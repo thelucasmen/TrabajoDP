@@ -1,3 +1,4 @@
+import java.util.*;
 
 /**
  * 
@@ -14,6 +15,7 @@ public class Etapa
     private double dificultad;
     private double distancia;
     private String nombre;
+    private List<Ciclista> ciclistas;
     
 
     /**
@@ -24,7 +26,7 @@ public class Etapa
         // initialise instance variables
         this.dificultad = dificultad;
         this.distancia = distancia;
-        this.nombre  =nombre;
+        this.nombre = nombre;
     }
     
     /**
@@ -58,10 +60,23 @@ public class Etapa
         this.dificultad = diff;
     }
     
+    public void setCiclista(Ciclista ciclista){
+        this.ciclistas.add(ciclista);
+    }
+    
     public void mostrar()
     {
+        Iterator<Ciclista> itc = ciclistas.iterator();
+        
         System.out.println("Nombre etapa: " + nombre);
         System.out.println("Distancia: " + distancia + " kilómetros");
         System.out.println("Dificultad: " + dificultad); 
+        System.out.println("Ciclistas: "); 
+        
+        if(ciclistas.size()>0){   
+            while (itc.hasNext()) {
+                itc.next().mostrar();
+            }
+        }
     }
 }

@@ -44,7 +44,7 @@ public class Ciclista
         this.energia = e;
     }
         
-    public void anadirResultado(Resultado r){
+    public void setResultado(Resultado r){
         resultados.add(r);   
     }
     
@@ -74,16 +74,17 @@ public class Ciclista
         
     public void mostrar()
     {
+        Iterator<Resultado> it = resultados.iterator();
+        
         System.out.println("Nombre ciclista: " + nombre);
         System.out.println("Energia: " + energia);
         System.out.println("Habilidad: ");
         habilidad.mostrar(); 
         System.out.println("Bicicleta: ");
-        bicicleta.mostrar();
-        for (Resultado resultado: resultados){
-            resultado.mostrar();
-        }
-        
+        bicicleta.mostrar();        
+        while(it.hasNext()) {
+          it.next().mostrar();
+        }                
     }
     
         /*Funcionalidad */
@@ -124,10 +125,12 @@ public class Ciclista
     }
     
     public double tiempoAcumulado(){
+        Iterator<Resultado> it = resultados.iterator();
         double tiempo = 0;
-        for (Resultado aux: resultados){
-            if(aux.getTiempo() > 0){
-                tiempo = tiempo + aux.getTiempo();
+        
+        while (it.hasNext()) {
+            if(it.next().getTiempo() > 0){
+                tiempo = tiempo + it.next().getTiempo();
             }
         }
         return tiempo;
@@ -149,6 +152,7 @@ public class Ciclista
     public String abandonada(){
         Iterator<Resultado> it = resultados.iterator();
         String stringAbandonadas = "";
+        
         while (it.hasNext()) {
             if(it.next().getTiempo() <= 0){
                 stringAbandonadas += "/n/t" + it.next().getEtapa();

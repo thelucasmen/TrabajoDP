@@ -72,7 +72,7 @@ Equipo
     ordenarCiclistas()
         ordenar ciclistas segun criterio(?)
     tiempoTotal()
-        sumaa total de tiempo de los ciclistas 
+        suma total de tiempo de los ciclistas 
     enviarCiclistas()
         que no hayan abandonado
         
