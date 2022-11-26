@@ -85,7 +85,7 @@ Clase: Ciclista
                 Variables:
                     +popularidad
                 Metodos:
-                    +SerPopular()
+                    +SerPopular() --> suma o resta popularidad segun el tiempo
                     destreza = (((habilidad del Ciclista + 6) / 140) * 10;
 
 4.

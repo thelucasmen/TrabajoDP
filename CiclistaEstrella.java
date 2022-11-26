@@ -34,6 +34,7 @@ public class CiclistaEstrella extends Ciclista
         return popularidad;
     }
     
+    //Suma o resta popularidad segun el tiempo
     public void SerPopular(double tiempo){
         if(tiempo<160){
            setPopularidad(getPopularidad()+4); 
@@ -43,6 +44,7 @@ public class CiclistaEstrella extends Ciclista
         
     }
     
+    //(((habilidad del Ciclista + 6) / 140) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 6) / 140 * 10;
     }

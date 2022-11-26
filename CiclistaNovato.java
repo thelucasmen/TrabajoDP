@@ -24,6 +24,7 @@ public class CiclistaNovato extends Ciclista
        super(nombre, bicicleta, habilidad, energia, resultado, equipo);
     }
 
+    //((habilidad del Ciclista + 2) / 120) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 2) / 120 * 10;
     }

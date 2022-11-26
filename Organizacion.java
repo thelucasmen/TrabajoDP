@@ -92,7 +92,7 @@ public class Organizacion
         this.ciclistasCarrera.remove(ciclista);
     }
     
-        public void setCriterioOrdenCiclistas(int criterioOrdenCiclistas){
+    public void setCriterioOrdenCiclistas(int criterioOrdenCiclistas){
         this.criterioOrdenCiclistas = criterioOrdenCiclistas;
     }
     
@@ -135,6 +135,7 @@ public class Organizacion
         }
     }
     
+    //Ordena las listas segun los criterios
     public void ordenarListas(){
         //etapas
             if(criterioOrdenCiclistas == 1 || criterioOrdenCiclistas == 4){
@@ -189,11 +190,13 @@ public class Organizacion
             }
     }
     
+    //Inscribe los equipos de la lista equipos en la etapa
     public void inscribirEquipos(Equipo equipo){
         setEquipos(equipo);
         ordenarListas();
     }
     
+    //Muestra la etapa y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
     public Equipo gestionarCarrera(boolean fin){
         Iterator<Equipo> itEq = equipos.iterator();
         String ganador = "Por decidir";
@@ -263,6 +266,7 @@ public class Organizacion
         return equipoGanador;
     }
     
+    //Muestra los resultados del campeonato
     public void celebracionEtapa(boolean fin){
         Iterator<Equipo> itEq = equipos.iterator();
         Iterator<Etapa> itE = etapas.iterator();

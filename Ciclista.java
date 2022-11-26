@@ -98,10 +98,12 @@ public class Ciclista
     }
     
         /*Funcionalidad */
+    //Cambiar la bicicleta
     public void cambiarBici(Bicicleta bicicleta){
         setBicicleta(bicicleta);
     }
     
+    //Comprueba si el ciclista ha abandonado
     public boolean abandonado(){
         if (energia <= 0){
             return true;
@@ -110,6 +112,7 @@ public class Ciclista
         }
     }
     
+    //Muestra resultados de cualquier etapa
     public Resultado mostrarResultados(Etapa e){
         //Busca una etapa concreta dentro del Array y devuelve la información del resultado de esa etapa, si no, devuelve null.
         Resultado aux = null;
@@ -130,10 +133,12 @@ public class Ciclista
             return null;
     }
     
+    //Devuelve el numro de etapas
     public int numeroEtapas(){
         return resultados.size();
     }
     
+    //Devuelve el tiempo total acumulado entre los resultados
     public double tiempoAcumulado(){
         Iterator<Resultado> it = resultados.iterator();
         double tiempo = 0;
@@ -146,6 +151,7 @@ public class Ciclista
         return tiempo;
     }
     
+    //Numero de etapas terminadas
     public int etapasTerminadas(){
         int cont = 0;
         Iterator<Resultado> it = resultados.iterator();
@@ -159,6 +165,7 @@ public class Ciclista
         
     }
     
+    //Muestra por pantalla las etapas abandonadas
     public String abandonada(){
         Iterator<Resultado> it = resultados.iterator();
         String stringAbandonadas = "";
@@ -171,6 +178,7 @@ public class Ciclista
         return stringAbandonadas;
     }
     
+    //Numero de etapas comenzadas, terminadas y tiempo acumulado, etapas abandonadas
     public String mostrarEtapas(){
         return "Etapas comenzadas:" + numeroEtapas() 
                     + "/nTiempo acumulado en etapas terminadas: " + tiempoAcumulado() 
@@ -178,7 +186,7 @@ public class Ciclista
                     + "/nEtapas abandonadas:" + abandonada();
     }
                        
-                                                //tiempo=bicicleta.calculartiempo(ciclista,etapa);
+    //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo){
         Resultado r;
         Bicicleta b = getBicicleta();

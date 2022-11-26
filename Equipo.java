@@ -74,6 +74,7 @@ public class Equipo
         }
     }
     
+    //Cuenta los ciclistas del equipo sin abandonar
     public int contCiclistas(){
         Iterator<Ciclista> itc = ciclistas.iterator();
         int i = 0;
@@ -94,6 +95,7 @@ public class Equipo
         }
     }
 
+    //cuenta los ciclistas del equipo que han abandonado
     public int contCiclistasAbandonados(){
         Iterator<Ciclista> itca = ciclistasA.iterator();
         int i = 0;
@@ -140,6 +142,7 @@ public class Equipo
         }
     }
     
+    //Ordenar ciclistas segun criterio
     public void ordenarCiclistas(int orden, int criterio){
             //1.ascendente, 2.descendente
             //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza()
@@ -168,7 +171,8 @@ public class Equipo
         }
     }
     
-        public void ordenarCiclistasA(int orden, int criterio){
+    //Ordenar ciclistas que han abandonado segun criterio
+    public void ordenarCiclistasA(int orden, int criterio){
             //1.ascendente, 2.descendente
             //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza()
         
@@ -196,6 +200,7 @@ public class Equipo
         }
     }    
 
+    //Suma total de tiempo de los ciclistas
     public double tiempoTotal(){
         Iterator<Ciclista> it = ciclistas.iterator();
         double tiempoAc = 0;
@@ -206,6 +211,7 @@ public class Equipo
         return tiempoAc;
     }
     
+    //Calcula la media del tiempo total
     public double mediatiempoTotal(){
         Iterator<Ciclista> it = ciclistas.iterator();
         double tiempoAc = tiempoTotal();
@@ -218,6 +224,7 @@ public class Equipo
         return tiempoAc/contCiclistas;
     }
     
+    //Envia a la etapa todos los ciclistas del equipo que no hayan abandonado
     public void enviarCiclistas(Etapa etapa){
         Iterator<Ciclista> itc = ciclistas.iterator();
         
@@ -228,6 +235,7 @@ public class Equipo
         }
     }
     
+    //Actualiza los ciclistas despues de la etapa
     public void recogerCiclistas(Ciclista ciclista){
         if(ciclista.getEnergia() > 0){
             borrarCiclista(ciclista);
@@ -238,6 +246,7 @@ public class Equipo
         }
     }
     
+    //Se encarga de mostrar los datos del equipo durante la etapa
     public ResultadosCarrera CaracterísticasCiclistas(Etapa etapa, boolean fin){
         Iterator<Ciclista> itc = ciclistas.iterator();
         double tiempo;

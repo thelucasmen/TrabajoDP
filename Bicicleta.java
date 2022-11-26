@@ -49,10 +49,12 @@ public class Bicicleta
     }
     
         /*Funcionalidad */
+    //habilidad*100/(peso*dificultad)
     public double calcularVelocidad(Ciclista ciclista, Etapa etapa)    {
         return ciclista.getHabilidad().getHabilidadCiclista()*100/(peso.getPesoBici()*etapa.getDificultad());
     }
     
+    //distancia/velocidad*60
     public double calculartiempo(Ciclista ciclista, Etapa etapa)    {
         return etapa.getDistancia()/calcularVelocidad(ciclista, etapa)*60;
          
