@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Etapa
 comment0.text=\r\n\ \r\n\ Cada\ etapa\ est\u00E1\ compuesta\ por\ un\ nombre,\ una\ distancia\ y\ una\ dificultad.\r\n\ Las\ operaciones\ en\ esta\ clase\ son\ las\ b\u00E1sicas\ para\ poder\ interactuar\ con\r\n\ otras\ clases.\ \r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=nombre\ dificultad\ distancia
-comment1.target=Etapa(java.lang.String,\ double,\ double)
+comment1.params=nombre\ dificultad\ distancia\ ciclistas
+comment1.target=Etapa(java.lang.String,\ double,\ double,\ java.util.List)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Etapa\r\n
 comment2.params=
 comment2.target=double\ getDificultad()

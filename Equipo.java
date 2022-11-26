@@ -17,12 +17,12 @@ public class Equipo
     /**
      * Constructor for objects of class Equipo
      */
-    public Equipo(String nombre)
+    public Equipo(String nombre, List<Ciclista> ciclistas, List<Ciclista> ciclistasA, List<Bicicleta> bicicletas)
     {    
         this.nombre = nombre;
-        ciclistas = new ArrayList<Ciclista>();
-        ciclistasA = new ArrayList<Ciclista>();
-        bicicletas = new ArrayList<Bicicleta>();
+        this.ciclistas = new ArrayList<Ciclista>();
+        this.ciclistasA = new ArrayList<Ciclista>();
+        this.bicicletas = new ArrayList<Bicicleta>();
     }   
 
     /**
@@ -44,6 +44,7 @@ public class Equipo
     }
     
     public void setCiclistaAbandonado(Ciclista ciclistaA){
+        borrarCiclista(ciclistaA);
         this.ciclistasA.add(ciclistaA);
     }
     
@@ -51,41 +52,57 @@ public class Equipo
         this.bicicletas.add(bicicleta);
     }
     
-    //cambiar borrar x borrar con iterator
-    public void borrarCiclista(int i){
-        if(i>=0 && i<ciclistas.size()){
-            ciclistas.remove(i);
-        } else {
-            System.out.println("El número elegido es mayor que la cantidad de ciclistas");
+    public void borrarCiclista(Ciclista ciclista){
+        this.ciclistas.remove(ciclista);
+    }
+    
+    public void borrarCiclistaAbandonado(Ciclista ciclistaA){
+        this.ciclistasA.remove(ciclistaA);
+    }
+    
+    public void borrarBicicletas(Bicicleta bicicleta){
+        this.bicicletas.remove(bicicleta);
+    }
+    
+    public void getCiclistas(){
+        Iterator<Ciclista> itc = ciclistas.iterator();
+        
+        System.out.println("Ciclistas: ");
+        while (itc.hasNext()) {
+            System.out.println(itc.next());
+            itc.next().getResultado();
         }
     }
     
-    public void borrarCiclistaAbandonado(int i){
-        if(i>=0 && i<ciclistasA.size()){
-            ciclistasA.remove(i);
-        } else {
-            System.out.println("El número elegido es mayor que la cantidad de ciclistas que han abandonado");
+    public int contCiclistas(){
+        Iterator<Ciclista> itc = ciclistas.iterator();
+        int i = 0;
+        
+        while (itc.hasNext()) {
+                i++;
         }
+        return i;
     }
     
-    public void borrarBicicletas(int i){
-        if(i>=0 && i<bicicletas.size()){
-            bicicletas.remove(i);
-        } else {
-            System.out.println("El número elegido es mayor que la cantidad de bicicletas");
+    public void getCiclistasAbandonados(){
+        Iterator<Ciclista> itca = ciclistasA.iterator();
+        
+        System.out.println("Ciclistas abandonados: ");
+        while (itca.hasNext()) {
+            System.out.println(itca.next());
+            itca.next().getResultado();
         }
     }
-    
-    /*public Ciclista getCiclista(int i){
-        //si el i elegido es mas grande que el numero de ciclistas devuelve un ciclista null 
-        Ciclista ciclista = null;
-        if(i>=0 && i<ciclistas.size()){
-            ciclista = ciclistas.get(i);
-        } else {
-            System.out.println("El número elegido es mayor que la cantidad de ciclistas");
-        }
-        return ciclista;
-    }*/
+
+    public int contCiclistasAbandonados(){
+        Iterator<Ciclista> itca = ciclistasA.iterator();
+        int i = 0;
+        
+        while (itca.hasNext()) {
+            i++;
+        }        
+        return i;
+    }
     
         /*Funcionalidad */    
     public void mostrar(){
@@ -94,6 +111,7 @@ public class Equipo
         Iterator<Bicicleta> itb = bicicletas.iterator();
         
         System.out.println("Nombre equipo: " + nombre);
+        System.out.println("Ciclistas equipo: ");
         if(ciclistas.size()>0){   
             while (itc.hasNext()) {
                 itc.next().mostrar();
@@ -102,14 +120,17 @@ public class Equipo
             System.out.println("El equipo no tiene ningún ciclista");
         }
         
+        System.out.println("Ciclistas abandonados equipo: ");
         if(ciclistasA.size()>0){
             while (itca.hasNext()) {
                 itc.next().mostrar();
+                System.out.println("(Abandonado)");
             }
         } else {
             System.out.println("Ningún ciclista del equipo ha abandonado");
         }
         
+        System.out.println("Bicicletas del equipo: ");
         if(bicicletas.size()>0){
             while (itb.hasNext()) {
                 itc.next().mostrar();
@@ -120,8 +141,6 @@ public class Equipo
     }
     
     public void ordenarCiclistas(int orden, int criterio){
-        List<Ciclista> ciclistasOrdenados = new ArrayList<Ciclista>();
-        Iterator<Ciclista> it = ciclistas.iterator();
             //1.ascendente, 2.descendente
             //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza()
         
@@ -149,6 +168,34 @@ public class Equipo
         }
     }
     
+        public void ordenarCiclistasA(int orden, int criterio){
+            //1.ascendente, 2.descendente
+            //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza()
+        
+        switch (criterio){
+            case 1:
+                ciclistas.sort(new NameComparator());
+                break;
+            case 2:
+                ciclistas.sort(new BicicletaPesoComparator());
+                ciclistas.sort(new BicicletaNameComparator());                
+                break;
+            case 3:
+                ciclistas.sort(new EnergyComparator());                 
+                break;
+            case 4:
+                ciclistas.sort(new TiempoComparator());                 
+                break;
+            case 5:
+                ciclistas.sort(new DestrezaComparator());                 
+                break;
+        }
+        
+        if(orden == 2){
+            Collections.sort(ciclistas, Collections.reverseOrder());
+        }
+    }    
+
     public double tiempoTotal(){
         Iterator<Ciclista> it = ciclistas.iterator();
         double tiempoAc = 0;
@@ -159,6 +206,18 @@ public class Equipo
         return tiempoAc;
     }
     
+    public double mediatiempoTotal(){
+        Iterator<Ciclista> it = ciclistas.iterator();
+        double tiempoAc = tiempoTotal();
+        int contCiclistas = 0;
+        
+        while (it.hasNext()) {
+            contCiclistas++;
+        }
+        
+        return tiempoAc/contCiclistas;
+    }
+    
     public void enviarCiclistas(Etapa etapa){
         Iterator<Ciclista> itc = ciclistas.iterator();
         
@@ -167,5 +226,49 @@ public class Equipo
                 etapa.setCiclista(itc.next());
             }
         }
+    }
+    
+    public void recogerCiclistas(Ciclista ciclista){
+        if(ciclista.getEnergia() > 0){
+            borrarCiclista(ciclista);
+            setCiclista(ciclista);
+        } else {
+            borrarCiclistaAbandonado(ciclista);
+            setCiclistaAbandonado(ciclista);
+        }
+    }
+    
+    public ResultadosCarrera CaracterísticasCiclistas(Etapa etapa, boolean fin){
+        Iterator<Ciclista> itc = ciclistas.iterator();
+        double tiempo;
+        boolean abandonado = false;
+        Resultado r = null;
+        ResultadosCarrera resultadosCarrera = null;
+        
+        getCiclistas();
+        System.out.println("Ciclistas: ");
+        while (itc.hasNext()) {
+            System.out.println(itc.next());
+            System.out.println("Velocidad: " + itc.next().getBicicleta().calcularVelocidad(itc.next(), etapa));
+            
+            tiempo = itc.next().getBicicleta().calculartiempo(itc.next(), etapa);
+            r = new Resultado(etapa, tiempo);
+            itc.next().setResultado(r);
+            
+            if(itc.next().getEnergia() > 0){
+                System.out.println("Tiempo: " + tiempo);
+            } else {
+                abandonado = true;
+                System.out.println("Energia: " + itc.next().getEnergia());  
+                System.out.println("Tiempo: " + tiempo);                
+            }
+            
+            resultadosCarrera = new ResultadosCarrera(itc.next().getNombre(), itc.next().getEnergia(), r, abandonado);
+            
+            if(fin){
+                recogerCiclistas(itc.next());
+            }
+        }
+        return resultadosCarrera;
     }
 }

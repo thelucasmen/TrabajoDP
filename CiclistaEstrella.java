@@ -20,9 +20,9 @@ public class CiclistaEstrella extends Ciclista
     /**
      * Constructor for objects of class Ciclista
      */
-    public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    public CiclistaEstrella(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultado, Equipo equipo)
     {
-       super(nombre, habilidad, energia, equipo);
+       super(nombre, bicicleta, habilidad, energia, resultado, equipo);
        this.popularidad = 6;       
     }
     

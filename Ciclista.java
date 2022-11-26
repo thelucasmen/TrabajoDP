@@ -19,7 +19,8 @@ public class Ciclista
     /**
      * Constructor for objects of class Ciclista
      */
-    public Ciclista(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    
+    public Ciclista(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultado, Equipo equipo)
     {
         this.nombre = nombre;
         this.habilidad = habilidad;
@@ -46,6 +47,14 @@ public class Ciclista
         
     public void setResultado(Resultado r){
         resultados.add(r);   
+    }
+    
+    public void getResultado(){ 
+        System.out.println("Resultados: ");
+        Iterator<Resultado> it = resultados.iterator();     
+        while(it.hasNext()) {
+          it.next().mostrar();
+        }              
     }
     
     public void setEquipo(Equipo e){
@@ -82,6 +91,7 @@ public class Ciclista
         habilidad.mostrar(); 
         System.out.println("Bicicleta: ");
         bicicleta.mostrar();        
+        System.out.println("Resultados: ");
         while(it.hasNext()) {
           it.next().mostrar();
         }                

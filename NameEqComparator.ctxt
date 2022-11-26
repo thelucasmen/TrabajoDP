@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=NameEqComparator
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ NameEqComparator\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=eq1\ eq2
+comment1.target=int\ compare(Equipo,\ Equipo)
+numComments=2

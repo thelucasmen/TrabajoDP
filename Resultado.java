@@ -49,8 +49,6 @@ public class Resultado
     }
     
     public void mostrar(){
-        System.out.println("Etapa: ");
-        etapa.mostrar();
         System.out.println("Tiempo: " + tiempo);
     }
 }

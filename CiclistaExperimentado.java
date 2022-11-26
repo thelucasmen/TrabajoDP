@@ -19,9 +19,9 @@ public class CiclistaExperimentado extends Ciclista
     /**
      * Constructor for objects of class CiclistaExperimentado
      */
-    public CiclistaExperimentado(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    public CiclistaExperimentado(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultado, Equipo equipo)
     {
-       super(nombre, habilidad, energia, equipo);
+       super(nombre, bicicleta, habilidad, energia, resultado, equipo);
     }
 
     public double calculaDestreza(){

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=ResultadoPodioComparator
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ResultadoPodioComparator\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=r1\ r2
+comment1.target=int\ compare(ResultadosCarrera,\ ResultadosCarrera)
+numComments=2

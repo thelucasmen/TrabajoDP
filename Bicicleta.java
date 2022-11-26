@@ -10,8 +10,6 @@ public class Bicicleta
     // instance variables - replace the example below with your own
     private String nombre;
     private Peso peso;
-//    private Ciclista ciclista;
-//    private Etapa etapa;
 
     /**
      * Constructor for objects of class Bicicleta

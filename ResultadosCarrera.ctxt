@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=ResultadosCarrera
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ResultadosCarrera\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ energia\ resultado\ abandonado
+comment1.target=ResultadosCarrera(java.lang.String,\ double,\ Resultado,\ boolean)
+comment10.params=
+comment10.target=void\ mostrar()
+comment2.params=nombre
+comment2.target=void\ setNombre(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=energia
+comment4.target=void\ setEnergia(double)
+comment5.params=
+comment5.target=double\ getEnergia()
+comment6.params=resultado
+comment6.target=void\ setResultado(Resultado)
+comment7.params=
+comment7.target=Resultado\ getResultado()
+comment8.params=abandonado
+comment8.target=void\ setAbandonado(boolean)
+comment9.params=
+comment9.target=boolean\ getAbandonado()
+numComments=11

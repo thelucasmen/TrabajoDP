@@ -21,7 +21,7 @@ public class Etapa
     /**
      * Constructor for objects of class Etapa
      */
-    public Etapa(String nombre, double dificultad, double distancia)
+    public Etapa(String nombre, double dificultad, double distancia, List<Ciclista> ciclistas)
     {
         // initialise instance variables
         this.dificultad = dificultad;
