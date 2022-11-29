@@ -22,7 +22,7 @@ public class Organizacion
     /**
      * Constructor for objects of class Organizacion
      */
-    public Organizacion(String nombreOrg, Etapa etapa, int criterioOrdenEtapas, Equipo equipo, int criterioOrdenEquipos, Ciclista ciclista, int criterioOrdenCiclistas)
+    public Organizacion(String nombreOrg, List<Etapa> etapas, int criterioOrdenEtapas, List<Equipo> equipos, int criterioOrdenEquipos, List<Ciclista> ciclistasCarrera, int criterioOrdenCiclistas)
     {
         this.nombreOrg = nombreOrg;
         
@@ -172,8 +172,8 @@ public class Organizacion
                 ciclistasCarrera.sort(new NameComparator());
             } else if(criterioOrdenCiclistas == 2 || criterioOrdenCiclistas == 7){ 
                 //2.bicicleta o 7.bicicleta(desc) 
-                ciclistasCarrera.sort(new BicicletaPesoComparator());
-                ciclistasCarrera.sort(new BicicletaNameComparator()); 
+                ciclistasCarrera.sort(new BicicletaPesoCiclistaComparator());
+                ciclistasCarrera.sort(new BicicletaNameCiclistaComparator()); 
             } else if(criterioOrdenCiclistas == 3 || criterioOrdenCiclistas == 8){
                 //3.energia o 8.energia(desc) 
                 ciclistasCarrera.sort(new EnergyComparator()); 
@@ -197,10 +197,11 @@ public class Organizacion
     }
     
     //Muestra la etapa y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
-    public Equipo gestionarCarrera(boolean fin){
+    public Equipo gestionarCarrera(){
         Iterator<Equipo> itEq = equipos.iterator();
         String ganador = "Por decidir";
         Equipo equipoGanador = null;
+        boolean fin = false;
         int contC = 0, contCA = 0;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         
@@ -218,6 +219,7 @@ public class Organizacion
             }
             
             if(contC != contCA || contC - contCA != 1) {
+                fin = true;
                 celebracionEtapa(fin);
             }
             

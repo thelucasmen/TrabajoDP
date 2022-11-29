@@ -8,7 +8,7 @@
 public enum Habilidad{
     LENTA("LENTA", 4.0),
     NORMAL("NORMAL", 6.0),
-    PESADA("BUENA", 8.0);
+    BUENA("BUENA", 8.0);
     
     private String catHabilidad;
     private double habilidadCiclista;

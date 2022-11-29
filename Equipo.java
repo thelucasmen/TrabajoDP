@@ -25,6 +25,14 @@ public class Equipo
         this.bicicletas = new ArrayList<Bicicleta>();
     }   
 
+    public Equipo(String nombre, List<Ciclista> ciclistas, List<Bicicleta> bicicletas)
+    {    
+        this.nombre = nombre;
+        this.ciclistas = new ArrayList<Ciclista>();
+        this.ciclistasA = new ArrayList<Ciclista>();
+        this.bicicletas = new ArrayList<Bicicleta>();
+    }
+        
     /**
      * An example of a method - replace this comment with your own
      * 
@@ -145,15 +153,15 @@ public class Equipo
     //Ordenar ciclistas segun criterio
     public void ordenarCiclistas(int orden, int criterio){
             //1.ascendente, 2.descendente
-            //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza()
+            //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza(), 6.habilidad
         
         switch (criterio){
             case 1:
                 ciclistas.sort(new NameComparator());
                 break;
             case 2:
-                ciclistas.sort(new BicicletaPesoComparator());
-                ciclistas.sort(new BicicletaNameComparator());                
+                ciclistas.sort(new BicicletaNameCiclistaComparator()); 
+                ciclistas.sort(new BicicletaPesoCiclistaComparator());               
                 break;
             case 3:
                 ciclistas.sort(new EnergyComparator());                 
@@ -163,6 +171,9 @@ public class Equipo
                 break;
             case 5:
                 ciclistas.sort(new DestrezaComparator());                 
+                break;
+            case 6:
+                ciclistas.sort(new HabilidadComparator());                 
                 break;
         }
         
@@ -174,15 +185,15 @@ public class Equipo
     //Ordenar ciclistas que han abandonado segun criterio
     public void ordenarCiclistasA(int orden, int criterio){
             //1.ascendente, 2.descendente
-            //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza()
+            //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza(), 6.habilidad
         
         switch (criterio){
             case 1:
                 ciclistas.sort(new NameComparator());
                 break;
             case 2:
-                ciclistas.sort(new BicicletaPesoComparator());
-                ciclistas.sort(new BicicletaNameComparator());                
+                ciclistas.sort(new BicicletaNameCiclistaComparator()); 
+                ciclistas.sort(new BicicletaPesoCiclistaComparator());               
                 break;
             case 3:
                 ciclistas.sort(new EnergyComparator());                 
@@ -193,6 +204,9 @@ public class Equipo
             case 5:
                 ciclistas.sort(new DestrezaComparator());                 
                 break;
+            case 6:
+                ciclistas.sort(new HabilidadComparator());                 
+                break;
         }
         
         if(orden == 2){
@@ -200,6 +214,25 @@ public class Equipo
         }
     }    
 
+    //Ordenar bicicletas segun criterio
+    public void ordenarBicicletas(int orden, int criterio){
+            //1.ascendente, 2.descendente
+            //1.nombre, 2.peso
+        
+        switch (criterio){
+            case 1:
+                bicicletas.sort(new BicicletaNameComparator()); 
+                break;
+            case 2:               
+                bicicletas.sort(new BicicletaPesoComparator());                 
+                break;
+        }
+        
+        if(orden == 2){
+            Collections.sort(bicicletas, Collections.reverseOrder());
+        }
+    }  
+    
     //Suma total de tiempo de los ciclistas
     public double tiempoTotal(){
         Iterator<Ciclista> it = ciclistas.iterator();
@@ -274,9 +307,7 @@ public class Equipo
             
             resultadosCarrera = new ResultadosCarrera(itc.next().getNombre(), itc.next().getEnergia(), r, abandonado);
             
-            if(fin){
-                recogerCiclistas(itc.next());
-            }
+            recogerCiclistas(itc.next());
         }
         return resultadosCarrera;
     }

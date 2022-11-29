@@ -6,9 +6,8 @@ import java.util.Comparator;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BicicletaNameComparator implements Comparator<Ciclista>{ 
-    public int compare(Ciclista c1, Ciclista c2){
-        return c1.getBicicleta().getNombre().compareTo(c2.getBicicleta().getNombre());
+public class BicicletaNameComparator implements Comparator<Bicicleta>{ 
+    public int compare(Bicicleta b1, Bicicleta b2){
+        return b1.getNombre().compareTo(b2.getNombre());
     }
 }
-

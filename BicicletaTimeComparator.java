@@ -9,7 +9,7 @@ import java.util.Comparator;
 public class BicicletaTimeComparator implements Comparator<Equipo>{ 
     public int compare(Equipo eq1, Equipo eq2){
         if(eq1.tiempoTotal() == eq2.tiempoTotal()){
-            return new BicicletaTimeComparator().compare(eq1, eq2);
+            return 0;
         } else if(eq1.tiempoTotal() > eq2.tiempoTotal()) {
             return 1;
         } else {

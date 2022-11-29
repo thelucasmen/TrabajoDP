@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Organizacion
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Organizacion\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=nombreOrg\ etapa\ criterioOrdenEtapas\ equipo\ criterioOrdenEquipos\ ciclista\ criterioOrdenCiclistas
-comment1.target=Organizacion(java.lang.String,\ Etapa,\ int,\ Equipo,\ int,\ Ciclista,\ int)
+comment1.params=nombreOrg\ etapas\ criterioOrdenEtapas\ equipos\ criterioOrdenEquipos\ ciclistasCarrera\ criterioOrdenCiclistas
+comment1.target=Organizacion(java.lang.String,\ java.util.List,\ int,\ java.util.List,\ int,\ java.util.List,\ int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Organizacion\r\n
 comment10.params=equipo
 comment10.target=void\ setEquipos(Equipo)
@@ -28,8 +28,8 @@ comment2.params=nombreOrg
 comment2.target=void\ setNombreOrg(java.lang.String)
 comment20.params=equipo
 comment20.target=void\ inscribirEquipos(Equipo)
-comment21.params=fin
-comment21.target=Equipo\ gestionarCarrera(boolean)
+comment21.params=
+comment21.target=Equipo\ gestionarCarrera()
 comment22.params=fin
 comment22.target=void\ celebracionEtapa(boolean)
 comment3.params=

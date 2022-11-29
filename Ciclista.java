@@ -23,9 +23,18 @@ public class Ciclista
     public Ciclista(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultado, Equipo equipo)
     {
         this.nombre = nombre;
+        this.bicicleta = bicicleta;
         this.habilidad = habilidad;
         this.energia = energia;
         this.resultados = new ArrayList<Resultado>();
+        this.equipo = equipo;
+    }
+    
+    public Ciclista(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    {
+        this.nombre = nombre;
+        this.habilidad = habilidad;
+        this.energia = energia;
         this.equipo = equipo;
     }
 

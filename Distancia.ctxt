@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Distancia
+comment0.text=\r\n\ Enumeration\ class\ Distancia\ -\ write\ a\ description\ of\ the\ enum\ class\ here\r\n\ \r\n\ @author\ (your\ name\ here)\r\n\ @version\ (version\ number\ or\ date\ here)\r\n
+comment1.params=catDistancia\ dificultadEtapa
+comment1.target=Distancia(java.lang.String,\ double)
+comment2.params=catDistancia
+comment2.target=void\ setCatDistancia(java.lang.String)
+comment3.params=distanciaEtapa
+comment3.target=void\ setDistanciaEtapa(double)
+comment4.params=
+comment4.target=java.lang.String\ getCatDistancia()
+comment5.params=
+comment5.target=double\ getDistanciaEtapa()
+comment6.params=
+comment6.target=void\ mostrar()
+numComments=7

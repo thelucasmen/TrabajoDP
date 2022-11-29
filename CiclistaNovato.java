@@ -23,6 +23,11 @@ public class CiclistaNovato extends Ciclista
     {
        super(nombre, bicicleta, habilidad, energia, resultado, equipo);
     }
+    
+    public CiclistaNovato(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    {
+       super(nombre, habilidad, energia, equipo);
+    }
 
     //((habilidad del Ciclista + 2) / 120) * 10
     public double calculaDestreza(){

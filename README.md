@@ -12,8 +12,10 @@
 Clase: Etapa
     Variables:
         nombre
-        dificultad
-        distancia
+        dificultad (enum)
+            SENCILLA(0.9) | NORMAL(1.0) | PESADA(1.1);
+        distancia (enum)
+            CORTA(150) | INTERMEDIA (200) | LARGA(225);
         Lista de ciclistas que participan en la etapa
     
     Metodos:
@@ -25,7 +27,7 @@ Clase: Bicicleta
     Variables:
         nombre
         peso (enum)
-        LIGERA (7.35) | NORMAL (7.50) | PESADA (7.85)
+            LIGERA (7.35) | NORMAL (7.50) | PESADA (7.85)
     
     Metodos:
         Setter y Getters
@@ -104,6 +106,7 @@ Clase: Equipo
         mostrar()
         ordenarCiclistas() --> ordenar ciclistas segun criterio
         ordenarCiclistasA --> ordenar ciclistas que han abandonado segun criterio
+        ordenarBicicletas() --> ordenar bicicletas segun criterio
         tiempoTotal() --> suma total de tiempo de los ciclistas 
         mediatiempoTotal() --> calcula la media del tiempo total
         enviarCiclistas() --> envia a la etapa todos los ciclistas del equipo que no hayan abandonado
@@ -156,5 +159,5 @@ Clases: Comparator --> Ordenan listas segun un criterio
 7.
 Clases: Funcionalidad
     Clase: CiclismoDemo (main)
-    Clase: DatosCampeonatoAbandonosFinal
-    Clase: DatosCampeonatoCompleto
+    Clase: DatosCampeonatoAbandonosFinal --> Prueba una carrera con abandonos
+    Clase: DatosCampeonatoCompleto --> Prueba una carrera sin abandonos

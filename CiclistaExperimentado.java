@@ -24,6 +24,11 @@ public class CiclistaExperimentado extends Ciclista
        super(nombre, bicicleta, habilidad, energia, resultado, equipo);
     }
 
+    public CiclistaExperimentado(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    {
+       super(nombre, habilidad, energia, equipo);
+    }
+    
     //((habilidad del Ciclista + 4) / 130) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 4) / 130 * 10;

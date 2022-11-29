@@ -26,6 +26,11 @@ public class CiclistaEstrella extends Ciclista
        this.popularidad = 6;       
     }
     
+    public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
+    {
+       super(nombre, habilidad, energia, equipo);
+    }
+    
     public void setPopularidad(int popularidad){
         this.popularidad = popularidad;
     }

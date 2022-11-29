@@ -12,8 +12,8 @@ import java.util.*;
 public class Etapa
 {
     // instance variables - replace the example below with your own
-    private double dificultad;
-    private double distancia;
+    private Dificultad dificultad;
+    private Distancia distancia;
     private String nombre;
     private List<Ciclista> ciclistas;
     
@@ -21,7 +21,7 @@ public class Etapa
     /**
      * Constructor for objects of class Etapa
      */
-    public Etapa(String nombre, double dificultad, double distancia, List<Ciclista> ciclistas)
+    public Etapa(String nombre, Dificultad dificultad, Distancia distancia)
     {
         // initialise instance variables
         this.dificultad = dificultad;
@@ -36,11 +36,11 @@ public class Etapa
      * @return     the sum of x and y 
      */
     
-    public double getDificultad(){        
+    public Dificultad getDificultad(){        
         return dificultad;    
     }  
     
-    public double getDistancia(){      
+    public Distancia getDistancia(){      
         return distancia;        
     }
     
@@ -52,11 +52,11 @@ public class Etapa
         this.nombre = n;
     }
     
-    public void setDistancia(double d){
+    public void setDistancia(Distancia d){
         this.distancia = d;
     }
     
-    public void setDificultad(double diff){
+    public void setDificultad(Dificultad diff){
         this.dificultad = diff;
     }
     
@@ -69,8 +69,10 @@ public class Etapa
         Iterator<Ciclista> itc = ciclistas.iterator();
         
         System.out.println("Nombre etapa: " + nombre);
-        System.out.println("Distancia: " + distancia + " kilómetros");
-        System.out.println("Dificultad: " + dificultad); 
+        System.out.print("Distancia: ");
+        distancia.mostrar();
+        System.out.println("Dificultad: ");
+        dificultad.mostrar(); 
         System.out.println("Ciclistas: "); 
         
         if(ciclistas.size()>0){   

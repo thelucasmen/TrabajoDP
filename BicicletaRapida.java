@@ -40,6 +40,6 @@ public class BicicletaRapida extends Bicicleta
         /*Funcionalidad */
     //habilidad*100/(peso*dificultad)+velocidadExtra
     public double calcularVelocidad(Ciclista ciclista, Etapa etapa)    {
-        return ciclista.getHabilidad().getHabilidadCiclista()*100/(getPeso().getPesoBici()*etapa.getDificultad())+velocidadExtra;
+        return ciclista.getHabilidad().getHabilidadCiclista()*100/(getPeso().getPesoBici()*etapa.getDificultad().getDificultadEtapa())+velocidadExtra;
     }
 }
