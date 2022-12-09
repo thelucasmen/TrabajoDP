@@ -90,21 +90,7 @@ public class Ciclista
         return equipo;
     }
         
-    public void mostrar()
-    {
-        Iterator<Resultado> it = resultados.iterator();
-        
-        System.out.println("Nombre ciclista: " + nombre);
-        System.out.println("Energia: " + energia);
-        System.out.println("Habilidad: ");
-        habilidad.mostrar(); 
-        System.out.println("Bicicleta: ");
-        bicicleta.mostrar();        
-        System.out.println("Resultados: ");
-        while(it.hasNext()) {
-          it.next().mostrar();
-        }                
-    }
+    public void mostrar() { }
     
         /*Funcionalidad */
     //Cambiar la bicicleta
@@ -149,14 +135,16 @@ public class Ciclista
     
     //Devuelve el tiempo total acumulado entre los resultados
     public double tiempoAcumulado(){
-        Iterator<Resultado> it = resultados.iterator();
-        double tiempo = 0;
-        
-        while (it.hasNext()) {
-            if(it.next().getTiempo() > 0){
-                tiempo = tiempo + it.next().getTiempo();
+        double tiempo = 0.0;
+        try{
+            Iterator<Resultado> it = resultados.iterator();
+            
+            while (it.hasNext()) {
+                if(it.next().getTiempo() > 0){
+                    tiempo = tiempo + it.next().getTiempo();
+                }
             }
-        }
+        }catch(NullPointerException e){ }
         return tiempo;
     }
     

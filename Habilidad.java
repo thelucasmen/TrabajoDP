@@ -35,7 +35,8 @@ public enum Habilidad{
         return habilidadCiclista;
     }
     
-    public void mostrar()    {
-        System.out.println(catHabilidad + "(" + habilidadCiclista + ")");
+    public void mostrar(){
+        //Buena (valor:8.0)
+        System.out.print(catHabilidad + "(valor:" + habilidadCiclista + ")");
     }
 };

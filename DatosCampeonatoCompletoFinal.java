@@ -65,8 +65,8 @@ public class DatosCampeonatoCompletoFinal
         organizacion.inscribirEquipos(dSMWomen);
         
         /**************BICICLETA**************/ 
-	//constructor de bicicletas pide ( String nombre, Peso peso)
-		//constructor de bicicletas rápidas pide ( String nombre, Peso peso, double velocidad extra)
+        //constructor de bicicletas pide ( String nombre, Peso peso)
+        //constructor de bicicletas rápidas pide ( String nombre, Peso peso, double velocidad extra)
             dSMWomen.setBicicleta(new BicicletaRapida("SCOTT CONTESSA ADDICT eRIDE 15",Peso.LIGERA, 0.3)); 
             dSMWomen.setBicicleta(new BicicletaPrototipo("SCOTT CONTESSA ADDICT 15",Peso.NORMAL));
             dSMWomen.setBicicleta(new Bicicleta("SCOTT CONTESSA ADDICT RC 15",Peso.PESADA));
@@ -75,7 +75,7 @@ public class DatosCampeonatoCompletoFinal
             dSMWomen.setCiclista(new CiclistaEstrella("LIPPERT", Habilidad.NORMAL, 1160, dSMWomen));
             dSMWomen.setCiclista(new CiclistaExperimentado("LABOUS", Habilidad.BUENA, 1150, dSMWomen));
 
-	//constructor de bicicletas pide ( String nombre, Peso peso)
+    //constructor de bicicletas pide ( String nombre, Peso peso)
             //constructor de bicicletas rápidas pide ( String nombre, Peso peso, double velocidad extra)
             trekSegafredoWomen.setBicicleta(new Bicicleta("TREK Madone SLR 9 eTap Gen 7",Peso.LIGERA));
             trekSegafredoWomen.setBicicleta(new BicicletaRapida("TREK Emonda SLR 9 eTap",Peso.NORMAL, 0.5));
@@ -86,7 +86,7 @@ public class DatosCampeonatoCompletoFinal
             trekSegafredoWomen.setCiclista(new CiclistaExperimentado("LONGO-BORGHINI", Habilidad.NORMAL,1175, trekSegafredoWomen));
             trekSegafredoWomen.setCiclista(new CiclistaNovato("CORDON-RAGOT", Habilidad.BUENA, 1120, trekSegafredoWomen));
         
-	//constructor de bicicletas pide ( String nombre, Peso peso)
+    //constructor de bicicletas pide ( String nombre, Peso peso)
             //constructor de bicicletas rápidas pide ( String nombre, Peso peso, double velocidad extra)
             movistarWomen.setBicicleta(new BicicletaRapida("CANYON Ultimate CFR eTap",Peso.LIGERA, 0.4));
             movistarWomen.setBicicleta(new Bicicleta("CANYON Aeroad CF SLX 8 Disc Di2",Peso.NORMAL));

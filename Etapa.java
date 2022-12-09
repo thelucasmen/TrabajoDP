@@ -27,6 +27,7 @@ public class Etapa
         this.dificultad = dificultad;
         this.distancia = distancia;
         this.nombre = nombre;
+        ciclistas = new ArrayList<Ciclista>();
     }
     
     /**
@@ -61,24 +62,54 @@ public class Etapa
     }
     
     public void setCiclista(Ciclista ciclista){
-        this.ciclistas.add(ciclista);
+        ciclistas.add(ciclista);
+    }
+    
+    public int getCiclista(){
+        int contador = 0;
+        try{
+            Iterator<Ciclista> itC = ciclistas.iterator();
+            while (itC.hasNext()) {
+                itC.next().mostrar();
+                contador++;
+            }
+        }catch(NullPointerException e){ }
+        return contador;
     }
     
     public void mostrar()
     {
-        Iterator<Ciclista> itc = ciclistas.iterator();
-        
-        System.out.println("Nombre etapa: " + nombre);
-        System.out.print("Distancia: ");
-        distancia.mostrar();
-        System.out.println("Dificultad: ");
+        //<etapa:sencilla intermedia> <dificultad:Sencilla (valor:0.9)> <distancia:Intermedia (valor:200.0)>
+        System.out.print("<etapa:" + nombre + "> <dificultad:");
         dificultad.mostrar(); 
-        System.out.println("Ciclistas: "); 
-        
-        if(ciclistas.size()>0){   
-            while (itc.hasNext()) {
-                itc.next().mostrar();
+        System.out.print("> <distancia:");
+        distancia.mostrar();
+        System.out.println(">"); 
+    }
+    
+    //Recorre el listado de ciclistas y sus bicicletas
+    public void mostrarCiclistas(int contC, Etapa etapa){
+        int contCE = 0;
+        Ciclista ciclista = null;
+        try{
+            Iterator<Ciclista> itC = ciclistas.iterator();
+            while (itC.hasNext()) {
+                contCE++;
+                System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
+                ciclista = itC.next();
+                ciclista.mostrar();
+                System.out.print(" con bicicleta\n");
+                ciclista.getBicicleta().mostrar();
+                ciclista.funcionalidadCiclista(etapa, ciclista.getBicicleta().calculartiempo(ciclista, etapa));
+                System.out.print("en etapa " + etapa.getNombre() + "\n" +
+                        "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + ciclista.getBicicleta().getNombre() + 
+                        " alcanza una velocidad de " + ciclista.getBicicleta().calcularVelocidad(ciclista, etapa) + " km/hora +++\n" +
+                        "+++ WIEBES termina la etapa en " + ciclista.getBicicleta().calculartiempo(ciclista, etapa) + " minutos +++\n" +
+                        "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + ciclista.getEnergia() + " +++\n" +
+                        "@@@\n");
+                System.out.println("+++ La popularidad del ciclista LIPPERT ha aumentado  y ahora su nivel de popularidad es de: 10 unidades" +
+                    "@@@\n");
             }
-        }
+        }catch(NullPointerException e){ }
     }
 }

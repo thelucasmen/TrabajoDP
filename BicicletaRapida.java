@@ -20,6 +20,8 @@ public class BicicletaRapida extends Bicicleta
     public BicicletaRapida(String nombre, Peso peso, double velocidadExtra)
     {       
         super(nombre, peso);
+        this.nombre = nombre;
+        this.peso = peso;
         this.velocidadExtra = velocidadExtra;
     }
     
@@ -31,10 +33,11 @@ public class BicicletaRapida extends Bicicleta
         return velocidadExtra;
     }
     
-    public void mostrar()    {
-        System.out.println("Nombre : " + nombre);
-        System.out.println("Peso: " + peso);
-        System.out.println("Velocidad Extra: " + velocidadExtra);
+    public void mostrar() {
+        //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)> en etapa sencilla intermedia
+        System.out.print("<BicicletaRapida: " + nombre + "> <peso: ");
+        peso.mostrar();
+        System.out.print("> <Velocidad Extra: " + velocidadExtra + ">");
     }
     
         /*Funcionalidad */

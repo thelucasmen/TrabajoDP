@@ -6,14 +6,14 @@
  * @version (version number or date here)
  */
 public enum Distancia{
-    CORTA("CORTA", 150),
-    INTERMEDIA("INTERMEDIA", 200),
-    LARGA("LARGA", 225);
+    CORTA("CORTA", 150.0),
+    INTERMEDIA("INTERMEDIA", 200.0),
+    LARGA("LARGA", 225.0);
     
     private String catDistancia;
     private double distanciaEtapa;
     
-    Distancia(String catDistancia, double dificultadEtapa)
+    Distancia(String catDistancia, double distanciaEtapa)
     {
         this.catDistancia = catDistancia;
         this.distanciaEtapa = distanciaEtapa;
@@ -36,6 +36,7 @@ public enum Distancia{
     }
     
     public void mostrar()    {
-        System.out.println(catDistancia + "(" + distanciaEtapa + " kilómetros)");
+        //Intermedia (valor:200.0)
+        System.out.print(catDistancia + "(valor:" + distanciaEtapa + ")");
     }
 };

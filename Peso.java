@@ -35,7 +35,8 @@ public enum Peso{
         return pesoBici;
     }
     
-    public void mostrar()    {
-        System.out.println(catPeso + "(" + pesoBici + ")");
+    public void mostrar(){
+        //Pesada (valor: 7.85)
+        System.out.print(catPeso + "(valor: " + pesoBici + ")");
     }
 };

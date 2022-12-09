@@ -29,6 +29,11 @@ public class CiclistaEstrella extends Ciclista
     public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
        super(nombre, habilidad, energia, equipo);
+       this.nombre = nombre;
+       this.habilidad = habilidad;
+       this.energia = energia;
+       this.equipo = equipo;
+       this.popularidad = 6;  
     }
     
     public void setPopularidad(int popularidad){
@@ -37,6 +42,14 @@ public class CiclistaEstrella extends Ciclista
     
     public int getPopularidad(){
         return popularidad;
+    }
+    
+    public void mostrar()
+    {
+        //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false> <popularidad: 6>
+        System.out.print("<CiclistaEstrella: " + nombre + "> <energía: " + energia + "> <habilidad:");
+        habilidad.mostrar(); 
+        System.out.print("> <tiempo acumulado sin abandonar: " + tiempoAcumulado() + ">\n<abandonado:" + abandonado() + "> <popularidad: " + getPopularidad() + ">\n");                
     }
     
     //Suma o resta popularidad segun el tiempo

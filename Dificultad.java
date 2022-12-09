@@ -36,6 +36,7 @@ public enum Dificultad{
     }
     
     public void mostrar()    {
-        System.out.println(catDificultad + "(" + dificultadEtapa + ")");
+        //Sencilla (valor:0.9)
+        System.out.print(catDificultad + "(valor:" + dificultadEtapa + ")");
     }
 };

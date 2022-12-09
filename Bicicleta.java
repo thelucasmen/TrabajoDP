@@ -42,10 +42,11 @@ public class Bicicleta
         return peso;
     }
     
-    public void mostrar()    {
-        System.out.println("Nombre : " + nombre);
-        System.out.print("Peso: ");
+    public void mostrar() {
+        //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)>
+        System.out.print("<Bicicleta: " + nombre + "> <peso: ");
         peso.mostrar();
+        System.out.print(">");
     }
     
         /*Funcionalidad */

@@ -48,7 +48,7 @@ public class Equipo
     }
     
     public void setCiclista(Ciclista ciclista){
-        this.ciclistas.add(ciclista);
+        ciclistas.add(ciclista);
     }
     
     public void setCiclistaAbandonado(Ciclista ciclistaA){
@@ -73,13 +73,13 @@ public class Equipo
     }
     
     public void getCiclistas(){
-        Iterator<Ciclista> itc = ciclistas.iterator();
-        
-        System.out.println("Ciclistas: ");
-        while (itc.hasNext()) {
-            System.out.println(itc.next());
-            itc.next().getResultado();
-        }
+        try{
+            Iterator<Ciclista> itc = ciclistas.iterator();
+            
+            while (itc.hasNext()) {
+                itc.next().mostrar();
+            }
+        }catch(NullPointerException e){ }
     }
     
     //Cuenta los ciclistas del equipo sin abandonar
@@ -88,19 +88,20 @@ public class Equipo
         int i = 0;
         
         while (itc.hasNext()) {
-                i++;
+            itc.next();
+            i++;
         }
         return i;
     }
     
     public void getCiclistasAbandonados(){
-        Iterator<Ciclista> itca = ciclistasA.iterator();
-        
-        System.out.println("Ciclistas abandonados: ");
-        while (itca.hasNext()) {
-            System.out.println(itca.next());
-            itca.next().getResultado();
-        }
+        try{
+            Iterator<Ciclista> itca = ciclistasA.iterator();
+            
+            while (itca.hasNext()) {
+                itca.next().mostrar();
+            }
+        }catch(NullPointerException e){ }
     }
 
     //cuenta los ciclistas del equipo que han abandonado
@@ -109,6 +110,7 @@ public class Equipo
         int i = 0;
         
         while (itca.hasNext()) {
+            itca.next();
             i++;
         }        
         return i;
@@ -117,37 +119,20 @@ public class Equipo
         /*Funcionalidad */    
     public void mostrar(){
         Iterator<Ciclista> itc = ciclistas.iterator();
-        Iterator<Ciclista> itca = ciclistasA.iterator();
-        Iterator<Bicicleta> itb = bicicletas.iterator();
         
-        System.out.println("Nombre equipo: " + nombre);
-        System.out.println("Ciclistas equipo: ");
-        if(ciclistas.size()>0){   
-            while (itc.hasNext()) {
-                itc.next().mostrar();
-            }
-        } else {
-            System.out.println("El equipo no tiene ningún ciclista");
-        }
+        //%%% DSM WOMEN %%% Media Minutos de Ciclistas sin abandonar 0.0 %%%
         
-        System.out.println("Ciclistas abandonados equipo: ");
-        if(ciclistasA.size()>0){
-            while (itca.hasNext()) {
-                itc.next().mostrar();
-                System.out.println("(Abandonado)");
-            }
-        } else {
-            System.out.println("Ningún ciclista del equipo ha abandonado");
-        }
+        System.out.println("%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + mediatiempoTotal() + "%%%");
+        getCiclistas();
+        getCiclistasAbandonados();
+        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
         
-        System.out.println("Bicicletas del equipo: ");
-        if(bicicletas.size()>0){
+        /*Iterator<Bicicleta> itb = bicicletas.iterator();
+        try{
             while (itb.hasNext()) {
                 itc.next().mostrar();
             }
-        } else {
-            System.out.println("El equipo no posee ninguna bicicleta");
-        }
+        }catch(NullPointerException e){ }*/
     }
     
     //Ordenar ciclistas segun criterio
@@ -251,6 +236,7 @@ public class Equipo
         int contCiclistas = 0;
         
         while (it.hasNext()) {
+            it.next();
             contCiclistas++;
         }
         
@@ -258,14 +244,26 @@ public class Equipo
     }
     
     //Envia a la etapa todos los ciclistas del equipo que no hayan abandonado
-    public void enviarCiclistas(Etapa etapa){
-        Iterator<Ciclista> itc = ciclistas.iterator();
-        
-        if(ciclistas.size()>0){   
-            while (itc.hasNext()) {
-                etapa.setCiclista(itc.next());
+    public void enviarCiclistas(Etapa etapa){        
+        try{  
+            Iterator<Ciclista> itc = ciclistas.iterator();
+            Iterator<Bicicleta> itb = bicicletas.iterator();
+            Ciclista ciclista;
+            Bicicleta bicicleta;
+            int cont = 0;
+            while (itb.hasNext() && itc.hasNext()) {
+                ciclista = itc.next();
+                bicicleta = itb.next();
+                ciclista.setBicicleta(bicicleta);
             }
-        }
+               
+            itc = ciclistas.iterator();
+            while (itc.hasNext()) {
+                ciclista = itc.next();
+                etapa.setCiclista(ciclista);
+                
+            }
+        } catch(NullPointerException e){ }
     }
     
     //Actualiza los ciclistas despues de la etapa

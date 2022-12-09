@@ -196,27 +196,72 @@ public class Organizacion
         ordenarListas();
     }
     
-    //Muestra la etapa y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
+    //Muestra las etapas y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
     public Equipo gestionarCarrera(){
+        Iterator<Etapa> itE = etapas.iterator();
         Iterator<Equipo> itEq = equipos.iterator();
         String ganador = "Por decidir";
+        Etapa etapa = null;
         Equipo equipoGanador = null;
+        Equipo equipo = null;
         boolean fin = false;
-        int contC = 0, contCA = 0;
+        int contC = 0, contCA = 0, contE = 0, contCE = 0;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         
-        ordenarListas();
-        
+        //ordenarListas();
+        if(etapas.size()>0){
+            System.out.println(
+            "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" +
+            "\n||||||||||||||||||| ETAPAS DEL CAMPEONATO |||||||||||||||||||" +
+            "\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+            );
+            while (itE.hasNext()) {
+                itE.next().mostrar();
+            }
+            System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+        }
         if(equipos.size()>0){
+            System.out.println( 
+            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
+            "\n%%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%" +
+            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
+            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+            );
             while (itEq.hasNext()) {
-                itEq.next().mostrar();
-                contC += itEq.next().contCiclistas();
-                contCA += itEq.next().contCiclistasAbandonados();
-                if(itEq.next().mediatiempoTotal() < menorTiempo){
-                    menorTiempo = itEq.next().mediatiempoTotal();
-                    equipoGanador = itEq.next();
+                equipo = itEq.next();
+                equipo.mostrar();
+                if(equipo.mediatiempoTotal() < menorTiempo){
+                    menorTiempo = equipo.mediatiempoTotal();
+                    equipoGanador = equipo;
                 }
             }
+            
+            itE = etapas.iterator();
+            System.out.println("********************************************************************************************************");
+            while (itE.hasNext()) {
+                contE++;
+                System.out.print("*** CARRERA<" + contE + "> EN ");
+                etapa = itE.next();
+                etapa.mostrar();
+                System.out.print("***\n"+
+                "********************************************************************************************************\n" +
+                "********************************************************************************************************\n" +
+                "******************************** Ciclistas que van a competir en " + etapa.getNombre() + 
+                " *******************************\n" +
+                "**********************************************************************************************************\n");
+                itEq = equipos.iterator();
+                while (itEq.hasNext()) {
+                    equipo = itEq.next();
+                    equipo.enviarCiclistas(etapa);
+                }
+                contC = etapa.getCiclista();
+                System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
+                        "+++++++++++++++++++++++++ Comienza la carrera en sencilla intermedia ++++++++++++++++++++++++++\n" +
+                        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+                etapa.mostrarCiclistas(contC, etapa);
+            }
+            
+            
             
             if(contC != contCA || contC - contCA != 1) {
                 fin = true;
@@ -227,34 +272,36 @@ public class Organizacion
                 if(contC == contCA || contC - contCA == 1) { 
                     System.out.println("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)");
                 } else {
+                    itEq = equipos.iterator();
                     //En todos los casos se mostrará como resumen final del campeonato
                     while (itEq.hasNext()) {
                         //MOSTRAR CICLISTAS
-                        itEq.next().ordenarCiclistas(1, 2);
-                        itEq.next().ordenarCiclistas(4, 1);
-                        itEq.next().getCiclistas();
+                        equipo = itEq.next();
+                        equipo.ordenarCiclistas(1, 2);
+                        equipo.ordenarCiclistas(4, 1);
+                        equipo.getCiclistas();
                         
                         //MOSTRAR CICLISTAS ABANDONADOS
-                        itEq.next().ordenarCiclistasA(1, 2);
-                        itEq.next().ordenarCiclistasA(4, 1);
-                        itEq.next().getCiclistasAbandonados();
+                        equipo.ordenarCiclistasA(1, 2);
+                        equipo.ordenarCiclistasA(4, 1);
+                        equipo.getCiclistasAbandonados();
                         
                         //EQUIPOS CON CICLISTAS SIN ABANDONAR
-                        if(itEq.next().contCiclistasAbandonados() == 0){
+                        if(equipo.contCiclistasAbandonados() == 0){
                             equipos.sort(new NameEqComparator());
                             Collections.sort(ciclistasCarrera, Collections.reverseOrder());
                             equipos.sort(new BicicletaTimeComparator());
-                            System.out.println("Nombre del equipo: " + itEq.next().getNombre());
-                            System.out.println("Tiempo total: " + itEq.next().tiempoTotal());
-                            System.out.println("Numero de ciclistas: " + itEq.next().contCiclistas() + "Numero de ciclistas abandonados: " + itEq.next().contCiclistasAbandonados());
+                            System.out.println("Nombre del equipo: " + equipo.getNombre());
+                            System.out.println("Tiempo total: " + equipo.tiempoTotal());
+                            System.out.println("Numero de ciclistas: " + equipo.contCiclistas() + "Numero de ciclistas abandonados: " + equipo.contCiclistasAbandonados());
                         }
                         
                         //EQUIPOS CON TODOS LOS CICLISTAS ABANDONADOS
-                        if(itEq.next().contCiclistasAbandonados() == itEq.next().contCiclistas() ){
+                        if(equipo.contCiclistasAbandonados() == equipo.contCiclistas() ){
                             equipos.sort(new NameEqComparator());
-                            System.out.println("Nombre del equipo: " + itEq.next().getNombre());
-                            System.out.println("Numero de ciclistas abandonados: " + itEq.next().contCiclistasAbandonados() + "Ciclistas abandonados: ");
-                            itEq.next().getCiclistasAbandonados();
+                            System.out.println("Nombre del equipo: " + equipo.getNombre());
+                            System.out.println("Numero de ciclistas abandonados: " + equipo.contCiclistasAbandonados() + "Ciclistas abandonados: ");
+                            equipo.getCiclistasAbandonados();
                         }
                     }
                     ordenarListas();

@@ -19,6 +19,15 @@ public class BicicletaPrototipo extends Bicicleta
     public BicicletaPrototipo(String nombre, Peso peso)
     {
         super(nombre, peso);
+        this.nombre = nombre;
+        this.peso = peso;
+    }
+    
+    public void mostrar() {
+        //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)>
+        System.out.print("<BicicletaPrototipo: " + nombre + "> <peso: ");
+        peso.mostrar();
+        System.out.print(">");
     }
     
         /*Funcionalidad */    
