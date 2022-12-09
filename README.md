@@ -21,6 +21,7 @@ Clase: Etapa
     Metodos:
         Setter y Getters
         mostrar()
+        mostrarCiclistas() --> Recorre el listado de ciclistas y sus bicicletas de la etapa
  
 2.
 Clase: Bicicleta
