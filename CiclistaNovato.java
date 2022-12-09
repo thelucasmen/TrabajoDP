@@ -25,6 +25,7 @@ public class CiclistaNovato implements Ciclista
        this.habilidad = habilidad;
        this.energia = energia;
        this.equipo = equipo;
+       resultados = new ArrayList<Resultado>();
     }
     
     public CiclistaNovato(String nombre, Habilidad habilidad, double energia, Equipo equipo)
@@ -32,7 +33,8 @@ public class CiclistaNovato implements Ciclista
        this.nombre = nombre;
        this.habilidad = habilidad;
        this.energia = energia;
-       this.equipo = equipo;
+       this.equipo = equipo;       
+       resultados = new ArrayList<Resultado>();
     }
 
     public void setNombre(String n){
@@ -188,7 +190,6 @@ public class CiclistaNovato implements Ciclista
         } else {
             r = new Resultado(e, energia - tiempo);
         }
-        r.setEtapa(e);
         resultados.add(r);
     }
 

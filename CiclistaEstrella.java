@@ -26,7 +26,8 @@ public class CiclistaEstrella implements Ciclista
        this.habilidad = habilidad;
        this.energia = energia;
        this.equipo = equipo;
-       this.popularidad = 6;       
+       this.popularidad = 6; 
+       resultados = new ArrayList<Resultado>();
     }
     
     public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
@@ -36,6 +37,7 @@ public class CiclistaEstrella implements Ciclista
        this.energia = energia;
        this.equipo = equipo;
        this.popularidad = 6;  
+       resultados = new ArrayList<Resultado>();
     }
     
     public void setPopularidad(int popularidad){
@@ -199,7 +201,6 @@ public class CiclistaEstrella implements Ciclista
         } else {
             r = new Resultado(e, energia - tiempo);
         }
-        r.setEtapa(e);
         resultados.add(r);
     }
     

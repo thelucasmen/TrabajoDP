@@ -92,6 +92,8 @@ public class Etapa
         int contCE = 0;
         Ciclista ciclista = null;
         try{
+            ciclistas.sort(new NameComparator());
+            Collections.sort(ciclistas, Collections.reverseOrder());
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 contCE++;
@@ -101,11 +103,11 @@ public class Etapa
                 System.out.print(" con bicicleta\n");
                 ciclista.getBicicleta().mostrar();
                 ciclista.funcionalidadCiclista(etapa, ciclista.getBicicleta().calculartiempo(ciclista, etapa));
-                System.out.print("en etapa " + etapa.getNombre() + "\n" +
+                System.out.printf("en etapa " + etapa.getNombre() + "\n" +
                         "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + ciclista.getBicicleta().getNombre() + 
-                        " alcanza una velocidad de " + ciclista.getBicicleta().calcularVelocidad(ciclista, etapa) + " km/hora +++\n" +
-                        "+++ WIEBES termina la etapa en " + ciclista.getBicicleta().calculartiempo(ciclista, etapa) + " minutos +++\n" +
-                        "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + ciclista.getEnergia() + " +++\n" +
+                        " alcanza una velocidad de " + String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++\n" +
+                        "+++ WIEBES termina la etapa en " + String.format("%.2f",ciclista.getBicicleta().calculartiempo(ciclista, etapa)) + " minutos +++\n" +
+                        "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + String.format("%.2f",ciclista.getEnergia()) + " +++\n" +
                         "@@@\n");
                 System.out.println("+++ La popularidad del ciclista LIPPERT ha aumentado  y ahora su nivel de popularidad es de: 10 unidades" +
                     "@@@\n");
