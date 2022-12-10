@@ -9,7 +9,7 @@ import java.util.Comparator;
 public class TiempoPodioComparator implements Comparator<ResultadosCarrera>{ 
     public int compare(ResultadosCarrera c1, ResultadosCarrera c2){
         if(c1.getResultado().getTiempo() == c2.getResultado().getTiempo()){
-            return 0;
+            return c1.getNombre().compareTo(c2.getNombre());
         } else if(c1.getResultado().getTiempo() > c2.getResultado().getTiempo()) {
             return 1;
         } else {

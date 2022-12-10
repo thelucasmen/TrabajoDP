@@ -9,7 +9,7 @@ import java.util.Comparator;
 public class DestrezaComparator implements Comparator<Ciclista>{ 
     public int compare(Ciclista c1, Ciclista c2){
         if(c1.calculaDestreza() == c2.calculaDestreza()){
-            return 0;
+            return c1.getNombre().compareTo(c2.getNombre());
         } else if(c1.calculaDestreza() > c2.calculaDestreza()) {
             return 1;
         } else {

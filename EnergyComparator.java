@@ -9,10 +9,10 @@ import java.util.Comparator;
 public class EnergyComparator implements Comparator<Ciclista>{ 
     public int compare(Ciclista c1, Ciclista c2){
         if(c1.getEnergia() == c2.getEnergia()){
-            return 0;
+            return c1.getNombre().compareTo(c2.getNombre());
         } else if(c1.getEnergia() > c2.getEnergia()) {
             return 1;
-        } else {
+        } else { 
             return -1;
         }
     }
