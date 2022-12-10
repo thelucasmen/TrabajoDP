@@ -217,12 +217,12 @@ public class CiclistaEstrella implements Ciclista
         if(tiempo<160){
            setPopularidad(getPopularidad()+4); 
            System.out.print("+++ La popularidad del ciclista " + getNombre() + 
-                         " ha aumentado y ahora su nivel de popularidad es de: " + String.format("%.2f",getPopularidad()) + " unidades\n" +
+                         " ha aumentado y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
                          "@@@\n");
         } else {
             setPopularidad(getPopularidad()-1);
             System.out.print("+++ La popularidad del ciclista " + getNombre() + 
-                         " ha disminuido y ahora su nivel de popularidad es de: " + String.format("%.2f",getPopularidad()) + " unidades\n" +
+                         " ha disminuido y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
                          "@@@\n");
         }
     }

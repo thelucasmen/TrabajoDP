@@ -34,6 +34,8 @@ public class Organizacion
             
         this.ciclistasCarrera = new ArrayList<Ciclista>();
             this.criterioOrdenCiclistas = criterioOrdenCiclistas;
+        
+        podio = new ArrayList<ResultadosCarrera>();
     }
     
     public void setNombreOrg(String nombreOrg){
@@ -204,8 +206,9 @@ public class Organizacion
         Etapa etapa = null;
         Equipo equipoGanador = null;
         Equipo equipo = null;
+        ResultadosCarrera resultadosCarrera = null;
         boolean fin = false;
-        int contC = 0, contCA = 0, contE = 0, contCE = 0;
+        int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio = 0;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         
         //ordenarListas();
@@ -238,10 +241,10 @@ public class Organizacion
             
             itE = etapas.iterator();
             System.out.println("********************************************************************************************************");
-            while (itE.hasNext()) {
+            while (itE.hasNext() && !fin) {
+                etapa = itE.next();
                 contE++;
                 System.out.print("*** CARRERA<" + contE + "> EN ");
-                etapa = itE.next();
                 etapa.mostrar();
                 System.out.print("***\n"+
                 "********************************************************************************************************\n" +
@@ -256,22 +259,33 @@ public class Organizacion
                 }
                 contC = etapa.getCiclista();
                 System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
-                        "+++++++++++++++++++++++++ Comienza la carrera en sencilla intermedia ++++++++++++++++++++++++++\n" +
+                        "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
                         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
-                podio = etapa.mostrarCiclistas(contC, etapa, podio);
+                podio = etapa.mostrarCiclistas(contC, etapa, podio);     
+                
                 System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
-                                 "+++++++++++++++++ Clasificación final de la carrera en sencilla intermedia ++++++++++++++++++\n" +
-                                 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                                 "+++++++++++++++++ Clasificación final de la " + etapa.getNombre() + " ++++++++++++++++++\n" +
+                                 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
                 podio.sort(new TiempoPodioComparator());
-                                                 
+                Iterator<ResultadosCarrera> itP = podio.iterator();
+                while(itP.hasNext()){
+                    contPodio++;
+                    resultadosCarrera = itP.next();
+                    System.out.println("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
+                    " - Tiempo: " + resultadosCarrera.getResultado().getTiempo() + " minutos @@@");
+                }
+                
+                if(contC != contCA || contC - contCA != 1) {
+                    fin = true;
+                    System.out.println("****************************************************\n" +
+                                        "**************** FIN DEL CAMPEONATO ****************\n" +
+                                        "****************************************************\n" +
+                                        "********** CLASIFICACIÓN FINAL DE CICLISTAS **********\n" +
+                                        "****************************************************");
+                    celebracionEtapa(fin);
+                }
             }
             
-            if(contC != contCA || contC - contCA != 1) {
-                fin = true;
-                celebracionEtapa(fin);
-            }
-            
-            if(fin){
                 if(contC == contCA || contC - contCA == 1) { 
                     System.out.println("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)");
                 } else {
@@ -310,10 +324,6 @@ public class Organizacion
                     ordenarListas();
                 }
             }
-            
-        } else {
-            System.out.println("No hay equipos");
-        }
         
         return equipoGanador;
     }
