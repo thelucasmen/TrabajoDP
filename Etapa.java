@@ -116,6 +116,7 @@ public class Etapa
                     ciclista.SerPopular(tiempo);
                 }
                 resultado = new Resultado(etapa, tiempo);
+                ciclista.setResultado(resultado);
                 resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
                 podio.add(resultadosCarrera);
             }

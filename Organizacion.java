@@ -208,7 +208,7 @@ public class Organizacion
         Equipo equipo = null;
         ResultadosCarrera resultadosCarrera = null;
         boolean fin = false;
-        int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio = 0;
+        int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         
         //ordenarListas();
@@ -261,6 +261,7 @@ public class Organizacion
                 System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                         "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
                         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+                podio.clear();
                 podio = etapa.mostrarCiclistas(contC, etapa, podio);     
                 
                 System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
@@ -268,24 +269,26 @@ public class Organizacion
                                  "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
                 podio.sort(new TiempoPodioComparator());
                 Iterator<ResultadosCarrera> itP = podio.iterator();
+                contPodio = 0;
                 while(itP.hasNext()){
                     contPodio++;
                     resultadosCarrera = itP.next();
                     System.out.println("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
-                    " - Tiempo: " + resultadosCarrera.getResultado().getTiempo() + " minutos @@@");
+                    " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@");
                 }
-                
-                if(contC != contCA || contC - contCA != 1) {
+                System.out.print("\n");
+                if(contC == contCA || contC - contCA == 1) {
                     fin = true;
-                    System.out.println("****************************************************\n" +
-                                        "**************** FIN DEL CAMPEONATO ****************\n" +
-                                        "****************************************************\n" +
-                                        "********** CLASIFICACIÓN FINAL DE CICLISTAS **********\n" +
-                                        "****************************************************");
-                    celebracionEtapa(fin);
                 }
             }
             
+            System.out.println("****************************************************\n" +
+                                "**************** FIN DEL CAMPEONATO ****************\n" +
+                                "****************************************************\n" +
+                                "********** CLASIFICACIÓN FINAL DE CICLISTAS **********\n" +
+                               "****************************************************");
+            celebracionEtapa(true);
+                    
                 if(contC == contCA || contC - contCA == 1) { 
                     System.out.println("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)");
                 } else {
