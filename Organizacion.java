@@ -258,10 +258,13 @@ public class Organizacion
                 System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                         "+++++++++++++++++++++++++ Comienza la carrera en sencilla intermedia ++++++++++++++++++++++++++\n" +
                         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
-                etapa.mostrarCiclistas(contC, etapa);
+                podio = etapa.mostrarCiclistas(contC, etapa, podio);
+                System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
+                                 "+++++++++++++++++ Clasificación final de la carrera en sencilla intermedia ++++++++++++++++++\n" +
+                                 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                podio.sort(new TiempoPodioComparator());
+                                                 
             }
-            
-            
             
             if(contC != contCA || contC - contCA != 1) {
                 fin = true;

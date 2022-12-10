@@ -201,8 +201,16 @@ public class CiclistaExperimentado implements Ciclista
         System.out.print("> <tiempo acumulado sin abandonar: " + tiempoAcumulado() + ">\n<abandonado:" + abandonado() + ">\n");                
     }
     
+     //Suma o resta popularidad segun el tiempo
+    public void SerPopular(double tiempo){ }
+    
     //((habilidad del Ciclista + 4) / 130) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 4) / 130 * 10;
+    }
+
+    //Devuelve un booleano que indica si el ciclista es estrella o no
+    public boolean esEstrella(){
+        return false;
     }
 }

@@ -77,6 +77,7 @@ Clase: Ciclista
         abandonada() --> muestra por pantalla las etapas abandonadas
         mostrarEtapas() --> numero de etapas comenzadas, terminadas y tiempo acumulado, etapas abandonadas
         funcionalidadCiclista() --> guarda en resultados el tiempo
+        esEstrella() --> Devuelve un booleano que indica si el ciclista es estrella o no
         calcularDestreza() --> herencia
             CiclistaNovato:
                 Metodos:

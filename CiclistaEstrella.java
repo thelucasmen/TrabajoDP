@@ -216,14 +216,24 @@ public class CiclistaEstrella implements Ciclista
     public void SerPopular(double tiempo){
         if(tiempo<160){
            setPopularidad(getPopularidad()+4); 
+           System.out.print("+++ La popularidad del ciclista " + getNombre() + 
+                         " ha aumentado y ahora su nivel de popularidad es de: " + String.format("%.2f",getPopularidad()) + " unidades\n" +
+                         "@@@\n");
         } else {
             setPopularidad(getPopularidad()-1);
+            System.out.print("+++ La popularidad del ciclista " + getNombre() + 
+                         " ha disminuido y ahora su nivel de popularidad es de: " + String.format("%.2f",getPopularidad()) + " unidades\n" +
+                         "@@@\n");
         }
-        
     }
     
     //(((habilidad del Ciclista + 6) / 140) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 6) / 140 * 10;
+    }
+    
+    //Devuelve un booleano que indica si el ciclista es estrella o no
+    public boolean esEstrella(){
+        return true;
     }
 }

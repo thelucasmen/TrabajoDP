@@ -88,12 +88,14 @@ public class Etapa
     }
     
     //Recorre el listado de ciclistas y sus bicicletas
-    public void mostrarCiclistas(int contC, Etapa etapa){
+    public List<ResultadosCarrera> mostrarCiclistas(int contC, Etapa etapa, List<ResultadosCarrera> podio){
         int contCE = 0;
         Ciclista ciclista = null;
+        ResultadosCarrera resultadosCarrera = null;
+        Resultado resultado = null;
+        double tiempo = 0;
         try{
-            ciclistas.sort(new NameComparator());
-            Collections.sort(ciclistas, Collections.reverseOrder());
+            ciclistas.sort(new ReverseNameComparator());
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 contCE++;
@@ -102,16 +104,22 @@ public class Etapa
                 ciclista.mostrar();
                 System.out.print(" con bicicleta\n");
                 ciclista.getBicicleta().mostrar();
-                ciclista.funcionalidadCiclista(etapa, ciclista.getBicicleta().calculartiempo(ciclista, etapa));
+                tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
+                ciclista.funcionalidadCiclista(etapa, tiempo);
                 System.out.printf("en etapa " + etapa.getNombre() + "\n" +
                         "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + ciclista.getBicicleta().getNombre() + 
                         " alcanza una velocidad de " + String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++\n" +
-                        "+++ WIEBES termina la etapa en " + String.format("%.2f",ciclista.getBicicleta().calculartiempo(ciclista, etapa)) + " minutos +++\n" +
+                        "+++ WIEBES termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n" +
                         "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + String.format("%.2f",ciclista.getEnergia()) + " +++\n" +
                         "@@@\n");
-                System.out.println("+++ La popularidad del ciclista LIPPERT ha aumentado  y ahora su nivel de popularidad es de: 10 unidades" +
-                    "@@@\n");
+                if(ciclista.esEstrella()){
+                    ciclista.SerPopular(tiempo);
+                }
+                resultado = new Resultado(etapa, tiempo);
+                resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
+                podio.add(resultadosCarrera);
             }
         }catch(NullPointerException e){ }
+        return podio;
     }
 }
