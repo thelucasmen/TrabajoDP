@@ -15,7 +15,7 @@ public class Etapa
     private Dificultad dificultad;
     private Distancia distancia;
     private String nombre;
-    private List<Ciclista> ciclistas;
+    private Set<Ciclista> ciclistas;
     
 
     /**
@@ -27,7 +27,7 @@ public class Etapa
         this.dificultad = dificultad;
         this.distancia = distancia;
         this.nombre = nombre;
-        ciclistas = new ArrayList<Ciclista>();
+        ciclistas = new TreeSet<Ciclista>(new ReverseNameComparator());
     }
     
     /**
@@ -95,7 +95,6 @@ public class Etapa
         Resultado resultado = null;
         double tiempo = 0;
         try{
-            ciclistas.sort(new ReverseNameComparator());
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 contCE++;
