@@ -13,19 +13,19 @@ public class CiclistaNovato implements Ciclista
     private Bicicleta bicicleta;
     private Habilidad habilidad;
     private double energia;
-    private List<Resultado> resultados;
+    private Map<Etapa, Resultado> resultados;
     private Equipo equipo;
 
     /**
      * Constructor for objects of class Ciclista
      */
-    public CiclistaNovato(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultado, Equipo equipo)
+    public CiclistaNovato(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, Map<Etapa, Resultado> resultado, Equipo equipo)
     {
        this.nombre = nombre;
        this.habilidad = habilidad;
        this.energia = energia;
        this.equipo = equipo;
-       resultados = new ArrayList<Resultado>();
+       resultados = new HashMap<Etapa, Resultado>();
     }
     
     public CiclistaNovato(String nombre, Habilidad habilidad, double energia, Equipo equipo)
@@ -34,7 +34,7 @@ public class CiclistaNovato implements Ciclista
        this.habilidad = habilidad;
        this.energia = energia;
        this.equipo = equipo;       
-       resultados = new ArrayList<Resultado>();
+       resultados = new HashMap<Etapa, Resultado>();
     }
 
     public void setNombre(String n){
@@ -54,18 +54,34 @@ public class CiclistaNovato implements Ciclista
     }
         
     public void setResultado(Resultado r){
-        resultados.add(r);   
+        resultados.put(r.getEtapa(),r);   
     }
     
     public void getResultado(){ 
         try{
-            Iterator<Resultado> it = resultados.iterator();     
+            Iterator<Map.Entry<Etapa, Resultado>> it = resultados.entrySet().iterator();     
             while(it.hasNext()) {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+              Map.Entry<Etapa, Resultado> entry = it.next();
+              System.out.println(entry.getKey() + ":" + entry.getValue().getTiempo());
+=======
                 it.next().mostrar();
                 it.next();
+>>>>>>> Stashed changes
+=======
+                it.next().mostrar();
+                it.next();
+>>>>>>> Stashed changes
+=======
+                it.next().mostrar();
+                it.next();
+>>>>>>> Stashed changes
             }   
         }catch(NullPointerException e){ }
     }
+    
     
     public void setEquipo(Equipo e){
         this.equipo = e;
@@ -111,12 +127,12 @@ public class CiclistaNovato implements Ciclista
         //Busca una etapa concreta dentro del Array y devuelve la información del resultado de esa etapa, si no, devuelve null.
         Resultado aux = null;
         boolean enc = false;
-        int i = 0;       
-        Iterator<Resultado> it = resultados.iterator();
+        int i = 0; 
+        Iterator<Map.Entry<Etapa, Resultado>> it = resultados.entrySet().iterator();  
         
         while (it.hasNext() && !enc) {
-            if (it.next().getEtapa() == e){
-                aux = it.next();
+            if (it.next().getKey() == e){
+                aux = it.next().getValue();
                 enc = true;
             }
             i++;
@@ -136,11 +152,11 @@ public class CiclistaNovato implements Ciclista
     public double tiempoAcumulado(){
         double tiempo = 0.0;
         try{
-            Iterator<Resultado> it = resultados.iterator();
+            Iterator<Map.Entry<Etapa, Resultado>> it = resultados.entrySet().iterator();
             
             while (it.hasNext()) {
-                if(it.next().getTiempo() > 0){
-                    tiempo = tiempo + it.next().getTiempo();
+                if(it.next().getValue().getTiempo() > 0){
+                    tiempo = tiempo + it.next().getValue().getTiempo();
                 }
             }
         }catch(NullPointerException e){ }
@@ -150,10 +166,10 @@ public class CiclistaNovato implements Ciclista
     //Numero de etapas terminadas
     public int etapasTerminadas(){
         int cont = 0;
-        Iterator<Resultado> it = resultados.iterator();
+        Iterator<Map.Entry<Etapa, Resultado>> it = resultados.entrySet().iterator();
         
         while (it.hasNext()) {
-            if(it.next().getTiempo() > 0){
+            if(it.next().getValue().getTiempo() > 0){
                 cont++;
             }
         }
@@ -163,12 +179,12 @@ public class CiclistaNovato implements Ciclista
     
     //Muestra por pantalla las etapas abandonadas
     public String abandonada(){
-        Iterator<Resultado> it = resultados.iterator();
+        Iterator<Map.Entry<Etapa, Resultado>> it = resultados.entrySet().iterator();  
         String stringAbandonadas = "";
         
         while (it.hasNext()) {
-            if(it.next().getTiempo() <= 0){
-                stringAbandonadas += "/n/t" + it.next().getEtapa();
+            if(it.next().getValue().getTiempo() <= 0){
+                stringAbandonadas += "/n/t" + it.next().getKey();
             }
         }
         return stringAbandonadas;
@@ -184,16 +200,15 @@ public class CiclistaNovato implements Ciclista
                        
     //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo){
-        Resultado r = null;
+        Resultado r;
         Bicicleta b = getBicicleta();
-        setEnergia(energia - tiempo);
-        //r = new Resultado(e, energia - tiempo);
+        setEnergia(tiempo/60);
         if(getEnergia() != 0){
             r = new Resultado(e, tiempo);
         } else {
             r = new Resultado(e, energia - tiempo);
         }
-        resultados.add(r);
+        resultados.put(r.getEtapa(),r);
     }
 
     public void mostrar()

@@ -103,31 +103,6 @@ public class Etapa
             Iterator<Ciclista> itC = ciclistasAux.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();
-                ciclista.mostrar();
-                System.out.print(" con bicicleta\n");
-                ciclista.getBicicleta().mostrar();
-                tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
-                energiaPrevia = ciclista.getEnergia();
-                ciclista.funcionalidadCiclista(etapa, tiempo);
-                System.out.printf("en etapa " + etapa.getNombre() + "\n" +
-                    "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
-                    ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
-                    String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++\n" +
-                    "+++ WIEBES termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
-                if(!ciclista.abandonado()){
-                    System.out.printf("+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                        String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n");
-                } else {
-                    System.out.printf("¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
-                        String.format("%.2f",tiempo) + " minutos para terminar !!!\n" +
-                    "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
-                    String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
-                    "+++ La ener   gía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                    String.format("%.2f",ciclista.getEnergia()) + " +++");
-                }
-                if(ciclista.esEstrella()){
-                    ciclista.SerPopular(tiempo);
-                }
                 if(!ciclista.abandonado()){
                     contCE++;
                     System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
