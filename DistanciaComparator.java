@@ -9,7 +9,7 @@ import java.util.Comparator;
 public class DistanciaComparator implements Comparator<Etapa>{ 
     public int compare(Etapa e1, Etapa e2){
         if(e1.getDistancia().getDistanciaEtapa() == e2.getDistancia().getDistanciaEtapa()){
-            return 0;
+            return e1.getNombre().compareTo(e2.getNombre());
         } else if(e1.getDistancia().getDistanciaEtapa() > e2.getDistancia().getDistanciaEtapa()) {
             return 1;
         } else {

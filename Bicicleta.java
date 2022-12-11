@@ -57,6 +57,7 @@ public class Bicicleta
     
     //distancia/velocidad*60
     public double calculartiempo(Ciclista ciclista, Etapa etapa)    {
+        //System.out.println(etapa.getDistancia().getDistanciaEtapa()+"/"+calcularVelocidad(ciclista, etapa)+"*"+60);
         return etapa.getDistancia().getDistanciaEtapa()/calcularVelocidad(ciclista, etapa)*60;
          
     }

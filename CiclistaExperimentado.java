@@ -184,11 +184,12 @@ public class CiclistaExperimentado implements Ciclista
                        
     //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo){
-        Resultado r;
+        Resultado r = null;
         Bicicleta b = getBicicleta();
+        setEnergia(energia - tiempo);
+        //r = new Resultado(e, energia - tiempo);
         if(getEnergia() != 0){
             r = new Resultado(e, tiempo);
-            setEnergia(tiempo/60);
         } else {
             r = new Resultado(e, energia - tiempo);
         }

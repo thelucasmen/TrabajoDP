@@ -184,9 +184,10 @@ public class CiclistaNovato implements Ciclista
                        
     //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo){
-        Resultado r;
+        Resultado r = null;
         Bicicleta b = getBicicleta();
-        setEnergia(tiempo/60);
+        setEnergia(energia - tiempo);
+        //r = new Resultado(e, energia - tiempo);
         if(getEnergia() != 0){
             r = new Resultado(e, tiempo);
         } else {

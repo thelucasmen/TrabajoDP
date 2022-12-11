@@ -103,7 +103,7 @@ public class Etapa
                 System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
                 ciclista = itC.next();
                 ciclista.mostrar();
-                System.out.print(" con bicicleta\n");
+                System.out.print("Con bicicleta\n");
                 ciclista.getBicicleta().mostrar();
                 tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
                 energiaPrevia = ciclista.getEnergia();
@@ -111,8 +111,8 @@ public class Etapa
                 System.out.printf("en etapa " + etapa.getNombre() + "\n" +
                     "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
                     ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
-                    String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++\n" +
-                    "+++ WIEBES termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
+                    String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora \n+++\n+++\n" +
+                    "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
                 if(!ciclista.abandonado()){
                     System.out.printf("+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
                         String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n");
@@ -147,8 +147,9 @@ public class Etapa
                 ciclista = itC.next();
                 cont++;
                 System.out.println("@@@ Posición(" + cont + "): " + ciclista.getNombre() + 
-                " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + "@@@");
+                " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + " @@@");
                 ciclista.getResultado();
+                System.out.print("\n");
             }
         }catch(NullPointerException e){ }
     }

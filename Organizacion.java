@@ -109,6 +109,7 @@ public class Organizacion
     
     //Muestra las etapas y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
     public void gestionarCarrera(){
+        etapas.sort(new DificultadComparator());
         Iterator<Etapa> itE = etapas.iterator();
         Iterator<Equipo> itEq = equipos.iterator();
         String ganador = "Por decidir";
@@ -220,8 +221,9 @@ public class Organizacion
                                    " con " + String.format("%.2f",equipo.mediatiempoTotal()) + " minutos de media @@@\n" +
                     "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
                                    "%%% " + equipo.getNombre() + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%% ");  
+                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%%");  
                 equipo.getCiclistas();
+                System.out.print("\n");
             }
             //celebracionEtapa(true);
             }
