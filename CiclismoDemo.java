@@ -12,7 +12,7 @@ import java.util.*;
 public class CiclismoDemo
 {    
     public static void main(String[] args)  throws java.io.IOException{
-        List<Etapa> etapas = new ArrayList<Etapa>();
+        HashSet<Etapa> etapas = new HashSet<Etapa>();
         List<Equipo> equipos = new ArrayList<Equipo>();
         List<Ciclista> ciclistasCarrera = new ArrayList<Ciclista>();
         

@@ -11,16 +11,16 @@ public class Organizacion
     // instance variables - replace the example below with your own
     private String nombreOrg;
     private List<ResultadosCarrera> podio;
-    private List<Etapa> etapas;
-    private List<Equipo> equipos;
+    private HashSet<Etapa> etapas;
+    private /*Map*/List<Equipo> equipos;
     private List<Ciclista> ciclistasCarrera;
     /**
      * Constructor for objects of class Organizacion
      */
-    public Organizacion(String nombreOrg, List<Etapa> etapas, List<Equipo> equipos, List<Ciclista> ciclistasCarrera)
+    public Organizacion(String nombreOrg, HashSet<Etapa> etapas, List<Equipo> equipos, List<Ciclista> ciclistasCarrera)
     {
         this.nombreOrg = nombreOrg;
-        this.etapas = new ArrayList<Etapa>();
+        this.etapas = new HashSet<Etapa>();
         this.equipos = new ArrayList<Equipo>();           
         this.ciclistasCarrera = new ArrayList<Ciclista>();
         
@@ -108,9 +108,10 @@ public class Organizacion
     }
     
     //Muestra las etapas y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
-    public void gestionarCarrera(){
-        etapas.sort(new DificultadComparator());
-        Iterator<Etapa> itE = etapas.iterator();
+    public void gestionarCarrera(){        
+        List<Etapa> etapasOrdenadas = new ArrayList<Etapa>(etapas);
+        etapasOrdenadas.sort(new DificultadComparator());
+        Iterator<Etapa> itE = etapasOrdenadas.iterator();
         Iterator<Equipo> itEq = equipos.iterator();
         String ganador = "Por decidir";
         Etapa etapa = null;
@@ -149,7 +150,7 @@ public class Organizacion
                 }
             }
             
-            itE = etapas.iterator();
+            itE = etapasOrdenadas.iterator();
             System.out.println("********************************************************************************************************");
             while (itE.hasNext() && !fin) {
                 etapa = itE.next();
@@ -225,7 +226,6 @@ public class Organizacion
                 equipo.getCiclistas();
                 System.out.print("\n");
             }
-            //celebracionEtapa(true);
-            }
+        }
     }
 }
