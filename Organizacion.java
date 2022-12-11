@@ -12,16 +12,16 @@ public class Organizacion
     private String nombreOrg;
     private List<ResultadosCarrera> podio;
     private HashSet<Etapa> etapas;
-    private /*Map*/List<Equipo> equipos;
+    private HashMap<String, Equipo> equipos;
     private List<Ciclista> ciclistasCarrera;
     /**
      * Constructor for objects of class Organizacion
      */
-    public Organizacion(String nombreOrg, HashSet<Etapa> etapas, List<Equipo> equipos, List<Ciclista> ciclistasCarrera)
+    public Organizacion(String nombreOrg, HashSet<Etapa> etapas, HashMap<String, Equipo> equipos, List<Ciclista> ciclistasCarrera)
     {
         this.nombreOrg = nombreOrg;
         this.etapas = new HashSet<Etapa>();
-        this.equipos = new ArrayList<Equipo>();           
+        this.equipos = new HashMap<String,Equipo>();           
         this.ciclistasCarrera = new ArrayList<Ciclista>();
         
         podio = new ArrayList<ResultadosCarrera>();
@@ -52,7 +52,7 @@ public class Organizacion
     }
     
     public void setEquipos(Equipo equipo){
-        this.equipos.add(equipo);
+        this.equipos.put(equipo.getNombre(), equipo);
     }
     
     public void borrarEquipo(Equipo equipo){
@@ -67,52 +67,13 @@ public class Organizacion
         this.ciclistasCarrera.remove(ciclista);
     }
     
-    public void mostrar()
-    {
-        Iterator<Etapa> itE = etapas.iterator();
-        Iterator<Equipo> itEq = equipos.iterator();
-        Iterator<Ciclista> itCC = ciclistasCarrera.iterator();
-        
-        System.out.println("Nombre organizacion: " + nombreOrg);
-        System.out.println("Etapas: ");
-        if(etapas.size()>0){   
-            while (itE.hasNext()) {
-                itE.next().mostrar();
-            }
-        } else {
-            System.out.println("No hay etapas");
-        }
-        
-        System.out.println("Equipos: ");
-        if(equipos.size()>0){
-            while (itEq.hasNext()) {
-                itEq.next().mostrar();
-            }
-        } else {
-            System.out.println("No hay equipos");
-        }
-        
-        System.out.println("Ciclistas en la carrera: ");
-        if(ciclistasCarrera.size()>0){
-            while (itCC.hasNext()) {
-                itCC.next().mostrar();
-            }
-        } else {
-            System.out.println("No hay ciclistas");
-        }
-    }
-    
     //Inscribe los equipos de la lista equipos en la etapa
     public void inscribirEquipos(Equipo equipo){
         setEquipos(equipo);
     }
     
     //Muestra las etapas y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
-    public void gestionarCarrera(){        
-        List<Etapa> etapasOrdenadas = new ArrayList<Etapa>(etapas);
-        etapasOrdenadas.sort(new DificultadComparator());
-        Iterator<Etapa> itE = etapasOrdenadas.iterator();
-        Iterator<Equipo> itEq = equipos.iterator();
+    public void gestionarCarrera(){  
         String ganador = "Por decidir";
         Etapa etapa = null;
         Equipo equipo = null;
@@ -121,6 +82,17 @@ public class Organizacion
         boolean fin = false;
         int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
+        //Ordenar Etapas
+        List<Etapa> etapasOrdenadas = new ArrayList<Etapa>(etapas);
+        etapasOrdenadas.sort(new DificultadComparator());
+        Iterator<Etapa> itE = etapasOrdenadas.iterator();
+        //Ordenar Equipos
+        List<Equipo> equiposOrdenadas = new ArrayList<Equipo>();
+        for (String i : equipos.keySet()) {
+          equiposOrdenadas.add(equipos.get(i));
+        }
+        equiposOrdenadas.sort(new NameEqComparator());
+        Iterator<Equipo> itEq = equiposOrdenadas.iterator();
         
         //ordenarListas();
         if(etapas.size()>0){
@@ -163,7 +135,7 @@ public class Organizacion
                 "******************************** Ciclistas que van a competir en " + etapa.getNombre() + 
                 " *******************************\n" +
                 "**********************************************************************************************************\n");
-                itEq = equipos.iterator();
+                itEq = equiposOrdenadas.iterator();
                 while (itEq.hasNext()) {
                     equipo = itEq.next();
                     equipo.enviarCiclistas(etapa);
@@ -213,8 +185,8 @@ public class Organizacion
                                "******** CLASIFICACIÓN FINAL DE EQUIPOS *********\n" +
                                "****************************************************");
             contE = 0;
-            equipos.sort(new MediaTiempoTotalComparator());
-            itEq = equipos.iterator();
+            equiposOrdenadas.sort(new MediaTiempoTotalComparator());
+            itEq = equiposOrdenadas.iterator();
             while (itEq.hasNext()) {
                 equipo = itEq.next();
                 contE++;

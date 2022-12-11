@@ -13,7 +13,7 @@ public class CiclismoDemo
 {    
     public static void main(String[] args)  throws java.io.IOException{
         HashSet<Etapa> etapas = new HashSet<Etapa>();
-        List<Equipo> equipos = new ArrayList<Equipo>();
+        HashMap<String, Equipo> equipos = new HashMap<String, Equipo>();
         List<Ciclista> ciclistasCarrera = new ArrayList<Ciclista>();
         
         Organizacion organizacion=new Organizacion("OrganizacionPrueba", etapas, equipos, ciclistasCarrera);
