@@ -31,8 +31,8 @@ public class BicicletaPrototipo extends Bicicleta
     }
     
         /*Funcionalidad */    
-    //distancia/velocidad*destreza
-    public double calculartiempo(Ciclista ciclista, Etapa etapa) {
-        return etapa.getDistancia().getDistanciaEtapa()/calcularVelocidad(ciclista, etapa)*ciclista.calculaDestreza();
+    //distancia/velocidad*60*destreza
+    public double calculartiempo(Ciclista ciclista, Etapa etapa)    {
+        return etapa.getDistancia().getDistanciaEtapa()/calcularVelocidad(ciclista, etapa)*60*ciclista.calculaDestreza();
     }
 }
