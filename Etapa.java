@@ -105,6 +105,7 @@ public class Etapa
                 ciclista = itC.next();
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 ciclista.mostrar();
                 System.out.print(" con bicicleta\n");
                 ciclista.getBicicleta().mostrar();
@@ -131,6 +132,9 @@ public class Etapa
                     ciclista.SerPopular(tiempo);
 =======
                 if(!ciclista.abandonado()){
+=======
+                if(!ciclista.abandonado()){
+>>>>>>> Stashed changes
 =======
                 if(!ciclista.abandonado()){
 >>>>>>> Stashed changes
@@ -170,6 +174,9 @@ public class Etapa
                     resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
                     podio.add(resultadosCarrera);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -184,8 +191,12 @@ public class Etapa
         Ciclista ciclista;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         Set<Ciclista> ciclistasAux;
         int cont = 0;
+=======
+        int contC = 0, contCA = 0;;
+>>>>>>> Stashed changes
 =======
         int contC = 0, contCA = 0;;
 >>>>>>> Stashed changes
@@ -201,11 +212,14 @@ public class Etapa
                 ciclista = itC.next();
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 cont++;
                 System.out.println("@@@ Posición(" + cont + "): " + ciclista.getNombre() + 
                 " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + "@@@");
                 ciclista.getResultado();
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 if(!ciclista.abandonado()){
@@ -235,6 +249,9 @@ public class Etapa
                     }
                 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

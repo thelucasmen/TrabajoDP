@@ -63,8 +63,13 @@ public class CiclistaNovato implements Ciclista
             while(it.hasNext()) {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               Map.Entry<Etapa, Resultado> entry = it.next();
               System.out.println(entry.getKey() + ":" + entry.getValue().getTiempo());
+=======
+                it.next().mostrar();
+                it.next();
+>>>>>>> Stashed changes
 =======
                 it.next().mostrar();
                 it.next();
