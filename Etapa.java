@@ -15,7 +15,7 @@ public class Etapa
     private Dificultad dificultad;
     private Distancia distancia;
     private String nombre;
-    private List<Ciclista> ciclistas;
+    private Set<Ciclista> ciclistas;
     
 
     /**
@@ -27,7 +27,7 @@ public class Etapa
         this.dificultad = dificultad;
         this.distancia = distancia;
         this.nombre = nombre;
-        ciclistas = new ArrayList<Ciclista>();
+        ciclistas = new TreeSet<Ciclista>();
     }
     
     /**
@@ -91,19 +91,22 @@ public class Etapa
     public List<ResultadosCarrera> mostrarCiclistas(int contC, Etapa etapa, List<ResultadosCarrera> podio){
         int contCE = 0;
         Ciclista ciclista = null;
+        Set<Ciclista> ciclistasAux;
         ResultadosCarrera resultadosCarrera = null;
         Resultado resultado = null;
         double tiempo = 0;
         double energiaPrevia = 0;
         try{
-            ciclistas.sort(new ReverseNameComparator());
-            Iterator<Ciclista> itC = ciclistas.iterator();
+            ciclistasAux = new TreeSet<Ciclista>(new ReverseNameComparator());
+            ciclistasAux.addAll(ciclistas);
+            //ciclistas.sort(new ReverseNameComparator());
+            Iterator<Ciclista> itC = ciclistasAux.iterator();
             while (itC.hasNext()) {
                 contCE++;
                 System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
                 ciclista = itC.next();
                 ciclista.mostrar();
-                System.out.print("Con bicicleta\n");
+                System.out.print(" con bicicleta\n");
                 ciclista.getBicicleta().mostrar();
                 tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
                 energiaPrevia = ciclista.getEnergia();
@@ -111,18 +114,18 @@ public class Etapa
                 System.out.printf("en etapa " + etapa.getNombre() + "\n" +
                     "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
                     ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
-                    String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora \n+++\n+++\n" +
-                    "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
+                    String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++\n" +
+                    "+++ WIEBES termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
                 if(!ciclista.abandonado()){
                     System.out.printf("+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
                         String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n");
                 } else {
                     System.out.printf("¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
                         String.format("%.2f",tiempo) + " minutos para terminar !!!\n" +
-                	"¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
-                	String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
-                	"+++ La ener   gía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                	String.format("%.2f",ciclista.getEnergia()) + " +++");
+                    "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
+                    String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
+                    "+++ La ener   gía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
+                    String.format("%.2f",ciclista.getEnergia()) + " +++");
                 }
                 if(ciclista.esEstrella()){
                     ciclista.SerPopular(tiempo);
@@ -139,17 +142,19 @@ public class Etapa
     //Recorre el listado de ciclistas muestras sus resultados en las diferentes etapas
     public void mostrarResultadosCiclistas(){
         Ciclista ciclista;
+        Set<Ciclista> ciclistasAux;
         int cont = 0;
         try{
-            ciclistas.sort(new TiempoComparator());
-            Iterator<Ciclista> itC = ciclistas.iterator();
+            ciclistasAux = new TreeSet<Ciclista>(new TiempoComparator());
+            ciclistasAux.addAll(ciclistas);
+            //ciclistas.sort(new ReverseNameComparator());
+            Iterator<Ciclista> itC = ciclistasAux.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();
                 cont++;
                 System.out.println("@@@ Posición(" + cont + "): " + ciclista.getNombre() + 
-                " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + " @@@");
+                " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + "@@@");
                 ciclista.getResultado();
-                System.out.print("\n");
             }
         }catch(NullPointerException e){ }
     }
