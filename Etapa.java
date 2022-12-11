@@ -15,7 +15,7 @@ public class Etapa
     private Dificultad dificultad;
     private Distancia distancia;
     private String nombre;
-    private Set<Ciclista> ciclistas;
+    private List<Ciclista> ciclistas;
     
 
     /**
@@ -27,7 +27,7 @@ public class Etapa
         this.dificultad = dificultad;
         this.distancia = distancia;
         this.nombre = nombre;
-        ciclistas = new TreeSet<Ciclista>();
+        ciclistas = new ArrayList<Ciclista>();
     }
     
     /**
@@ -91,16 +91,13 @@ public class Etapa
     public List<ResultadosCarrera> mostrarCiclistas(int contC, Etapa etapa, List<ResultadosCarrera> podio){
         int contCE = 0;
         Ciclista ciclista = null;
-        Set<Ciclista> ciclistasAux;
         ResultadosCarrera resultadosCarrera = null;
         Resultado resultado = null;
         double tiempo = 0;
         double energiaPrevia = 0;
         try{
-            ciclistasAux = new TreeSet<Ciclista>(new ReverseNameComparator());
-            ciclistasAux.addAll(ciclistas);
-            //ciclistas.sort(new ReverseNameComparator());
-            Iterator<Ciclista> itC = ciclistasAux.iterator();
+            ciclistas.sort(new ReverseNameComparator());
+            Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();
                 if(!ciclista.abandonado()){
@@ -148,13 +145,10 @@ public class Etapa
     //Recorre el listado de ciclistas muestras sus resultados en las diferentes etapas
     public void mostrarResultadosCiclistas(){
         Ciclista ciclista;
-        Set<Ciclista> ciclistasAux;
-        int contC = 0, contCA = 0;
+        int contC = 0, contCA = 0;;
         try{
-            ciclistasAux = new TreeSet<Ciclista>(new TiempoComparator());
-            ciclistasAux.addAll(ciclistas);
-            //ciclistas.sort(new ReverseNameComparator());
-            Iterator<Ciclista> itC = ciclistasAux.iterator();
+            ciclistas.sort(new TiempoComparator());
+            Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();
                 if(!ciclista.abandonado()){
