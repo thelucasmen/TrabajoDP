@@ -167,6 +167,7 @@ public class Etapa
                 System.out.println("****************************************************\n" +
                                    "************** CICLISTAS QUE ABANDONARON **************\n" +
         	                   "****************************************************");
+        	ciclistas.sort(new PuntosAnuladosComparator());
         	itC = ciclistas.iterator();
                 while (itC.hasNext()) {
                     ciclista = itC.next();

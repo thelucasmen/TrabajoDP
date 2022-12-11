@@ -160,6 +160,7 @@ Clases: Comparator --> Ordenan listas segun un criterio
     - NombreBicicleta
     - Destreza
     - Peso bicicleta
+    - Puntos anulados
     
     ResultadosCarrera
     - Tiempo etapa

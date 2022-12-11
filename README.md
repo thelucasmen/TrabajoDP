@@ -159,7 +159,8 @@ Clases: Comparator --> Ordenan listas segun un criterio
     - Energia
     - NombreBicicleta
     - Destreza
-    - Peso bicicleta
+    - Peso bicicleta    
+    - Puntos anulados
     
     ResultadosCarrera
     - Tiempo etapa
