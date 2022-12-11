@@ -16,10 +16,10 @@ public class CiclismoDemo
         List<Equipo> equipos = new ArrayList<Equipo>();
         List<Ciclista> ciclistasCarrera = new ArrayList<Ciclista>();
         
-        Organizacion organizacion=new Organizacion("OrganizacionPrueba", etapas, 1, equipos, 1, ciclistasCarrera, 1);
+        Organizacion organizacion=new Organizacion("OrganizacionPrueba", etapas, equipos, ciclistasCarrera);
         //Descomentar de las dos líneas siguientes, la prueba que se quiera ejecutar
-            DatosCampeonatoCompletoFinal initdata = new DatosCampeonatoCompletoFinal(organizacion);
-            //DatosCampeonatoAbandonosFinal initdata = new DatosCampeonatoAbandonosFinal(organizacion); 
+            //DatosCampeonatoCompletoFinal initdata = new DatosCampeonatoCompletoFinal(organizacion);
+            DatosCampeonatoAbandonosFinal initdata = new DatosCampeonatoAbandonosFinal(organizacion); 
             
         organizacion.gestionarCarrera();
 

@@ -186,9 +186,9 @@ public class CiclistaNovato implements Ciclista
     public void funcionalidadCiclista(Etapa e, double tiempo){
         Resultado r;
         Bicicleta b = getBicicleta();
+        setEnergia(tiempo/60);
         if(getEnergia() != 0){
             r = new Resultado(e, tiempo);
-            setEnergia(tiempo/60);
         } else {
             r = new Resultado(e, energia - tiempo);
         }

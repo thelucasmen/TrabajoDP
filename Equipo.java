@@ -104,6 +104,17 @@ public class Equipo
         }catch(NullPointerException e){ }
     }
 
+    public void getBicicletas(){
+        try{
+            Iterator<Bicicleta> itb = bicicletas.iterator();
+            
+            while (itb.hasNext()) {
+                itb.next().mostrar();
+                System.out.print("\n");
+            }
+        }catch(NullPointerException e){ }
+    }
+    
     //cuenta los ciclistas del equipo que han abandonado
     public int contCiclistasAbandonados(){
         Iterator<Ciclista> itca = ciclistasA.iterator();
@@ -137,7 +148,7 @@ public class Equipo
     }
     
     //Ordenar ciclistas segun criterio
-    public void ordenarCiclistas(int orden, int criterio){
+    public void ordenarCiclistas(int criterio){
             //1.ascendente, 2.descendente
             //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza(), 6.habilidad
         
@@ -161,49 +172,28 @@ public class Equipo
             case 6:
                 ciclistas.sort(new HabilidadComparator());                 
                 break;
-        }
-        
-        if(orden == 2){
-            Collections.sort(ciclistas, Collections.reverseOrder());
-        }
-    }
-    
-    //Ordenar ciclistas que han abandonado segun criterio
-    public void ordenarCiclistasA(int orden, int criterio){
-            //1.ascendente, 2.descendente
-            //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza(), 6.habilidad
-        
-        switch (criterio){
-            case 1:
-                ciclistas.sort(new NameComparator());
+            case 7:
+                ciclistas.sort(new ReverseNameComparator());
                 break;
-            case 2:
-                ciclistas.sort(new BicicletaNameCiclistaComparator()); 
-                ciclistas.sort(new BicicletaPesoCiclistaComparator());               
+            case 8:
+                ciclistas.sort(new ReverseEnergyComparator());                 
                 break;
-            case 3:
-                ciclistas.sort(new EnergyComparator());                 
+            case 9:
+                ciclistas.sort(new ReverseTiempoComparator());                 
                 break;
-            case 4:
-                ciclistas.sort(new TiempoComparator());                 
+            case 10:
+                ciclistas.sort(new ReverseDestrezaComparator());                 
                 break;
-            case 5:
-                ciclistas.sort(new DestrezaComparator());                 
+            case 11:
+                ciclistas.sort(new ReverseHabilidadComparator());                 
                 break;
-            case 6:
-                ciclistas.sort(new HabilidadComparator());                 
-                break;
-        }
-        
-        if(orden == 2){
-            Collections.sort(ciclistas, Collections.reverseOrder());
         }
     }    
 
     //Ordenar bicicletas segun criterio
-    public void ordenarBicicletas(int orden, int criterio){
-            //1.ascendente, 2.descendente
-            //1.nombre, 2.peso
+    public void ordenarBicicletas(int criterio){
+            //descendente
+            //1.nombre, 2.peso, 3.nombre descendente, 4.peso descendente
         
         switch (criterio){
             case 1:
@@ -212,10 +202,12 @@ public class Equipo
             case 2:               
                 bicicletas.sort(new BicicletaPesoComparator());                 
                 break;
-        }
-        
-        if(orden == 2){
-            Collections.sort(bicicletas, Collections.reverseOrder());
+            case 3:
+                bicicletas.sort(new ReversedBicicletaNameComparator()); 
+                break;
+            case 4:               
+                bicicletas.sort(new ReversedBicicletaPesoComparator());                 
+                break;
         }
     }  
     
@@ -291,7 +283,7 @@ public class Equipo
             borrarCiclista(ciclista);
             setCiclista(ciclista);
         } else {
-            borrarCiclistaAbandonado(ciclista);
+            borrarCiclista(ciclista);
             setCiclistaAbandonado(ciclista);
         }
     }

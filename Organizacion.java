@@ -12,28 +12,17 @@ public class Organizacion
     private String nombreOrg;
     private List<ResultadosCarrera> podio;
     private List<Etapa> etapas;
-    private int criterioOrdenEtapas; //1.dificultad, 2.distancia, 3.nombre, 4.dificultad(desc), 5.distancia(desc) o 6.nombre(desc) 
     private List<Equipo> equipos;
-    private int criterioOrdenEquipos; //1.nombre, 2.tiempoTotal(), 3.nombre(desc), 4.tiempoTotal()(desc)
     private List<Ciclista> ciclistasCarrera;
-    private int criterioOrdenCiclistas; //1.nombre, 2.bicicleta, 3.energia, 4.tiempoAcumulado(), 5.calculaDestreza(), 
-                                        //6.nombre(desc), 7.bicicleta(desc), 8.energia(desc), 9.tiempoAcumulado()(desc), 10.calculaDestreza()(desc)
-    
     /**
      * Constructor for objects of class Organizacion
      */
-    public Organizacion(String nombreOrg, List<Etapa> etapas, int criterioOrdenEtapas, List<Equipo> equipos, int criterioOrdenEquipos, List<Ciclista> ciclistasCarrera, int criterioOrdenCiclistas)
+    public Organizacion(String nombreOrg, List<Etapa> etapas, List<Equipo> equipos, List<Ciclista> ciclistasCarrera)
     {
         this.nombreOrg = nombreOrg;
-        
         this.etapas = new ArrayList<Etapa>();
-            this.criterioOrdenEtapas = criterioOrdenEtapas;
-            
-        this.equipos = new ArrayList<Equipo>();
-            this.criterioOrdenEquipos = criterioOrdenEquipos;
-            
+        this.equipos = new ArrayList<Equipo>();           
         this.ciclistasCarrera = new ArrayList<Ciclista>();
-            this.criterioOrdenCiclistas = criterioOrdenCiclistas;
         
         podio = new ArrayList<ResultadosCarrera>();
     }
@@ -62,14 +51,6 @@ public class Organizacion
         this.etapas.remove(etapa);
     }
     
-    public void setCriterioOrdenEtapas(int criterioOrdenEtapas){
-        this.criterioOrdenEtapas = criterioOrdenEtapas;
-    }
-    
-    public int getCriterioOrdenEtapas(){
-        return criterioOrdenEtapas;
-    }
-    
     public void setEquipos(Equipo equipo){
         this.equipos.add(equipo);
     }
@@ -78,28 +59,12 @@ public class Organizacion
         this.equipos.remove(equipo);
     }
     
-    public void setCriterioOrdenEquipos(int criterioOrdenEquipos){
-        this.criterioOrdenEquipos = criterioOrdenEquipos;
-    }
-    
-    public int getCriterioOrdenEquipos(){
-        return criterioOrdenEquipos;
-    }
-    
     public void setCiclistasCarrera(Ciclista ciclista){
         this.ciclistasCarrera.add(ciclista);
     }
     
     public void borrarCiclistasCarrera(Ciclista ciclista){
         this.ciclistasCarrera.remove(ciclista);
-    }
-    
-    public void setCriterioOrdenCiclistas(int criterioOrdenCiclistas){
-        this.criterioOrdenCiclistas = criterioOrdenCiclistas;
-    }
-    
-    public int getCriterioOrdenCiclistas(){
-        return criterioOrdenCiclistas;
     }
     
     public void mostrar()
@@ -137,65 +102,9 @@ public class Organizacion
         }
     }
     
-    //Ordena las listas segun los criterios
-    public void ordenarListas(){
-        //etapas
-            if(criterioOrdenCiclistas == 1 || criterioOrdenCiclistas == 4){
-                //1.dificultad o 4.dificultad(desc)
-                etapas.sort(new DificultadComparator());
-            } else if(criterioOrdenCiclistas == 2 || criterioOrdenCiclistas == 5){ 
-                //2.distancia o 5.distancia(desc) 
-                etapas.sort(new DistanciaComparator()); 
-            } else if(criterioOrdenCiclistas == 3 || criterioOrdenCiclistas == 6){
-                //3.nombre o 6.nombre(desc) 
-                etapas.sort(new NameEComparator()); 
-            } 
-            
-            if(criterioOrdenCiclistas > 4){
-                Collections.sort(ciclistasCarrera, Collections.reverseOrder());
-            }
-            
-        //equipos 
-            if(criterioOrdenCiclistas == 1 || criterioOrdenCiclistas == 3){
-                //1.nombre o 3.nombre(desc)
-                equipos.sort(new NameEqComparator());
-            } else if(criterioOrdenCiclistas == 2 || criterioOrdenCiclistas == 4){ 
-                //2.tiempoTotal() o 4.tiempoTotal()(desc) 
-                equipos.sort(new BicicletaTimeComparator());
-            }
-            
-            if(criterioOrdenCiclistas > 3){
-                Collections.sort(ciclistasCarrera, Collections.reverseOrder());
-            }
-            
-        //ciclistasCarrera
-            if(criterioOrdenCiclistas == 1 || criterioOrdenCiclistas == 6){
-                //1.nombre o 6.nombre(desc)
-                ciclistasCarrera.sort(new NameComparator());
-            } else if(criterioOrdenCiclistas == 2 || criterioOrdenCiclistas == 7){ 
-                //2.bicicleta o 7.bicicleta(desc) 
-                ciclistasCarrera.sort(new BicicletaPesoCiclistaComparator());
-                ciclistasCarrera.sort(new BicicletaNameCiclistaComparator()); 
-            } else if(criterioOrdenCiclistas == 3 || criterioOrdenCiclistas == 8){
-                //3.energia o 8.energia(desc) 
-                ciclistasCarrera.sort(new EnergyComparator()); 
-            } else if(criterioOrdenCiclistas == 4 || criterioOrdenCiclistas == 9){
-                //4.tiempoAcumulado() o 9.tiempoAcumulado()(desc)
-                ciclistasCarrera.sort(new TiempoComparator()); 
-            } else if(criterioOrdenCiclistas == 5 || criterioOrdenCiclistas == 10){
-                //5.calculaDestreza() o 10.calculaDestreza()(desc)
-                ciclistasCarrera.sort(new DestrezaComparator()); 
-            }
-            
-            if(criterioOrdenCiclistas > 5){
-                Collections.sort(ciclistasCarrera, Collections.reverseOrder());
-            }
-    }
-    
     //Inscribe los equipos de la lista equipos en la etapa
     public void inscribirEquipos(Equipo equipo){
         setEquipos(equipo);
-        ordenarListas();
     }
     
     //Muestra las etapas y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
@@ -273,9 +182,15 @@ public class Organizacion
                 while(itP.hasNext()){
                     contPodio++;
                     resultadosCarrera = itP.next();
-                    System.out.println("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
-                    " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@");
-                }
+                    if(resultadosCarrera.getEnergia() > 0){
+                        System.out.println("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
+                            " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@");
+                    } else {
+                        System.out.println("¡¡¡ Ha abandonado " + resultadosCarrera.getNombre() + " - Tiempo: " + 
+                            String.format("%.2f", resultadosCarrera.getResultado().getTiempo()) + 
+                        " - Además ha abandonado para el resto del Campeonato !!!");
+                    }
+                }                   
                 System.out.print("\n");
                 if(contC == contCA || contC - contCA == 1) {
                     fin = true;

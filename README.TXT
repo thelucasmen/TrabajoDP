@@ -116,7 +116,6 @@ Clase: Equipo
         contCiclistasAbandonados() --> cuenta los ciclistas del equipo que han abandonado
         mostrar()
         ordenarCiclistas() --> ordenar ciclistas segun criterio
-        ordenarCiclistasA --> ordenar ciclistas que han abandonado segun criterio
         ordenarBicicletas() --> ordenar bicicletas segun criterio
         tiempoTotal() --> suma total de tiempo de los ciclistas
         mediatiempoSinA --> calcula la media del tiempo de los ciclistas sin abandonar
@@ -131,17 +130,13 @@ Clase: Organizacion
         nombreOrg
         List<ResultadosCarrera> podio --> Lista que almacena el podio de la etapa
         List<Etapa> etapas
-            criterioOrdenEtapas;
         List<Equipo> equipos
-            criterioOrdenEquipos
         List<Ciclista> ciclistasCarrera
-            criterioOrdenCiclistas
     
     Metodos:
         Setter y Getters
         metodos para borrar de las cuatro listas
         mostrar()
-        ordenarListas() --> ordena las listas segun los criterios
         inscribirEquipos() --> inscribe los equipos de la lista equipos en la etapa
         gestionarCarrera() --> detecta si el campeonato ha acabado y muestra un resumen del campeonato
   
