@@ -128,12 +128,11 @@ public class Etapa
                     if(ciclista.esEstrella()){
                         ciclista.SerPopular(tiempo);
                     }
-                    if(ciclista.getEnergia() > 0){
+                    
+                    if(!ciclista.abandonado()){
                         resultado = new Resultado(etapa, tiempo);
-                    } else {
-                        resultado = new Resultado(etapa, ciclista.getEnergia());
-                    }   
-                    ciclista.setResultado(resultado);
+                        ciclista.setResultado(resultado);
+                    }
                     resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
                     podio.add(resultadosCarrera);
                 }
@@ -145,7 +144,7 @@ public class Etapa
     //Recorre el listado de ciclistas muestras sus resultados en las diferentes etapas
     public void mostrarResultadosCiclistas(){
         Ciclista ciclista;
-        int contC = 0, contCA = 0;;
+        int contC = 0, contCA = 0;
         try{
             ciclistas.sort(new TiempoComparator());
             Iterator<Ciclista> itC = ciclistas.iterator();
@@ -170,7 +169,6 @@ public class Etapa
                 while (itC.hasNext()) {
                     ciclista = itC.next();
                     if(ciclista.abandonado()){
-                        contC++;
                         System.out.println("--- ciclista Abandonado: " + ciclista.getNombre() + " - Puntos Totales Anulados: " +
                         String.format("%.2f",ciclista.tiempoAcumulado() - ciclista.getEnergia()) + "---");
                         ciclista.getResultado();

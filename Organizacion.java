@@ -181,9 +181,9 @@ public class Organizacion
                 Iterator<ResultadosCarrera> itP = podio.iterator();
                 contPodio = 0;
                 while(itP.hasNext()){
-                    contPodio++;
                     resultadosCarrera = itP.next();
                     if(resultadosCarrera.getEnergia() > 0){
+                        contPodio++;
                         System.out.println("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
                             " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@");
                     } else {

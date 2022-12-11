@@ -75,7 +75,8 @@ public class CiclistaEstrella implements Ciclista
               it.next().mostrar();
               it.next();
             }   
-        }catch(NullPointerException e){ }      
+        }catch(NullPointerException e){ }
+        catch(NoSuchElementException e2){ }
     }
     
     public void setEquipo(Equipo e){
@@ -146,12 +147,15 @@ public class CiclistaEstrella implements Ciclista
     //Devuelve el tiempo total acumulado entre los resultados
     public double tiempoAcumulado(){
         double tiempo = 0.0;
+        Resultado resultado;
         try{
             Iterator<Resultado> it = resultados.iterator();
-            
             while (it.hasNext()) {
-                if(it.next().getTiempo() > 0){
-                    tiempo = tiempo + it.next().getTiempo();
+                resultado = it.next();
+                if(!abandonado()){
+                    tiempo = tiempo + resultado.getTiempo();
+                } else {
+                    tiempo = getEnergia();
                 }
             }
         }catch(NullPointerException e){ }
