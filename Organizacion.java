@@ -218,7 +218,7 @@ public class Organizacion
                 equipo = itEq.next();
                 contE++;
                 System.out.println("@@@ Posición(" + contE + ") " + equipo.getNombre() + 
-                                   " con " + String.format("%.2f",equipo.mediatiempoTotal()) + " minutos de media @@@\n" +
+                                   " con " + String.format("%.2f",equipo.mediatiempoSinA()) + " minutos de media @@@\n" +
                     "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
                                    "%%% " + equipo.getNombre() + " %%% Media Minutos de Ciclistas sin abandonar " + 
                                    String.format("%.2f",equipo.mediatiempoSinA()) + " %%%");  

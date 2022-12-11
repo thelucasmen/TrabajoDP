@@ -131,8 +131,10 @@ public class Etapa
                     
                     if(!ciclista.abandonado()){
                         resultado = new Resultado(etapa, tiempo);
-                        ciclista.setResultado(resultado);
+                    } else {
+                        resultado = new Resultado(etapa, ciclista.getEnergia());
                     }
+                    ciclista.setResultado(resultado);
                     resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
                     podio.add(resultadosCarrera);
                 }
@@ -170,7 +172,7 @@ public class Etapa
                     ciclista = itC.next();
                     if(ciclista.abandonado()){
                         System.out.println("--- ciclista Abandonado: " + ciclista.getNombre() + " - Puntos Totales Anulados: " +
-                        String.format("%.2f",ciclista.tiempoAcumulado() - ciclista.getEnergia()) + "---");
+                        String.format("%.2f",ciclista.puntosAnulados()) + "---");
                         ciclista.getResultado();
                         System.out.print("\n");
                     }

@@ -82,6 +82,7 @@ Clase: Ciclista
         mostrarResultados() --> muestra resultados de cualquier etapa
         numeroEtapas() --> devuelve el numro de etapas
         tiempoAcumulado() --> devuelve el tiempo total acumulado entre los resultados
+        puntosAnulados() --> devuelve el total de puntos anulados de un ciclista que ha abandonado
         etapasTerminadas() --> numero de etapas terminadas
         abandonada() --> muestra por pantalla las etapas abandonadas
         mostrarEtapas() --> numero de etapas comenzadas, terminadas y tiempo acumulado, etapas abandonadas

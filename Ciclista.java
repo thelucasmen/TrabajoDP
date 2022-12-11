@@ -44,6 +44,8 @@ interface Ciclista
     public int numeroEtapas();
         //Devuelve el tiempo total acumulado entre los resultados
     public double tiempoAcumulado();
+        //Devuelve el total de puntos anulados de un ciclista que ha abandonado
+    public double puntosAnulados();
         //Numero de etapas terminadas
     public int etapasTerminadas();
         //Muestra por pantalla las etapas abandonadas

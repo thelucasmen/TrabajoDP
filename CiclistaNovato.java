@@ -59,12 +59,13 @@ public class CiclistaNovato implements Ciclista
     
     public void getResultado(){ 
         try{
-            Iterator<Resultado> it = resultados.iterator();   
+            Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
-                it.next().mostrar();
-                it.next();
+              it.next();
+              it.next().mostrar();
             }   
         }catch(NullPointerException e){ }
+        catch(NoSuchElementException e2){ }
     }
     
     
@@ -141,6 +142,21 @@ public class CiclistaNovato implements Ciclista
                     tiempo = getEnergia();
                 }
             }
+        }catch(NullPointerException e){ }
+        return tiempo;
+    }
+    
+    //Devuelve el total de puntos anulados de un ciclista que ha abandonado
+    public double puntosAnulados(){
+        double tiempo = 0.0;
+        Resultado resultado;
+        try{
+            Iterator<Resultado> it = resultados.iterator();
+            while (it.hasNext()) {
+                resultado = it.next();
+                tiempo = tiempo + it.next().getTiempo();
+            }
+            tiempo = tiempo - getEnergia();
         }catch(NullPointerException e){ }
         return tiempo;
     }
