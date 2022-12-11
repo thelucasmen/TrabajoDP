@@ -116,11 +116,28 @@ public class Etapa
                     ciclista.SerPopular(tiempo);
                 }
                 resultado = new Resultado(etapa, tiempo);
-                ciclista.setResultado(resultado);
+                ciclista.setResultado(new Resultado(etapa, tiempo));
                 resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
                 podio.add(resultadosCarrera);
             }
         }catch(NullPointerException e){ }
         return podio;
+    }
+
+    //Recorre el listado de ciclistas muestras sus resultados en las diferentes etapas
+    public void mostrarResultadosCiclistas(){
+        Ciclista ciclista;
+        int cont = 0;
+        try{
+            ciclistas.sort(new TiempoComparator());
+            Iterator<Ciclista> itC = ciclistas.iterator();
+            while (itC.hasNext()) {
+                ciclista = itC.next();
+                cont++;
+                System.out.println("@@@ Posición(" + cont + "): " + ciclista.getNombre() + 
+                " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + "@@@");
+                ciclista.getResultado();
+            }
+        }catch(NullPointerException e){ }
     }
 }

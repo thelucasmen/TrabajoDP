@@ -199,13 +199,13 @@ public class Organizacion
     }
     
     //Muestra las etapas y sus equipos, ademas, detecta si el campeonato ha acabado y muestra un resumen del campeonato
-    public Equipo gestionarCarrera(){
+    public void gestionarCarrera(){
         Iterator<Etapa> itE = etapas.iterator();
         Iterator<Equipo> itEq = equipos.iterator();
         String ganador = "Por decidir";
         Etapa etapa = null;
-        Equipo equipoGanador = null;
         Equipo equipo = null;
+        Equipo equipoGanador = null;
         ResultadosCarrera resultadosCarrera = null;
         boolean fin = false;
         int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
@@ -287,83 +287,28 @@ public class Organizacion
                                 "****************************************************\n" +
                                 "********** CLASIFICACIÓN FINAL DE CICLISTAS **********\n" +
                                "****************************************************");
-            celebracionEtapa(true);
-                    
-                if(contC == contCA || contC - contCA == 1) { 
-                    System.out.println("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)");
-                } else {
-                    itEq = equipos.iterator();
-                    //En todos los casos se mostrará como resumen final del campeonato
-                    while (itEq.hasNext()) {
-                        //MOSTRAR CICLISTAS
-                        equipo = itEq.next();
-                        equipo.ordenarCiclistas(1, 2);
-                        equipo.ordenarCiclistas(4, 1);
-                        equipo.getCiclistas();
-                        
-                        //MOSTRAR CICLISTAS ABANDONADOS
-                        equipo.ordenarCiclistasA(1, 2);
-                        equipo.ordenarCiclistasA(4, 1);
-                        equipo.getCiclistasAbandonados();
-                        
-                        //EQUIPOS CON CICLISTAS SIN ABANDONAR
-                        if(equipo.contCiclistasAbandonados() == 0){
-                            equipos.sort(new NameEqComparator());
-                            Collections.sort(ciclistasCarrera, Collections.reverseOrder());
-                            equipos.sort(new BicicletaTimeComparator());
-                            System.out.println("Nombre del equipo: " + equipo.getNombre());
-                            System.out.println("Tiempo total: " + equipo.tiempoTotal());
-                            System.out.println("Numero de ciclistas: " + equipo.contCiclistas() + "Numero de ciclistas abandonados: " + equipo.contCiclistasAbandonados());
-                        }
-                        
-                        //EQUIPOS CON TODOS LOS CICLISTAS ABANDONADOS
-                        if(equipo.contCiclistasAbandonados() == equipo.contCiclistas() ){
-                            equipos.sort(new NameEqComparator());
-                            System.out.println("Nombre del equipo: " + equipo.getNombre());
-                            System.out.println("Numero de ciclistas abandonados: " + equipo.contCiclistasAbandonados() + "Ciclistas abandonados: ");
-                            equipo.getCiclistasAbandonados();
-                        }
-                    }
-                    ordenarListas();
-                }
+            
+            if(fin) { 
+                System.out.println("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)");
             }
-        
-        return equipoGanador;
-    }
-    
-    //Muestra los resultados del campeonato
-    public void celebracionEtapa(boolean fin){
-        Iterator<Equipo> itEq = equipos.iterator();
-        Iterator<Etapa> itE = etapas.iterator();
-        Iterator<ResultadosCarrera> itP = podio.iterator();
-        ResultadosCarrera resultadosCarrera;
-        
-        while (itE.hasNext()) {
+            etapa.mostrarResultadosCiclistas();
+            System.out.println("****************************************************\n" +
+                               "******** CLASIFICACIÓN FINAL DE EQUIPOS *********\n" +
+                               "****************************************************");
+            contE = 0;
+            equipos.sort(new MediaTiempoTotalComparator());
+            itEq = equipos.iterator();
             while (itEq.hasNext()) {
-                itEq.next().enviarCiclistas(itE.next());
+                equipo = itEq.next();
+                contE++;
+                System.out.println("@@@ Posición(" + contE + ") " + equipo.getNombre() + 
+                                   " con " + String.format("%.2f",equipo.mediatiempoTotal()) + " minutos de media @@@\n" +
+                    "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
+                                   "%%% " + equipo.getNombre() + " %%% Media Minutos de Ciclistas sin abandonar " + 
+                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%% ");  
+                equipo.getCiclistas();
             }
-            
-            if(itEq.next().contCiclistas() > 1 && itEq.next().contCiclistasAbandonados() != itEq.next().contCiclistas()){
-                itEq.next().ordenarCiclistasA(1, 1);
-                itEq.next().ordenarCiclistasA(4, 2);
-                resultadosCarrera = itEq.next().CaracterísticasCiclistas(itE.next(), fin);
-                setPodio(resultadosCarrera);
+            //celebracionEtapa(true);
             }
-            
-            
-            podio.sort(new ResultadoPodioComparator());
-            System.out.println("Resultados carrera: ");
-            while (itP.hasNext()) {
-                if(!itP.next().getAbandonado()){
-                    itP.next().mostrar();
-                }  
-            }
-            System.out.println("Resultados carrera (abandonados): ");
-            while (itP.hasNext()) {
-                if(itP.next().getAbandonado()){
-                    itP.next().mostrar();
-                }  
-            }
-        }
     }
 }

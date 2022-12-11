@@ -122,7 +122,8 @@ public class Equipo
         
         //%%% DSM WOMEN %%% Media Minutos de Ciclistas sin abandonar 0.0 %%%
         
-        System.out.println("%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + mediatiempoTotal() + "%%%");
+        System.out.println("%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
+                            String.format("%.2f", mediatiempoSinA()) + "%%%");
         getCiclistas();
         getCiclistasAbandonados();
         System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
@@ -243,6 +244,23 @@ public class Equipo
         return tiempoAc/contCiclistas;
     }
     
+    //Calcula la media del tiempo de los ciclistas sin abandonar
+    public double mediatiempoSinA(){
+        Iterator<Ciclista> it = ciclistas.iterator();
+        double tiempoAc = 0;
+        int contCiclistas = 0;
+        Ciclista ciclista;
+        while (it.hasNext()) {
+            ciclista = it.next();
+            if(ciclista.getEnergia() > 0){
+                tiempoAc = tiempoAc + ciclista.tiempoAcumulado();
+                contCiclistas++;
+            }
+        }
+        
+        return tiempoAc/contCiclistas;
+    }
+    
     //Envia a la etapa todos los ciclistas del equipo que no hayan abandonado
     public void enviarCiclistas(Etapa etapa){        
         try{  
@@ -260,8 +278,9 @@ public class Equipo
             itc = ciclistas.iterator();
             while (itc.hasNext()) {
                 ciclista = itc.next();
-                etapa.setCiclista(ciclista);
-                
+                if(!ciclista.abandonado()){
+                    etapa.setCiclista(ciclista);
+                }
             }
         } catch(NullPointerException e){ }
     }

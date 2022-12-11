@@ -1,5 +1,13 @@
 # DP
+NOMBRES: Marcos Acedo Mejías
+    Daniel Barrantes Pulido
+    Lucas Méndez Fernández
+    
+Clase main: CiclismoDemo
 
+Github: https://github.com/thelucasmen/TrabajoDP.git
+
+<---------Funcionalidad--------->
 1. Clase Etapa
 2. Clase Bicicleta
 3. Clase Ciclista
@@ -22,6 +30,7 @@ Clase: Etapa
         Setter y Getters
         mostrar()
         mostrarCiclistas() --> Recorre el listado de ciclistas y sus bicicletas de la etapa
+        mostrarResultadosCiclistas() -->
  
 2.
 Clase: Bicicleta
@@ -109,7 +118,8 @@ Clase: Equipo
         ordenarCiclistas() --> ordenar ciclistas segun criterio
         ordenarCiclistasA --> ordenar ciclistas que han abandonado segun criterio
         ordenarBicicletas() --> ordenar bicicletas segun criterio
-        tiempoTotal() --> suma total de tiempo de los ciclistas 
+        tiempoTotal() --> suma total de tiempo de los ciclistas
+        mediatiempoSinA --> calcula la media del tiempo de los ciclistas sin abandonar
         mediatiempoTotal() --> calcula la media del tiempo total
         enviarCiclistas() --> envia a la etapa todos los ciclistas del equipo que no hayan abandonado
         recogerCiclistas() --> actualiza los ciclistas despues de la etapa
@@ -134,7 +144,6 @@ Clase: Organizacion
         ordenarListas() --> ordena las listas segun los criterios
         inscribirEquipos() --> inscribe los equipos de la lista equipos en la etapa
         gestionarCarrera() --> detecta si el campeonato ha acabado y muestra un resumen del campeonato
-        celebracionEtapa() --> muestra los resultados del campeonato
   
 6.
 Clases: Comparator --> Ordenan listas segun un criterio
@@ -146,6 +155,7 @@ Clases: Comparator --> Ordenan listas segun un criterio
     Equipo
     - Nombre equipo
     - Tiempo total
+    - Media del tiempo total
     
     Ciclista
     - Nombre ciclista

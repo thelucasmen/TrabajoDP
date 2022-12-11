@@ -49,6 +49,7 @@ public class Resultado
     }
     
     public void mostrar(){
-        System.out.println("Tiempo: " + tiempo);
+        //Carrera(sencilla intermedia) - Tiempo: 2.12 minutos
+        System.out.println("Carrera(" + etapa.getNombre() + ") - Tiempo: " + String.format("%.2f",tiempo) + " minutos: ");
     }
 }

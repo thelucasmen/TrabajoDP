@@ -18,9 +18,7 @@ public class CiclismoDemo
         
         Organizacion organizacion=new Organizacion("OrganizacionPrueba", etapas, 1, equipos, 1, ciclistasCarrera, 1);
         //Descomentar de las dos líneas siguientes, la prueba que se quiera ejecutar
-        System.out.println("Prueba DatosCampeonatoCompletoFinal: ");
-                DatosCampeonatoCompletoFinal initdata = new DatosCampeonatoCompletoFinal(organizacion); 
-        //System.out.println("Prueba DatosCampeonatoAbandonosFinal: ");
+            DatosCampeonatoCompletoFinal initdata = new DatosCampeonatoCompletoFinal(organizacion);
             //DatosCampeonatoAbandonosFinal initdata = new DatosCampeonatoAbandonosFinal(organizacion); 
             
         organizacion.gestionarCarrera();
