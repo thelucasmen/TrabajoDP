@@ -99,38 +99,44 @@ public class Etapa
             ciclistas.sort(new ReverseNameComparator());
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
-                contCE++;
-                System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
                 ciclista = itC.next();
-                ciclista.mostrar();
-                System.out.print("Con bicicleta\n");
-                ciclista.getBicicleta().mostrar();
-                tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
-                energiaPrevia = ciclista.getEnergia();
-                ciclista.funcionalidadCiclista(etapa, tiempo);
-                System.out.printf("en etapa " + etapa.getNombre() + "\n" +
-                    "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
-                    ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
-                    String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora \n+++\n+++\n" +
-                    "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
                 if(!ciclista.abandonado()){
-                    System.out.printf("+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                        String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n");
-                } else {
-                    System.out.printf("¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
-                        String.format("%.2f",tiempo) + " minutos para terminar !!!\n" +
-                	"¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
-                	String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
-                	"+++ La ener   gía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                	String.format("%.2f",ciclista.getEnergia()) + " +++");
+                    contCE++;
+                    System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
+                    ciclista.mostrar();
+                    System.out.print("Con bicicleta\n");
+                    ciclista.getBicicleta().mostrar();
+                    tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
+                    energiaPrevia = ciclista.getEnergia();
+                    ciclista.funcionalidadCiclista(etapa, tiempo);
+                    System.out.printf("en etapa " + etapa.getNombre() + "\n" +
+                        "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
+                        ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
+                        String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora \n+++\n+++\n" +
+                        "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n");
+                    if(!ciclista.abandonado()){
+                        System.out.printf("+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
+                            String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n");
+                    } else {
+                        System.out.printf("¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
+                            String.format("%.2f",tiempo) + " minutos para terminar !!!\n" +
+                    	"¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
+                    	String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
+                    	"+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
+                    	String.format("%.2f",ciclista.getEnergia()) + " +++\n");
+                    }
+                    if(ciclista.esEstrella()){
+                        ciclista.SerPopular(tiempo);
+                    }
+                    if(ciclista.getEnergia() > 0){
+                        resultado = new Resultado(etapa, tiempo);
+                    } else {
+                        resultado = new Resultado(etapa, ciclista.getEnergia());
+                    }   
+                    ciclista.setResultado(resultado);
+                    resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
+                    podio.add(resultadosCarrera);
                 }
-                if(ciclista.esEstrella()){
-                    ciclista.SerPopular(tiempo);
-                }
-                resultado = new Resultado(etapa, tiempo);
-                ciclista.setResultado(new Resultado(etapa, tiempo));
-                resultadosCarrera = new ResultadosCarrera(ciclista.getNombre(), ciclista.getEnergia(), resultado, ciclista.abandonado());
-                podio.add(resultadosCarrera);
             }
         }catch(NullPointerException e){ }
         return podio;
@@ -139,17 +145,38 @@ public class Etapa
     //Recorre el listado de ciclistas muestras sus resultados en las diferentes etapas
     public void mostrarResultadosCiclistas(){
         Ciclista ciclista;
-        int cont = 0;
+        int contC = 0, contCA = 0;;
         try{
             ciclistas.sort(new TiempoComparator());
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();
-                cont++;
-                System.out.println("@@@ Posición(" + cont + "): " + ciclista.getNombre() + 
-                " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + " @@@");
-                ciclista.getResultado();
-                System.out.print("\n");
+                if(!ciclista.abandonado()){
+                    contC++;
+                    System.out.println("@@@ Posición(" + contC + "): " + ciclista.getNombre() + 
+                    " - Tiempo Total: " + String.format("%.2f",ciclista.tiempoAcumulado()) + " @@@");
+                    ciclista.getResultado();
+                    System.out.print("\n");
+                } else {
+                    contCA++;
+                }
+            }
+            
+            if(contCA > 0){
+                System.out.println("****************************************************\n" +
+                                   "************** CICLISTAS QUE ABANDONARON **************\n" +
+        	                   "****************************************************");
+        	itC = ciclistas.iterator();
+                while (itC.hasNext()) {
+                    ciclista = itC.next();
+                    if(ciclista.abandonado()){
+                        contC++;
+                        System.out.println("--- ciclista Abandonado: " + ciclista.getNombre() + " - Puntos Totales Anulados: " +
+                        String.format("%.2f",ciclista.tiempoAcumulado() - ciclista.getEnergia()) + "---");
+                        ciclista.getResultado();
+                        System.out.print("\n");
+                    }
+                }
             }
         }catch(NullPointerException e){ }
     }

@@ -61,8 +61,8 @@ public class CiclistaNovato implements Ciclista
         try{
             Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
-              it.next().mostrar();
-              it.next();
+                it.next().mostrar();
+                it.next();
             }   
         }catch(NullPointerException e){ }
     }

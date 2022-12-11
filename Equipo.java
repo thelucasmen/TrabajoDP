@@ -270,9 +270,7 @@ public class Equipo
             itc = ciclistas.iterator();
             while (itc.hasNext()) {
                 ciclista = itc.next();
-                if(!ciclista.abandonado()){
-                    etapa.setCiclista(ciclista);
-                }
+                etapa.setCiclista(ciclista);
             }
         } catch(NullPointerException e){ }
     }
