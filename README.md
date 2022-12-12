@@ -1,6 +1,6 @@
 # DP
-NOMBRES: Marcos Acedo Mejías
-    Daniel Barrantes Pulido
+NOMBRES: Marcos Acedo Mejías,
+    Daniel Barrantes Pulido,
     Lucas Méndez Fernández
     
 Clase main: CiclismoDemo
