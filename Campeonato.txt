@@ -1,0 +1,1515 @@
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||| ETAPAS DEL CAMPEONATO |||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+SENCILLA(valor:0.9)
+
+INTERMEDIA(valor:200.0)
+
+SENCILLA(valor:0.9)
+
+LARGA(valor:225.0)
+
+NORMAL(valor:1.0)
+
+INTERMEDIA(valor:200.0)
+
+NORMAL(valor:1.0)
+
+LARGA(valor:225.0)
+
+COMPLEJA(valor:1.1)
+
+INTERMEDIA(valor:200.0)
+
+COMPLEJA(valor:1.1)
+
+LARGA(valor:225.0)
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%     %%%%%%%%%%%%%%%%%%%
+%%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Movistar Women %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
+
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% DSM Women %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
+
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Trek Segafredo Women %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+********************************************************************************************************
+
+*** CARRERA<1> EN 
+
+SENCILLA(valor:0.9)
+
+INTERMEDIA(valor:200.0)
+
+***
+********************************************************************************************************
+********************************************************************************************************
+******************************** Ciclistas que van a competir en sencilla intermedia *******************************
+**********************************************************************************************************
+
+
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Comienza la carrera en sencilla intermedia ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+BUENA(valor:8.0)
+
+<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.4>
+
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
+
+NORMAL(valor: 7.5)
+
+> <Velocidad Extra: 0.5>
+
+LENTA(valor:4.0)
+
+<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.3>
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 0,00>
+<abandonado:false>
+
+
+<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+LENTA(valor:4.0)
+
+<Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: 
+
+LIGERA(valor: 7.35)
+
+>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ Clasificación final de la sencilla intermedia ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+@@@ Posición(1): CORDON-RAGOT - Tiempo: 1,47 minutos @@@
+
+@@@ Posición(2): VAN VLEUTEN - Tiempo: 1,77 minutos @@@
+
+@@@ Posición(3): LIPPERT - Tiempo: 2,41 minutos @@@
+
+@@@ Posición(4): LABOUS - Tiempo: 98,98 minutos @@@
+
+@@@ Posición(5): LONGO-BORGHINI - Tiempo: 134,24 minutos @@@
+
+@@@ Posición(6): NORSGAARD - Tiempo: 135,00 minutos @@@
+
+@@@ Posición(7): WIEBES - Tiempo: 141,30 minutos @@@
+
+@@@ Posición(8): SIERRA - Tiempo: 197,15 minutos @@@
+
+@@@ Posición(9): BALSAMO - Tiempo: 198,45 minutos @@@
+
+
+
+
+*** CARRERA<2> EN 
+
+SENCILLA(valor:0.9)
+
+LARGA(valor:225.0)
+
+***
+********************************************************************************************************
+********************************************************************************************************
+******************************** Ciclistas que van a competir en sencilla larga *******************************
+**********************************************************************************************************
+
+
+<CiclistaNovato: SIERRA> <energía: 912,85> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 394,29>
+<abandonado:false>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 1010,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 135,00>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+<CiclistaExperimentado: LABOUS> <energía: 1051,02> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 98,98>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 1048,70> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 282,60>
+<abandonado:false>
+
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1118,53> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 2,94>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1040,76> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 134,24>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Comienza la carrera en sencilla larga ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<CiclistaNovato: WIEBES> <energía: 1048,70> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 282,60>
+<abandonado:false>
+
+
+<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+BUENA(valor:8.0)
+
+<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+<CiclistaNovato: SIERRA> <energía: 912,85> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 394,29>
+<abandonado:false>
+
+
+<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.4>
+
+<CiclistaExperimentado: NORSGAARD> <energía: 1010,00> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 135,00>
+<abandonado:false>
+
+
+<Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1040,76> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 134,24>
+<abandonado:false>
+
+
+<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
+
+NORMAL(valor: 7.5)
+
+> <Velocidad Extra: 0.5>
+
+LENTA(valor:4.0)
+
+<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LABOUS> <energía: 1051,02> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 98,98>
+<abandonado:false>
+
+
+<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.3>
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1118,53> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 2,94>
+<abandonado:false>
+
+
+<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+LENTA(valor:4.0)
+
+<Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: 
+
+LIGERA(valor: 7.35)
+
+>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ Clasificación final de la sencilla larga ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+@@@ Posición(1): CORDON-RAGOT - Tiempo: 1,66 minutos @@@
+
+@@@ Posición(2): VAN VLEUTEN - Tiempo: 1,99 minutos @@@
+
+@@@ Posición(3): LIPPERT - Tiempo: 2,71 minutos @@@
+
+@@@ Posición(4): LABOUS - Tiempo: 111,35 minutos @@@
+
+@@@ Posición(5): LONGO-BORGHINI - Tiempo: 151,03 minutos @@@
+
+@@@ Posición(6): NORSGAARD - Tiempo: 151,88 minutos @@@
+
+@@@ Posición(7): WIEBES - Tiempo: 158,96 minutos @@@
+
+@@@ Posición(8): SIERRA - Tiempo: 221,79 minutos @@@
+
+@@@ Posición(9): BALSAMO - Tiempo: 223,26 minutos @@@
+
+
+
+
+*** CARRERA<3> EN 
+
+NORMAL(valor:1.0)
+
+INTERMEDIA(valor:200.0)
+
+***
+********************************************************************************************************
+********************************************************************************************************
+******************************** Ciclistas que van a competir en normal intermedia *******************************
+**********************************************************************************************************
+
+
+<CiclistaNovato: SIERRA> <energía: 691,07> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 837,87>
+<abandonado:false>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 858,13> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 286,88>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+<CiclistaExperimentado: LABOUS> <energía: 939,67> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 210,33>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 889,74> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 600,52>
+<abandonado:false>
+
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1116,87> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 6,26>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 889,73> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 285,27>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Comienza la carrera en normal intermedia ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<CiclistaNovato: WIEBES> <energía: 889,74> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 600,52>
+<abandonado:false>
+
+
+<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+BUENA(valor:8.0)
+
+<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+<CiclistaNovato: SIERRA> <energía: 691,07> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 837,87>
+<abandonado:false>
+
+
+<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.4>
+
+<CiclistaExperimentado: NORSGAARD> <energía: 858,13> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 286,88>
+<abandonado:false>
+
+
+<Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 889,73> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 285,27>
+<abandonado:false>
+
+
+<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
+
+NORMAL(valor: 7.5)
+
+> <Velocidad Extra: 0.5>
+
+LENTA(valor:4.0)
+
+<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LABOUS> <energía: 939,67> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 210,33>
+<abandonado:false>
+
+
+<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.3>
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1116,87> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 6,26>
+<abandonado:false>
+
+
+<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+LENTA(valor:4.0)
+
+<Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: 
+
+LIGERA(valor: 7.35)
+
+>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ Clasificación final de la normal intermedia ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+@@@ Posición(1): CORDON-RAGOT - Tiempo: 1,64 minutos @@@
+
+@@@ Posición(2): VAN VLEUTEN - Tiempo: 1,96 minutos @@@
+
+@@@ Posición(3): LIPPERT - Tiempo: 2,68 minutos @@@
+
+@@@ Posición(4): LABOUS - Tiempo: 109,95 minutos @@@
+
+@@@ Posición(5): LONGO-BORGHINI - Tiempo: 149,07 minutos @@@
+
+@@@ Posición(6): NORSGAARD - Tiempo: 150,00 minutos @@@
+
+@@@ Posición(7): WIEBES - Tiempo: 157,00 minutos @@@
+
+@@@ Posición(8): SIERRA - Tiempo: 218,89 minutos @@@
+
+@@@ Posición(9): BALSAMO - Tiempo: 220,50 minutos @@@
+
+
+
+
+*** CARRERA<4> EN 
+
+NORMAL(valor:1.0)
+
+LARGA(valor:225.0)
+
+***
+********************************************************************************************************
+********************************************************************************************************
+******************************** Ciclistas que van a competir en normal larga *******************************
+**********************************************************************************************************
+
+
+<CiclistaNovato: SIERRA> <energía: 472,17> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 1275,65>
+<abandonado:false>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 708,13> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 436,88>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+<CiclistaExperimentado: LABOUS> <energía: 829,72> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 320,28>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 732,74> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 914,52>
+<abandonado:false>
+
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1115,24> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 9,53>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 740,66> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 434,34>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Comienza la carrera en normal larga ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<CiclistaNovato: WIEBES> <energía: 732,74> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 914,52>
+<abandonado:false>
+
+
+<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+BUENA(valor:8.0)
+
+<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+<CiclistaNovato: SIERRA> <energía: 472,17> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 1275,65>
+<abandonado:false>
+
+
+<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.4>
+
+<CiclistaExperimentado: NORSGAARD> <energía: 708,13> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 436,88>
+<abandonado:false>
+
+
+<Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 740,66> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 434,34>
+<abandonado:false>
+
+
+<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
+
+NORMAL(valor: 7.5)
+
+> <Velocidad Extra: 0.5>
+
+LENTA(valor:4.0)
+
+<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LABOUS> <energía: 829,72> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 320,28>
+<abandonado:false>
+
+
+<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.3>
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1115,24> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 9,53>
+<abandonado:false>
+
+
+<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+LENTA(valor:4.0)
+
+<Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: 
+
+LIGERA(valor: 7.35)
+
+>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ Clasificación final de la normal larga ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+@@@ Posición(1): CORDON-RAGOT - Tiempo: 1,84 minutos @@@
+
+@@@ Posición(2): VAN VLEUTEN - Tiempo: 2,21 minutos @@@
+
+@@@ Posición(3): LIPPERT - Tiempo: 3,01 minutos @@@
+
+@@@ Posición(4): LABOUS - Tiempo: 123,69 minutos @@@
+
+@@@ Posición(5): LONGO-BORGHINI - Tiempo: 167,70 minutos @@@
+
+@@@ Posición(6): NORSGAARD - Tiempo: 168,75 minutos @@@
+
+@@@ Posición(7): WIEBES - Tiempo: 176,62 minutos @@@
+
+@@@ Posición(8): SIERRA - Tiempo: 246,25 minutos @@@
+
+@@@ Posición(9): BALSAMO - Tiempo: 248,06 minutos @@@
+
+
+
+
+*** CARRERA<5> EN 
+
+COMPLEJA(valor:1.1)
+
+INTERMEDIA(valor:200.0)
+
+***
+********************************************************************************************************
+********************************************************************************************************
+******************************** Ciclistas que van a competir en compleja intermedia *******************************
+**********************************************************************************************************
+
+
+<CiclistaNovato: SIERRA> <energía: 225,92> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 1768,16>
+<abandonado:false>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 539,38> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 605,63>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+<CiclistaExperimentado: LABOUS> <energía: 706,03> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 443,97>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 556,11> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 1267,77>
+<abandonado:false>
+
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1113,40> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 13,21>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 572,96> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 602,04>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Comienza la carrera en compleja intermedia ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<CiclistaNovato: WIEBES> <energía: 556,11> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 1267,77>
+<abandonado:false>
+
+
+<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+BUENA(valor:8.0)
+
+<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+<CiclistaNovato: SIERRA> <energía: 225,92> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: 1768,16>
+<abandonado:false>
+
+
+<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.4>
+
+<CiclistaExperimentado: NORSGAARD> <energía: 539,38> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 605,63>
+<abandonado:false>
+
+
+<Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 572,96> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 602,04>
+<abandonado:false>
+
+
+<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
+
+NORMAL(valor: 7.5)
+
+> <Velocidad Extra: 0.5>
+
+LENTA(valor:4.0)
+
+<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LABOUS> <energía: 706,03> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 443,97>
+<abandonado:false>
+
+
+<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.3>
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1113,40> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 13,21>
+<abandonado:false>
+
+
+<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+LENTA(valor:4.0)
+
+<Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: 
+
+LIGERA(valor: 7.35)
+
+>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ Clasificación final de la compleja intermedia ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+¡¡¡ Ha abandonado SIERRA - Tiempo: -14,68 - Además ha abandonado para el resto del Campeonato !!!
+
+@@@ Posición(1): CORDON-RAGOT - Tiempo: 1,80 minutos @@@
+
+@@@ Posición(2): VAN VLEUTEN - Tiempo: 2,16 minutos @@@
+
+@@@ Posición(3): LIPPERT - Tiempo: 2,95 minutos @@@
+
+@@@ Posición(4): LABOUS - Tiempo: 120,91 minutos @@@
+
+@@@ Posición(5): LONGO-BORGHINI - Tiempo: 163,87 minutos @@@
+
+@@@ Posición(6): NORSGAARD - Tiempo: 165,00 minutos @@@
+
+@@@ Posición(7): WIEBES - Tiempo: 172,70 minutos @@@
+
+@@@ Posición(8): BALSAMO - Tiempo: 242,55 minutos @@@
+
+
+
+
+*** CARRERA<6> EN 
+
+COMPLEJA(valor:1.1)
+
+LARGA(valor:225.0)
+
+***
+********************************************************************************************************
+********************************************************************************************************
+******************************** Ciclistas que van a competir en compleja larga *******************************
+**********************************************************************************************************
+
+
+<CiclistaNovato: SIERRA> <energía: -14,68> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: -14,68>
+<abandonado:true>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 374,38> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 770,63>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+<CiclistaExperimentado: LABOUS> <energía: 585,12> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 564,88>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 383,41> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 1613,18>
+<abandonado:false>
+
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1111,60> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 16,80>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 409,09> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 765,91>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Comienza la carrera en compleja larga ++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+<CiclistaNovato: WIEBES> <energía: 383,41> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 1613,18>
+<abandonado:false>
+
+
+<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+BUENA(valor:8.0)
+
+<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+<CiclistaExperimentado: NORSGAARD> <energía: 374,38> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 770,63>
+<abandonado:false>
+
+
+<Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 409,09> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 765,91>
+<abandonado:false>
+
+
+<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
+
+NORMAL(valor: 7.5)
+
+> <Velocidad Extra: 0.5>
+
+LENTA(valor:4.0)
+
+<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: 
+
+NORMAL(valor: 7.5)
+
+>
+
+<CiclistaExperimentado: LABOUS> <energía: 585,12> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 564,88>
+<abandonado:false>
+
+
+<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
+
+LIGERA(valor: 7.35)
+
+> <Velocidad Extra: 0.3>
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1111,60> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 16,80>
+<abandonado:false>
+
+
+<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
+
+PESADA(valor: 7.85)
+
+>
+
+LENTA(valor:4.0)
+
+<Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: 
+
+LIGERA(valor: 7.35)
+
+>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ Clasificación final de la compleja larga ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+¡¡¡ Ha abandonado BALSAMO - Tiempo: -225,69 - Además ha abandonado para el resto del Campeonato !!!
+
+@@@ Posición(1): CORDON-RAGOT - Tiempo: 2,02 minutos @@@
+
+@@@ Posición(2): VAN VLEUTEN - Tiempo: 2,43 minutos @@@
+
+@@@ Posición(3): LIPPERT - Tiempo: 3,31 minutos @@@
+
+@@@ Posición(4): LABOUS - Tiempo: 136,02 minutos @@@
+
+@@@ Posición(5): LONGO-BORGHINI - Tiempo: 184,36 minutos @@@
+
+@@@ Posición(6): NORSGAARD - Tiempo: 185,62 minutos @@@
+
+@@@ Posición(7): WIEBES - Tiempo: 194,29 minutos @@@
+
+
+
+
+****************************************************
+**************** FIN DEL CAMPEONATO ****************
+****************************************************
+********** CLASIFICACIÓN FINAL DE CICLISTAS **********
+****************************************************
+
+Carrera(sencilla intermedia) - Tiempo: 1,47 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 1,66 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 1,64 minutos: 
+
+Carrera(normal larga) - Tiempo: 1,84 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 1,80 minutos: 
+
+Carrera(compleja larga) - Tiempo: 2,02 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 1,77 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 1,99 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 1,96 minutos: 
+
+Carrera(normal larga) - Tiempo: 2,21 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 2,16 minutos: 
+
+Carrera(compleja larga) - Tiempo: 2,43 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 2,41 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 2,71 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 2,68 minutos: 
+
+Carrera(normal larga) - Tiempo: 3,01 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 2,95 minutos: 
+
+Carrera(compleja larga) - Tiempo: 3,31 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 98,98 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 111,35 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 109,95 minutos: 
+
+Carrera(normal larga) - Tiempo: 123,69 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 120,91 minutos: 
+
+Carrera(compleja larga) - Tiempo: 136,02 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 134,24 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 151,03 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 149,07 minutos: 
+
+Carrera(normal larga) - Tiempo: 167,70 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 163,87 minutos: 
+
+Carrera(compleja larga) - Tiempo: 184,36 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 135,00 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 151,88 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 150,00 minutos: 
+
+Carrera(normal larga) - Tiempo: 168,75 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 165,00 minutos: 
+
+Carrera(compleja larga) - Tiempo: 185,62 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 141,30 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 158,96 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 157,00 minutos: 
+
+Carrera(normal larga) - Tiempo: 176,62 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 172,70 minutos: 
+
+Carrera(compleja larga) - Tiempo: 194,29 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 197,15 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 221,79 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 218,89 minutos: 
+
+Carrera(normal larga) - Tiempo: 246,25 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: -14,68 minutos: 
+
+Carrera(sencilla intermedia) - Tiempo: 198,45 minutos: 
+
+Carrera(sencilla larga) - Tiempo: 223,26 minutos: 
+
+Carrera(normal intermedia) - Tiempo: 220,50 minutos: 
+
+Carrera(normal larga) - Tiempo: 248,06 minutos: 
+
+Carrera(compleja intermedia) - Tiempo: 242,55 minutos: 
+
+Carrera(compleja larga) - Tiempo: -225,69 minutos: 
+
+****************************************************
+******** CLASIFICACIÓN FINAL DE EQUIPOS *********
+****************************************************
+
+@@@ Posición(1) Trek Segafredo Women con 485,56 minutos de media @@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Trek Segafredo Women %%% Media Minutos de Ciclistas sin abandonar 485,56 %%%
+
+<CiclistaNovato: CORDON-RAGOT> <energía: 1109,57> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 20,85>
+<abandonado:false>
+
+
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 224,73> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 950,27>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+
+
+
+@@@ Posición(2) Movistar Women con 490,64 minutos de media @@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Movistar Women %%% Media Minutos de Ciclistas sin abandonar 490,64 %%%
+
+<CiclistaNovato: SIERRA> <energía: -14,68> <habilidad:
+
+LENTA(valor:4.0)
+
+> <tiempo acumulado sin abandonar: -14,68>
+<abandonado:true>
+
+
+<CiclistaExperimentado: NORSGAARD> <energía: 188,75> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 956,25>
+<abandonado:false>
+
+
+BUENA(valor:8.0)
+
+
+
+
+@@@ Posición(3) DSM Women con 912,27 minutos de media @@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DSM Women %%% Media Minutos de Ciclistas sin abandonar 912,27 %%%
+
+<CiclistaExperimentado: LABOUS> <energía: 449,10> <habilidad:
+
+BUENA(valor:8.0)
+
+> <tiempo acumulado sin abandonar: 700,90>
+<abandonado:false>
+
+
+LENTA(valor:4.0)
+
+<CiclistaNovato: WIEBES> <energía: 189,13> <habilidad:
+
+NORMAL(valor:6.0)
+
+> <tiempo acumulado sin abandonar: 2001,75>
+<abandonado:false>
+
+
+
+
+

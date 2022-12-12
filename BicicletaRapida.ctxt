@@ -1,16 +1,19 @@
 #BlueJ class context
 comment0.target=BicicletaRapida
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BicicletaRapida\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ La\ clase\ bicicleta\ rapida\ es\ un\ complemento\ de\ la\ clase\ bicicleta.\r\n\ Tiene\ las\ mismas\ funcionalidades,\ pero\ con\ un\ atributo\ extra.\ No\ todas\ las\ bicicletas\ tienen\ por\ que\r\n\ ser\ bicicletas\ rapidas\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
 comment1.params=nombre\ peso\ velocidadExtra
 comment1.target=BicicletaRapida(java.lang.String,\ Peso,\ double)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BicicletaRapida\r\n
 comment2.params=velocidadExtra
 comment2.target=void\ setVelocidadExtra(double)
+comment2.text=\r\n\ Changes\ the\ value\ of\ the\ double\ variable\ velocidadExtra\ in\ BicicletaRapida\ class\r\n\ \r\n\ @param\ double\ variable\ to\ set\ in\ velocidadExtra\r\n\ @return\r\n
 comment3.params=
 comment3.target=java.lang.Double\ getVelocidadExtra()
+comment3.text=\r\n\ Returns\ the\ value\ of\ the\ double\ variable\ velocidadExtra\ in\ BicicletaRapida\ class\r\n\ \r\n\ @param\r\n\ @return\ double\ variable\r\n
 comment4.params=
 comment4.target=void\ mostrar()
+comment4.text=\r\n\ Shows\ on\ screen\ all\ the\ information\ about\ BicicletaRapida\ class\r\n\ \r\n\ @param\r\n\ @return\r\n
 comment5.params=ciclista\ etapa
 comment5.target=double\ calcularVelocidad(Ciclista,\ Etapa)
-comment5.text=Funcionalidad
+comment5.text=\r\n\ Returns\ the\ value\ of\ the\ increased\ velocity\ depending\ on\ the\ velocidadExtra\ variable\r\n\ \r\n\ @param\ Ciclista\ and\ Etapa\ variables\ to\ calculate\ velocity\r\n\ @return\ double\ variable\ calculated\ this\ time\ adding\ the\ value\ of\ velocidadExtra\r\n
 numComments=6

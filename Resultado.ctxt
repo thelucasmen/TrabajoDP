@@ -1,19 +1,24 @@
 #BlueJ class context
 comment0.target=Resultado
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Resultados\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Cada\ clase\ resultado\ contiene\ una\ variable\ Etapa\ a\ la\ cual\ pertenece\ dicho\ resultado\ y\ el\r\n\ tiempo\ que\ se\ ha\ tardado\ en\ terminar\ dicha\ etapa.\r\n\ \r\n\ Contiene\ las\ operaciones\ necesarias\ para\ interactuar\ con\ otras\ clases\ y\ objetos.\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
 comment1.params=etapa\ tiempo
 comment1.target=Resultado(Etapa,\ double)
+comment1.text=\r\n\ Constructor\ for\ class\ Resultado\r\n
 comment2.params=etapa
 comment2.target=Resultado(Etapa)
 comment3.params=e
 comment3.target=void\ setEtapa(Etapa)
-comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment3.text=\r\n\ Changes\ the\ value\ of\ the\ Etapa\ variable\ in\ a\ certain\ Resultado\ class\r\n\ \r\n\ @param\ \ Etapa\ variable\ to\ set\ in\ Resultado\r\n\ @return\ \ \ \ \ \r\n
 comment4.params=t
 comment4.target=void\ setTiempo(double)
+comment4.text=\r\n\ Changes\ the\ value\ of\ the\ double\ variable\ tiempo\ in\ a\ certain\ Resultado\ class\r\n\ \r\n\ @param\ double\ variable\ to\ set\ in\ Resultado\r\n\ @return\r\n
 comment5.params=
 comment5.target=Etapa\ getEtapa()
+comment5.text=\r\n\ Returns\ the\ value\ of\ the\ Etapa\ variable\ in\ Resultados\ class\r\n\ \r\n\ @param\ \r\n\ @return\ Etapa\ variable\ \r\n
 comment6.params=
 comment6.target=double\ getTiempo()
+comment6.text=\r\n\ Returns\ double\ variable\ tiempo\ in\ Resultados\ class\r\n\ \r\n\ @param\r\n\ @return\ double\ variable\ representing\ the\ time.\r\n
 comment7.params=
 comment7.target=void\ mostrar()
+comment7.text=\r\n\ Shows\ on\ screen\ all\ the\ information\ about\ Resultados\ class\r\n
 numComments=8

@@ -4,7 +4,7 @@ NOMBRES: Marcos Acedo Mejías
     Lucas Méndez Fernández
     
 Clase main: CiclismoDemo
-
+Fichero de salida: Campeonato.txt
 Github: https://github.com/thelucasmen/TrabajoDP.git
 
 <---------Funcionalidad--------->

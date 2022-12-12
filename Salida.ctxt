@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Salida
+comment0.text=\r\n\ La\ clase\ Salida\ almacena\ el\ contenido\ pasado\ en\ un\r\n\ fichero\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\r\n\ @version\ (9.12.22)\r\n
+comment1.params=fichero
+comment1.target=void\ abrirFlujo(java.lang.String)
+comment1.text=\r\n\ Opens\ the\ stream\ to\ the\ folder\r\n\ \r\n\ @param\ String\ variable\ with\ the\ name\ of\ the\ folder\r\n\ @throws\ IOException\ in\ case\ of\ fail\r\n
+comment2.params=linea
+comment2.target=void\ volcarLinea(java.lang.String)
+comment2.text=\r\n\ Writes\ the\ line\ and\ makes\ a\ jump\ line\ indicating\r\n\ time\ of\ stream\ being\ opened.\r\n\ \r\n\ @param\ String\ variable\ with\ what\ is\ going\ to\ be\ written\r\n\ @throws\ IOException\ in\ case\ of\ fail\r\n
+comment3.params=
+comment3.target=void\ cerrarFlujo()
+comment3.text=\r\n\ Closes\ the\ stream.\r\n\ \r\n\ @throws\ IOException\ in\ case\ of\ fail\r\n
+numComments=4

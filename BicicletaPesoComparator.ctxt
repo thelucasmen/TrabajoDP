@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BicicletaPesoComparator
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BicicletaPesoComparator\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Compara\ el\ peso\ de\ dos\ bicicletas\ distintas.\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ FernandezMarcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
 comment1.params=b1\ b2
 comment1.target=int\ compare(Bicicleta,\ Bicicleta)
 numComments=2
