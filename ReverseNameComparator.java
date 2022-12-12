@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class NameComparator here.
+ * Compara los nombres de dos ciclistas de forma inversa.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class ReverseNameComparator implements Comparator<Ciclista>{ 
     public int compare(Ciclista c1, Ciclista c2){

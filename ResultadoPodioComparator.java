@@ -1,19 +1,13 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class ResultadoPodioComparator here.
+ * Compara los nombres de dos ciclistas en el podio.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class ResultadoPodioComparator implements Comparator<ResultadosCarrera>{ 
     public int compare(ResultadosCarrera r1, ResultadosCarrera r2){
-        if(r1.getResultado().getTiempo() == r2.getResultado().getTiempo()){
-            return new ResultadoPodioComparator().compare(r1, r2);
-        } else if(r1.getResultado().getTiempo() > r2.getResultado().getTiempo()) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return r1.getResultado().getEtapa().getNombre().compareTo(r2.getResultado().getEtapa().getNombre());
     }
 }

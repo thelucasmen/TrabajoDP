@@ -2,8 +2,8 @@
 /**
  * Enumeration class Peso - write a description of the enum class here
  * 
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez)
+ * @version (9.12.22)
  */
 public enum Peso{
     LIGERA("LIGERA", 7.35),
@@ -38,5 +38,6 @@ public enum Peso{
     public void mostrar(){
         //Pesada (valor: 7.85)
         System.out.print(catPeso + "(valor: " + pesoBici + ")");
+        Salida.volcarLinea(catPeso + "(valor: " + pesoBici + ")" + "\n");
     }
 };

@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class PuntosAnuladosComparator here.
+ * Compara dos ciclistas para comprobar los puntos anulados.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class PuntosAnuladosComparator implements Comparator<Ciclista>{ 
     public int compare(Ciclista c1, Ciclista c2){
