@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class BicicletaPesoComparator here.
+ * Compara el peso de dos bicicletas distintas.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez FernandezMarcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class BicicletaPesoComparator implements Comparator<Bicicleta>{ 
     public int compare(Bicicleta b1, Bicicleta b2){

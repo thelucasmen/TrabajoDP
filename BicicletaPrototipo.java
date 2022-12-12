@@ -1,9 +1,12 @@
 
 /**
- * Write a description of class BicicletaPrototipo here.
+ * Bicicleta prototipo es una clase complementaria a Bicicleta.
+ * Tiene las mismas caracteristicas que Bicicleta. Una Bicicleta no
+ * tiene por que ser una BicicletaPrototipo, pero si lo es, no puede ser
+ * una BicicletaRapida y viceversa.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class BicicletaPrototipo extends Bicicleta
 {
@@ -22,16 +25,29 @@ public class BicicletaPrototipo extends Bicicleta
         this.nombre = nombre;
         this.peso = peso;
     }
-    
+    /**
+     * Shows on screen all information about BicicletaPrototipo class
+     * 
+     * @param
+     * @return
+     */
     public void mostrar() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)>
         System.out.print("<BicicletaPrototipo: " + nombre + "> <peso: ");
+        Salida.volcarLinea("<BicicletaPrototipo: " + nombre + "> <peso: " + "\n");
         peso.mostrar();
         System.out.print(">");
+        Salida.volcarLinea(">" + "\n");
     }
     
         /*Funcionalidad */    
     //distancia/velocidad*destreza
+    /**
+     * Returns the time needed to end a certain stage
+     * 
+     * @param Ciclista and Etapa variables to calculate time and velocity
+     * @return double variable which is the distance divided by the multiplication of velocity and dexterity
+     */
     public double calculartiempo(Ciclista ciclista, Etapa etapa) {
         return etapa.getDistancia().getDistanciaEtapa()/calcularVelocidad(ciclista, etapa)*ciclista.calculaDestreza();
     }

@@ -2,8 +2,8 @@
 /**
  * Enumeration class Distancia - write a description of the enum class here
  * 
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez)
+ * @version (9.12.22)
  */
 public enum Distancia{
     CORTA("CORTA", 150.0),
@@ -38,5 +38,6 @@ public enum Distancia{
     public void mostrar()    {
         //Intermedia (valor:200.0)
         System.out.print(catDistancia + "(valor:" + distanciaEtapa + ")");
+        Salida.volcarLinea(catDistancia + "(valor:" + distanciaEtapa + ")" + "\n");
     }
 };

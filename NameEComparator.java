@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class NameEComparator here.
+ * Compara los nombres de dos etapas distintas.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class NameEComparator implements Comparator<Etapa>{ 
     public int compare(Etapa e1, Etapa e2){

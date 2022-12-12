@@ -12,6 +12,7 @@ import java.util.*;
 public class CiclismoDemo
 {    
     public static void main(String[] args)  throws java.io.IOException{
+        Salida.abrirFlujo("Campeonato.txt");       
         HashSet<Etapa> etapas = new HashSet<Etapa>();
         HashMap<String, Equipo> equipos = new HashMap<String, Equipo>();
         List<Ciclista> ciclistasCarrera = new ArrayList<Ciclista>();
@@ -22,7 +23,8 @@ public class CiclismoDemo
             DatosCampeonatoAbandonosFinal initdata = new DatosCampeonatoAbandonosFinal(organizacion); 
             
         organizacion.gestionarCarrera();
-
+        
+        Salida.cerrarFlujo();
     }    
 
 }

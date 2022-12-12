@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class MediaTiempoTotalComparator here.
+ * Compara la media de tiempo entre dos equipos para comprobar el ganador.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class MediaTiempoTotalComparator implements Comparator<Equipo>{ 
     public int compare(Equipo e1, Equipo e2){

@@ -1,10 +1,10 @@
 import java.util.Comparator;
 
 /**
- * Write a description of class NameEqComparator here.
+ * Compara el nombre de dos equipos distintos.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class NameEqComparator implements Comparator<Equipo>{ 
     public int compare(Equipo eq1, Equipo eq2){

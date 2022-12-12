@@ -2,8 +2,8 @@
 /**
  * Enumeration class Habilidad - write a description of the enum class here
  * 
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez)
+ * @version (9.12.22)
  */
 public enum Habilidad{
     LENTA("LENTA", 4.0),
@@ -38,5 +38,6 @@ public enum Habilidad{
     public void mostrar(){
         //Buena (valor:8.0)
         System.out.print(catHabilidad + "(valor:" + habilidadCiclista + ")");
+        Salida.volcarLinea(catHabilidad + "(valor:" + habilidadCiclista + ")" + "\n");
     }
 };

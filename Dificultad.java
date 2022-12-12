@@ -2,8 +2,8 @@
 /**
  * Enumeration class Dificultad - write a description of the enum class here
  * 
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez)
+ * @version (9.12.22)
  */
 public enum Dificultad{
     SENCILLA("SENCILLA", 0.9),
@@ -38,5 +38,6 @@ public enum Dificultad{
     public void mostrar()    {
         //Sencilla (valor:0.9)
         System.out.print(catDificultad + "(valor:" + dificultadEtapa + ")");
+        Salida.volcarLinea(catDificultad + "(valor:" + dificultadEtapa + ")" + "\n");
     }
 };

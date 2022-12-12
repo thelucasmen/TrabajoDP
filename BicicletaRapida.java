@@ -1,9 +1,11 @@
 
 /**
- * Write a description of class BicicletaRapida here.
+ * La clase bicicleta rapida es un complemento de la clase bicicleta.
+ * Tiene las mismas funcionalidades, pero con un atributo extra. No todas las bicicletas tienen por que
+ * ser bicicletas rapidas
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
+ * @version (9.12.22)
  */
 public class BicicletaRapida extends Bicicleta
 {
@@ -24,24 +26,49 @@ public class BicicletaRapida extends Bicicleta
         this.peso = peso;
         this.velocidadExtra = velocidadExtra;
     }
-    
+    /**
+     * Changes the value of the double variable velocidadExtra in BicicletaRapida class
+     * 
+     * @param double variable to set in velocidadExtra
+     * @return
+     */
     public void setVelocidadExtra(double velocidadExtra){
         this.velocidadExtra = velocidadExtra;
     }
     
+    /**
+     * Returns the value of the double variable velocidadExtra in BicicletaRapida class
+     * 
+     * @param
+     * @return double variable
+     */
     public Double getVelocidadExtra(){
         return velocidadExtra;
     }
     
+    /**
+     * Shows on screen all the information about BicicletaRapida class
+     * 
+     * @param
+     * @return
+     */
     public void mostrar() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)> en etapa sencilla intermedia
         System.out.print("<BicicletaRapida: " + nombre + "> <peso: ");
+        Salida.volcarLinea("<BicicletaRapida: " + nombre + "> <peso: " + "\n");
         peso.mostrar();
         System.out.print("> <Velocidad Extra: " + velocidadExtra + ">");
+        Salida.volcarLinea("> <Velocidad Extra: " + velocidadExtra + ">" + "\n");
     }
     
         /*Funcionalidad */
     //habilidad*100/(peso*dificultad)+velocidadExtra
+    /**
+     * Returns the value of the increased velocity depending on the velocidadExtra variable
+     * 
+     * @param Ciclista and Etapa variables to calculate velocity
+     * @return double variable calculated this time adding the value of velocidadExtra
+     */
     public double calcularVelocidad(Ciclista ciclista, Etapa etapa)    {
         return ciclista.getHabilidad().getHabilidadCiclista()*100/(getPeso().getPesoBici()*etapa.getDificultad().getDificultadEtapa())+velocidadExtra;
     }
