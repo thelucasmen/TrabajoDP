@@ -14,7 +14,6 @@
 <etapa:compleja larga> <dificultad:Compleja (valor:1.1)> <distancia:Larga (valor:225.0)>
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,7 +68,6 @@
 <abandonado:false> <popularidad: 6>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ********************************************************************************************************
-
 *** CARRERA<1> EN 
 
 <etapa:sencilla intermedia> <dificultad:Sencilla (valor:0.9)> <distancia:Intermedia (valor:200.0)>
@@ -78,7 +76,6 @@
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en sencilla intermedia *******************************
 **********************************************************************************************************
-
 
 <CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00>
 <abandonado: false>
@@ -201,7 +198,6 @@ LIGERA(valor: 7.35)
 ******************************** Ciclistas que van a competir en sencilla larga *******************************
 **********************************************************************************************************
 
-
 <CiclistaNovato: SIERRA> <energía: 912,85> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 394,29>
 <abandonado: false>
 
@@ -322,7 +318,6 @@ LIGERA(valor: 7.35)
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en normal intermedia *******************************
 **********************************************************************************************************
-
 
 <CiclistaNovato: SIERRA> <energía: 691,07> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 837,87>
 <abandonado: false>
@@ -445,7 +440,6 @@ LIGERA(valor: 7.35)
 ******************************** Ciclistas que van a competir en normal larga *******************************
 **********************************************************************************************************
 
-
 <CiclistaNovato: SIERRA> <energía: 472,17> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1275,65>
 <abandonado: false>
 
@@ -567,7 +561,6 @@ LIGERA(valor: 7.35)
 ******************************** Ciclistas que van a competir en compleja intermedia *******************************
 **********************************************************************************************************
 
-
 <CiclistaNovato: SIERRA> <energía: 225,92> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1768,16>
 <abandonado: false>
 
@@ -688,7 +681,6 @@ LIGERA(valor: 7.35)
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en compleja larga *******************************
 **********************************************************************************************************
-
 
 <CiclistaNovato: SIERRA> <energía: -14,68> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: -14,68>
 <abandonado: true>

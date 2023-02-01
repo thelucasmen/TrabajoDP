@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Organizacion
 comment0.text=\r\n\ La\ clase\ organizacion\ se\ encarga\ de\ gestionar\ todo\ el\ campeonato.\r\n\ Sera\ la\ encargada\ de\ gestionar\ las\ etapas,\ equipos,\ participantes,\ etc...\r\n\ Tambien\ sera\ la\ encargada\ de\ gestionar\ los\ resultados,\ clasificaciones\ por\ equipos,\ etc...\r\n\ \r\n\ La\ clase\ esta\ preparada\ para\ acceder\ al\ resto\ de\ clases\ y\ emplear\ sus\ operaciones\ para\ \r\n\ gestionar\ y\ realizar\ las\ funcionalidades\ previamente\ mencionadas\ en\ funcion\ de\ la\ informacion\r\n\ enviada.\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
-comment1.params=nombreOrg\ etapas\ equipos\ ciclistasCarrera\ ab
-comment1.target=Organizacion(java.lang.String,\ java.util.HashSet,\ java.util.HashMap,\ java.util.List,\ boolean)
+comment1.params=nombreOrg\ etapas\ equipos\ ciclistasCarrera
+comment1.target=Organizacion(java.lang.String,\ java.util.HashSet,\ java.util.HashMap,\ java.util.List)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Organizacion\r\n
 comment10.params=ciclista
 comment10.target=void\ setCiclistasCarrera(Ciclista)

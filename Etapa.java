@@ -122,7 +122,7 @@ public class Etapa
         double tiempo = 0;
         double energiaPrevia = 0;
         try{
-            ciclistas.sort(new ReverseNameComparator());
+            Collections.sort(ciclistas, Collections.reverseOrder(new NameComparator()));
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();

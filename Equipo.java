@@ -283,19 +283,19 @@ public class Equipo
                 ciclistas.sort(new HabilidadComparator());                 
                 break;
             case 7:
-                ciclistas.sort(new ReverseNameComparator());
+                Collections.sort(ciclistas, Collections.reverseOrder(new NameComparator()));
                 break;
-            case 8:
-                ciclistas.sort(new ReverseEnergyComparator());                 
+            case 8:                
+                Collections.sort(ciclistas, Collections.reverseOrder(new EnergyComparator()));
                 break;
             case 9:
-                ciclistas.sort(new ReverseTiempoComparator());                 
+                Collections.sort(ciclistas, Collections.reverseOrder(new TiempoComparator()));
                 break;
             case 10:
-                //ciclistas.sort(reverse, new DestrezaComparator());    //??             
+                Collections.sort(ciclistas, Collections.reverseOrder(new DestrezaComparator()));            
                 break;
             case 11:
-                ciclistas.sort(new ReverseHabilidadComparator());                 
+                Collections.sort(ciclistas, Collections.reverseOrder(new HabilidadComparator()));       
                 break;
         }
     }    
@@ -319,10 +319,10 @@ public class Equipo
                 bicicletas.sort(new BicicletaPesoComparator());                 
                 break;
             case 3:
-                bicicletas.sort(new ReversedBicicletaNameComparator()); 
+                Collections.sort(bicicletas, Collections.reverseOrder(new BicicletaNameComparator()));  
                 break;
             case 4:               
-                bicicletas.sort(new ReversedBicicletaPesoComparator());                 
+                Collections.sort(bicicletas, Collections.reverseOrder(new BicicletaPesoComparator()));                 
                 break;
         }
     }  

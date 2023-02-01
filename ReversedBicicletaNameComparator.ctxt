@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.target=ReversedBicicletaNameComparator
-comment0.text=\r\n\ Compara\ dos\ bicicletas.\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
-comment1.params=b1\ b2
-comment1.target=int\ compare(Bicicleta,\ Bicicleta)
-numComments=2
