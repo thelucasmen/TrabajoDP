@@ -8,6 +8,6 @@ import java.util.Comparator;
  */
 public class NameEqComparator implements Comparator<Equipo>{ 
     public int compare(Equipo eq1, Equipo eq2){
-        return eq1.getNombre().compareTo(eq1.getNombre());
+        return eq1.getNombre().compareTo(eq2.getNombre());
     }
 }

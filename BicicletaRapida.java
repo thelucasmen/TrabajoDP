@@ -59,7 +59,6 @@ public class BicicletaRapida extends Bicicleta
         mostrar += peso;
         mostrar += "> <Velocidad Extra: " + velocidadExtra + ">";
         
-        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
         

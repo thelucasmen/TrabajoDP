@@ -38,7 +38,6 @@ public class BicicletaPrototipo extends Bicicleta
         mostrar += peso;
         mostrar += ">";
         
-        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     

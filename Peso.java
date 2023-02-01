@@ -38,7 +38,6 @@ public enum Peso{
     public String toString(){
         //Pesada (valor: 7.85)
         String mostrar = catPeso + "(valor: " + pesoBici + ")";
-        Salida.volcarLinea(catPeso + "(valor: " + pesoBici + ")" + "\n");
         return(mostrar);
     }
 };

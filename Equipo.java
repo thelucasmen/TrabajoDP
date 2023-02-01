@@ -42,8 +42,8 @@ public class Equipo
      * @param  String variable to set in Equipo
      * @return     
      */
-    public void setNombre(String n){
-        this.nombre = n;
+    public void setNombre(String nombre){
+        this.nombre = nombre;
     }    
     
     /**
@@ -126,10 +126,10 @@ public class Equipo
             Iterator<Ciclista> itc = ciclistas.iterator();
             
             while (itc.hasNext()) {
-                mostrar += itc.next();
+                mostrar += itc.next() + "\n";
             }
         }catch(NullPointerException e){ }
-        return(mostrar);
+        return mostrar;
     }
     
     //Cuenta los ciclistas del equipo sin abandonar
@@ -159,10 +159,10 @@ public class Equipo
             Iterator<Ciclista> itca = ciclistasA.iterator();
             
             while (itca.hasNext()) {
-                mostrar += itca.next();
+                mostrar += itca.next() + "\n";
             }
         }catch(NullPointerException e){ }
-        return(mostrar);
+        return mostrar;
     }
     
     /**
@@ -206,18 +206,17 @@ public class Equipo
      * @return
      */    
     public String toString(){
-        Iterator<Ciclista> itc = ciclistas.iterator();
         
         //%%% DSM WOMEN %%% Media Minutos de Ciclistas sin abandonar 0.0 %%%
         
-        String mostrar = "%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                            String.format("%.2f", mediatiempoSinA()) + "%%%";
+        String mostrar = "%%% " + nombre.toUpperCase() + " %%% Media Minutos de Ciclistas sin abandonar " + 
+                            String.format("%.2f", mediatiempoSinA()) + "%%%\n\n";
+                            
         mostrar += getCiclistas();
         mostrar += getCiclistasAbandonados();
-        mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
-        
-        Salida.volcarLinea(mostrar);
-        return(mostrar);
+        mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
+            
+        return mostrar;
         /*Iterator<Bicicleta> itb = bicicletas.iterator();
         try{
             while (itb.hasNext()) {
@@ -394,7 +393,8 @@ public class Equipo
      * @param Etapa class to copy the information to
      * @return
      */
-    public void enviarCiclistas(Etapa etapa){        
+    public String enviarCiclistas(Etapa etapa){   
+        String salida = "";
         try{  
             Iterator<Ciclista> itc = ciclistas.iterator();
             Iterator<Bicicleta> itb = bicicletas.iterator();
@@ -411,8 +411,10 @@ public class Equipo
             while (itc.hasNext()) {
                 ciclista = itc.next();
                 etapa.setCiclista(ciclista);
+                salida += ciclista + "\n";
             }
         } catch(NullPointerException e){ }
+        return salida;
     }
     
     //Actualiza los ciclistas despues de la etapa

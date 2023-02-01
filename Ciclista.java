@@ -26,7 +26,7 @@ interface Ciclista
     public double getEnergia();
         
     public void setResultado(Resultado r);
-    public void getResultado();
+    public String getResultado();
     
     public void setEquipo(Equipo e);
     public Equipo getEquipo();
@@ -58,7 +58,7 @@ interface Ciclista
         //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo);
         //Suma o resta popularidad segun el tiempo
-    public void SerPopular(double tiempo);
+    public String SerPopular(double tiempo);
         //Caclcula la destreza del ciclista
     public double calculaDestreza();
         //Devuelve un booleano que indica si el ciclista es estrella o no

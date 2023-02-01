@@ -123,7 +123,6 @@ public class ResultadosCarrera
         mostrar += "Energia: " + energia + "\nResultado:";
         mostrar += resultado;
         
-        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     

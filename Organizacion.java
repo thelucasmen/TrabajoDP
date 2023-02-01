@@ -159,6 +159,7 @@ public class Organizacion
         Equipo equipo = null;
         Equipo equipoGanador = null;
         ResultadosCarrera resultadosCarrera = null;
+        String salida = "";
         boolean fin = false;
         int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
@@ -175,38 +176,24 @@ public class Organizacion
         Iterator<Equipo> itEq = equiposOrdenadas.iterator();
         
         //ordenarListas();
-        Salida.volcarLinea("");
         if(etapas.size()>0){
-            System.out.print(
-            "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" +
-            "\n||||||||||||||||||| ETAPAS DEL CAMPEONATO |||||||||||||||||||" +
-            "\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
-            );
-            Salida.volcarLinea("*********************************************************************************************************\n" + 
-            "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" +
-            "\n||||||||||||||||||| ETAPAS DEL CAMPEONATO |||||||||||||||||||" +
-            "\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"+"\n");
+            salida += "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" +
+                      "\n||||||||||||||||||| ETAPAS DEL CAMPEONATO |||||||||||||||||||" +
+                      "\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n";
             while (itE.hasNext()) {
-                System.out.println(itE.next());
+                salida += itE.next() + "\n";
             }
-            System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
-            Salida.volcarLinea("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n");
+            salida += "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n\n";
         }
         if(equipos.size()>0){
-            System.out.println( 
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
-            "\n%%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%" +
-            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
-            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
-            );
-            Salida.volcarLinea(
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
-            "\n%%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%" +
-            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
-            "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" + "\n");
+            salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" +
+                      "\n%%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%" +
+                      "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";            
+            
             while (itEq.hasNext()) {
                 equipo = itEq.next();
-                System.out.println(equipo);
+                salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
+                salida += equipo;
                 if(equipo.mediatiempoTotal() < menorTiempo){
                     menorTiempo = equipo.mediatiempoTotal();
                     equipoGanador = equipo;
@@ -214,47 +201,34 @@ public class Organizacion
             }
             
             itE = etapasOrdenadas.iterator();
-            System.out.println("********************************************************************************************************");
-            Salida.volcarLinea("********************************************************************************************************");
+            salida += "\n********************************************************************************************************\n";
             while (itE.hasNext() && !fin) {
                 etapa = itE.next();
                 contE++;
-                System.out.print("*** CARRERA<" + contE + "> EN ");
-                Salida.volcarLinea("*** CARRERA<" + contE + "> EN " + "\n");
-                System.out.println(etapa);
-                System.out.print("***\n"+
+                salida += "*** CARRERA<" + contE + "> EN ";
+                salida += etapa;
+                salida += "***\n"+
                 "********************************************************************************************************\n" +
                 "********************************************************************************************************\n" +
                 "******************************** Ciclistas que van a competir en " + etapa.getNombre() + 
                 " *******************************\n" +
-                "**********************************************************************************************************\n");
-                Salida.volcarLinea("***\n"+
-                "********************************************************************************************************\n" +
-                "********************************************************************************************************\n" +
-                "******************************** Ciclistas que van a competir en " + etapa.getNombre() + 
-                " *******************************\n" +
-                "**********************************************************************************************************\n");
+                "**********************************************************************************************************\n";
                 itEq = equiposOrdenadas.iterator();
                 while (itEq.hasNext()) {
                     equipo = itEq.next();
-                    equipo.enviarCiclistas(etapa);
+                    salida += equipo.enviarCiclistas(etapa);
                 }
                 contC = etapa.getCiclista();
-                System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
+                salida += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                         "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
-                        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
-                Salida.volcarLinea("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
-                        "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
-                        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" + "\n");
+                        "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
                 podio.clear();
-                podio = etapa.mostrarCiclistas(contC, etapa, podio);     
+                //podio = etapa.mostrarCiclistas(contC, etapa, podio);   
+                salida += etapa.salidaMostrarCiclistas(contC, etapa, podio);
                 
-                System.out.print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
-                                 "+++++++++++++++++ Clasificación final de la " + etapa.getNombre() + " ++++++++++++++++++\n" +
-                                 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
-                Salida.volcarLinea("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
-                                 "+++++++++++++++++ Clasificación final de la " + etapa.getNombre() + " ++++++++++++++++++\n" +
-                                 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" + "\n");
+                salida += "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
+                            "+++++++++++++++++ Clasificación final de la " + etapa.getNombre() + " ++++++++++++++++++\n" +
+                            "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
                 podio.sort(new TiempoPodioComparator());
                 Iterator<ResultadosCarrera> itP = podio.iterator();
                 contPodio = 0;
@@ -262,68 +236,49 @@ public class Organizacion
                     resultadosCarrera = itP.next();
                     if(resultadosCarrera.getEnergia() > 0){
                         contPodio++;
-                        System.out.println("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
-                            " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@");
-                        Salida.volcarLinea("@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
-                            " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@" + "\n");
+                        salida += "@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
+                            " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@\n";
                     } else {
-                        System.out.println("¡¡¡ Ha abandonado " + resultadosCarrera.getNombre() + " - Tiempo: " + 
+                        salida += "¡¡¡ Ha abandonado " + resultadosCarrera.getNombre() + " - Tiempo: " + 
                             String.format("%.2f", resultadosCarrera.getResultado().getTiempo()) + 
-                        " - Además ha abandonado para el resto del Campeonato !!!");
-                        Salida.volcarLinea("¡¡¡ Ha abandonado " + resultadosCarrera.getNombre() + " - Tiempo: " + 
-                            String.format("%.2f", resultadosCarrera.getResultado().getTiempo()) + 
-                        " - Además ha abandonado para el resto del Campeonato !!!" + "\n");
+                        " - Además ha abandonado para el resto del Campeonato !!!\n";
                     }
                 }                   
-                System.out.print("\n");
-                Salida.volcarLinea("\n" + "\n");
+                salida += "\n********************************************************************************************************\n";
                 if(contC == contCA || contC - contCA == 1) {
                     fin = true;
                 }
             }
             
-            System.out.println("****************************************************\n" +
+            salida +=           "****************************************************\n" +
                                 "**************** FIN DEL CAMPEONATO ****************\n" +
                                 "****************************************************\n" +
                                 "********** CLASIFICACIÓN FINAL DE CICLISTAS **********\n" +
-                               "****************************************************");
-            Salida.volcarLinea("****************************************************\n" +
-                                "**************** FIN DEL CAMPEONATO ****************\n" +
-                                "****************************************************\n" +
-                                "********** CLASIFICACIÓN FINAL DE CICLISTAS **********\n" +
-                               "****************************************************" + "\n");
+                               "****************************************************\n";
             
             if(fin) { 
-                System.out.println("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)");
-                Salida.volcarLinea("Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)" + "\n");
+                salida += "Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)\n";
             }
-            etapa.mostrarResultadosCiclistas();
-            System.out.println("****************************************************\n" +
+            salida += etapa.mostrarResultadosCiclistas();
+            salida +=          "****************************************************\n" +
                                "******** CLASIFICACIÓN FINAL DE EQUIPOS *********\n" +
-                               "****************************************************");
-            Salida.volcarLinea("****************************************************\n" +
-                               "******** CLASIFICACIÓN FINAL DE EQUIPOS *********\n" +
-                               "****************************************************" + "\n");
+                               "****************************************************\n";
             contE = 0;
             equiposOrdenadas.sort(new MediaTiempoTotalComparator());
             itEq = equiposOrdenadas.iterator();
             while (itEq.hasNext()) {
                 equipo = itEq.next();
                 contE++;
-                System.out.println("@@@ Posición(" + contE + ") " + equipo.getNombre() + 
+                salida +=          "@@@ Posición(" + contE + ") " + equipo.getNombre() + 
                                    " con " + String.format("%.2f",equipo.mediatiempoSinA()) + " minutos de media @@@\n" +
                     "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
                                    "%%% " + equipo.getNombre() + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%%");  
-                Salida.volcarLinea("@@@ Posición(" + contE + ") " + equipo.getNombre() + 
-                                   " con " + String.format("%.2f",equipo.mediatiempoSinA()) + " minutos de media @@@\n" +
-                    "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
-                                   "%%% " + equipo.getNombre() + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%%" + "\n");
-                equipo.getCiclistas();
-                System.out.print("\n");
-                Salida.volcarLinea("\n" + "\n");
+                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%%\n\n";  
+                salida += equipo.getCiclistas();
+                salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
             }
         }
+        System.out.println(salida);
+        Salida.volcarLinea(salida);
     }
 }

@@ -4,9 +4,13 @@ public class DatosCampeonatoAbandonosFinal
     
     public DatosCampeonatoAbandonosFinal(Organizacion organizacion)
     {
-        System.out.println("*********************************************************************************************************");
-        System.out.println("*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETANDOSE TODAS LAS CARRERAS PERO CON ABANDONOS*******************");
-        System.out.println("*********************************************************************************************************\n");
+        System.out.println("*********************************************************************************************************\n"
+                        +  "*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETANDOSE TODAS LAS CARRERAS PERO CON ABANDONOS*******************\n"
+                        +  "*********************************************************************************************************\n");
+        
+        Salida.volcarLinea("*********************************************************************************************************\n"
+                        +  "*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETANDOSE TODAS LAS CARRERAS PERO CON ABANDONOS*******************\n"
+                        +  "*********************************************************************************************************\n");
         
         initData(organizacion);
     }

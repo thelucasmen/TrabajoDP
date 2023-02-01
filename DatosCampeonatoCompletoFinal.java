@@ -4,10 +4,13 @@ public class DatosCampeonatoCompletoFinal
     
     public DatosCampeonatoCompletoFinal(Organizacion organizacion)
     {
-        System.out.println("*********************************************************************************************************");
-        System.out.println("*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETÁNDOSE TODAS LAS CARRERAS*******************");
-        System.out.println("*********************************************************************************************************\n");
+        System.out.println("*********************************************************************************************************\n"
+                         + "*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETÁNDOSE TODAS LAS CARRERAS*******************\n"
+                         + "*********************************************************************************************************\n");
         
+        Salida.volcarLinea("*********************************************************************************************************\n"
+                         + "*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETÁNDOSE TODAS LAS CARRERAS*******************\n"
+                         + "*********************************************************************************************************\n");
         initData(organizacion);
     }
     

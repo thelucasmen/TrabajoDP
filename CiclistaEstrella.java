@@ -68,15 +68,17 @@ public class CiclistaEstrella implements Ciclista
         resultados.add(r);   
     }
     
-    public void getResultado(){ 
+    public String getResultado(){ 
+        String salida = "";
         try{
             Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
               it.next();
-              System.out.println(it.next());
+              salida += it.next() + "\n";
             }   
         }catch(NullPointerException e){ }
         catch(NoSuchElementException e2){ }
+        return salida;
     }
     
     public void setEquipo(Equipo e){
@@ -109,9 +111,8 @@ public class CiclistaEstrella implements Ciclista
         String mostrar = "<CiclistaEstrella: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:";
         mostrar += habilidad; 
         mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         ">\n<abandonado:" + abandonado() + "> <popularidad: " + getPopularidad() + ">\n";  
-                         
-        Salida.volcarLinea(mostrar); 
+                         "> <abandonado:" + abandonado() + "> <popularidad: " + getPopularidad() + ">";  
+        
         return(mostrar);             
     }
     
@@ -262,18 +263,20 @@ public class CiclistaEstrella implements Ciclista
     }
     
     //Suma o resta popularidad segun el tiempo
-    public void SerPopular(double tiempo){
+    public String SerPopular(double tiempo){
+        String salida = "";
         if(tiempo<160){
            setPopularidad(getPopularidad()+4); 
-           System.out.print("+++ La popularidad del ciclista " + getNombre() + 
+           salida += "+++ La popularidad del ciclista " + getNombre() + 
                          " ha aumentado y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
-                         "@@@\n");
+                         "@@@\n";
         } else {
             setPopularidad(getPopularidad()-1);
-            System.out.print("+++ La popularidad del ciclista " + getNombre() + 
+            salida += "+++ La popularidad del ciclista " + getNombre() + 
                          " ha disminuido y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
-                         "@@@\n");
+                         "@@@";
         }
+        return salida;
     }
     
     //(((habilidad del Ciclista + 6) / 140) * 10

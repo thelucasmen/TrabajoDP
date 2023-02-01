@@ -96,15 +96,17 @@ public class CiclistaNovato implements Ciclista
      * @param
      * @return Resultado variable
      */
-    public void getResultado(){ 
+    public String getResultado(){ 
+        String salida = "";
         try{
             Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
               it.next();
-              System.out.println(it.next());
+               salida += it.next() + "\n";
             }   
         }catch(NullPointerException e){ }
         catch(NoSuchElementException e2){ }
+        return salida;
     }
     
     /**
@@ -179,9 +181,8 @@ public class CiclistaNovato implements Ciclista
         String mostrar = "<CiclistaNovato: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
         mostrar += habilidad;
         mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         ">\n<abandonado: " + abandonado() + ">\n";       
+                         "> <abandonado: " + abandonado() + ">";       
 
-        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     
@@ -388,7 +389,9 @@ public class CiclistaNovato implements Ciclista
     }
     
     //Suma o resta popularidad segun el tiempo
-    public void SerPopular(double tiempo){ }
+    public String SerPopular(double tiempo){ 
+        return "";
+    }
     
     //((habilidad del Ciclista + 2) / 120) * 10
     public double calculaDestreza(){

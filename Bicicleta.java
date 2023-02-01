@@ -74,7 +74,6 @@ public class Bicicleta
         mostrar += peso;
         mostrar += ">";
         
-        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     
