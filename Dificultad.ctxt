@@ -12,5 +12,5 @@ comment4.target=java.lang.String\ getCatDificultad()
 comment5.params=
 comment5.target=double\ getDificultadEtapa()
 comment6.params=
-comment6.target=void\ mostrar()
+comment6.target=java.lang.String\ toString()
 numComments=7

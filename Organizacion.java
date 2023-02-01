@@ -32,6 +32,7 @@ public class Organizacion
         
         podio = new ArrayList<ResultadosCarrera>();
     }
+    
     /**
      * Changes the value of the String variable nombre in Organizacion class
      * 
@@ -184,7 +185,7 @@ public class Organizacion
             "\n||||||||||||||||||| ETAPAS DEL CAMPEONATO |||||||||||||||||||" +
             "\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"+"\n");
             while (itE.hasNext()) {
-                itE.next().mostrar();
+                System.out.println(itE.next());
             }
             System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
             Salida.volcarLinea("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n");
@@ -203,7 +204,7 @@ public class Organizacion
             "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" + "\n");
             while (itEq.hasNext()) {
                 equipo = itEq.next();
-                equipo.mostrar();
+                System.out.println(equipo);
                 if(equipo.mediatiempoTotal() < menorTiempo){
                     menorTiempo = equipo.mediatiempoTotal();
                     equipoGanador = equipo;
@@ -218,7 +219,7 @@ public class Organizacion
                 contE++;
                 System.out.print("*** CARRERA<" + contE + "> EN ");
                 Salida.volcarLinea("*** CARRERA<" + contE + "> EN " + "\n");
-                etapa.mostrar();
+                System.out.println(etapa);
                 System.out.print("***\n"+
                 "********************************************************************************************************\n" +
                 "********************************************************************************************************\n" +

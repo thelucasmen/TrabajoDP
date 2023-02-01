@@ -25,19 +25,44 @@ public class BicicletaPrototipo extends Bicicleta
         this.nombre = nombre;
         this.peso = peso;
     }
+    
     /**
      * Shows on screen all information about BicicletaPrototipo class
      * 
      * @param
      * @return
      */
-    public void mostrar() {
+    public String toString() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)>
-        System.out.print("<BicicletaPrototipo: " + nombre + "> <peso: ");
+        String mostrar = "<BicicletaPrototipo: " + nombre + "> <peso: ";
         Salida.volcarLinea("<BicicletaPrototipo: " + nombre + "> <peso: " + "\n");
-        peso.mostrar();
-        System.out.print(">");
+        mostrar += peso;
+        mostrar += ">";
         Salida.volcarLinea(">" + "\n");
+        return(mostrar);
+    }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
     }
     
         /*Funcionalidad */    

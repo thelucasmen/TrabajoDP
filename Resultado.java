@@ -75,9 +75,33 @@ public class Resultado
     /**
      * Shows on screen all the information about Resultados class
      */
-    public void mostrar(){
+    public String toString(){
         //Carrera(sencilla intermedia) - Tiempo: 2.12 minutos
-        System.out.println("Carrera(" + etapa.getNombre() + ") - Tiempo: " + String.format("%.2f",tiempo) + " minutos: ");
+        String mostrar = "Carrera(" + etapa.getNombre() + ") - Tiempo: " + String.format("%.2f",tiempo) + " minutos: ";
         Salida.volcarLinea("Carrera(" + etapa.getNombre() + ") - Tiempo: " + String.format("%.2f",tiempo) + " minutos: " + "\n");
+        return(mostrar);
+    }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((etapa.getNombre() == null) ? 0 : etapa.getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Resultado other = (Resultado) obj;
+        if (etapa.getNombre() == null) {
+            if (other.etapa.getNombre() != null)
+                return false;
+            } else if (!other.etapa.getNombre().equals(other.etapa.getNombre()))
+                return false;
+        return true;
     }
 }

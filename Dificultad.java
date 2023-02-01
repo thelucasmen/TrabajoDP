@@ -35,9 +35,10 @@ public enum Dificultad{
         return dificultadEtapa;
     }
     
-    public void mostrar()    {
+    public String toString(){
         //Sencilla (valor:0.9)
-        System.out.print(catDificultad + "(valor:" + dificultadEtapa + ")");
+        String mostrar = catDificultad + "(valor:" + dificultadEtapa + ")";
         Salida.volcarLinea(catDificultad + "(valor:" + dificultadEtapa + ")" + "\n");
+        return(mostrar);
     }
 };

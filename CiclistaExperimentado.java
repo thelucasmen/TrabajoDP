@@ -101,7 +101,7 @@ public class CiclistaExperimentado implements Ciclista
             Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
               it.next();
-              it.next().mostrar();
+              System.out.println(it.next());
             }   
         }catch(NullPointerException e){ }
         catch(NoSuchElementException e2){ }
@@ -165,6 +165,48 @@ public class CiclistaExperimentado implements Ciclista
      */
     public Equipo getEquipo(){
         return equipo;
+    }
+    
+    /**
+     * Shows on screen all information about CiclistaExperimentado class
+     * 
+     * @param
+     * @return
+     */
+    public String toString()
+    {
+        //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
+        String mostrar = "<CiclistaExperimentado: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:";
+        Salida.volcarLinea("<CiclistaExperimentado: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:" + "\n");
+        System.out.println(habilidad); 
+        mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
+                         ">\n<abandonado: " + abandonado() + ">\n";   
+        Salida.volcarLinea("> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
+                         ">\n<abandonado: " + abandonado() + ">\n" + "\n");
+        return(mostrar);
+    }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
     }
     
         /*Funcionalidad */
@@ -346,24 +388,6 @@ public class CiclistaExperimentado implements Ciclista
             r = new Resultado(e, energia - tiempo);
         }
         resultados.add(r);
-    }
-    
-    /**
-     * Shows on screen all information about CiclistaExperimentado class
-     * 
-     * @param
-     * @return
-     */
-    public void mostrar()
-    {
-        //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
-        System.out.print("<CiclistaExperimentado: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:");
-        Salida.volcarLinea("<CiclistaExperimentado: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:" + "\n");
-        habilidad.mostrar(); 
-        System.out.print("> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         ">\n<abandonado:" + abandonado() + ">\n");   
-        Salida.volcarLinea("> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         ">\n<abandonado:" + abandonado() + ">\n" + "\n");
     }
     
      //Suma o resta popularidad segun el tiempo

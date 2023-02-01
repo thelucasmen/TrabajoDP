@@ -26,6 +26,7 @@ public class BicicletaRapida extends Bicicleta
         this.peso = peso;
         this.velocidadExtra = velocidadExtra;
     }
+    
     /**
      * Changes the value of the double variable velocidadExtra in BicicletaRapida class
      * 
@@ -52,13 +53,37 @@ public class BicicletaRapida extends Bicicleta
      * @param
      * @return
      */
-    public void mostrar() {
+    public String toString() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)> en etapa sencilla intermedia
-        System.out.print("<BicicletaRapida: " + nombre + "> <peso: ");
+        String mostrar = "<BicicletaRapida: " + nombre + "> <peso: ";
         Salida.volcarLinea("<BicicletaRapida: " + nombre + "> <peso: " + "\n");
-        peso.mostrar();
-        System.out.print("> <Velocidad Extra: " + velocidadExtra + ">");
+        mostrar += peso;
+        mostrar += "> <Velocidad Extra: " + velocidadExtra + ">";
         Salida.volcarLinea("> <Velocidad Extra: " + velocidadExtra + ">" + "\n");
+        return(mostrar);
+    }
+        
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
     }
     
         /*Funcionalidad */

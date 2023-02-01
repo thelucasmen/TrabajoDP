@@ -120,14 +120,16 @@ public class Equipo
     /**
      * 
      */
-    public void getCiclistas(){
+    public String getCiclistas(){
+        String mostrar = "";
         try{
             Iterator<Ciclista> itc = ciclistas.iterator();
             
             while (itc.hasNext()) {
-                itc.next().mostrar();
+                mostrar += itc.next();
             }
         }catch(NullPointerException e){ }
+        return(mostrar);
     }
     
     //Cuenta los ciclistas del equipo sin abandonar
@@ -151,28 +153,32 @@ public class Equipo
     /**
      * 
      */
-    public void getCiclistasAbandonados(){
+    public String getCiclistasAbandonados(){
+        String mostrar = "";
         try{
             Iterator<Ciclista> itca = ciclistasA.iterator();
             
             while (itca.hasNext()) {
-                itca.next().mostrar();
+                mostrar += itca.next();
             }
         }catch(NullPointerException e){ }
+        return(mostrar);
     }
     
     /**
      * 
      */
-    public void getBicicletas(){
+    public String getBicicletas(){
+        String mostrar = "";
         try{
             Iterator<Bicicleta> itb = bicicletas.iterator();
             
             while (itb.hasNext()) {
-                itb.next().mostrar();
-                System.out.print("\n");
+                mostrar += itb.next();
+                mostrar += "\n";
             }
         }catch(NullPointerException e){ }
+        return(mostrar);
     }
     
     //cuenta los ciclistas del equipo que han abandonado
@@ -193,27 +199,27 @@ public class Equipo
         return i;
     }
     
-        /*Funcionalidad */ 
     /**
      * Shows on screen all the information about Equipo class
      * 
      * @param
      * @return
      */    
-    public void mostrar(){
+    public String toString(){
         Iterator<Ciclista> itc = ciclistas.iterator();
         
         //%%% DSM WOMEN %%% Media Minutos de Ciclistas sin abandonar 0.0 %%%
         
-        System.out.println("%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                            String.format("%.2f", mediatiempoSinA()) + "%%%");
+        String mostrar = "%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
+                            String.format("%.2f", mediatiempoSinA()) + "%%%";
         Salida.volcarLinea("%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
                             String.format("%.2f", mediatiempoSinA()) + "%%%" + "\n");
-        getCiclistas();
-        getCiclistasAbandonados();
-        System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
+        mostrar += getCiclistas();
+        mostrar += getCiclistasAbandonados();
+        mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
         Salida.volcarLinea("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" + "\n");
         
+        return(mostrar);
         /*Iterator<Bicicleta> itb = bicicletas.iterator();
         try{
             while (itb.hasNext()) {
@@ -221,6 +227,31 @@ public class Equipo
             }
         }catch(NullPointerException e){ }*/
     }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
+    }
+    
+        /*Funcionalidad */ 
     
     //Ordenar ciclistas segun criterio
     /**

@@ -41,7 +41,7 @@ LARGA(valor:225.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:
@@ -49,7 +49,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -63,7 +63,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -73,7 +73,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,7 +85,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:
@@ -93,7 +93,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -120,7 +120,7 @@ INTERMEDIA(valor:200.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:
@@ -128,7 +128,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -138,7 +138,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -148,7 +148,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:
@@ -156,7 +156,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:
@@ -164,7 +164,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -179,7 +179,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
@@ -201,7 +201,7 @@ PESADA(valor: 7.85)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
@@ -215,7 +215,7 @@ LIGERA(valor: 7.35)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
@@ -229,7 +229,7 @@ NORMAL(valor: 7.5)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
@@ -251,7 +251,7 @@ NORMAL(valor: 7.5)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
@@ -265,7 +265,7 @@ LIGERA(valor: 7.35)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 0,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
@@ -326,7 +326,7 @@ LARGA(valor:225.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 394,29>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 1010,00> <habilidad:
@@ -334,7 +334,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 135,00>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -344,7 +344,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 98,98>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -354,7 +354,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 282,60>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1118,53> <habilidad:
@@ -362,7 +362,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 2,94>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1040,76> <habilidad:
@@ -370,7 +370,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 134,24>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -385,7 +385,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 282,60>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
@@ -407,7 +407,7 @@ PESADA(valor: 7.85)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 394,29>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
@@ -421,7 +421,7 @@ LIGERA(valor: 7.35)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 135,00>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
@@ -435,7 +435,7 @@ NORMAL(valor: 7.5)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 134,24>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
@@ -457,7 +457,7 @@ NORMAL(valor: 7.5)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 98,98>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
@@ -471,7 +471,7 @@ LIGERA(valor: 7.35)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 2,94>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
@@ -532,7 +532,7 @@ INTERMEDIA(valor:200.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 837,87>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 858,13> <habilidad:
@@ -540,7 +540,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 286,88>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -550,7 +550,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 210,33>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -560,7 +560,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 600,52>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1116,87> <habilidad:
@@ -568,7 +568,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 6,26>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 889,73> <habilidad:
@@ -576,7 +576,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 285,27>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -591,7 +591,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 600,52>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
@@ -613,7 +613,7 @@ PESADA(valor: 7.85)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 837,87>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
@@ -627,7 +627,7 @@ LIGERA(valor: 7.35)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 286,88>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
@@ -641,7 +641,7 @@ NORMAL(valor: 7.5)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 285,27>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
@@ -663,7 +663,7 @@ NORMAL(valor: 7.5)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 210,33>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
@@ -677,7 +677,7 @@ LIGERA(valor: 7.35)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 6,26>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
@@ -738,7 +738,7 @@ LARGA(valor:225.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 1275,65>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 708,13> <habilidad:
@@ -746,7 +746,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 436,88>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -756,7 +756,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 320,28>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -766,7 +766,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 914,52>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1115,24> <habilidad:
@@ -774,7 +774,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 9,53>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 740,66> <habilidad:
@@ -782,7 +782,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 434,34>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -797,7 +797,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 914,52>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
@@ -819,7 +819,7 @@ PESADA(valor: 7.85)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 1275,65>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
@@ -833,7 +833,7 @@ LIGERA(valor: 7.35)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 436,88>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
@@ -847,7 +847,7 @@ NORMAL(valor: 7.5)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 434,34>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
@@ -869,7 +869,7 @@ NORMAL(valor: 7.5)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 320,28>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
@@ -883,7 +883,7 @@ LIGERA(valor: 7.35)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 9,53>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
@@ -944,7 +944,7 @@ INTERMEDIA(valor:200.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 1768,16>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 539,38> <habilidad:
@@ -952,7 +952,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 605,63>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -962,7 +962,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 443,97>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -972,7 +972,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 1267,77>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1113,40> <habilidad:
@@ -980,7 +980,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 13,21>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 572,96> <habilidad:
@@ -988,7 +988,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 602,04>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -1003,7 +1003,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 1267,77>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
@@ -1025,7 +1025,7 @@ PESADA(valor: 7.85)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: 1768,16>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: CANYON Ultimate CFR eTap> <peso: 
@@ -1039,7 +1039,7 @@ LIGERA(valor: 7.35)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 605,63>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
@@ -1053,7 +1053,7 @@ NORMAL(valor: 7.5)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 602,04>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
@@ -1075,7 +1075,7 @@ NORMAL(valor: 7.5)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 443,97>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
@@ -1089,7 +1089,7 @@ LIGERA(valor: 7.35)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 13,21>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
@@ -1150,7 +1150,7 @@ LARGA(valor:225.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: -14,68>
-<abandonado:true>
+<abandonado: true>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 374,38> <habilidad:
@@ -1158,7 +1158,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 770,63>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -1168,7 +1168,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 564,88>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -1178,7 +1178,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 1613,18>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1111,60> <habilidad:
@@ -1186,7 +1186,7 @@ NORMAL(valor:6.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 16,80>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 409,09> <habilidad:
@@ -1194,7 +1194,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 765,91>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -1209,7 +1209,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 1613,18>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: 
@@ -1231,7 +1231,7 @@ PESADA(valor: 7.85)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 770,63>
-<abandonado:false>
+<abandonado: false>
 
 
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: 
@@ -1245,7 +1245,7 @@ NORMAL(valor: 7.5)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 765,91>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: 
@@ -1267,7 +1267,7 @@ NORMAL(valor: 7.5)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 564,88>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: 
@@ -1281,7 +1281,7 @@ LIGERA(valor: 7.35)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 16,80>
-<abandonado:false>
+<abandonado: false>
 
 
 <BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: 
@@ -1447,7 +1447,7 @@ Carrera(compleja larga) - Tiempo: -225,69 minutos:
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 20,85>
-<abandonado:false>
+<abandonado: false>
 
 
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 224,73> <habilidad:
@@ -1455,7 +1455,7 @@ BUENA(valor:8.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 950,27>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -1472,7 +1472,7 @@ LENTA(valor:4.0)
 LENTA(valor:4.0)
 
 > <tiempo acumulado sin abandonar: -14,68>
-<abandonado:true>
+<abandonado: true>
 
 
 <CiclistaExperimentado: NORSGAARD> <energía: 188,75> <habilidad:
@@ -1480,7 +1480,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 956,25>
-<abandonado:false>
+<abandonado: false>
 
 
 BUENA(valor:8.0)
@@ -1497,7 +1497,7 @@ BUENA(valor:8.0)
 BUENA(valor:8.0)
 
 > <tiempo acumulado sin abandonar: 700,90>
-<abandonado:false>
+<abandonado: false>
 
 
 LENTA(valor:4.0)
@@ -1507,7 +1507,7 @@ LENTA(valor:4.0)
 NORMAL(valor:6.0)
 
 > <tiempo acumulado sin abandonar: 2001,75>
-<abandonado:false>
+<abandonado: false>
 
 
 

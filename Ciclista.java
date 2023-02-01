@@ -31,8 +31,11 @@ interface Ciclista
     public void setEquipo(Equipo e);
     public Equipo getEquipo();
     
-    public void mostrar();
+    public String toString();
 
+    public int hashCode();
+    public boolean equals(Object obj);
+    
     /***Funcionalidad***/
         //Cambiar la bicicleta
     public void cambiarBici(Bicicleta bicicleta);

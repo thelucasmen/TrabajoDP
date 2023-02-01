@@ -35,9 +35,10 @@ public enum Distancia{
         return distanciaEtapa;
     }
     
-    public void mostrar()    {
+    public String toString(){
         //Intermedia (valor:200.0)
-        System.out.print(catDistancia + "(valor:" + distanciaEtapa + ")");
+        String mostrar = catDistancia + "(valor:" + distanciaEtapa + ")";
         Salida.volcarLinea(catDistancia + "(valor:" + distanciaEtapa + ")" + "\n");
+        return(mostrar);
     }
 };

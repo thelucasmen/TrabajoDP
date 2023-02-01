@@ -73,7 +73,7 @@ public class CiclistaEstrella implements Ciclista
             Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
               it.next();
-              it.next().mostrar();
+              System.out.println(it.next());
             }   
         }catch(NullPointerException e){ }
         catch(NoSuchElementException e2){ }
@@ -101,6 +101,39 @@ public class CiclistaEstrella implements Ciclista
     
     public Equipo getEquipo(){
         return equipo;
+    }
+    
+    public String toString()
+    {
+        //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false> <popularidad: 6>
+        String mostrar = "<CiclistaEstrella: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:";
+        System.out.println(habilidad); 
+        mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
+                         ">\n<abandonado:" + abandonado() + "> <popularidad: " + getPopularidad() + ">\n";   
+        return(mostrar);             
+    }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
     }
     
         /*Funcionalidad */
@@ -224,15 +257,6 @@ public class CiclistaEstrella implements Ciclista
             r = new Resultado(e, energia - tiempo);
         }
         resultados.add(r);
-    }
-    
-    public void mostrar()
-    {
-        //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false> <popularidad: 6>
-        System.out.print("<CiclistaEstrella: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:");
-        habilidad.mostrar(); 
-        System.out.print("> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         ">\n<abandonado:" + abandonado() + "> <popularidad: " + getPopularidad() + ">\n");                
     }
     
     //Suma o resta popularidad segun el tiempo

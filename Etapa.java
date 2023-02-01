@@ -16,7 +16,6 @@ public class Etapa
     private Distancia distancia;
     private String nombre;
     private List<Ciclista> ciclistas;
-    
 
     /**
      * Constructor for objects of class Etapa
@@ -70,22 +69,48 @@ public class Etapa
         try{
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
-                itC.next().mostrar();
+                System.out.println(itC.next());
                 contador++;
             }
         }catch(NullPointerException e){ }
         return contador;
     }
-    
-    public void mostrar()
+        
+    public String toString()
     {
         //<etapa:sencilla intermedia> <dificultad:Sencilla (valor:0.9)> <distancia:Intermedia (valor:200.0)>
-        System.out.print("<etapa:" + nombre + "> <dificultad:");
-        dificultad.mostrar(); 
-        System.out.print("> <distancia:");
-        distancia.mostrar();
-        System.out.println(">"); 
+        String mostrar = "<etapa:" + nombre + "> <dificultad:";
+        mostrar += dificultad; 
+        mostrar += "> <distancia:";
+        mostrar += distancia;
+        mostrar += ">"; 
+        return(mostrar);
     }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
+    }
+    
+        /*Funcionalidad */ 
     
     //Recorre el listado de ciclistas y sus bicicletas
     public List<ResultadosCarrera> mostrarCiclistas(int contC, Etapa etapa, List<ResultadosCarrera> podio){
@@ -103,9 +128,9 @@ public class Etapa
                 if(!ciclista.abandonado()){
                     contCE++;
                     System.out.print("@@@ ciclista " + contCE + " de " + contC + "\n");
-                    ciclista.mostrar();
+                    System.out.println(ciclista);
                     System.out.print("Con bicicleta\n");
-                    ciclista.getBicicleta().mostrar();
+                    System.out.println(ciclista.getBicicleta());
                     tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
                     energiaPrevia = ciclista.getEnergia();
                     ciclista.funcionalidadCiclista(etapa, tiempo);
@@ -120,10 +145,10 @@ public class Etapa
                     } else {
                         System.out.printf("¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
                             String.format("%.2f",tiempo) + " minutos para terminar !!!\n" +
-                    	"¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
-                    	String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
-                    	"+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                    	String.format("%.2f",ciclista.getEnergia()) + " +++\n");
+                        "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
+                        String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
+                        "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
+                        String.format("%.2f",ciclista.getEnergia()) + " +++\n");
                     }
                     if(ciclista.esEstrella()){
                         ciclista.SerPopular(tiempo);
@@ -166,9 +191,9 @@ public class Etapa
             if(contCA > 0){
                 System.out.println("****************************************************\n" +
                                    "************** CICLISTAS QUE ABANDONARON **************\n" +
-        	                   "****************************************************");
-        	ciclistas.sort(new PuntosAnuladosComparator());
-        	itC = ciclistas.iterator();
+                               "****************************************************");
+            ciclistas.sort(new PuntosAnuladosComparator());
+            itC = ciclistas.iterator();
                 while (itC.hasNext()) {
                     ciclista = itC.next();
                     if(ciclista.abandonado()){

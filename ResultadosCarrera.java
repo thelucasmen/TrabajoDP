@@ -113,18 +113,41 @@ public class ResultadosCarrera
      * @param
      * @return
      */
-    public void mostrar(){
+    public String toString(){
+        String mostrar = "";
         if(abandonado){
-                    System.out.println("Nombre ciclista: " + nombre + "(abandonado)");
+            mostrar += "Nombre ciclista: " + nombre + "(abandonado)";
                     Salida.volcarLinea("Nombre ciclista: " + nombre + "(abandonado)"+"\n");
         } else {        
-            System.out.println("Nombre ciclista: " + nombre);
+            mostrar += "Nombre ciclista: " + nombre;
             Salida.volcarLinea("Nombre ciclista: " + nombre + "\n");
         }
-        System.out.println("Energia: " + energia);
-        Salida.volcarLinea("Energia: " + energia + "\n");
-        System.out.println("Resultado: ");
-        Salida.volcarLinea("Resultado: " + "\n");
-        resultado.mostrar();
+        mostrar += "Energia: " + energia + "\nResultado:";
+        Salida.volcarLinea("Energia: " + energia + "\nResultado: " + "\n");
+        mostrar += resultado;
+        return(mostrar);
+    }
+    
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
     }
 }

@@ -35,9 +35,10 @@ public enum Habilidad{
         return habilidadCiclista;
     }
     
-    public void mostrar(){
+    public String toString(){
         //Buena (valor:8.0)
-        System.out.print(catHabilidad + "(valor:" + habilidadCiclista + ")");
+        String mostrar = catHabilidad + "(valor:" + habilidadCiclista + ")";
         Salida.volcarLinea(catHabilidad + "(valor:" + habilidadCiclista + ")" + "\n");
+        return(mostrar);
     }
 };
