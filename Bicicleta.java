@@ -71,13 +71,35 @@ public class Bicicleta
     public String toString() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)>
         String mostrar = "<Bicicleta: " + nombre + "> <peso: ";
-        Salida.volcarLinea("<Bicicleta: " + nombre + "> <peso: " + "\n");
         mostrar += peso;
         mostrar += ">";
-        Salida.volcarLinea(">" + "\n");
+        
+        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     
+        public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
+        return result;
+    }
+     
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Etapa other = (Etapa) obj;
+        if (other.getNombre() == null) {
+            if (other.getNombre() != null)
+                return false;
+            } else if (!other.getNombre().equals(other.getNombre()))
+                return false;
+        return true;
+    }    
         /*Funcionalidad */
     //habilidad*100/(peso*dificultad)
     /**
@@ -101,28 +123,5 @@ public class Bicicleta
         //System.out.println(etapa.getDistancia().getDistanciaEtapa()+"/"+calcularVelocidad(ciclista, etapa)+"*"+60);
         return etapa.getDistancia().getDistanciaEtapa()/calcularVelocidad(ciclista, etapa)*60;
          
-    }
-    
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
-        return result;
-    }
-     
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Etapa other = (Etapa) obj;
-        if (other.getNombre() == null) {
-            if (other.getNombre() != null)
-                return false;
-            } else if (!other.getNombre().equals(other.getNombre()))
-                return false;
-        return true;
     }
 }

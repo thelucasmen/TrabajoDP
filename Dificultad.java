@@ -6,9 +6,9 @@
  * @version (9.12.22)
  */
 public enum Dificultad{
-    SENCILLA("SENCILLA", 0.9),
-    NORMAL("NORMAL", 1.0),
-    COMPLEJA("COMPLEJA", 1.1);
+    SENCILLA("Sencilla", 0.9),
+    NORMAL("Normal", 1.0),
+    COMPLEJA("Compleja", 1.1);
     
     private String catDificultad;
     private double dificultadEtapa;
@@ -37,8 +37,7 @@ public enum Dificultad{
     
     public String toString(){
         //Sencilla (valor:0.9)
-        String mostrar = catDificultad + "(valor:" + dificultadEtapa + ")";
-        Salida.volcarLinea(catDificultad + "(valor:" + dificultadEtapa + ")" + "\n");
+        String mostrar = catDificultad + " (valor:" + dificultadEtapa + ")";
         return(mostrar);
     }
 };

@@ -78,7 +78,8 @@ public class Resultado
     public String toString(){
         //Carrera(sencilla intermedia) - Tiempo: 2.12 minutos
         String mostrar = "Carrera(" + etapa.getNombre() + ") - Tiempo: " + String.format("%.2f",tiempo) + " minutos: ";
-        Salida.volcarLinea("Carrera(" + etapa.getNombre() + ") - Tiempo: " + String.format("%.2f",tiempo) + " minutos: " + "\n");
+        
+        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     

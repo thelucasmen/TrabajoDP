@@ -212,13 +212,11 @@ public class Equipo
         
         String mostrar = "%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
                             String.format("%.2f", mediatiempoSinA()) + "%%%";
-        Salida.volcarLinea("%%% " + nombre + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                            String.format("%.2f", mediatiempoSinA()) + "%%%" + "\n");
         mostrar += getCiclistas();
         mostrar += getCiclistasAbandonados();
         mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
-        Salida.volcarLinea("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%" + "\n");
         
+        Salida.volcarLinea(mostrar);
         return(mostrar);
         /*Iterator<Bicicleta> itb = bicicletas.iterator();
         try{
@@ -294,7 +292,7 @@ public class Equipo
                 ciclistas.sort(new ReverseTiempoComparator());                 
                 break;
             case 10:
-                ciclistas.sort(new ReverseDestrezaComparator());                 
+                //ciclistas.sort(reverse, new DestrezaComparator());    //??             
                 break;
             case 11:
                 ciclistas.sort(new ReverseHabilidadComparator());                 

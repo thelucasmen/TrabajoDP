@@ -84,6 +84,7 @@ public class Etapa
         mostrar += "> <distancia:";
         mostrar += distancia;
         mostrar += ">"; 
+        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     

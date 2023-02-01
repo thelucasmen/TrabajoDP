@@ -117,14 +117,13 @@ public class ResultadosCarrera
         String mostrar = "";
         if(abandonado){
             mostrar += "Nombre ciclista: " + nombre + "(abandonado)";
-                    Salida.volcarLinea("Nombre ciclista: " + nombre + "(abandonado)"+"\n");
         } else {        
             mostrar += "Nombre ciclista: " + nombre;
-            Salida.volcarLinea("Nombre ciclista: " + nombre + "\n");
         }
         mostrar += "Energia: " + energia + "\nResultado:";
-        Salida.volcarLinea("Energia: " + energia + "\nResultado: " + "\n");
         mostrar += resultado;
+        
+        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     

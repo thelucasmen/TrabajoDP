@@ -6,9 +6,9 @@
  * @version (9.12.22)
  */
 public enum Distancia{
-    CORTA("CORTA", 150.0),
-    INTERMEDIA("INTERMEDIA", 200.0),
-    LARGA("LARGA", 225.0);
+    CORTA("Corta", 150.0),
+    INTERMEDIA("Intermedia", 200.0),
+    LARGA("Larga", 225.0);
     
     private String catDistancia;
     private double distanciaEtapa;
@@ -37,8 +37,7 @@ public enum Distancia{
     
     public String toString(){
         //Intermedia (valor:200.0)
-        String mostrar = catDistancia + "(valor:" + distanciaEtapa + ")";
-        Salida.volcarLinea(catDistancia + "(valor:" + distanciaEtapa + ")" + "\n");
+        String mostrar = catDistancia + " (valor:" + distanciaEtapa + ")";
         return(mostrar);
     }
 };

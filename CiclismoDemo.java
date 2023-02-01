@@ -16,11 +16,19 @@ public class CiclismoDemo
         HashSet<Etapa> etapas = new HashSet<Etapa>();
         HashMap<String, Equipo> equipos = new HashMap<String, Equipo>();
         List<Ciclista> ciclistasCarrera = new ArrayList<Ciclista>();
-        
+       
+        Salida.volcarLinea("*********************************************************************************************************");
+ 
         Organizacion organizacion=new Organizacion("OrganizacionPrueba", etapas, equipos, ciclistasCarrera);
-        //Descomentar de las dos líneas siguientes, la prueba que se quiera ejecutar
-            //DatosCampeonatoCompletoFinal initdata = new DatosCampeonatoCompletoFinal(organizacion);
-            DatosCampeonatoAbandonosFinal initdata = new DatosCampeonatoAbandonosFinal(organizacion); 
+        //Descomentar de las líneas siguientes, la prueba que se quiera ejecutar
+        
+        /**DatosCampeonatoFinal**/
+            //Salida.volcarLinea("*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETANDOSE TODAS LAS CARRERAS");
+                //DatosCampeonatoCompletoFinal initdata = new DatosCampeonatoCompletoFinal(organizacion); 
+                
+        /**DatosCampeonatoAbandonosFinal**/
+            Salida.volcarLinea("*****************ESTA SIMULACIÓN CONCLUYE NORMALMENTE COMPLETANDOSE TODAS LAS CARRERAS  PERO CON ABANDONOS");
+                DatosCampeonatoAbandonosFinal initdata = new DatosCampeonatoAbandonosFinal(organizacion); 
             
         organizacion.gestionarCarrera();
         

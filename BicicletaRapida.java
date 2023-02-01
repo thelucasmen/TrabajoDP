@@ -56,10 +56,10 @@ public class BicicletaRapida extends Bicicleta
     public String toString() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)> en etapa sencilla intermedia
         String mostrar = "<BicicletaRapida: " + nombre + "> <peso: ";
-        Salida.volcarLinea("<BicicletaRapida: " + nombre + "> <peso: " + "\n");
         mostrar += peso;
         mostrar += "> <Velocidad Extra: " + velocidadExtra + ">";
-        Salida.volcarLinea("> <Velocidad Extra: " + velocidadExtra + ">" + "\n");
+        
+        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
         

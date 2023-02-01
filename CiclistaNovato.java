@@ -177,12 +177,11 @@ public class CiclistaNovato implements Ciclista
     {
         //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
         String mostrar = "<CiclistaNovato: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
-        Salida.volcarLinea("<CiclistaNovato: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:" + "\n");
-        mostrar += habilidad; 
+        mostrar += habilidad;
         mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
                          ">\n<abandonado: " + abandonado() + ">\n";       
-        Salida.volcarLinea("> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         ">\n<abandonado: " + abandonado() + ">\n" + "\n");
+
+        Salida.volcarLinea(mostrar);
         return(mostrar);
     }
     

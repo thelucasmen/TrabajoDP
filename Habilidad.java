@@ -6,9 +6,9 @@
  * @version (9.12.22)
  */
 public enum Habilidad{
-    LENTA("LENTA", 4.0),
-    NORMAL("NORMAL", 6.0),
-    BUENA("BUENA", 8.0);
+    LENTA("Lenta", 4.0),
+    NORMAL("Normal", 6.0),
+    BUENA("Buena", 8.0);
     
     private String catHabilidad;
     private double habilidadCiclista;
@@ -37,8 +37,7 @@ public enum Habilidad{
     
     public String toString(){
         //Buena (valor:8.0)
-        String mostrar = catHabilidad + "(valor:" + habilidadCiclista + ")";
-        Salida.volcarLinea(catHabilidad + "(valor:" + habilidadCiclista + ")" + "\n");
+        String mostrar = catHabilidad + " (valor:" + habilidadCiclista + ")";
         return(mostrar);
     }
 };
