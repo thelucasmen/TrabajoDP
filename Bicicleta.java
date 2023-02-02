@@ -10,7 +10,7 @@
 public class Bicicleta
 {
     // instance variables - replace the example below with your own
-    private String nombre;
+    String nombre;
     private Peso peso;
 
     /**
@@ -37,7 +37,7 @@ public class Bicicleta
      * 
      * @param Peso variable to set in Bicicleta
      * @return
-     */
+    */
     public void setPeso(Peso peso){
         this.peso = peso;
     }

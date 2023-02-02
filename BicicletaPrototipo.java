@@ -22,8 +22,6 @@ public class BicicletaPrototipo extends Bicicleta
     public BicicletaPrototipo(String nombre, Peso peso)
     {
         super(nombre, peso);
-        this.nombre = nombre;
-        this.peso = peso;
     }
     
     /**
@@ -39,31 +37,7 @@ public class BicicletaPrototipo extends Bicicleta
         mostrar += ">";
         
         return(mostrar);
-    }
-    
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
-        return result;
-    }
-     
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Etapa other = (Etapa) obj;
-        if (other.getNombre() == null) {
-            if (other.getNombre() != null)
-                return false;
-            } else if (!other.getNombre().equals(other.getNombre()))
-                return false;
-        return true;
-    }
-    
+    }    
         /*Funcionalidad */    
     //distancia/velocidad*destreza
     /**

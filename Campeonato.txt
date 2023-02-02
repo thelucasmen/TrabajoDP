@@ -20,7 +20,7 @@
 %%% DSM WOMEN %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
 
 <CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1160,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0>
 <CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,14 +28,14 @@
 
 <CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1200,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% TREK SEGAFREDO WOMEN %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
 
 <CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 1180,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ********************************************************************************************************
@@ -45,14 +45,14 @@
 ******************************** Ciclistas que van a competir en sencilla intermedia *******************************
 **********************************************************************************************************
 <CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1160,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0>
 <CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1200,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0>
 <CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 1180,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++ Comienza la carrera en sencilla intermedia ++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -64,17 +64,17 @@
 +++ La energía del ciclista WIEBES tras la carrera es 1048,70 +++
 @@@
 @@@ ciclista 2 de 9
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1200,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6> con bicicleta
-<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: PESADA(valor: 7.85)>en etapa sencilla intermedia
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista VAN VLEUTEN con la bicicleta CANYON Endurace CF SLX 9 Di2 alcanza una velocidad de 113,23 km/hora 
 +++ VAN VLEUTEN termina la etapa en 1,77 minutos +++
 +++ La energía del ciclista VAN VLEUTEN tras la carrera es 1198,23 +++
 @@@
-+++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 10 unidades
++++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 4 unidades
 @@@
 @@@ ciclista 3 de 9
 <CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false> con bicicleta
-<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.4>en etapa sencilla intermedia
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.4>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista SIERRA con la bicicleta CANYON Ultimate CFR eTap alcanza una velocidad de 60,87 km/hora 
 +++ SIERRA termina la etapa en 197,15 minutos +++
 +++ La energía del ciclista SIERRA tras la carrera es 912,85 +++
@@ -88,42 +88,42 @@
 @@@
 @@@ ciclista 5 de 9
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false> con bicicleta
-<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: NORMAL(valor: 7.5)> <Velocidad Extra: 0.5>en etapa sencilla intermedia
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.5>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista LONGO-BORGHINI con la bicicleta TREK Emonda SLR 9 eTap alcanza una velocidad de 89,39 km/hora 
 +++ LONGO-BORGHINI termina la etapa en 134,24 minutos +++
 +++ La energía del ciclista LONGO-BORGHINI tras la carrera es 1040,76 +++
 @@@
 @@@ ciclista 6 de 9
-<CiclistaEstrella: LIPPERT> <energía: 1160,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6> con bicicleta
-<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: NORMAL(valor: 7.5)>en etapa sencilla intermedia
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista LIPPERT con la bicicleta SCOTT CONTESSA ADDICT 15 alcanza una velocidad de 59,26 km/hora 
 +++ LIPPERT termina la etapa en 2,41 minutos +++
 +++ La energía del ciclista LIPPERT tras la carrera es 1157,59 +++
 @@@
-+++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 10 unidades
++++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 4 unidades
 @@@
 @@@ ciclista 7 de 9
 <CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false> con bicicleta
-<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.3>en etapa sencilla intermedia
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.3>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista LABOUS con la bicicleta SCOTT CONTESSA ADDICT eRIDE 15 alcanza una velocidad de 121,24 km/hora 
 +++ LABOUS termina la etapa en 98,98 minutos +++
 +++ La energía del ciclista LABOUS tras la carrera es 1051,02 +++
 @@@
 @@@ ciclista 8 de 9
 <CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false> con bicicleta
-<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: PESADA(valor: 7.85)>en etapa sencilla intermedia
+<BicicletaPrototipo: null> <peso: null>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista CORDON-RAGOT con la bicicleta TREK Domane SLR 9 eTap Gen 4 alcanza una velocidad de 113,23 km/hora 
 +++ CORDON-RAGOT termina la etapa en 1,47 minutos +++
 +++ La energía del ciclista CORDON-RAGOT tras la carrera es 1118,53 +++
 @@@
 @@@ ciclista 9 de 9
-<CiclistaEstrella: BALSAMO> <energía: 1180,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 6> con bicicleta
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 0,00> <abandonado:false> <popularidad: 0> con bicicleta
 <Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: LIGERA(valor: 7.35)>en etapa sencilla intermedia
 +++ Con estas condiciones el ciclista BALSAMO con la bicicleta TREK Madone SLR 9 eTap Gen 7 alcanza una velocidad de 60,47 km/hora 
 +++ BALSAMO termina la etapa en 198,45 minutos +++
 +++ La energía del ciclista BALSAMO tras la carrera es 981,55 +++
 @@@
-+++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: 5 unidades
++++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: -1 unidades
 @@@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ Clasificación final de la sencilla intermedia ++++++++++++++++++
@@ -144,86 +144,86 @@
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en sencilla larga *******************************
 **********************************************************************************************************
-<CiclistaExperimentado: LABOUS> <energía: 1051,02> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 98,98> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1157,59> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 4,82> <abandonado:false> <popularidad: 10>
-<CiclistaNovato: WIEBES> <energía: 1048,70> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 282,60> <abandonado: false>
-<CiclistaNovato: SIERRA> <energía: 912,85> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 394,29> <abandonado: false>
-<CiclistaExperimentado: NORSGAARD> <energía: 1010,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 135,00> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1198,23> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 3,53> <abandonado:false> <popularidad: 10>
-<CiclistaNovato: CORDON-RAGOT> <energía: 1118,53> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 2,94> <abandonado: false>
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1040,76> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 134,24> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 981,55> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 396,90> <abandonado:false> <popularidad: 5>
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 197,96> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 4,82> <abandonado:false> <popularidad: 4>
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 282,60> <abandonado: false>
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 394,29> <abandonado: false>
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 270,00> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 3,53> <abandonado:false> <popularidad: 4>
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 2,94> <abandonado: false>
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 268,49> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 396,90> <abandonado:false> <popularidad: -1>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++ Comienza la carrera en sencilla larga ++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @@@ ciclista 1 de 9
-<CiclistaNovato: WIEBES> <energía: 1048,70> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 282,60> <abandonado: false> con bicicleta
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 282,60> <abandonado: false> con bicicleta
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: PESADA(valor: 7.85)>en etapa sencilla larga
 +++ Con estas condiciones el ciclista WIEBES con la bicicleta SCOTT CONTESSA ADDICT RC 15 alcanza una velocidad de 84,93 km/hora 
 +++ WIEBES termina la etapa en 158,96 minutos +++
 +++ La energía del ciclista WIEBES tras la carrera es 889,74 +++
 @@@
 @@@ ciclista 2 de 9
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1198,23> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 3,53> <abandonado:false> <popularidad: 10> con bicicleta
-<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: PESADA(valor: 7.85)>en etapa sencilla larga
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 3,53> <abandonado:false> <popularidad: 4> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa sencilla larga
 +++ Con estas condiciones el ciclista VAN VLEUTEN con la bicicleta CANYON Endurace CF SLX 9 Di2 alcanza una velocidad de 113,23 km/hora 
 +++ VAN VLEUTEN termina la etapa en 1,99 minutos +++
 +++ La energía del ciclista VAN VLEUTEN tras la carrera es 1196,25 +++
 @@@
-+++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 14 unidades
++++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 8 unidades
 @@@
 @@@ ciclista 3 de 9
-<CiclistaNovato: SIERRA> <energía: 912,85> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 394,29> <abandonado: false> con bicicleta
-<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.4>en etapa sencilla larga
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 394,29> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.4>en etapa sencilla larga
 +++ Con estas condiciones el ciclista SIERRA con la bicicleta CANYON Ultimate CFR eTap alcanza una velocidad de 60,87 km/hora 
 +++ SIERRA termina la etapa en 221,79 minutos +++
 +++ La energía del ciclista SIERRA tras la carrera es 691,07 +++
 @@@
 @@@ ciclista 4 de 9
-<CiclistaExperimentado: NORSGAARD> <energía: 1010,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 135,00> <abandonado: false> con bicicleta
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 270,00> <abandonado: false> con bicicleta
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: NORMAL(valor: 7.5)>en etapa sencilla larga
 +++ Con estas condiciones el ciclista NORSGAARD con la bicicleta CANYON Aeroad CF SLX 8 Disc Di2 alcanza una velocidad de 88,89 km/hora 
 +++ NORSGAARD termina la etapa en 151,88 minutos +++
 +++ La energía del ciclista NORSGAARD tras la carrera es 858,13 +++
 @@@
 @@@ ciclista 5 de 9
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1040,76> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 134,24> <abandonado: false> con bicicleta
-<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: NORMAL(valor: 7.5)> <Velocidad Extra: 0.5>en etapa sencilla larga
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 268,49> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.5>en etapa sencilla larga
 +++ Con estas condiciones el ciclista LONGO-BORGHINI con la bicicleta TREK Emonda SLR 9 eTap alcanza una velocidad de 89,39 km/hora 
 +++ LONGO-BORGHINI termina la etapa en 151,03 minutos +++
 +++ La energía del ciclista LONGO-BORGHINI tras la carrera es 889,73 +++
 @@@
 @@@ ciclista 6 de 9
-<CiclistaEstrella: LIPPERT> <energía: 1157,59> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 4,82> <abandonado:false> <popularidad: 10> con bicicleta
-<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: NORMAL(valor: 7.5)>en etapa sencilla larga
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 4,82> <abandonado:false> <popularidad: 4> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa sencilla larga
 +++ Con estas condiciones el ciclista LIPPERT con la bicicleta SCOTT CONTESSA ADDICT 15 alcanza una velocidad de 59,26 km/hora 
 +++ LIPPERT termina la etapa en 2,71 minutos +++
 +++ La energía del ciclista LIPPERT tras la carrera es 1154,88 +++
 @@@
-+++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 14 unidades
++++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 8 unidades
 @@@
 @@@ ciclista 7 de 9
-<CiclistaExperimentado: LABOUS> <energía: 1051,02> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 98,98> <abandonado: false> con bicicleta
-<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.3>en etapa sencilla larga
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 197,96> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.3>en etapa sencilla larga
 +++ Con estas condiciones el ciclista LABOUS con la bicicleta SCOTT CONTESSA ADDICT eRIDE 15 alcanza una velocidad de 121,24 km/hora 
 +++ LABOUS termina la etapa en 111,35 minutos +++
 +++ La energía del ciclista LABOUS tras la carrera es 939,67 +++
 @@@
 @@@ ciclista 8 de 9
-<CiclistaNovato: CORDON-RAGOT> <energía: 1118,53> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 2,94> <abandonado: false> con bicicleta
-<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: PESADA(valor: 7.85)>en etapa sencilla larga
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 2,94> <abandonado: false> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa sencilla larga
 +++ Con estas condiciones el ciclista CORDON-RAGOT con la bicicleta TREK Domane SLR 9 eTap Gen 4 alcanza una velocidad de 113,23 km/hora 
 +++ CORDON-RAGOT termina la etapa en 1,66 minutos +++
 +++ La energía del ciclista CORDON-RAGOT tras la carrera es 1116,87 +++
 @@@
 @@@ ciclista 9 de 9
-<CiclistaEstrella: BALSAMO> <energía: 981,55> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 396,90> <abandonado:false> <popularidad: 5> con bicicleta
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 396,90> <abandonado:false> <popularidad: -1> con bicicleta
 <Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: LIGERA(valor: 7.35)>en etapa sencilla larga
 +++ Con estas condiciones el ciclista BALSAMO con la bicicleta TREK Madone SLR 9 eTap Gen 7 alcanza una velocidad de 60,47 km/hora 
 +++ BALSAMO termina la etapa en 223,26 minutos +++
 +++ La energía del ciclista BALSAMO tras la carrera es 758,29 +++
 @@@
-+++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: 4 unidades
++++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: -2 unidades
 @@@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ Clasificación final de la sencilla larga ++++++++++++++++++
@@ -244,86 +244,86 @@
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en normal intermedia *******************************
 **********************************************************************************************************
-<CiclistaExperimentado: LABOUS> <energía: 939,67> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 210,33> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1154,88> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 10,25> <abandonado:false> <popularidad: 14>
-<CiclistaNovato: WIEBES> <energía: 889,74> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 600,52> <abandonado: false>
-<CiclistaNovato: SIERRA> <energía: 691,07> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 837,87> <abandonado: false>
-<CiclistaExperimentado: NORSGAARD> <energía: 858,13> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 286,88> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1196,25> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 7,51> <abandonado:false> <popularidad: 14>
-<CiclistaNovato: CORDON-RAGOT> <energía: 1116,87> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 6,26> <abandonado: false>
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 889,73> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 285,27> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 758,29> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 843,41> <abandonado:false> <popularidad: 4>
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 420,66> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 10,25> <abandonado:false> <popularidad: 8>
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 600,52> <abandonado: false>
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 837,87> <abandonado: false>
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 573,75> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 7,51> <abandonado:false> <popularidad: 8>
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 6,26> <abandonado: false>
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 570,54> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 843,41> <abandonado:false> <popularidad: -2>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++ Comienza la carrera en normal intermedia ++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @@@ ciclista 1 de 9
-<CiclistaNovato: WIEBES> <energía: 889,74> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 600,52> <abandonado: false> con bicicleta
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 600,52> <abandonado: false> con bicicleta
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: PESADA(valor: 7.85)>en etapa normal intermedia
 +++ Con estas condiciones el ciclista WIEBES con la bicicleta SCOTT CONTESSA ADDICT RC 15 alcanza una velocidad de 76,43 km/hora 
 +++ WIEBES termina la etapa en 157,00 minutos +++
 +++ La energía del ciclista WIEBES tras la carrera es 732,74 +++
 @@@
 @@@ ciclista 2 de 9
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1196,25> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 7,51> <abandonado:false> <popularidad: 14> con bicicleta
-<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: PESADA(valor: 7.85)>en etapa normal intermedia
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 7,51> <abandonado:false> <popularidad: 8> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa normal intermedia
 +++ Con estas condiciones el ciclista VAN VLEUTEN con la bicicleta CANYON Endurace CF SLX 9 Di2 alcanza una velocidad de 101,91 km/hora 
 +++ VAN VLEUTEN termina la etapa en 1,96 minutos +++
 +++ La energía del ciclista VAN VLEUTEN tras la carrera es 1194,28 +++
 @@@
-+++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 18 unidades
++++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 12 unidades
 @@@
 @@@ ciclista 3 de 9
-<CiclistaNovato: SIERRA> <energía: 691,07> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 837,87> <abandonado: false> con bicicleta
-<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.4>en etapa normal intermedia
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 837,87> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.4>en etapa normal intermedia
 +++ Con estas condiciones el ciclista SIERRA con la bicicleta CANYON Ultimate CFR eTap alcanza una velocidad de 54,82 km/hora 
 +++ SIERRA termina la etapa en 218,89 minutos +++
 +++ La energía del ciclista SIERRA tras la carrera es 472,17 +++
 @@@
 @@@ ciclista 4 de 9
-<CiclistaExperimentado: NORSGAARD> <energía: 858,13> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 286,88> <abandonado: false> con bicicleta
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 573,75> <abandonado: false> con bicicleta
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: NORMAL(valor: 7.5)>en etapa normal intermedia
 +++ Con estas condiciones el ciclista NORSGAARD con la bicicleta CANYON Aeroad CF SLX 8 Disc Di2 alcanza una velocidad de 80,00 km/hora 
 +++ NORSGAARD termina la etapa en 150,00 minutos +++
 +++ La energía del ciclista NORSGAARD tras la carrera es 708,13 +++
 @@@
 @@@ ciclista 5 de 9
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 889,73> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 285,27> <abandonado: false> con bicicleta
-<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: NORMAL(valor: 7.5)> <Velocidad Extra: 0.5>en etapa normal intermedia
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 570,54> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.5>en etapa normal intermedia
 +++ Con estas condiciones el ciclista LONGO-BORGHINI con la bicicleta TREK Emonda SLR 9 eTap alcanza una velocidad de 80,50 km/hora 
 +++ LONGO-BORGHINI termina la etapa en 149,07 minutos +++
 +++ La energía del ciclista LONGO-BORGHINI tras la carrera es 740,66 +++
 @@@
 @@@ ciclista 6 de 9
-<CiclistaEstrella: LIPPERT> <energía: 1154,88> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 10,25> <abandonado:false> <popularidad: 14> con bicicleta
-<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: NORMAL(valor: 7.5)>en etapa normal intermedia
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 10,25> <abandonado:false> <popularidad: 8> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa normal intermedia
 +++ Con estas condiciones el ciclista LIPPERT con la bicicleta SCOTT CONTESSA ADDICT 15 alcanza una velocidad de 53,33 km/hora 
 +++ LIPPERT termina la etapa en 2,68 minutos +++
 +++ La energía del ciclista LIPPERT tras la carrera es 1152,20 +++
 @@@
-+++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 18 unidades
++++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 12 unidades
 @@@
 @@@ ciclista 7 de 9
-<CiclistaExperimentado: LABOUS> <energía: 939,67> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 210,33> <abandonado: false> con bicicleta
-<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.3>en etapa normal intermedia
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 420,66> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.3>en etapa normal intermedia
 +++ Con estas condiciones el ciclista LABOUS con la bicicleta SCOTT CONTESSA ADDICT eRIDE 15 alcanza una velocidad de 109,14 km/hora 
 +++ LABOUS termina la etapa en 109,95 minutos +++
 +++ La energía del ciclista LABOUS tras la carrera es 829,72 +++
 @@@
 @@@ ciclista 8 de 9
-<CiclistaNovato: CORDON-RAGOT> <energía: 1116,87> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 6,26> <abandonado: false> con bicicleta
-<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: PESADA(valor: 7.85)>en etapa normal intermedia
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 6,26> <abandonado: false> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa normal intermedia
 +++ Con estas condiciones el ciclista CORDON-RAGOT con la bicicleta TREK Domane SLR 9 eTap Gen 4 alcanza una velocidad de 101,91 km/hora 
 +++ CORDON-RAGOT termina la etapa en 1,64 minutos +++
 +++ La energía del ciclista CORDON-RAGOT tras la carrera es 1115,24 +++
 @@@
 @@@ ciclista 9 de 9
-<CiclistaEstrella: BALSAMO> <energía: 758,29> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 843,41> <abandonado:false> <popularidad: 4> con bicicleta
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 843,41> <abandonado:false> <popularidad: -2> con bicicleta
 <Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: LIGERA(valor: 7.35)>en etapa normal intermedia
 +++ Con estas condiciones el ciclista BALSAMO con la bicicleta TREK Madone SLR 9 eTap Gen 7 alcanza una velocidad de 54,42 km/hora 
 +++ BALSAMO termina la etapa en 220,50 minutos +++
 +++ La energía del ciclista BALSAMO tras la carrera es 537,79 +++
 @@@
-+++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: 3 unidades
++++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: -3 unidades
 @@@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ Clasificación final de la normal intermedia ++++++++++++++++++
@@ -344,86 +344,86 @@
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en normal larga *******************************
 **********************************************************************************************************
-<CiclistaExperimentado: LABOUS> <energía: 829,72> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 320,28> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1152,20> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 15,60> <abandonado:false> <popularidad: 18>
-<CiclistaNovato: WIEBES> <energía: 732,74> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 914,52> <abandonado: false>
-<CiclistaNovato: SIERRA> <energía: 472,17> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1275,65> <abandonado: false>
-<CiclistaExperimentado: NORSGAARD> <energía: 708,13> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 436,88> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1194,28> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 11,43> <abandonado:false> <popularidad: 18>
-<CiclistaNovato: CORDON-RAGOT> <energía: 1115,24> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 9,53> <abandonado: false>
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 740,66> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 434,34> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 537,79> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1284,41> <abandonado:false> <popularidad: 3>
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 640,56> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 15,60> <abandonado:false> <popularidad: 12>
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 914,52> <abandonado: false>
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1275,65> <abandonado: false>
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 873,75> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 11,43> <abandonado:false> <popularidad: 12>
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 9,53> <abandonado: false>
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 868,68> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 1284,41> <abandonado:false> <popularidad: -3>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++ Comienza la carrera en normal larga ++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @@@ ciclista 1 de 9
-<CiclistaNovato: WIEBES> <energía: 732,74> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 914,52> <abandonado: false> con bicicleta
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 914,52> <abandonado: false> con bicicleta
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: PESADA(valor: 7.85)>en etapa normal larga
 +++ Con estas condiciones el ciclista WIEBES con la bicicleta SCOTT CONTESSA ADDICT RC 15 alcanza una velocidad de 76,43 km/hora 
 +++ WIEBES termina la etapa en 176,62 minutos +++
 +++ La energía del ciclista WIEBES tras la carrera es 556,11 +++
 @@@
 @@@ ciclista 2 de 9
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1194,28> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 11,43> <abandonado:false> <popularidad: 18> con bicicleta
-<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: PESADA(valor: 7.85)>en etapa normal larga
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 11,43> <abandonado:false> <popularidad: 12> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa normal larga
 +++ Con estas condiciones el ciclista VAN VLEUTEN con la bicicleta CANYON Endurace CF SLX 9 Di2 alcanza una velocidad de 101,91 km/hora 
 +++ VAN VLEUTEN termina la etapa en 2,21 minutos +++
 +++ La energía del ciclista VAN VLEUTEN tras la carrera es 1192,08 +++
 @@@
-+++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 22 unidades
++++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 16 unidades
 @@@
 @@@ ciclista 3 de 9
-<CiclistaNovato: SIERRA> <energía: 472,17> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1275,65> <abandonado: false> con bicicleta
-<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.4>en etapa normal larga
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1275,65> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.4>en etapa normal larga
 +++ Con estas condiciones el ciclista SIERRA con la bicicleta CANYON Ultimate CFR eTap alcanza una velocidad de 54,82 km/hora 
 +++ SIERRA termina la etapa en 246,25 minutos +++
 +++ La energía del ciclista SIERRA tras la carrera es 225,92 +++
 @@@
 @@@ ciclista 4 de 9
-<CiclistaExperimentado: NORSGAARD> <energía: 708,13> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 436,88> <abandonado: false> con bicicleta
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 873,75> <abandonado: false> con bicicleta
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: NORMAL(valor: 7.5)>en etapa normal larga
 +++ Con estas condiciones el ciclista NORSGAARD con la bicicleta CANYON Aeroad CF SLX 8 Disc Di2 alcanza una velocidad de 80,00 km/hora 
 +++ NORSGAARD termina la etapa en 168,75 minutos +++
 +++ La energía del ciclista NORSGAARD tras la carrera es 539,38 +++
 @@@
 @@@ ciclista 5 de 9
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 740,66> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 434,34> <abandonado: false> con bicicleta
-<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: NORMAL(valor: 7.5)> <Velocidad Extra: 0.5>en etapa normal larga
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 868,68> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.5>en etapa normal larga
 +++ Con estas condiciones el ciclista LONGO-BORGHINI con la bicicleta TREK Emonda SLR 9 eTap alcanza una velocidad de 80,50 km/hora 
 +++ LONGO-BORGHINI termina la etapa en 167,70 minutos +++
 +++ La energía del ciclista LONGO-BORGHINI tras la carrera es 572,96 +++
 @@@
 @@@ ciclista 6 de 9
-<CiclistaEstrella: LIPPERT> <energía: 1152,20> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 15,60> <abandonado:false> <popularidad: 18> con bicicleta
-<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: NORMAL(valor: 7.5)>en etapa normal larga
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 15,60> <abandonado:false> <popularidad: 12> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa normal larga
 +++ Con estas condiciones el ciclista LIPPERT con la bicicleta SCOTT CONTESSA ADDICT 15 alcanza una velocidad de 53,33 km/hora 
 +++ LIPPERT termina la etapa en 3,01 minutos +++
 +++ La energía del ciclista LIPPERT tras la carrera es 1149,19 +++
 @@@
-+++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 22 unidades
++++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 16 unidades
 @@@
 @@@ ciclista 7 de 9
-<CiclistaExperimentado: LABOUS> <energía: 829,72> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 320,28> <abandonado: false> con bicicleta
-<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.3>en etapa normal larga
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 640,56> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.3>en etapa normal larga
 +++ Con estas condiciones el ciclista LABOUS con la bicicleta SCOTT CONTESSA ADDICT eRIDE 15 alcanza una velocidad de 109,14 km/hora 
 +++ LABOUS termina la etapa en 123,69 minutos +++
 +++ La energía del ciclista LABOUS tras la carrera es 706,03 +++
 @@@
 @@@ ciclista 8 de 9
-<CiclistaNovato: CORDON-RAGOT> <energía: 1115,24> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 9,53> <abandonado: false> con bicicleta
-<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: PESADA(valor: 7.85)>en etapa normal larga
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 9,53> <abandonado: false> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa normal larga
 +++ Con estas condiciones el ciclista CORDON-RAGOT con la bicicleta TREK Domane SLR 9 eTap Gen 4 alcanza una velocidad de 101,91 km/hora 
 +++ CORDON-RAGOT termina la etapa en 1,84 minutos +++
 +++ La energía del ciclista CORDON-RAGOT tras la carrera es 1113,40 +++
 @@@
 @@@ ciclista 9 de 9
-<CiclistaEstrella: BALSAMO> <energía: 537,79> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1284,41> <abandonado:false> <popularidad: 3> con bicicleta
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 1284,41> <abandonado:false> <popularidad: -3> con bicicleta
 <Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: LIGERA(valor: 7.35)>en etapa normal larga
 +++ Con estas condiciones el ciclista BALSAMO con la bicicleta TREK Madone SLR 9 eTap Gen 7 alcanza una velocidad de 54,42 km/hora 
 +++ BALSAMO termina la etapa en 248,06 minutos +++
 +++ La energía del ciclista BALSAMO tras la carrera es 289,73 +++
 @@@
-+++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: 2 unidades
++++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: -4 unidades
 @@@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ Clasificación final de la normal larga ++++++++++++++++++
@@ -444,87 +444,87 @@
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en compleja intermedia *******************************
 **********************************************************************************************************
-<CiclistaExperimentado: LABOUS> <energía: 706,03> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 443,97> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1149,19> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 21,63> <abandonado:false> <popularidad: 22>
-<CiclistaNovato: WIEBES> <energía: 556,11> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1267,77> <abandonado: false>
-<CiclistaNovato: SIERRA> <energía: 225,92> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1768,16> <abandonado: false>
-<CiclistaExperimentado: NORSGAARD> <energía: 539,38> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 605,63> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1192,08> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 15,85> <abandonado:false> <popularidad: 22>
-<CiclistaNovato: CORDON-RAGOT> <energía: 1113,40> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 13,21> <abandonado: false>
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 572,96> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 602,04> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 289,73> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1780,54> <abandonado:false> <popularidad: 2>
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 887,94> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 21,63> <abandonado:false> <popularidad: 16>
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1267,77> <abandonado: false>
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1768,16> <abandonado: false>
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1211,25> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 15,85> <abandonado:false> <popularidad: 16>
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 13,21> <abandonado: false>
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1204,08> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 1780,54> <abandonado:false> <popularidad: -4>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++ Comienza la carrera en compleja intermedia ++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @@@ ciclista 1 de 9
-<CiclistaNovato: WIEBES> <energía: 556,11> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1267,77> <abandonado: false> con bicicleta
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1267,77> <abandonado: false> con bicicleta
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: PESADA(valor: 7.85)>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista WIEBES con la bicicleta SCOTT CONTESSA ADDICT RC 15 alcanza una velocidad de 69,48 km/hora 
 +++ WIEBES termina la etapa en 172,70 minutos +++
 +++ La energía del ciclista WIEBES tras la carrera es 383,41 +++
 @@@
 @@@ ciclista 2 de 9
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1192,08> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 15,85> <abandonado:false> <popularidad: 22> con bicicleta
-<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: PESADA(valor: 7.85)>en etapa compleja intermedia
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 15,85> <abandonado:false> <popularidad: 16> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista VAN VLEUTEN con la bicicleta CANYON Endurace CF SLX 9 Di2 alcanza una velocidad de 92,65 km/hora 
 +++ VAN VLEUTEN termina la etapa en 2,16 minutos +++
 +++ La energía del ciclista VAN VLEUTEN tras la carrera es 1189,92 +++
 @@@
-+++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 26 unidades
++++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 20 unidades
 @@@
 @@@ ciclista 3 de 9
-<CiclistaNovato: SIERRA> <energía: 225,92> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1768,16> <abandonado: false> con bicicleta
-<BicicletaRapida: CANYON Ultimate CFR eTap> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.4>en etapa compleja intermedia
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1768,16> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.4>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista SIERRA con la bicicleta CANYON Ultimate CFR eTap alcanza una velocidad de 49,87 km/hora 
 +++ SIERRA termina la etapa en 240,60 minutos +++
 ¡¡¡ El ciclista SIERRA se quedó sin energia a falta de 240,60 minutos para terminar !!!
 ¡¡¡ En el momento de quedarse sin energia llevaba en carrera 225,92 minutos !!!
 +++ La energía del ciclista SIERRA tras la carrera es -14,68 +++
 @@@ ciclista 4 de 9
-<CiclistaExperimentado: NORSGAARD> <energía: 539,38> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 605,63> <abandonado: false> con bicicleta
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1211,25> <abandonado: false> con bicicleta
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: NORMAL(valor: 7.5)>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista NORSGAARD con la bicicleta CANYON Aeroad CF SLX 8 Disc Di2 alcanza una velocidad de 72,73 km/hora 
 +++ NORSGAARD termina la etapa en 165,00 minutos +++
 +++ La energía del ciclista NORSGAARD tras la carrera es 374,38 +++
 @@@
 @@@ ciclista 5 de 9
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 572,96> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 602,04> <abandonado: false> con bicicleta
-<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: NORMAL(valor: 7.5)> <Velocidad Extra: 0.5>en etapa compleja intermedia
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1204,08> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.5>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista LONGO-BORGHINI con la bicicleta TREK Emonda SLR 9 eTap alcanza una velocidad de 73,23 km/hora 
 +++ LONGO-BORGHINI termina la etapa en 163,87 minutos +++
 +++ La energía del ciclista LONGO-BORGHINI tras la carrera es 409,09 +++
 @@@
 @@@ ciclista 6 de 9
-<CiclistaEstrella: LIPPERT> <energía: 1149,19> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 21,63> <abandonado:false> <popularidad: 22> con bicicleta
-<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: NORMAL(valor: 7.5)>en etapa compleja intermedia
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 21,63> <abandonado:false> <popularidad: 16> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista LIPPERT con la bicicleta SCOTT CONTESSA ADDICT 15 alcanza una velocidad de 48,48 km/hora 
 +++ LIPPERT termina la etapa en 2,95 minutos +++
 +++ La energía del ciclista LIPPERT tras la carrera es 1146,24 +++
 @@@
-+++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 26 unidades
++++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 20 unidades
 @@@
 @@@ ciclista 7 de 9
-<CiclistaExperimentado: LABOUS> <energía: 706,03> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 443,97> <abandonado: false> con bicicleta
-<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.3>en etapa compleja intermedia
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 887,94> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.3>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista LABOUS con la bicicleta SCOTT CONTESSA ADDICT eRIDE 15 alcanza una velocidad de 99,25 km/hora 
 +++ LABOUS termina la etapa en 120,91 minutos +++
 +++ La energía del ciclista LABOUS tras la carrera es 585,12 +++
 @@@
 @@@ ciclista 8 de 9
-<CiclistaNovato: CORDON-RAGOT> <energía: 1113,40> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 13,21> <abandonado: false> con bicicleta
-<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: PESADA(valor: 7.85)>en etapa compleja intermedia
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 13,21> <abandonado: false> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista CORDON-RAGOT con la bicicleta TREK Domane SLR 9 eTap Gen 4 alcanza una velocidad de 92,65 km/hora 
 +++ CORDON-RAGOT termina la etapa en 1,80 minutos +++
 +++ La energía del ciclista CORDON-RAGOT tras la carrera es 1111,60 +++
 @@@
 @@@ ciclista 9 de 9
-<CiclistaEstrella: BALSAMO> <energía: 289,73> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 1780,54> <abandonado:false> <popularidad: 2> con bicicleta
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 1780,54> <abandonado:false> <popularidad: -4> con bicicleta
 <Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: LIGERA(valor: 7.35)>en etapa compleja intermedia
 +++ Con estas condiciones el ciclista BALSAMO con la bicicleta TREK Madone SLR 9 eTap Gen 7 alcanza una velocidad de 49,47 km/hora 
 +++ BALSAMO termina la etapa en 242,55 minutos +++
 +++ La energía del ciclista BALSAMO tras la carrera es 47,18 +++
 @@@
-+++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: 1 unidades
++++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: -5 unidades
 @@@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ Clasificación final de la compleja intermedia ++++++++++++++++++
@@ -545,80 +545,80 @@
 ********************************************************************************************************
 ******************************** Ciclistas que van a competir en compleja larga *******************************
 **********************************************************************************************************
-<CiclistaExperimentado: LABOUS> <energía: 585,12> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 564,88> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1146,24> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 27,52> <abandonado:false> <popularidad: 26>
-<CiclistaNovato: WIEBES> <energía: 383,41> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1613,18> <abandonado: false>
-<CiclistaNovato: SIERRA> <energía: -14,68> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: -14,68> <abandonado: true>
-<CiclistaExperimentado: NORSGAARD> <energía: 374,38> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 770,63> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1189,92> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 20,16> <abandonado:false> <popularidad: 26>
-<CiclistaNovato: CORDON-RAGOT> <energía: 1111,60> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 16,80> <abandonado: false>
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 409,09> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 765,91> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: 47,18> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 2265,64> <abandonado:false> <popularidad: 1>
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 1129,75> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 27,52> <abandonado:false> <popularidad: 20>
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1613,18> <abandonado: false>
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: -14,68> <abandonado: true>
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1541,25> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 20,16> <abandonado:false> <popularidad: 20>
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 16,80> <abandonado: false>
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1531,83> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 2265,64> <abandonado:false> <popularidad: -5>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++ Comienza la carrera en compleja larga ++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @@@ ciclista 1 de 8
-<CiclistaNovato: WIEBES> <energía: 383,41> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1613,18> <abandonado: false> con bicicleta
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1613,18> <abandonado: false> con bicicleta
 <Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: PESADA(valor: 7.85)>en etapa compleja larga
 +++ Con estas condiciones el ciclista WIEBES con la bicicleta SCOTT CONTESSA ADDICT RC 15 alcanza una velocidad de 69,48 km/hora 
 +++ WIEBES termina la etapa en 194,29 minutos +++
 +++ La energía del ciclista WIEBES tras la carrera es 189,13 +++
 @@@
 @@@ ciclista 2 de 8
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1189,92> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 20,16> <abandonado:false> <popularidad: 26> con bicicleta
-<BicicletaPrototipo: CANYON Endurace CF SLX 9 Di2> <peso: PESADA(valor: 7.85)>en etapa compleja larga
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 20,16> <abandonado:false> <popularidad: 20> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa compleja larga
 +++ Con estas condiciones el ciclista VAN VLEUTEN con la bicicleta CANYON Endurace CF SLX 9 Di2 alcanza una velocidad de 92,65 km/hora 
 +++ VAN VLEUTEN termina la etapa en 2,43 minutos +++
 +++ La energía del ciclista VAN VLEUTEN tras la carrera es 1187,49 +++
 @@@
-+++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 30 unidades
++++ La popularidad del ciclista VAN VLEUTEN ha aumentado y ahora su nivel de popularidad es de: 24 unidades
 @@@
 @@@ ciclista 3 de 8
-<CiclistaExperimentado: NORSGAARD> <energía: 374,38> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 770,63> <abandonado: false> con bicicleta
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1541,25> <abandonado: false> con bicicleta
 <Bicicleta: CANYON Aeroad CF SLX 8 Disc Di2> <peso: NORMAL(valor: 7.5)>en etapa compleja larga
 +++ Con estas condiciones el ciclista NORSGAARD con la bicicleta CANYON Aeroad CF SLX 8 Disc Di2 alcanza una velocidad de 72,73 km/hora 
 +++ NORSGAARD termina la etapa en 185,62 minutos +++
 +++ La energía del ciclista NORSGAARD tras la carrera es 188,75 +++
 @@@
 @@@ ciclista 4 de 8
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 409,09> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 765,91> <abandonado: false> con bicicleta
-<BicicletaRapida: TREK Emonda SLR 9 eTap> <peso: NORMAL(valor: 7.5)> <Velocidad Extra: 0.5>en etapa compleja larga
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1531,83> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.5>en etapa compleja larga
 +++ Con estas condiciones el ciclista LONGO-BORGHINI con la bicicleta TREK Emonda SLR 9 eTap alcanza una velocidad de 73,23 km/hora 
 +++ LONGO-BORGHINI termina la etapa en 184,36 minutos +++
 +++ La energía del ciclista LONGO-BORGHINI tras la carrera es 224,73 +++
 @@@
 @@@ ciclista 5 de 8
-<CiclistaEstrella: LIPPERT> <energía: 1146,24> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 27,52> <abandonado:false> <popularidad: 26> con bicicleta
-<BicicletaPrototipo: SCOTT CONTESSA ADDICT 15> <peso: NORMAL(valor: 7.5)>en etapa compleja larga
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 27,52> <abandonado:false> <popularidad: 20> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa compleja larga
 +++ Con estas condiciones el ciclista LIPPERT con la bicicleta SCOTT CONTESSA ADDICT 15 alcanza una velocidad de 48,48 km/hora 
 +++ LIPPERT termina la etapa en 3,31 minutos +++
 +++ La energía del ciclista LIPPERT tras la carrera es 1142,92 +++
 @@@
-+++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 30 unidades
++++ La popularidad del ciclista LIPPERT ha aumentado y ahora su nivel de popularidad es de: 24 unidades
 @@@
 @@@ ciclista 6 de 8
-<CiclistaExperimentado: LABOUS> <energía: 585,12> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 564,88> <abandonado: false> con bicicleta
-<BicicletaRapida: SCOTT CONTESSA ADDICT eRIDE 15> <peso: LIGERA(valor: 7.35)> <Velocidad Extra: 0.3>en etapa compleja larga
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 1129,75> <abandonado: false> con bicicleta
+<BicicletaRapida: null> <peso: null> <Velocidad Extra: 0.3>en etapa compleja larga
 +++ Con estas condiciones el ciclista LABOUS con la bicicleta SCOTT CONTESSA ADDICT eRIDE 15 alcanza una velocidad de 99,25 km/hora 
 +++ LABOUS termina la etapa en 136,02 minutos +++
 +++ La energía del ciclista LABOUS tras la carrera es 449,10 +++
 @@@
 @@@ ciclista 7 de 8
-<CiclistaNovato: CORDON-RAGOT> <energía: 1111,60> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 16,80> <abandonado: false> con bicicleta
-<BicicletaPrototipo: TREK Domane SLR 9 eTap Gen 4> <peso: PESADA(valor: 7.85)>en etapa compleja larga
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 16,80> <abandonado: false> con bicicleta
+<BicicletaPrototipo: null> <peso: null>en etapa compleja larga
 +++ Con estas condiciones el ciclista CORDON-RAGOT con la bicicleta TREK Domane SLR 9 eTap Gen 4 alcanza una velocidad de 92,65 km/hora 
 +++ CORDON-RAGOT termina la etapa en 2,02 minutos +++
 +++ La energía del ciclista CORDON-RAGOT tras la carrera es 1109,57 +++
 @@@
 @@@ ciclista 8 de 8
-<CiclistaEstrella: BALSAMO> <energía: 47,18> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 2265,64> <abandonado:false> <popularidad: 1> con bicicleta
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 2265,64> <abandonado:false> <popularidad: -5> con bicicleta
 <Bicicleta: TREK Madone SLR 9 eTap Gen 7> <peso: LIGERA(valor: 7.35)>en etapa compleja larga
 +++ Con estas condiciones el ciclista BALSAMO con la bicicleta TREK Madone SLR 9 eTap Gen 7 alcanza una velocidad de 49,47 km/hora 
 +++ BALSAMO termina la etapa en 272,87 minutos +++
 ¡¡¡ El ciclista BALSAMO se quedó sin energia a falta de 272,87 minutos para terminar !!!
 ¡¡¡ En el momento de quedarse sin energia llevaba en carrera 47,18 minutos !!!
 +++ La energía del ciclista BALSAMO tras la carrera es -225,69 +++
-+++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: 0 unidades
++++ La popularidad del ciclista BALSAMO ha disminuido y ahora su nivel de popularidad es de: -6 unidades
 @@@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ Clasificación final de la compleja larga ++++++++++++++++++
@@ -662,7 +662,7 @@ Carrera(normal larga) - Tiempo: 3,01 minutos:
 Carrera(compleja intermedia) - Tiempo: 2,95 minutos: 
 Carrera(compleja larga) - Tiempo: 3,31 minutos: 
 
-@@@ Posición(4): LABOUS - Tiempo Total: 700,90 @@@
+@@@ Posición(4): LABOUS - Tiempo Total: 1401,80 @@@
 Carrera(sencilla intermedia) - Tiempo: 98,98 minutos: 
 Carrera(sencilla larga) - Tiempo: 111,35 minutos: 
 Carrera(normal intermedia) - Tiempo: 109,95 minutos: 
@@ -670,7 +670,7 @@ Carrera(normal larga) - Tiempo: 123,69 minutos:
 Carrera(compleja intermedia) - Tiempo: 120,91 minutos: 
 Carrera(compleja larga) - Tiempo: 136,02 minutos: 
 
-@@@ Posición(5): LONGO-BORGHINI - Tiempo Total: 950,27 @@@
+@@@ Posición(5): LONGO-BORGHINI - Tiempo Total: 1900,54 @@@
 Carrera(sencilla intermedia) - Tiempo: 134,24 minutos: 
 Carrera(sencilla larga) - Tiempo: 151,03 minutos: 
 Carrera(normal intermedia) - Tiempo: 149,07 minutos: 
@@ -678,7 +678,7 @@ Carrera(normal larga) - Tiempo: 167,70 minutos:
 Carrera(compleja intermedia) - Tiempo: 163,87 minutos: 
 Carrera(compleja larga) - Tiempo: 184,36 minutos: 
 
-@@@ Posición(6): NORSGAARD - Tiempo Total: 956,25 @@@
+@@@ Posición(6): NORSGAARD - Tiempo Total: 1912,50 @@@
 Carrera(sencilla intermedia) - Tiempo: 135,00 minutos: 
 Carrera(sencilla larga) - Tiempo: 151,88 minutos: 
 Carrera(normal intermedia) - Tiempo: 150,00 minutos: 
@@ -713,28 +713,28 @@ Carrera(compleja larga) - Tiempo: -225,69 minutos:
 ****************************************************
 ******** CLASIFICACIÓN FINAL DE EQUIPOS *********
 ****************************************************
-@@@ Posición(1) Trek Segafredo Women con 485,56 minutos de media @@@
+@@@ Posición(1) Trek Segafredo Women con 960,70 minutos de media @@@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Trek Segafredo Women %%% Media Minutos de Ciclistas sin abandonar 485,56 %%%
+%%% Trek Segafredo Women %%% Media Minutos de Ciclistas sin abandonar 960,70 %%%
 
-<CiclistaNovato: CORDON-RAGOT> <energía: 1109,57> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 20,85> <abandonado: false>
-<CiclistaExperimentado: LONGO-BORGHINI> <energía: 224,73> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 950,27> <abandonado: false>
-<CiclistaEstrella: BALSAMO> <energía: -225,69> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: -225,69> <abandonado:true> <popularidad: 0>
+<CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 20,85> <abandonado: false>
+<CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1900,54> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: -225,69> <abandonado:true> <popularidad: -6>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@@@ Posición(2) Movistar Women con 490,64 minutos de media @@@
+@@@ Posición(2) Movistar Women con 968,76 minutos de media @@@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Movistar Women %%% Media Minutos de Ciclistas sin abandonar 490,64 %%%
+%%% Movistar Women %%% Media Minutos de Ciclistas sin abandonar 968,76 %%%
 
-<CiclistaNovato: SIERRA> <energía: -14,68> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: -14,68> <abandonado: true>
-<CiclistaExperimentado: NORSGAARD> <energía: 188,75> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 956,25> <abandonado: false>
-<CiclistaEstrella: VAN VLEUTEN> <energía: 1187,49> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 25,02> <abandonado:false> <popularidad: 30>
+<CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: -14,68> <abandonado: true>
+<CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 1912,50> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 25,02> <abandonado:false> <popularidad: 24>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@@@ Posición(3) DSM Women con 912,27 minutos de media @@@
+@@@ Posición(3) DSM Women con 1145,90 minutos de media @@@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% DSM Women %%% Media Minutos de Ciclistas sin abandonar 912,27 %%%
+%%% DSM Women %%% Media Minutos de Ciclistas sin abandonar 1145,90 %%%
 
-<CiclistaExperimentado: LABOUS> <energía: 449,10> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 700,90> <abandonado: false>
-<CiclistaEstrella: LIPPERT> <energía: 1142,92> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 34,15> <abandonado:false> <popularidad: 30>
-<CiclistaNovato: WIEBES> <energía: 189,13> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 2001,75> <abandonado: false>
+<CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 1401,80> <abandonado: false>
+<CiclistaEstrella: null> <energía: 0,00> <habilidad:null> <tiempo acumulado sin abandonar: 34,15> <abandonado:false> <popularidad: 24>
+<CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 2001,75> <abandonado: false>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -22,8 +22,6 @@ public class BicicletaRapida extends Bicicleta
     public BicicletaRapida(String nombre, Peso peso, double velocidadExtra)
     {       
         super(nombre, peso);
-        this.nombre = nombre;
-        this.peso = peso;
         this.velocidadExtra = velocidadExtra;
     }
     
@@ -60,29 +58,6 @@ public class BicicletaRapida extends Bicicleta
         mostrar += "> <Velocidad Extra: " + velocidadExtra + ">";
         
         return(mostrar);
-    }
-        
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getNombre() == null) ? 0 : getNombre().hashCode());
-        return result;
-    }
-     
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Etapa other = (Etapa) obj;
-        if (other.getNombre() == null) {
-            if (other.getNombre() != null)
-                return false;
-            } else if (!other.getNombre().equals(other.getNombre()))
-                return false;
-        return true;
     }
     
         /*Funcionalidad */
