@@ -35,7 +35,11 @@ public class CiclistaExperimentado extends Ciclista
 
     public CiclistaExperimentado(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
-       super(nombre, habilidad, energia, equipo);       
+       super(nombre, habilidad, energia, equipo);
+       this.nombre = nombre;
+       this.habilidad = habilidad;
+       this.energia = energia;
+       this.equipo = equipo;     
        resultados = new ArrayList();
     }
     

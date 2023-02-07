@@ -7,7 +7,7 @@ import java.util.*;
  * @author (Marcos Acedo Mejias, Daniel Barrantes Pulido, Lucas Mendez Fernandez) 
  * @version (9.12.22)
  */
-public class Ciclista implements CiclistaInterfaz
+abstract class Ciclista implements CiclistaInterfaz
 {
    // instance variables - replace the example below with your own
     private String nombre;
@@ -36,7 +36,7 @@ public class Ciclista implements CiclistaInterfaz
        this.habilidad = habilidad;
        this.energia = energia;
        this.equipo = equipo;          
-       resultados = new ArrayList();
+       //resultados = new ArrayList();
     }
     
     /**
