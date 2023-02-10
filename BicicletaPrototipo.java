@@ -22,6 +22,8 @@ public class BicicletaPrototipo extends Bicicleta
     public BicicletaPrototipo(String nombre, Peso peso)
     {
         super(nombre, peso);
+        this.nombre = nombre;
+        this.peso = peso;
     }
     
     /**

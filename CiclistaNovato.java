@@ -61,6 +61,7 @@ public class CiclistaNovato extends Ciclista
     }
         
         /*Funcionalidad */
+    
     //((habilidad del Ciclista + 2) / 120) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 2) / 120 * 10;

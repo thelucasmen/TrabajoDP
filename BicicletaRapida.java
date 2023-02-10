@@ -22,6 +22,8 @@ public class BicicletaRapida extends Bicicleta
     public BicicletaRapida(String nombre, Peso peso, double velocidadExtra)
     {       
         super(nombre, peso);
+        this.nombre = nombre;
+        this.peso = peso;
         this.velocidadExtra = velocidadExtra;
     }
     

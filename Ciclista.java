@@ -36,7 +36,7 @@ abstract class Ciclista implements CiclistaInterfaz
        this.habilidad = habilidad;
        this.energia = energia;
        this.equipo = equipo;          
-       //resultados = new ArrayList();
+       resultados = new ArrayList();
     }
     
     /**
