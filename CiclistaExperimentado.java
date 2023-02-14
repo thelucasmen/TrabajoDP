@@ -50,9 +50,13 @@ public class CiclistaExperimentado extends Ciclista
         //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
         String mostrar = "<CiclistaExperimentado: " + nombre + "> <energía: " + String.format("%.2f",energia) + "> <habilidad:";
         mostrar += habilidad;
-        mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         "> <abandonado: " + abandonado() + ">";   
-        
+        if(abandonado()){
+            mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",puntosAnulados()) + 
+                         "> <abandonado: " + abandonado() + ">"; 
+        } else {
+            mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
+                         "> <abandonado: " + abandonado() + ">"; 
+        }
         return(mostrar);
     }
     

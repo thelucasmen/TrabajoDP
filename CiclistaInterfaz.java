@@ -42,7 +42,7 @@ interface CiclistaInterfaz
         //Comprueba si el ciclista ha abandonado
     public boolean abandonado();
         //Muestra resultados de cualquier etapa
-    public Resultado mostrarResultados(Etapa e);
+    public double mostrarResultados();
         //Devuelve el numro de etapas
     public int numeroEtapas();
         //Devuelve el tiempo total acumulado entre los resultados

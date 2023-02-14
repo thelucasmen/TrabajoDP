@@ -178,9 +178,13 @@ abstract class Ciclista implements CiclistaInterfaz
         //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
         String mostrar = "<Ciclista: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
         mostrar += habilidad;
-        mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         "> <abandonado: " + abandonado() + ">";       
-
+        if(abandonado()){
+            mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",puntosAnulados()) + 
+                         "> <abandonado: " + abandonado() + ">"; 
+        } else {
+            mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
+                         "> <abandonado: " + abandonado() + ">"; 
+        }
         return(mostrar);
     }
     
@@ -242,18 +246,18 @@ abstract class Ciclista implements CiclistaInterfaz
      * @param Etapa variable to search for results
      * @return Resultado variable of the desired Etapa class in ArrayList
      */
-    public Resultado mostrarResultados(Etapa e){
-        //Busca una etapa concreta dentro del Array y devuelve la información del resultado de esa etapa, si no, devuelve null.
-        Resultado aux = null;
-        boolean enc = false;
-        int i = 0; 
+    public double mostrarResultados(){
+        Resultado r = null;
+        double tiempo = 0; 
         Iterator<Resultado> it = resultados.iterator();  
         
-        while (it.hasNext() && !enc) {
-            aux = it.next();
-            enc = true;
+        while (it.hasNext()) {
+            r = it.next();
+            if(r.getTiempo() > 0){
+                tiempo = r.getTiempo();
+            }
         }
-        return aux;
+        return tiempo;
     }
     
     //Devuelve el numro de etapas
