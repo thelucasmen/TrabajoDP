@@ -10,17 +10,17 @@ import java.util.*;
 abstract class Ciclista implements CiclistaInterfaz
 {
    // instance variables - replace the example below with your own
-    private String nombre;
-    private Bicicleta bicicleta;
-    private Habilidad habilidad;
-    private double energia;
-    private List resultados;
-    private Equipo equipo;
+    public String nombre;
+    public Bicicleta bicicleta;
+    public Habilidad habilidad;
+    public double energia;
+    public List resultados;
+    public Equipo equipo;
 
     /**
      * Constructor for objects of class Ciclista
      */
-    public Ciclista(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List resultados, Equipo equipo)
+    /*public Ciclista(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List resultados, Equipo equipo)
     {
        this.nombre = nombre;
        this.bicicleta = bicicleta;
@@ -28,7 +28,7 @@ abstract class Ciclista implements CiclistaInterfaz
        this.energia = energia;
        this.equipo = equipo;
        this.resultados = resultados;
-    }
+    }*/
     
     public Ciclista(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     { 
@@ -100,7 +100,6 @@ abstract class Ciclista implements CiclistaInterfaz
         try{
             Iterator<Resultado> it = resultados.iterator();     
             while(it.hasNext()) {
-              it.next();
                salida += it.next() + "\n";
             }   
         }catch(NullPointerException e){ }
@@ -177,7 +176,7 @@ abstract class Ciclista implements CiclistaInterfaz
     public String toString()
     {
         //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
-        String mostrar = "<CiclistaNovato: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
+        String mostrar = "<Ciclista: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
         mostrar += habilidad;
         mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
                          "> <abandonado: " + abandonado() + ">";       
@@ -306,7 +305,7 @@ abstract class Ciclista implements CiclistaInterfaz
             Iterator<Resultado> it = resultados.iterator();
             while (it.hasNext()) {
                 resultado = it.next();
-                tiempo = tiempo + it.next().getTiempo();
+                tiempo = tiempo + resultado.getTiempo();
             }
             tiempo = tiempo - getEnergia();
         }catch(NullPointerException e){ }
@@ -376,15 +375,14 @@ abstract class Ciclista implements CiclistaInterfaz
      */
     public void funcionalidadCiclista(Etapa e, double tiempo){
         Resultado r = null;
-        Bicicleta b = getBicicleta();
         setEnergia(energia - tiempo);
         //r = new Resultado(e, energia - tiempo);
-        if(getEnergia() != 0){
+        if(getEnergia() >= 0){
             r = new Resultado(e, tiempo);
         } else {
-            r = new Resultado(e, energia - tiempo);
+            r = new Resultado(e, energia);
         }   
-        resultados.add(r);
+        //resultados.add(r);
     }
     
     //Suma o resta popularidad segun el tiempo

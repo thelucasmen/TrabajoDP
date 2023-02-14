@@ -10,11 +10,11 @@
 public class BicicletaRapida extends Bicicleta
 {
     // instance variables - replace the example below with your own
-    private String nombre;
-    private Peso peso;
+    //private String nombre;
+    //private Peso peso;
     private double velocidadExtra;
-//    private Ciclista ciclista;
-//    private Etapa etapa;
+    //private Ciclista ciclista;
+    //private Etapa etapa;
 
     /**
      * Constructor for objects of class BicicletaRapida
@@ -22,8 +22,6 @@ public class BicicletaRapida extends Bicicleta
     public BicicletaRapida(String nombre, Peso peso, double velocidadExtra)
     {       
         super(nombre, peso);
-        this.nombre = nombre;
-        this.peso = peso;
         this.velocidadExtra = velocidadExtra;
     }
     

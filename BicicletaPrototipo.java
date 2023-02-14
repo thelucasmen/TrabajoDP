@@ -11,10 +11,10 @@
 public class BicicletaPrototipo extends Bicicleta
 {
     // instance variables - replace the example below with your own
-    private String nombre;
-    private Peso peso;
-//    private Ciclista ciclista;
-//    private Etapa etapa;
+    //private String nombre;
+    //private Peso peso;
+    //private Ciclista ciclista;
+    //private Etapa etapa;
 
     /**
      * Constructor for objects of class BicicletaPrototipo
@@ -22,8 +22,6 @@ public class BicicletaPrototipo extends Bicicleta
     public BicicletaPrototipo(String nombre, Peso peso)
     {
         super(nombre, peso);
-        this.nombre = nombre;
-        this.peso = peso;
     }
     
     /**
@@ -49,6 +47,6 @@ public class BicicletaPrototipo extends Bicicleta
      * @return double variable which is the distance divided by the multiplication of velocity and dexterity
      */
     public double calculartiempo(Ciclista ciclista, Etapa etapa) {
-        return etapa.getDistancia().getDistanciaEtapa()/calcularVelocidad(ciclista, etapa)*ciclista.calculaDestreza();
+        return etapa.getDistancia().getDistanciaEtapa()/(calcularVelocidad(ciclista, etapa)*ciclista.calculaDestreza());
     }
 }

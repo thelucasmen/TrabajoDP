@@ -1,15 +1,13 @@
 #BlueJ class context
 comment0.target=CiclistaNovato
 comment0.text=\r\n\ La\ clase\ ciclista\ novato\ es\ un\ complemento\ excluyente\ de\ la\ clase\ ciclista.\r\n\ Si\ un\ ciclista\ es\ novato,\ entonces\ no\ puede\ ser\ experimentado\ ni\ estrella.\r\n\ \r\n\ Contiene\ adem\u00E1s\ las\ operaciones\ basicas\ para\ interactuar\ con\ las\ otras\ clases\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
-comment1.params=nombre\ bicicleta\ habilidad\ energia\ resultados\ equipo
-comment1.target=CiclistaNovato(java.lang.String,\ Bicicleta,\ Habilidad,\ double,\ java.util.List,\ Equipo)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ciclista\r\n
-comment2.params=nombre\ habilidad\ energia\ equipo
-comment2.target=CiclistaNovato(java.lang.String,\ Habilidad,\ double,\ Equipo)
+comment1.params=nombre\ habilidad\ energia\ equipo
+comment1.target=CiclistaNovato(java.lang.String,\ Habilidad,\ double,\ Equipo)
+comment1.text=public\ CiclistaNovato(String\ nombre,\ Bicicleta\ bicicleta,\ Habilidad\ habilidad,\ double\ energia,\ List\ resultados,\ Equipo\ equipo)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ super(nombre,\ bicicleta,\ habilidad,\ energia,\ resultados,\ equipo);\r\n\ \ \ \ \ \ \ this.nombre\ \=\ nombre;\r\n\ \ \ \ \ \ \ this.bicicleta\ \=\ bicicleta;\r\n\ \ \ \ \ \ \ this.habilidad\ \=\ habilidad;\r\n\ \ \ \ \ \ \ this.energia\ \=\ energia;\r\n\ \ \ \ \ \ \ this.equipo\ \=\ equipo;\r\n\ \ \ \ \ \ \ this.resultados\ \=\ resultados;\r\n}
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Shows\ on\ screen\ all\ information\ about\ CiclistaNovato\ class\r\n\ \r\n\ @param\r\n\ @return\r\n
 comment3.params=
-comment3.target=java.lang.String\ toString()
-comment3.text=\r\n\ Shows\ on\ screen\ all\ information\ about\ CiclistaNovato\ class\r\n\ \r\n\ @param\r\n\ @return\r\n
-comment4.params=
-comment4.target=double\ calculaDestreza()
-comment4.text=Funcionalidad
-numComments=5
+comment3.target=double\ calculaDestreza()
+comment3.text=Funcionalidad
+numComments=4

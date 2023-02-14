@@ -12,17 +12,17 @@ import java.util.*;
 public class CiclistaExperimentado extends Ciclista
 {
     // instance variables - replace the example below with your own
-    private String nombre;
-    private Bicicleta bicicleta;
-    private Habilidad habilidad;
-    private double energia;
+    //private String nombre;
+    //private Bicicleta bicicleta;
+    //private Habilidad habilidad;
+    //private double energia;
     private List<Resultado> resultados;
-    private Equipo equipo;
+    //private Equipo equipo;
 
     /**
      * Constructor for objects of class CiclistaExperimentado
      */
-    public CiclistaExperimentado(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultados, Equipo equipo)
+    /*public CiclistaExperimentado(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultados, Equipo equipo)
     {
        super(nombre, bicicleta, habilidad, energia, resultados, equipo);
        this.nombre = nombre;
@@ -31,15 +31,11 @@ public class CiclistaExperimentado extends Ciclista
        this.energia = energia;
        this.equipo = equipo;
        this.resultados = resultados;
-    }
+    }*/
 
     public CiclistaExperimentado(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
-       super(nombre, habilidad, energia, equipo);
-       this.nombre = nombre;
-       this.habilidad = habilidad;
-       this.energia = energia;
-       this.equipo = equipo;     
+       super(nombre, habilidad, energia, equipo);    
        resultados = new ArrayList();
     }
     

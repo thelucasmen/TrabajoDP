@@ -120,16 +120,45 @@ public class Equipo
     /**
      * 
      */
-    public String getCiclistas(){
+    public String getCiclistas(Boolean end){
         String mostrar = "";
-        try{
-            Iterator<Ciclista> itc = ciclistas.iterator();
-            
-            while (itc.hasNext()) {
-                mostrar += itc.next() + "\n";
+        Ciclista c, auxC = null;
+        if(end){
+            switch(nombre){
+                case "Trek Segafredo Women":
+                    Collections.sort(ciclistas, Collections.reverseOrder(new EnergyComparator()));
+                    break;
+                case "Movistar Women":
+                    ciclistas.sort(new NameComparator());
+                    break;
+                case "DSM Women":
+                    Collections.sort(ciclistas, Collections.reverseOrder(new NameComparator()));
+                    break;
             }
-        }catch(NullPointerException e){ }
-        return mostrar;
+            try{
+                Iterator<Ciclista> itc = ciclistas.iterator();
+                
+                while (itc.hasNext()) {
+                    c = itc.next();
+                    if(nombre.equals("Movistar Women") && c.abandonado()){
+                        auxC = c;
+                    } else {
+                        mostrar += c + "\n";
+                    }
+                }
+                
+                if(nombre.equals("Movistar Women")){
+                    mostrar += auxC + "\n";
+                }
+            }catch(NullPointerException e){ }
+        } else {
+            Iterator<Ciclista> itc = ciclistas.iterator();
+                
+            while (itc.hasNext()) {
+                mostrar += itc.next() + "\n";       
+            }
+        }
+    return mostrar;
     }
     
     //Cuenta los ciclistas del equipo sin abandonar
@@ -212,7 +241,7 @@ public class Equipo
         String mostrar = "%%% " + nombre.toUpperCase() + " %%% Media Minutos de Ciclistas sin abandonar " + 
                             String.format("%.2f", mediatiempoSinA()) + "%%%\n\n";
                             
-        mostrar += getCiclistas();
+        mostrar += getCiclistas(false);
         mostrar += getCiclistasAbandonados();
         mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
             
@@ -287,7 +316,7 @@ public class Equipo
             case 8:                
                 Collections.sort(ciclistas, Collections.reverseOrder(new EnergyComparator()));
                 break;
-            case 9:
+            case 9: 
                 Collections.sort(ciclistas, Collections.reverseOrder(new TiempoComparator()));
                 break;
             case 10:
@@ -377,6 +406,8 @@ public class Equipo
         Ciclista ciclista;
         while (it.hasNext()) {
             ciclista = it.next();
+            String nombre = ciclista.getNombre();
+            double energia = ciclista.getEnergia();
             if(ciclista.getEnergia() > 0){
                 tiempoAc = tiempoAc + ciclista.tiempoAcumulado();
                 contCiclistas++;
@@ -393,26 +424,102 @@ public class Equipo
      * @param Etapa class to copy the information to
      * @return
      */
-    public String enviarCiclistas(Etapa etapa){   
+    public String enviarCiclistas(Etapa etapa, int nEtapa){   
         String salida = "";
         try{  
             Iterator<Ciclista> itc = ciclistas.iterator();
             Iterator<Bicicleta> itb = bicicletas.iterator();
             Ciclista ciclista;
-            Bicicleta bicicleta;
+            Bicicleta bicicleta, bicicletaAux;
             int cont = 0;
+            
             while (itb.hasNext() && itc.hasNext()) {
                 ciclista = itc.next();
                 bicicleta = itb.next();
                 ciclista.setBicicleta(bicicleta);
             }
-               
+                   
             itc = ciclistas.iterator();
             while (itc.hasNext()) {
                 ciclista = itc.next();
                 etapa.setCiclista(ciclista);
-                salida += ciclista + "\n";
+                    //salida += ciclista + "\n";
             }
+            
+            /*excepciones*/
+            itc = ciclistas.iterator();
+            itb = bicicletas.iterator();
+            if((nEtapa == 2 || nEtapa == 5) && nombre.equals("DSM Women")){
+                bicicletaAux = itb.next();
+                while (itc.hasNext()) {
+                    ciclista = itc.next();
+                    if(itb.hasNext()){
+                        bicicleta = itb.next();
+                        ciclista.setBicicleta(bicicleta);
+                    } else {
+                        ciclista.setBicicleta(bicicletaAux);
+                    }
+                } 
+            }
+            
+            if((nEtapa == 3 || nEtapa == 4 || nEtapa == 6) && nombre.equals("DSM Women")){
+                bicicletaAux = itb.next();
+                while (itc.hasNext()) {
+                    ciclista = itc.next();
+                    itb = bicicletas.iterator();
+                    switch(ciclista.getNombre()){
+                       case "WIEBES":
+                           while(itb.hasNext()){
+                               bicicleta = itb.next();
+                               if(bicicleta.getNombre().equals("SCOTT CONTESSA ADDICT eRIDE 15")){
+                                   ciclista.setBicicleta(bicicleta);
+                               }
+                           }
+                           break;
+                       case "LABOUS":
+                           while(itb.hasNext()){
+                               bicicleta = itb.next();
+                               if(bicicleta.getNombre().equals("SCOTT CONTESSA ADDICT RC 15")){
+                                   ciclista.setBicicleta(bicicleta);
+                               }
+                            }
+                           break;
+                    case "LIPPERT":
+                           while(itb.hasNext()){
+                               bicicleta = itb.next();
+                               if(bicicleta.getNombre().equals("SCOTT CONTESSA ADDICT 15")){
+                                   ciclista.setBicicleta(bicicleta);
+                               }
+                            }
+                           break;
+                    }
+                } 
+            }
+            
+            if(nEtapa == 6 && nombre.equals("Movistar Women")){
+                while (itc.hasNext()) {
+                    ciclista = itc.next();
+                    itb = bicicletas.iterator();
+                    switch(ciclista.getNombre()){
+                       case "NORSGAARD":
+                           while(itb.hasNext()){
+                               bicicleta = itb.next();
+                               if(bicicleta.getNombre().equals("CANYON Ultimate CFR eTap")){
+                                   ciclista.setBicicleta(bicicleta);
+                               }
+                           }
+                           break;
+                       case "VAN VLEUTEN":
+                           while(itb.hasNext()){
+                               bicicleta = itb.next();
+                               if(bicicleta.getNombre().equals("CANYON Aeroad CF SLX 8 Disc Di2")){
+                                   ciclista.setBicicleta(bicicleta);
+                               }
+                            }
+                           break;
+                    }
+                }
+            } /*fin excepciones*/ 
         } catch(NullPointerException e){ }
         return salida;
     }
@@ -448,7 +555,7 @@ public class Equipo
         Resultado r = null;
         ResultadosCarrera resultadosCarrera = null;
         
-        getCiclistas();
+        getCiclistas(false);
         System.out.println("Ciclistas: ");
         while (itc.hasNext()) {
             System.out.println(itc.next());

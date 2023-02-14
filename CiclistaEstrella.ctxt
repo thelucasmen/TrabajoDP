@@ -1,22 +1,20 @@
 #BlueJ class context
 comment0.target=CiclistaEstrella
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ CiclistaEstrella\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=nombre\ bicicleta\ habilidad\ energia\ resultados\ equipo
-comment1.target=CiclistaEstrella(java.lang.String,\ Bicicleta,\ Habilidad,\ double,\ java.util.List,\ Equipo)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ciclista\r\n
-comment2.params=nombre\ habilidad\ energia\ equipo
-comment2.target=CiclistaEstrella(java.lang.String,\ Habilidad,\ double,\ Equipo)
-comment3.params=popularidad
-comment3.target=void\ setPopularidad(int)
+comment1.params=nombre\ habilidad\ energia\ equipo
+comment1.target=CiclistaEstrella(java.lang.String,\ Habilidad,\ double,\ Equipo)
+comment1.text=public\ CiclistaEstrella(String\ nombre,\ Bicicleta\ bicicleta,\ Habilidad\ habilidad,\ double\ energia,\ List<Resultado>\ resultados,\ Equipo\ equipo)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ super(nombre,\ bicicleta,\ habilidad,\ energia,\ resultados,\ equipo);\r\n\ \ \ \ \ \ \ this.nombre\ \=\ nombre;\r\n\ \ \ \ \ \ \ this.bicicleta\ \=\ bicicleta;\r\n\ \ \ \ \ \ \ this.habilidad\ \=\ habilidad;\r\n\ \ \ \ \ \ \ this.energia\ \=\ energia;\r\n\ \ \ \ \ \ \ this.equipo\ \=\ equipo;\r\n\ \ \ \ \ \ \ this.popularidad\ \=\ 6;\ \r\n\ \ \ \ \ \ \ this.resultados\ \=\ resultados;\r\n}
+comment2.params=popularidad
+comment2.target=void\ setPopularidad(int)
+comment3.params=
+comment3.target=int\ getPopularidad()
 comment4.params=
-comment4.target=int\ getPopularidad()
-comment5.params=
-comment5.target=java.lang.String\ toString()
-comment6.params=tiempo
-comment6.target=java.lang.String\ SerPopular(double)
-comment6.text=Funcionalidad
+comment4.target=java.lang.String\ toString()
+comment5.params=tiempo
+comment5.target=java.lang.String\ SerPopular(double)
+comment5.text=Funcionalidad
+comment6.params=
+comment6.target=double\ calculaDestreza()
 comment7.params=
-comment7.target=double\ calculaDestreza()
-comment8.params=
-comment8.target=boolean\ esEstrella()
-numComments=9
+comment7.target=boolean\ esEstrella()
+numComments=8

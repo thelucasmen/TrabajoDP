@@ -160,6 +160,7 @@ public class Organizacion
         Equipo equipoGanador = null;
         ResultadosCarrera resultadosCarrera = null;
         String salida = "";
+        String aux = "";
         boolean fin = false;
         int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
@@ -216,8 +217,9 @@ public class Organizacion
                 itEq = equiposOrdenadas.iterator();
                 while (itEq.hasNext()) {
                     equipo = itEq.next();
-                    salida += equipo.enviarCiclistas(etapa);
+                    equipo.enviarCiclistas(etapa, contE);
                 }
+                salida += etapa.getCiclistas();
                 contC = etapa.getCiclista();
                 salida += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                         "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
@@ -227,7 +229,7 @@ public class Organizacion
                 salida += etapa.salidaMostrarCiclistas(contC, etapa, podio);
                 
                 salida += "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
-                            "+++++++++++++++++ Clasificación final de la " + etapa.getNombre() + " ++++++++++++++++++\n" +
+                            "+++++++++++++++++ Clasificación final de la carrera en " + etapa.getNombre() + " ++++++++++++++++++\n" +
                             "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
                 podio.sort(new TiempoPodioComparator());
                 Iterator<ResultadosCarrera> itP = podio.iterator();
@@ -239,12 +241,12 @@ public class Organizacion
                         salida += "@@@ Posición(" + contPodio + "): " + resultadosCarrera.getNombre() + 
                             " - Tiempo: " + String.format("%.2f",resultadosCarrera.getResultado().getTiempo()) + " minutos @@@\n";
                     } else {
-                        salida += "¡¡¡ Ha abandonado " + resultadosCarrera.getNombre() + " - Tiempo: " + 
+                        aux = "¡¡¡ Ha abandonado " + resultadosCarrera.getNombre() + " - Tiempo: " + 
                             String.format("%.2f", resultadosCarrera.getResultado().getTiempo()) + 
                         " - Además ha abandonado para el resto del Campeonato !!!\n";
                     }
                 }                   
-                salida += "\n********************************************************************************************************\n";
+                salida += aux + "\n********************************************************************************************************\n";
                 if(contC == contCA || contC - contCA == 1) {
                     fin = true;
                 }
@@ -272,9 +274,9 @@ public class Organizacion
                 salida +=          "@@@ Posición(" + contE + ") " + equipo.getNombre() + 
                                    " con " + String.format("%.2f",equipo.mediatiempoSinA()) + " minutos de media @@@\n" +
                     "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
-                                   "%%% " + equipo.getNombre() + " %%% Media Minutos de Ciclistas sin abandonar " + 
-                                   String.format("%.2f",equipo.mediatiempoSinA()) + " %%%\n\n";  
-                salida += equipo.getCiclistas();
+                                   "%%% " + equipo.getNombre().toUpperCase()/*.charAt(0) + equipo.getNombre().substring(1, equipo.getNombre().length()).toLowerCase() */
+                                   + " %%% Media Minutos de Ciclistas sin abandonar " + String.format("%.2f",equipo.mediatiempoSinA()) + " %%%\n\n";  
+                salida += equipo.getCiclistas(true);
                 salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
             }
         }

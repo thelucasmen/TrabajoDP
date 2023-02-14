@@ -78,7 +78,24 @@ public class Etapa
         }catch(NullPointerException e){ }
         return contador;
     }
-        
+       
+    public String getCiclistas(){
+        String salida = "";
+        Ciclista ciclista;
+        Collections.sort(ciclistas, Collections.reverseOrder(new NameComparator()));
+        Collections.sort(ciclistas, Collections.reverseOrder(new TiempoComparator()));
+        try{
+            Iterator<Ciclista> itC = ciclistas.iterator();
+            while (itC.hasNext()) {  
+                ciclista = itC.next();
+                if(!ciclista.abandonado()){
+                    salida += ciclista + "\n";
+                }
+            }
+        }catch(NullPointerException e){ }
+        return salida;
+    }
+    
     public String toString()
     {
         //<etapa:sencilla intermedia> <dificultad:Sencilla (valor:0.9)> <distancia:Intermedia (valor:200.0)>
@@ -126,6 +143,7 @@ public class Etapa
         String salida = "";
         try{
             Collections.sort(ciclistas, Collections.reverseOrder(new NameComparator()));
+            Collections.sort(ciclistas, Collections.reverseOrder(new TiempoComparator()));
             Iterator<Ciclista> itC = ciclistas.iterator();
             while (itC.hasNext()) {
                 ciclista = itC.next();
@@ -135,23 +153,23 @@ public class Etapa
                     salida += ciclista + " con bicicleta\n";
                     salida += ciclista.getBicicleta();
                     tiempo = ciclista.getBicicleta().calculartiempo(ciclista, etapa);
-                    energiaPrevia = ciclista.getEnergia();
+                    energiaPrevia = ciclista.getEnergia(); 
                     ciclista.funcionalidadCiclista(etapa, tiempo);
                     salida += "en etapa " + etapa.getNombre() + "\n" +
                         "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
                         ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
-                        String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora \n" +
-                        "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n";
+                        String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++ \n";
                     if(!ciclista.abandonado()){
-                        salida += "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
+                        salida += "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n" +
+                            "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
                             String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n";
                     } else {
                         salida += "¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
-                            String.format("%.2f",tiempo) + " minutos para terminar !!!\n" +
+                            String.format("%.2f",ciclista.getEnergia()*(-1)) + " minutos para terminar !!!\n" +
                         "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
                         String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
                         "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                        String.format("%.2f",ciclista.getEnergia()) + " +++\n";
+                        String.format("%.2f",ciclista.getEnergia()) + " +++\n@@@\n";
                     }
                     if(ciclista.esEstrella()){
                         salida += ciclista.SerPopular(tiempo);

@@ -9,18 +9,18 @@ import java.util.*;
 public class CiclistaEstrella extends Ciclista 
 {
     // instance variables - replace the example below with your own
-    private String nombre;
-    private Bicicleta bicicleta;
-    private Habilidad habilidad;
-    private double energia;
+    //private String nombre;
+    //private Bicicleta bicicleta;
+    //private Habilidad habilidad;
+    //private double energia;
     private List<Resultado> resultados;
-    private Equipo equipo;
+    //private Equipo equipo;
     private int popularidad;
 
     /**
      * Constructor for objects of class Ciclista
      */
-    public CiclistaEstrella(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultados, Equipo equipo)
+    /*public CiclistaEstrella(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultados, Equipo equipo)
     {
        super(nombre, bicicleta, habilidad, energia, resultados, equipo);
        this.nombre = nombre;
@@ -30,15 +30,12 @@ public class CiclistaEstrella extends Ciclista
        this.equipo = equipo;
        this.popularidad = 6; 
        this.resultados = resultados;
-    }
+    }*/
     
     public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
        super(nombre, habilidad, energia, equipo); 
-       this.nombre = nombre;
-       this.habilidad = habilidad;
-       this.energia = energia;
-       this.equipo = equipo;       
+       this.popularidad = 6;
        resultados = new ArrayList();
     }
     
@@ -61,7 +58,7 @@ public class CiclistaEstrella extends Ciclista
         return(mostrar);             
     }
     
-        /*Funcionalidad */
+        /*Funcionalidad */        
     //Suma o resta popularidad segun el tiempo
     public String SerPopular(double tiempo){
         String salida = "";
@@ -72,9 +69,9 @@ public class CiclistaEstrella extends Ciclista
                          "@@@\n";
         } else {
             setPopularidad(getPopularidad()-1);
-            salida += "+++ La popularidad del ciclista " + getNombre() + 
+            salida += "--- La popularidad del ciclista " + getNombre() + 
                          " ha disminuido y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
-                         "@@@";
+                         "@@@\n";
         }
         return salida;
     }

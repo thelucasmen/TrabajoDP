@@ -12,17 +12,17 @@ import java.util.*;
 public class CiclistaNovato extends Ciclista
 {
    // instance variables - replace the example below with your own
-    private String nombre;
-    private Bicicleta bicicleta;
-    private Habilidad habilidad;
-    private double energia;
+    //private String nombre;
+    //private Bicicleta bicicleta;
+    //private Habilidad habilidad;
+    //private double energia;
     private List resultados;
-    private Equipo equipo;
+    //private Equipo equipo;
 
     /**
      * Constructor for objects of class Ciclista
      */
-    public CiclistaNovato(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List resultados, Equipo equipo)
+    /*public CiclistaNovato(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List resultados, Equipo equipo)
     {
        super(nombre, bicicleta, habilidad, energia, resultados, equipo);
        this.nombre = nombre;
@@ -31,15 +31,11 @@ public class CiclistaNovato extends Ciclista
        this.energia = energia;
        this.equipo = equipo;
        this.resultados = resultados;
-    }
+    }*/
     
     public CiclistaNovato(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
-       super(nombre, habilidad, energia, equipo); 
-       this.nombre = nombre;
-       this.habilidad = habilidad;
-       this.energia = energia;
-       this.equipo = equipo;            
+       super(nombre, habilidad, energia, equipo);          
        resultados = new ArrayList();
     }
     
@@ -60,8 +56,7 @@ public class CiclistaNovato extends Ciclista
         return(mostrar);
     }
         
-        /*Funcionalidad */
-    
+        /*Funcionalidad */        
     //((habilidad del Ciclista + 2) / 120) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 2) / 120 * 10;

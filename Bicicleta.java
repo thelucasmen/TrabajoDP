@@ -10,8 +10,8 @@
 public class Bicicleta
 {
     // instance variables - replace the example below with your own
-    String nombre;
-    private Peso peso;
+    public String nombre;
+    public Peso peso;
 
     /**
      * Constructor for objects of class Bicicleta

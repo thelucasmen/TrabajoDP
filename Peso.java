@@ -6,9 +6,9 @@
  * @version (9.12.22)
  */
 public enum Peso{
-    LIGERA("LIGERA", 7.35),
-    NORMAL("NORMAL", 7.50),
-    PESADA("PESADA", 7.85);
+    LIGERA("Ligera", 7.35),
+    NORMAL("Normal", 7.50),
+    PESADA("Pesada", 7.85);
     
     private String catPeso;
     private double pesoBici;
