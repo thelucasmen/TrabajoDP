@@ -14,25 +14,16 @@ public class Equipo
     // instance variables - replace the example below with your own
     private String nombre;
     private List<Ciclista> ciclistas;
-    private List<Ciclista> ciclistasA;
     private List<Bicicleta> bicicletas;
     
     /**
      * Constructor for objects of class Equipo
-     */
-    public Equipo(String nombre, List<Ciclista> ciclistas, List<Ciclista> ciclistasA, List<Bicicleta> bicicletas)
-    {    
-        this.nombre = nombre;
-        this.ciclistas = new ArrayList<Ciclista>();
-        this.ciclistasA = new ArrayList<Ciclista>();
-        this.bicicletas = new ArrayList<Bicicleta>();
-    }   
+     */ 
     
     public Equipo(String nombre, List<Ciclista> ciclistas, List<Bicicleta> bicicletas)
     {    
         this.nombre = nombre;
         this.ciclistas = new ArrayList<Ciclista>();
-        this.ciclistasA = new ArrayList<Ciclista>();
         this.bicicletas = new ArrayList<Bicicleta>();
     }
         
@@ -67,17 +58,6 @@ public class Equipo
     }
     
     /**
-     * Moves a certain Ciclista variable from ciclistas ArrayList to ciclistasA ArrayList
-     * 
-     * @param Ciclista variable in ciclistas
-     * @return
-     */
-    public void setCiclistaAbandonado(Ciclista ciclistaA){
-        borrarCiclista(ciclistaA);
-        this.ciclistasA.add(ciclistaA);
-    }
-    
-    /**
      * Adds a new Bicicleta element to the bicicletas ArrayList
      * 
      * @param Bicicleta variable to insert
@@ -95,16 +75,6 @@ public class Equipo
      */
     public void borrarCiclista(Ciclista ciclista){
         this.ciclistas.remove(ciclista);
-    }
-    
-    /**
-     * Removes a certain Ciclista element in ciclistasA ArrayList
-     * 
-     * @param Ciclista variable in ciclistasA
-     * @return
-     */
-    public void borrarCiclistaAbandonado(Ciclista ciclistaA){
-        this.ciclistasA.remove(ciclistaA);
     }
     
     /**
@@ -182,21 +152,6 @@ public class Equipo
     /**
      * 
      */
-    public String getCiclistasAbandonados(){
-        String mostrar = "";
-        try{
-            Iterator<Ciclista> itca = ciclistasA.iterator();
-            
-            while (itca.hasNext()) {
-                mostrar += itca.next() + "\n";
-            }
-        }catch(NullPointerException e){ }
-        return mostrar;
-    }
-    
-    /**
-     * 
-     */
     public String getBicicletas(){
         String mostrar = "";
         try{
@@ -208,24 +163,6 @@ public class Equipo
             }
         }catch(NullPointerException e){ }
         return(mostrar);
-    }
-    
-    //cuenta los ciclistas del equipo que han abandonado
-    /**
-     * Returns the amount of elements in ciclistasA ArrayList
-     * 
-     * @param
-     * @return int number representing the amount of elements in ciclistasA
-     */
-    public int contCiclistasAbandonados(){
-        Iterator<Ciclista> itca = ciclistasA.iterator();
-        int i = 0;
-        
-        while (itca.hasNext()) {
-            itca.next();
-            i++;
-        }        
-        return i;
     }
     
     /**
@@ -242,7 +179,6 @@ public class Equipo
                             String.format("%.2f", mediatiempoSinA()) + "%%%\n\n";
                             
         mostrar += getCiclistas(false);
-        mostrar += getCiclistasAbandonados();
         mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
             
         return mostrar;
@@ -268,7 +204,7 @@ public class Equipo
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Etapa other = (Etapa) obj;
+        Equipo other = (Equipo) obj;
         if (other.getNombre() == null) {
             if (other.getNombre() != null)
                 return false;
@@ -532,56 +468,7 @@ public class Equipo
      * @return
      */
     public void recogerCiclistas(Ciclista ciclista){
-        if(ciclista.getEnergia() > 0){
-            borrarCiclista(ciclista);
-            setCiclista(ciclista);
-        } else {
-            borrarCiclista(ciclista);
-            setCiclistaAbandonado(ciclista);
-        }
-    }
-    
-    //Se encarga de mostrar los datos del equipo durante la etapa
-    /**
-     * Shows on screen the information about stage results and returns those results as a ResultadosCarrera variable
-     * 
-     * @param Etapa class to recieve the info and boolean variable to know if it ended or not
-     * @return ResultadosCarrera variable with all the information printed
-     */
-    public ResultadosCarrera CaracterísticasCiclistas(Etapa etapa, boolean fin){
-        Iterator<Ciclista> itc = ciclistas.iterator();
-        double tiempo;
-        boolean abandonado = false;
-        Resultado r = null;
-        ResultadosCarrera resultadosCarrera = null;
-        
-        getCiclistas(false);
-        System.out.println("Ciclistas: ");
-        while (itc.hasNext()) {
-            System.out.println(itc.next());
-            Salida.volcarLinea(itc.next() + "\n");
-            System.out.println("Velocidad: " + itc.next().getBicicleta().calcularVelocidad(itc.next(), etapa));
-            Salida.volcarLinea("Velocidad: " + itc.next().getBicicleta().calcularVelocidad(itc.next(), etapa) + "\n");
-            
-            tiempo = itc.next().getBicicleta().calculartiempo(itc.next(), etapa);
-            r = new Resultado(etapa, tiempo);
-            itc.next().setResultado(r);
-            
-            if(itc.next().getEnergia() > 0){
-                System.out.println("Tiempo: " + tiempo);
-                Salida.volcarLinea("Tiempo: " + tiempo + "\n");
-            } else {
-                abandonado = true;
-                System.out.println("Energia: " + itc.next().getEnergia()); 
-                Salida.volcarLinea("Energia: " + itc.next().getEnergia() + "\n");
-                System.out.println("Tiempo: " + tiempo);      
-                Salida.volcarLinea("Tiempo: " + tiempo + "\n");
-            }
-            
-            resultadosCarrera = new ResultadosCarrera(itc.next().getNombre(), itc.next().getEnergia(), r, abandonado);
-            
-            recogerCiclistas(itc.next());
-        }
-        return resultadosCarrera;
+        borrarCiclista(ciclista);
+        setCiclista(ciclista);
     }
 }

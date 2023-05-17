@@ -47,13 +47,11 @@ public class Pruebas
     public void setUp()
     {
         cs1 = new ArrayList<Ciclista>();
-        csA1 = new ArrayList<Ciclista>();
         bs1 = new ArrayList<Bicicleta>();
         cs2 = new ArrayList<Ciclista>();
-        csA2 = new ArrayList<Ciclista>();
         bs2 = new ArrayList<Bicicleta>();
-        e1 = new Equipo("ESPAÑA", cs1, csA1, bs1);
-        e2 = new Equipo("ARGENTINA", cs1, csA1, bs1);
+        e1 = new Equipo("ESPAÑA", cs1, bs1);
+        e2 = new Equipo("ARGENTINA", cs1, bs1);
         et1 = new Etapa("Barcelona", Dificultad.COMPLEJA, Distancia.LARGA);
         et2 = new Etapa("París", Dificultad.NORMAL, Distancia.CORTA);
         c1 = new CiclistaNovato("Alberto", Habilidad.BUENA, 1400, e1);

@@ -20,16 +20,6 @@ abstract class Ciclista implements CiclistaInterfaz
     /**
      * Constructor for objects of class Ciclista
      */
-    /*public Ciclista(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List resultados, Equipo equipo)
-    {
-       this.nombre = nombre;
-       this.bicicleta = bicicleta;
-       this.habilidad = habilidad;
-       this.energia = energia;
-       this.equipo = equipo;
-       this.resultados = resultados;
-    }*/
-    
     public Ciclista(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     { 
        this.nombre = nombre;
@@ -202,7 +192,7 @@ abstract class Ciclista implements CiclistaInterfaz
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Etapa other = (Etapa) obj;
+        Ciclista other = (Ciclista) obj;
         if (other.getNombre() == null) {
             if (other.getNombre() != null)
                 return false;
