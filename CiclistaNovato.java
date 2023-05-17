@@ -16,7 +16,7 @@ public class CiclistaNovato extends Ciclista
     //private Bicicleta bicicleta;
     //private Habilidad habilidad;
     //private double energia;
-    private List resultados;
+    //private List resultados;
     //private Equipo equipo;
 
     /**
@@ -36,33 +36,13 @@ public class CiclistaNovato extends Ciclista
     public CiclistaNovato(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
        super(nombre, habilidad, energia, equipo);          
-       resultados = new ArrayList();
-    }
-    
-    /**
-     * Shows on screen all information about CiclistaNovato class
-     * 
-     * @param
-     * @return
-     */
-    public String toString()
-    {
-        //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
-        String mostrar = "<CiclistaNovato: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
-        mostrar += habilidad;
-        if(abandonado()){
-            mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",puntosAnulados()) + 
-                         "> <abandonado: " + abandonado() + ">"; 
-        } else {
-            mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
-                         "> <abandonado: " + abandonado() + ">"; 
-        }
-        return(mostrar);
+       //resultados = new ArrayList();
     }
         
         /*Funcionalidad */        
     //((habilidad del Ciclista + 2) / 120) * 10
-    public double calculaDestreza(){
+    @Override
+    public double calculaDestreza(){    
         return (getHabilidad().getHabilidadCiclista() + 2) / 120 * 10;
     }
 }

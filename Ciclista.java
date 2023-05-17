@@ -166,7 +166,7 @@ abstract class Ciclista implements CiclistaInterfaz
     public String toString()
     {
         //<CiclistaExperimentado:LABOUS> <energía: 1150.0> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0.0> <abandonado:false>
-        String mostrar = "<Ciclista: " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
+        String mostrar = "<" + getClass().getName() + ": " + nombre + "> <energía: " + String.format("%.2f", energia) + "> <habilidad:";
         mostrar += habilidad;
         if(abandonado()){
             mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",puntosAnulados()) + 
@@ -178,6 +178,7 @@ abstract class Ciclista implements CiclistaInterfaz
         return(mostrar);
     }
     
+   @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
@@ -185,6 +186,7 @@ abstract class Ciclista implements CiclistaInterfaz
         return result;
     }
      
+    @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
