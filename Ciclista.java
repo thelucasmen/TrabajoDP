@@ -10,12 +10,12 @@ import java.util.*;
 abstract class Ciclista implements CiclistaInterfaz
 {
    // instance variables - replace the example below with your own
-    public String nombre;
-    public Bicicleta bicicleta;
-    public Habilidad habilidad;
-    public double energia;
-    public List resultados;
-    public Equipo equipo;
+    private String nombre;
+    private Bicicleta bicicleta;
+    private Habilidad habilidad;
+    private double energia;
+    private List resultados;
+    private Equipo equipo;
 
     /**
      * Constructor for objects of class Ciclista
@@ -147,6 +147,10 @@ abstract class Ciclista implements CiclistaInterfaz
         return energia;
     }
     
+    public int getPopularidad(){
+        return 0;
+    }
+    
     /**
      * Returns the value of the Equipo variable in CiclistaNovato class
      * 
@@ -175,8 +179,15 @@ abstract class Ciclista implements CiclistaInterfaz
             mostrar += "> <tiempo acumulado sin abandonar: " + String.format("%.2f",tiempoAcumulado()) + 
                          "> <abandonado: " + abandonado() + ">"; 
         }
+        
+        if(getClass().getName().equals("CiclistaEstrella")){
+            mostrar +=  " <popularidad: " + getPopularidad() + ">";
+        }
+        
         return(mostrar);
     }
+
+    
     
    @Override
     public int hashCode() {
@@ -308,26 +319,6 @@ abstract class Ciclista implements CiclistaInterfaz
         return tiempo;
     }
     
-    //Numero de etapas terminadas
-    /**
-     * Returns the amount of the stages finished by the cyclist
-     * 
-     * @param
-     * @return int number.
-     */
-    public int etapasTerminadas(){
-        int cont = 0;
-        Iterator<Resultado> it = resultados.iterator();
-        
-        while (it.hasNext()) {
-            if(it.next().getTiempo() > 0){
-                cont++;
-            }
-        }
-        return cont;
-        
-    }
-    
     //Muestra por pantalla las etapas abandonadas
     /**
      * Returns the name of the stage where the cyclist abandoned.
@@ -345,20 +336,6 @@ abstract class Ciclista implements CiclistaInterfaz
             }
         }
         return stringAbandonadas;
-    }
-    
-    //Numero de etapas comenzadas, terminadas y tiempo acumulado, etapas abandonadas
-    /**
-     * Returns the information about started, ended and abandoned stages and time.
-     * 
-     * @param
-     * @return String variable with all the information mentioned.
-     */
-    public String mostrarEtapas(){
-        return "Etapas comenzadas:" + numeroEtapas() 
-                    + "/nTiempo acumulado en etapas terminadas: " + tiempoAcumulado() 
-                    + "/nEtapas terminadas:" + etapasTerminadas() 
-                    + "/nEtapas abandonadas:" + abandonada();
     }
                        
     //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);

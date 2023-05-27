@@ -49,12 +49,8 @@ interface CiclistaInterfaz
     public double tiempoAcumulado();
         //Devuelve el total de puntos anulados de un ciclista que ha abandonado
     public double puntosAnulados();
-        //Numero de etapas terminadas
-    public int etapasTerminadas();
         //Muestra por pantalla las etapas abandonadas
     public String abandonada();
-        //Numero de etapas comenzadas, terminadas y tiempo acumulado, etapas abandonadas
-    public String mostrarEtapas();
         //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo);
         //Suma o resta popularidad segun el tiempo

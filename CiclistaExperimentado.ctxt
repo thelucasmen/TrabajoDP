@@ -5,9 +5,6 @@ comment1.params=nombre\ habilidad\ energia\ equipo
 comment1.target=CiclistaExperimentado(java.lang.String,\ Habilidad,\ double,\ Equipo)
 comment1.text=public\ CiclistaExperimentado(String\ nombre,\ Bicicleta\ bicicleta,\ Habilidad\ habilidad,\ double\ energia,\ List<Resultado>\ resultados,\ Equipo\ equipo)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ super(nombre,\ bicicleta,\ habilidad,\ energia,\ resultados,\ equipo);\r\n\ \ \ \ \ \ \ this.nombre\ \=\ nombre;\r\n\ \ \ \ \ \ \ this.bicicleta\ \=\ bicicleta;\r\n\ \ \ \ \ \ \ this.habilidad\ \=\ habilidad;\r\n\ \ \ \ \ \ \ this.energia\ \=\ energia;\r\n\ \ \ \ \ \ \ this.equipo\ \=\ equipo;\r\n\ \ \ \ \ \ \ this.resultados\ \=\ resultados;\r\n}
 comment2.params=
-comment2.target=java.lang.String\ toString()
-comment2.text=\r\n\ Shows\ on\ screen\ all\ information\ about\ CiclistaExperimentado\ class\r\n\ \r\n\ @param\r\n\ @return\r\n
-comment3.params=
-comment3.target=double\ calculaDestreza()
-comment3.text=Funcionalidad
-numComments=4
+comment2.target=double\ calculaDestreza()
+comment2.text=Funcionalidad
+numComments=3
