@@ -371,91 +371,19 @@ public class Equipo
             
             while (itb.hasNext() && itc.hasNext()) {
                 ciclista = itc.next();
-                bicicleta = itb.next();
-                ciclista.setBicicleta(bicicleta);
+                if(!ciclista.abandonado()){
+                    bicicleta = itb.next();
+                    ciclista.setBicicleta(bicicleta);
+                    etapa.setCiclista(ciclista);    
+                }  
             }
                    
-            itc = ciclistas.iterator();
+            /*itc = ciclistas.iterator();
             while (itc.hasNext()) {
                 ciclista = itc.next();
                 etapa.setCiclista(ciclista);
                     //salida += ciclista + "\n";
-            }
-            
-            /*excepciones*/
-            itc = ciclistas.iterator();
-            itb = bicicletas.iterator();
-            if((nEtapa == 2 || nEtapa == 5) && nombre.equals("DSM Women")){
-                bicicletaAux = itb.next();
-                while (itc.hasNext()) {
-                    ciclista = itc.next();
-                    if(itb.hasNext()){
-                        bicicleta = itb.next();
-                        ciclista.setBicicleta(bicicleta);
-                    } else {
-                        ciclista.setBicicleta(bicicletaAux);
-                    }
-                } 
-            }
-            
-            if((nEtapa == 3 || nEtapa == 4 || nEtapa == 6) && nombre.equals("DSM Women")){
-                bicicletaAux = itb.next();
-                while (itc.hasNext()) {
-                    ciclista = itc.next();
-                    itb = bicicletas.iterator();
-                    switch(ciclista.getNombre()){
-                       case "WIEBES":
-                           while(itb.hasNext()){
-                               bicicleta = itb.next();
-                               if(bicicleta.getNombre().equals("SCOTT CONTESSA ADDICT eRIDE 15")){
-                                   ciclista.setBicicleta(bicicleta);
-                               }
-                           }
-                           break;
-                       case "LABOUS":
-                           while(itb.hasNext()){
-                               bicicleta = itb.next();
-                               if(bicicleta.getNombre().equals("SCOTT CONTESSA ADDICT RC 15")){
-                                   ciclista.setBicicleta(bicicleta);
-                               }
-                            }
-                           break;
-                    case "LIPPERT":
-                           while(itb.hasNext()){
-                               bicicleta = itb.next();
-                               if(bicicleta.getNombre().equals("SCOTT CONTESSA ADDICT 15")){
-                                   ciclista.setBicicleta(bicicleta);
-                               }
-                            }
-                           break;
-                    }
-                } 
-            }
-            
-            if(nEtapa == 6 && nombre.equals("Movistar Women")){
-                while (itc.hasNext()) {
-                    ciclista = itc.next();
-                    itb = bicicletas.iterator();
-                    switch(ciclista.getNombre()){
-                       case "NORSGAARD":
-                           while(itb.hasNext()){
-                               bicicleta = itb.next();
-                               if(bicicleta.getNombre().equals("CANYON Ultimate CFR eTap")){
-                                   ciclista.setBicicleta(bicicleta);
-                               }
-                           }
-                           break;
-                       case "VAN VLEUTEN":
-                           while(itb.hasNext()){
-                               bicicleta = itb.next();
-                               if(bicicleta.getNombre().equals("CANYON Aeroad CF SLX 8 Disc Di2")){
-                                   ciclista.setBicicleta(bicicleta);
-                               }
-                            }
-                           break;
-                    }
-                }
-            } /*fin excepciones*/ 
+            }*/
         } catch(NullPointerException e){ }
         return salida;
     }

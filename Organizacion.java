@@ -171,7 +171,7 @@ public class Organizacion
         //Ordenar Equipos
         List<Equipo> equiposOrdenadas = new ArrayList<Equipo>();
         for (String i : equipos.keySet()) {
-          equiposOrdenadas.add(equipos.get(i));
+            equiposOrdenadas.add(equipos.get(i));
         }
         equiposOrdenadas.sort(new NameEqComparator());
         Iterator<Equipo> itEq = equiposOrdenadas.iterator();
@@ -215,10 +215,24 @@ public class Organizacion
                 " *******************************\n" +
                 "**********************************************************************************************************\n";
                 itEq = equiposOrdenadas.iterator();
-                while (itEq.hasNext()) {
-                    equipo = itEq.next();
-                    equipo.enviarCiclistas(etapa, contE);
-                }
+                try{
+                    while (itEq.hasNext()) {
+                        equipo = itEq.next();
+                        if(equipo.getNombre()=="DSM Women"){
+                            equipo.ordenarCiclistas(3);
+                            equipo.ordenarBicicletas(2);
+                        }
+                        if(equipo.getNombre()=="Movistar Women"){
+                            equipo.ordenarCiclistas(6);
+                            equipo.ordenarBicicletas(2);
+                        }
+                        if(equipo.getNombre()=="Trek Segafredo Women"){
+                            equipo.ordenarCiclistas(11);
+                            equipo.ordenarBicicletas(4);
+                        }
+                        equipo.enviarCiclistas(etapa, contE);
+                    } 
+                } catch(ConcurrentModificationException e){ }
                 salida += etapa.getCiclistas();
                 contC = etapa.getCiclista();
                 salida += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +

@@ -220,7 +220,7 @@ public class Etapa
                     ciclista = itC.next();
                     if(ciclista.abandonado()){
                         salida += "--- ciclista Abandonado: " + ciclista.getNombre() + " - Puntos Totales Anulados: " +
-                        String.format("%.2f",ciclista.puntosAnulados()) + "---";
+                        String.format("%.2f",ciclista.puntosAnulados()) + "---\n";
                         salida += ciclista.getResultado();
                         salida += "\n";
                     }
