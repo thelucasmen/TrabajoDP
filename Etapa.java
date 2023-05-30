@@ -66,6 +66,10 @@ public class Etapa
         ciclistas.add(ciclista);
     }
     
+    public void clearCiclista(){
+        ciclistas.clear();
+    }
+    
     public int getCiclista(){
         int contador = 0;
         try{
@@ -193,7 +197,8 @@ public class Etapa
     public String mostrarResultadosCiclistas(){
         Ciclista ciclista;
         String salida = "";
-        int contC = 0, contCA = 0;
+        int contC = 0, contCA = 0, cont = 0;
+        
         try{
             ciclistas.sort(new TiempoComparator());
             Iterator<Ciclista> itC = ciclistas.iterator();
@@ -214,9 +219,10 @@ public class Etapa
                 salida += "****************************************************\n" +
                           "************** CICLISTAS QUE ABANDONARON **************\n" +
                           "****************************************************\n";
-            ciclistas.sort(new PuntosAnuladosComparator());
+            ciclistas.sort(new PuntosAnuladosComparator());            
             itC = ciclistas.iterator();
-                while (itC.hasNext()) {
+                while (itC.hasNext()){ //&& cont < ciclistas.size()-1) {
+                    cont++;
                     ciclista = itC.next();
                     if(ciclista.abandonado()){
                         salida += "--- ciclista Abandonado: " + ciclista.getNombre() + " - Puntos Totales Anulados: " +

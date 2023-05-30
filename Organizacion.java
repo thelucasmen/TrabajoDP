@@ -19,7 +19,6 @@ public class Organizacion
     private List<ResultadosCarrera> podio;
     private Set<Etapa> etapas;
     private HashMap<String, Equipo> equipos;
-    private List<Ciclista> ciclistasCarrera;
     /**
      * Constructor for objects of class Organizacion
      */
@@ -27,8 +26,7 @@ public class Organizacion
     {
         this.nombreOrg = nombreOrg;
         this.etapas = new TreeSet<Etapa>(new DificultadComparator());
-        this.equipos = new HashMap<String,Equipo>();           
-        this.ciclistasCarrera = new ArrayList<Ciclista>();
+        this.equipos = new HashMap<String,Equipo>();       
         
         podio = new ArrayList<ResultadosCarrera>();
     }
@@ -111,26 +109,6 @@ public class Organizacion
      */
     public void borrarEquipo(Equipo equipo){
         this.equipos.remove(equipo);
-    }
-    
-    /**
-     * Adds a new Ciclista element to the ciclistas ArrayList
-     * 
-     * @param Ciclista variable to add
-     * @return
-     */
-    public void setCiclistasCarrera(Ciclista ciclista){
-        this.ciclistasCarrera.add(ciclista);
-    }
-    
-    /**
-     * Removes a certain Ciclista element from ciclistas ArrayList
-     * 
-     * @param Ciclista element in ArrayList to remove
-     * @return
-     */
-    public void borrarCiclistasCarrera(Ciclista ciclista){
-        this.ciclistasCarrera.remove(ciclista);
     }
     
     //Inscribe los equipos de la lista equipos en la etapa
@@ -257,8 +235,13 @@ public class Organizacion
                             String.format("%.2f", resultadosCarrera.getResultado().getTiempo()) + 
                         " - Además ha abandonado para el resto del Campeonato !!!\n";
                     }
-                }                   
-                salida += aux + "\n********************************************************************************************************\n";
+                } 
+                if(contE < etapas.size()){
+                    salida += aux + "\n********************************************************************************************************\n";
+                } else {
+                    salida += aux;
+                }
+                
                 if(contC == contCA || contC - contCA == 1) {
                     fin = true;
                 }
@@ -273,6 +256,14 @@ public class Organizacion
             if(fin) { 
                 salida += "Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)\n";
             }
+            
+            etapa.clearCiclista();
+            itEq = equiposOrdenadas.iterator();
+            while (itEq.hasNext()) {
+                equipo = itEq.next();
+                equipo.enviarTodosCiclistas(etapa);
+            }
+            
             salida += etapa.mostrarResultadosCiclistas();
             salida +=          "****************************************************\n" +
                                "******** CLASIFICACIÓN FINAL DE EQUIPOS *********\n" +

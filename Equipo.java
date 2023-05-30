@@ -15,6 +15,7 @@ public class Equipo
     private String nombre;
     private List<Ciclista> ciclistas;
     private List<Bicicleta> bicicletas;
+    private List<Ciclista> ciclistasAbandonado;
     
     /**
      * Constructor for objects of class Equipo
@@ -25,6 +26,7 @@ public class Equipo
         this.nombre = nombre;
         this.ciclistas = new ArrayList<Ciclista>();
         this.bicicletas = new ArrayList<Bicicleta>();
+        ArrayList<Ciclista> ciclistasAbandonado = new ArrayList<Ciclista>();
     }
         
     /**
@@ -139,14 +141,7 @@ public class Equipo
      * @return int number representing the amount of elements in ciclistas
      */
     public int contCiclistas(){
-        Iterator<Ciclista> itc = ciclistas.iterator();
-        int i = 0;
-        
-        while (itc.hasNext()) {
-            itc.next();
-            i++;
-        }
-        return i;
+        return ciclistas.size();
     }
     
     /**
@@ -388,6 +383,25 @@ public class Equipo
         return salida;
     }
     
+    //Envia a la etapa todos los ciclistas del equipo que no hayan abandonado
+    /**
+     * Sends to a certain Etapa class all the information in ciclistas ArrayList
+     * 
+     * @param Etapa class to copy the information to
+     * @return
+     */
+    public void enviarTodosCiclistas(Etapa etapa){   
+        try{  
+            Iterator<Ciclista> itc = ciclistas.iterator();
+            Ciclista ciclista;
+            
+            while (itc.hasNext()) {
+                ciclista = itc.next();
+                etapa.setCiclista(ciclista); 
+            }  
+        } catch(NullPointerException e){ }
+    }
+    
     //Actualiza los ciclistas despues de la etapa
     /**
      * Updates the information about a certain Ciclista variable 
@@ -398,5 +412,8 @@ public class Equipo
     public void recogerCiclistas(Ciclista ciclista){
         borrarCiclista(ciclista);
         setCiclista(ciclista);
+        if(ciclista.abandonado()){
+            ciclistasAbandonado.add(ciclista);
+        }
     }
 }

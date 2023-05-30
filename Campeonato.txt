@@ -636,8 +636,6 @@
 @@@ Posición(6): WIEBES - Tiempo: 181,18 minutos @@@
 @@@ Posición(7): LONGO-BORGHINI - Tiempo: 184,36 minutos @@@
 ¡¡¡ Ha abandonado BALSAMO - Tiempo: -225,69 - Además ha abandonado para el resto del Campeonato !!!
-
-********************************************************************************************************
 ****************************************************
 **************** FIN DEL CAMPEONATO ****************
 ****************************************************
@@ -702,6 +700,13 @@ Carrera(compleja larga) - Tiempo: 180,94 minutos:
 ****************************************************
 ************** CICLISTAS QUE ABANDONARON **************
 ****************************************************
+--- ciclista Abandonado: SIERRA - Puntos Totales Anulados: 884,08---
+Carrera(sencilla intermedia) - Tiempo: 197,15 minutos: 
+Carrera(sencilla larga) - Tiempo: 221,79 minutos: 
+Carrera(normal intermedia) - Tiempo: 218,89 minutos: 
+Carrera(normal larga) - Tiempo: 246,25 minutos: 
+Carrera(compleja intermedia) - Tiempo: -14,68 minutos: 
+
 --- ciclista Abandonado: BALSAMO - Puntos Totales Anulados: 1132,82---
 Carrera(sencilla intermedia) - Tiempo: 198,45 minutos: 
 Carrera(sencilla larga) - Tiempo: 223,26 minutos: 
