@@ -17,7 +17,7 @@ public class Organizacion
     // instance variables - replace the example below with your own
     private String nombreOrg;
     private List<ResultadosCarrera> podio;
-    private HashSet<Etapa> etapas;
+    private Set<Etapa> etapas;
     private HashMap<String, Equipo> equipos;
     private List<Ciclista> ciclistasCarrera;
     /**
@@ -26,7 +26,7 @@ public class Organizacion
     public Organizacion(String nombreOrg, HashSet<Etapa> etapas, HashMap<String, Equipo> equipos, List<Ciclista> ciclistasCarrera)
     {
         this.nombreOrg = nombreOrg;
-        this.etapas = new HashSet<Etapa>();
+        this.etapas = new TreeSet<Etapa>(new DificultadComparator());
         this.equipos = new HashMap<String,Equipo>();           
         this.ciclistasCarrera = new ArrayList<Ciclista>();
         
@@ -165,9 +165,7 @@ public class Organizacion
         int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         //Ordenar Etapas
-        List<Etapa> etapasOrdenadas = new ArrayList<Etapa>(etapas);
-        etapasOrdenadas.sort(new DificultadComparator());
-        Iterator<Etapa> itE = etapasOrdenadas.iterator();
+        Iterator<Etapa> itE = etapas.iterator();
         //Ordenar Equipos
         List<Equipo> equiposOrdenadas = new ArrayList<Equipo>();
         for (String i : equipos.keySet()) {
@@ -201,7 +199,7 @@ public class Organizacion
                 }
             }
             
-            itE = etapasOrdenadas.iterator();
+            itE = etapas.iterator();
             salida += "\n********************************************************************************************************\n";
             while (itE.hasNext() && !fin) {
                 etapa = itE.next();

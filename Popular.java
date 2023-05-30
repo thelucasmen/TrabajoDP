@@ -14,7 +14,8 @@ import java.util.*;
      * @return        the result produced by sampleMethod 
      */
     
-    public void setPopularidad(int popularidad); 
+    public void setPopularidad(int popularidad);
+    
     public int getPopularidad();
     
 }

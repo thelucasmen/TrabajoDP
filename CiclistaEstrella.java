@@ -6,7 +6,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CiclistaEstrella extends Ciclista implements Popular
+public class CiclistaEstrella extends Ciclista 
 {
     // instance variables - replace the example below with your own
     //private String nombre;
@@ -19,8 +19,18 @@ public class CiclistaEstrella extends Ciclista implements Popular
 
     /**
      * Constructor for objects of class Ciclista
-     */    
-    //override correr y toSgtring
+     */
+    /*public CiclistaEstrella(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultados, Equipo equipo)
+    {
+       super(nombre, bicicleta, habilidad, energia, resultados, equipo);
+       this.nombre = nombre;
+       this.bicicleta = bicicleta;
+       this.habilidad = habilidad;
+       this.energia = energia;
+       this.equipo = equipo;
+       this.popularidad = 6; 
+       this.resultados = resultados;
+    }*/
     
     public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
@@ -37,33 +47,9 @@ public class CiclistaEstrella extends Ciclista implements Popular
         return popularidad;
     }
     
-    @Override
-    public String toString(){
-        
-        String mostrar;
-        double tiempo;
-        tiempo = tiempoAcumulado();
-        mostrar = super.toString();
-        
-        mostrar += " <popularidad: " + getPopularidad() + ">";
-        
-        return mostrar;          
-        }
-    
-    @Override
-    public void funcionalidadCiclista(Etapa e, double tiempo){
-        super.funcionalidadCiclista(e,tiempo);
-        if(tiempo<160){
-            setPopularidad(getPopularidad()+4); 
-        } else{
-            setPopularidad(getPopularidad()-1);
-        }
-    }
-    
-    /* Funcionalidad */
-    
+        /*Funcionalidad */        
     //Suma o resta popularidad segun el tiempo
-    public String serPopular(double tiempo){
+    public String SerPopular(double tiempo){
         String salida = "";
         if(tiempo<160){
            setPopularidad(getPopularidad()+4); 
@@ -79,10 +65,8 @@ public class CiclistaEstrella extends Ciclista implements Popular
         return salida;
     }
     
-   
     //(((habilidad del Ciclista + 6) / 140) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 6) / 140 * 10;
     }
-    
 }

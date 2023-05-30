@@ -172,7 +172,7 @@ public class Etapa
                         String.format("%.2f",ciclista.getEnergia()) + " +++\n@@@\n";
                     }
                     if(ciclista.getClass().getName().equals("CiclistaEstrella")){
-                        salida += ciclista.serPopular(tiempo);
+                        salida += ciclista.SerPopular(tiempo);
                     }
                     
                     if(!ciclista.abandonado()){

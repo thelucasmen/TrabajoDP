@@ -131,7 +131,7 @@ public class Pruebas
     @Test
     public void PruebaEnviarCiclista()
     {
-        //e1.enviarCiclistas(et1);
+        e1.enviarCiclistas(et1);
         assertEquals(225.64, e1.mediatiempoTotal(), 0.01);
     }
 }
