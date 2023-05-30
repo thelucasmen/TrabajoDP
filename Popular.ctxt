@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Popular
+comment0.text=\r\n\ Interfaz\ para\ la\ popularidad\ de\ CiclistasEstrella\r\n\ \r\n\ @author\ Marcos\ Acedo\ Mej\u00EDas,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=popularidad
+comment1.target=void\ setPopularidad(int)
+comment1.text=\r\n\ An\ example\ of\ a\ method\ header\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ \ \ \ the\ result\ produced\ by\ sampleMethod\ \r\n
+comment2.params=
+comment2.target=int\ getPopularidad()
+numComments=3

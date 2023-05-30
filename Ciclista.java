@@ -30,9 +30,9 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Changes the value of the String variable nombre in CiclistaNovato class
+     * Changes the value of the String variable nombre in Ciclista class
      * 
-     * @param String variable to set in CiclistaExperimentado
+     * @param String variable to set in Ciclista
      * @return
      */
     public void setNombre(String n){
@@ -40,9 +40,9 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Changes the value of the Bicicleta variable in CiclistaNovato class
+     * Changes the value of the Bicicleta variable in Ciclista class
      * 
-     * @param Bicicleta variable to set in CiclistaNovato
+     * @param Bicicleta variable to set in Ciclista
      * @return
      */
     public void setBicicleta(Bicicleta b){
@@ -50,9 +50,9 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Changes the value of the Habilidad variable in CiclistaNovato class
+     * Changes the value of the Habilidad variable in Ciclista class
      * 
-     * @param Habilidad variable to set in CiclistaNovato
+     * @param Habilidad variable to set in Ciclista
      * @return
      */
     public void setHabilidad(Habilidad h){
@@ -60,9 +60,9 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Changes the value of the double variable energia in CiclistaNovato class
+     * Changes the value of the double variable energia in Ciclista class
      * 
-     * @param double variable to set in CiclistaNovato
+     * @param double variable to set in Ciclista
      * @return
      */
     public void setEnergia(double e){
@@ -70,9 +70,9 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Changes the value of the Resultado variable in CiclistaNovato class
+     * Changes the value of the Resultado variable in Ciclista class
      * 
-     * @param Resultado variable to set in CiclistaNovato
+     * @param Resultado variable to set in Ciclista
      * @return
      */
     public void setResultado(Resultado r){
@@ -80,27 +80,24 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Returns the value of the Resultado variable in CiclistaNovato class
+     * Returns the value of the Resultado variable in Ciclista class
      * 
      * @param
      * @return Resultado variable
      */
     public String getResultado(){ 
         String salida = "";
-        try{
-            Iterator<Resultado> it = resultados.iterator();     
-            while(it.hasNext()) {
-               salida += it.next() + "\n";
-            }   
-        }catch(NullPointerException e){ }
-        catch(NoSuchElementException e2){ }
+        Iterator<Resultado> it = resultados.iterator();     
+        while(it.hasNext()) {
+            salida += it.next() + "\n";
+        }   
         return salida;
     }
     
     /**
-     * Changes the value of the Equipo variable in CiclistaNovato class
+     * Changes the value of the Equipo variable in Ciclista class
      * 
-     * @param Equipo variable to set in CiclistaNovato
+     * @param Equipo variable to set in Ciclista
      * @return
      */
     public void setEquipo(Equipo e){
@@ -108,7 +105,7 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Returns the value of the String variable nombre in CiclistaNovato class
+     * Returns the value of the String variable nombre in Ciclista class
      * 
      * @param
      * @return String variable
@@ -118,7 +115,7 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Returns the value of the Bicicleta variable in CiclistaNovato class
+     * Returns the value of the Bicicleta variable in Ciclista class
      * 
      * @param
      * @return Bicicleta variable
@@ -128,7 +125,7 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Returns the value of the Habilidad variable in CiclistaNovato class
+     * Returns the value of the Habilidad variable in Ciclista class
      * 
      * @param
      * @return Habilidad variable
@@ -138,7 +135,7 @@ abstract class Ciclista implements CiclistaInterfaz
     }
     
     /**
-     * Returns the value of the double variable energia in CiclistaNovato class
+     * Returns the value of the double variable energia in Ciclista class
      * 
      * @param
      * @return double variable
@@ -146,9 +143,25 @@ abstract class Ciclista implements CiclistaInterfaz
     public double getEnergia(){
         return energia;
     }
-    
+        
+    /**
+     * Returns the value of the int popularidad energia in Ciclista class
+     * 
+     * @param
+     * @return int variable
+     */
     public int getPopularidad(){
         return 0;
+    }
+    
+    /**
+     * Returns the value of the String whit the new popularidad for the CiclistaEstrella class
+     * 
+     * @param
+     * @return String variable
+     */
+    public String serPopular(double tiempo){
+        return "";
     }
     
     /**
@@ -180,6 +193,7 @@ abstract class Ciclista implements CiclistaInterfaz
                          "> <abandonado: " + abandonado() + ">"; 
         }
         
+         
         if(getClass().getName().equals("CiclistaEstrella")){
             mostrar +=  " <popularidad: " + getPopularidad() + ">";
         }
@@ -281,20 +295,20 @@ abstract class Ciclista implements CiclistaInterfaz
      * @param
      * @return double variable which is the sum of all the times scored by the cyclist.
      */
+    
+    // Solo hay que tener en cuenta el tiempo cuando NO ha abandonado.
     public double tiempoAcumulado(){
         double tiempo = 0.0;
         Resultado resultado;
-        try{
-            Iterator<Resultado> it = resultados.iterator();
+        Iterator<Resultado> it = resultados.iterator();
             while (it.hasNext()) {
                 resultado = it.next();
-                if(!abandonado()){
-                    tiempo = tiempo + resultado.getTiempo();
-                } else {
-                    tiempo = getEnergia();
-                }
+            if(!abandonado()){
+                tiempo = tiempo + resultado.getTiempo();
+            } else {
+                 tiempo = getEnergia();
             }
-        }catch(NullPointerException e){ }
+        }
         return tiempo;
     }
     
@@ -308,14 +322,12 @@ abstract class Ciclista implements CiclistaInterfaz
     public double puntosAnulados(){
         double tiempo = 0.0;
         Resultado resultado;
-        try{
-            Iterator<Resultado> it = resultados.iterator();
-            while (it.hasNext()) {
-                resultado = it.next();
-                tiempo = tiempo + resultado.getTiempo();
-            }
-            tiempo = tiempo - getEnergia();
-        }catch(NullPointerException e){ }
+        Iterator<Resultado> it = resultados.iterator();
+        while (it.hasNext()) {
+            resultado = it.next();
+            tiempo = tiempo + resultado.getTiempo();
+        }
+        tiempo = tiempo - getEnergia();
         return tiempo;
     }
     
@@ -358,18 +370,9 @@ abstract class Ciclista implements CiclistaInterfaz
         //resultados.add(r);
     }
     
-    //Suma o resta popularidad segun el tiempo
-    public String SerPopular(double tiempo){ 
-        return "";
-    }
-    
     //((habilidad del Ciclista + 2) / 120) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 2) / 120 * 10;
     }
     
-    //Devuelve un booleano que indica si el ciclista es estrella o no
-    public boolean esEstrella(){
-        return false;
-    }
 }

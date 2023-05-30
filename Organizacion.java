@@ -230,7 +230,7 @@ public class Organizacion
                             equipo.ordenarCiclistas(11);
                             equipo.ordenarBicicletas(4);
                         }
-                        equipo.enviarCiclistas(etapa, contE);
+                        equipo.enviarCiclistas(etapa);
                     } 
                 } catch(ConcurrentModificationException e){ }
                 salida += etapa.getCiclistas();

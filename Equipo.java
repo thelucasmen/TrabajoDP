@@ -360,7 +360,7 @@ public class Equipo
      * @param Etapa class to copy the information to
      * @return
      */
-    public String enviarCiclistas(Etapa etapa, int nEtapa){   
+    public String enviarCiclistas(Etapa etapa){   
         String salida = "";
         try{  
             Iterator<Ciclista> itc = ciclistas.iterator();

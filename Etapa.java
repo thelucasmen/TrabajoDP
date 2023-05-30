@@ -171,8 +171,8 @@ public class Etapa
                         "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
                         String.format("%.2f",ciclista.getEnergia()) + " +++\n@@@\n";
                     }
-                    if(ciclista.esEstrella()){
-                        salida += ciclista.SerPopular(tiempo);
+                    if(ciclista.getClass().getName().equals("CiclistaEstrella")){
+                        salida += ciclista.serPopular(tiempo);
                     }
                     
                     if(!ciclista.abandonado()){
