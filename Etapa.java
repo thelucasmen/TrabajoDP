@@ -95,30 +95,18 @@ public class Etapa
         ciclistas.add(ciclista);
     }
     
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     /**
      * Clears ciclistas ArrayList
      */
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
     public void clearCiclista(){
         ciclistas.clear();
     }
     
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     /**
      * Returns the number of elements in ciclistas ArrayList
      * 
      * @return int variable
      */
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
     public int getCiclista(){
         /*int contador = 0;
         try{

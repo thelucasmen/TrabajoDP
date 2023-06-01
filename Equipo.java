@@ -378,42 +378,23 @@ public class Equipo
      * Sends to a certain Etapa class all the information in ciclistas ArrayList
      * 
      * @param Etapa class to copy the information to
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-     */
-    public void enviarTodosCiclistas(Etapa etapa){   
-        try{   
-            Iterator<Ciclista> itcA;
-=======
->>>>>>> Stashed changes
-     * @return
      */
     public void enviarTodosCiclistas(Etapa etapa){   
         try{  
-<<<<<<< Updated upstream
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
+            Iterator<Ciclista> itcA;
             Iterator<Ciclista> itc = ciclistas.iterator();
             Ciclista ciclista;
             
             while (itc.hasNext()) {
                 ciclista = itc.next();
                 etapa.setCiclista(ciclista); 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-            }
+            }  
             
             itcA = ciclistasAbandonado.iterator();
             while (itcA.hasNext()) {
                 ciclista = itcA.next();
                 etapa.setCiclista(ciclista); 
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
-            }  
+            } 
         } catch(NullPointerException e){ }
     }
     
@@ -425,19 +406,10 @@ public class Equipo
      */
     public void recogerCiclistas(Ciclista ciclista){
         borrarCiclista(ciclista);
-<<<<<<< HEAD
         if(ciclista.abandonado()){
             ciclistasAbandonado.add(ciclista);
         } else {
-            setCiclista(ciclista);
-=======
-        setCiclista(ciclista);
-        if(ciclista.abandonado()){
-            ciclistasAbandonado.add(ciclista);
-<<<<<<< Updated upstream
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
+            setCiclista(ciclista);            
         }
     }
 }

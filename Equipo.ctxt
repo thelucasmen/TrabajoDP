@@ -34,7 +34,6 @@ comment19.target=java.lang.String\ enviarCiclistas(Etapa)
 comment19.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Etapa\ class\ to\ copy\ the\ information\ to\r\n\ @return\ String\ salida\r\n
 comment2.params=nombre
 comment2.target=void\ setNombre(java.lang.String)
-<<<<<<< HEAD
 comment2.text=\r\n\ Changes\ the\ value\ of\ the\ String\ variable\ name\ in\ a\ certain\ Equipo\ class\r\n\ \r\n\ @param\ \ String\ variable\ to\ set\ in\ Equipo\ \ \ \r\n
 comment20.params=etapa
 comment20.target=void\ enviarTodosCiclistas(Etapa)
@@ -42,18 +41,6 @@ comment20.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\
 comment21.params=ciclista
 comment21.target=void\ recogerCiclistas(Ciclista)
 comment21.text=\r\n\ Updates\ the\ information\ about\ a\ certain\ Ciclista\ variable\ \r\n\ \r\n\ @param\ Ciclista\ variable\ to\ update\r\n
-=======
-comment2.text=\r\n\ Changes\ the\ value\ of\ the\ String\ variable\ name\ in\ a\ certain\ Equipo\ class\r\n\ \r\n\ @param\ \ String\ variable\ to\ set\ in\ Equipo\r\n\ @return\ \ \ \ \ \r\n
-comment20.params=etapa
-comment20.target=void\ enviarTodosCiclistas(Etapa)
-comment20.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Etapa\ class\ to\ copy\ the\ information\ to\r\n\ @return\r\n
-comment21.params=ciclista
-comment21.target=void\ recogerCiclistas(Ciclista)
-comment21.text=\r\n\ Updates\ the\ information\ about\ a\ certain\ Ciclista\ variable\ \r\n\ \r\n\ @param\ Ciclista\ variable\ to\ update\r\n\ @return\r\n
-<<<<<<< Updated upstream
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
 comment3.params=
 comment3.target=java.lang.String\ getNombre()
 comment3.text=\r\n\ Returns\ the\ String\ variable\ nombre\ value\r\n\ \r\n\ @return\ String\ value\r\n
@@ -74,12 +61,5 @@ comment8.target=java.lang.String\ getCiclistas(java.lang.Boolean)
 comment8.text=\r\n\ \r\n\ @param\ boolean\ variable\r\n\ @return\ String\ mostrar\r\n
 comment9.params=
 comment9.target=int\ contCiclistas()
-<<<<<<< HEAD
 comment9.text=\r\n\ Counts\ the\ amount\ of\ Ciclista\ elements\ in\ the\ ciclistas\ ArrayList\r\n\ \r\n\ @return\ int\ number\ representing\ the\ amount\ of\ elements\ in\ ciclistas\r\n
-=======
-comment9.text=\r\n\ Counts\ the\ amount\ of\ Ciclista\ elements\ in\ the\ ciclistas\ ArrayList\r\n\ \r\n\ @param\r\n\ @return\ int\ number\ representing\ the\ amount\ of\ elements\ in\ ciclistas\r\n
-<<<<<<< Updated upstream
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
 numComments=22

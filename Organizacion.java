@@ -243,14 +243,7 @@ public class Organizacion
                     salida += aux;
                 }
                 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
                 if(etapa.getCiclista() == contCA || etapa.getCiclista() - contCA == 1) {
-=======
->>>>>>> Stashed changes
-                if(contC == contCA || contC - contCA == 1) {
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
                     fin = true;
                 }
             }
