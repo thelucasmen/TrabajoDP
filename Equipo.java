@@ -32,8 +32,7 @@ public class Equipo
     /**
      * Changes the value of the String variable name in a certain Equipo class
      * 
-     * @param  String variable to set in Equipo
-     * @return     
+     * @param  String variable to set in Equipo   
      */
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -42,7 +41,6 @@ public class Equipo
     /**
      * Returns the String variable nombre value
      * 
-     * @param
      * @return String value
      */
     public String getNombre(){
@@ -53,7 +51,6 @@ public class Equipo
      * Adds a new Ciclista element to the ciclistas ArrayList
      * 
      * @param Ciclista variable to add to the ArrayList
-     * @return
      */
     public void setCiclista(Ciclista ciclista){
         ciclistas.add(ciclista);
@@ -63,7 +60,6 @@ public class Equipo
      * Adds a new Bicicleta element to the bicicletas ArrayList
      * 
      * @param Bicicleta variable to insert
-     * @return
      */
     public void setBicicleta(Bicicleta bicicleta){
         this.bicicletas.add(bicicleta);
@@ -73,7 +69,6 @@ public class Equipo
      * Removes a certain Ciclista element in ciclistas ArrayList
      * 
      * @param Ciclista variable in ciclistas
-     * @return
      */
     public void borrarCiclista(Ciclista ciclista){
         this.ciclistas.remove(ciclista);
@@ -83,7 +78,6 @@ public class Equipo
      * Removes a certain Bicicleta element in bicicletas ArrayList
      * 
      * @param Bicicleta variable in bicicletas
-     * @return
      */
     public void borrarBicicletas(Bicicleta bicicleta){
         this.bicicletas.remove(bicicleta);
@@ -91,6 +85,8 @@ public class Equipo
     
     /**
      * 
+     * @param boolean variable
+     * @return String mostrar
      */
     public String getCiclistas(Boolean end){
         String mostrar = "";
@@ -137,7 +133,6 @@ public class Equipo
     /**
      * Counts the amount of Ciclista elements in the ciclistas ArrayList
      * 
-     * @param
      * @return int number representing the amount of elements in ciclistas
      */
     public int contCiclistas(){
@@ -146,6 +141,7 @@ public class Equipo
     
     /**
      * 
+     * @return String mostrar
      */
     public String getBicicletas(){
         String mostrar = "";
@@ -163,8 +159,7 @@ public class Equipo
     /**
      * Shows on screen all the information about Equipo class
      * 
-     * @param
-     * @return
+     * @return String mostrar
      */    
     public String toString(){
         
@@ -215,7 +210,6 @@ public class Equipo
      * Sorts ciclistas ArrayList following a certain criteria
      * 
      * @param int number to choose the way of sorting
-     * @return
      */
     public void ordenarCiclistas(int criterio){
             //1.ascendente, 2.descendente
@@ -264,7 +258,6 @@ public class Equipo
      * Sorts bicicletas ArrayList following a certain criteria
      * 
      * @param int number to choose the way of sorting
-     * @return
      */
     public void ordenarBicicletas(int criterio){
             //descendente
@@ -290,7 +283,6 @@ public class Equipo
     /**
      * Calculates the amount of time in total in ciclistas ArrayList
      * 
-     * @param
      * @return double variable whichs is the summation of all the times in ciclistas ArrayList
      */
     public double tiempoTotal(){
@@ -307,7 +299,6 @@ public class Equipo
     /**
      * Calculates the average time spended by cyclist in the Equipo class
      * 
-     * @param
      * @return double variable which is the total time divided by the total elements in ciclistas
      */
     public double mediatiempoTotal(){
@@ -327,7 +318,6 @@ public class Equipo
     /**
      * Calculates the average time spendend by cyclist in the Equipo class who did NOT abandon the stage
      * 
-     * @param
      * @return double variable which represents the total amount of time divided by the total amount of cyclist (who did NOT abandon)
      */
     public double mediatiempoSinA(){
@@ -353,7 +343,7 @@ public class Equipo
      * Sends to a certain Etapa class all the information in ciclistas ArrayList
      * 
      * @param Etapa class to copy the information to
-     * @return
+     * @return String salida
      */
     public String enviarCiclistas(Etapa etapa){   
         String salida = "";
@@ -388,16 +378,41 @@ public class Equipo
      * Sends to a certain Etapa class all the information in ciclistas ArrayList
      * 
      * @param Etapa class to copy the information to
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+     */
+    public void enviarTodosCiclistas(Etapa etapa){   
+        try{   
+            Iterator<Ciclista> itcA;
+=======
+>>>>>>> Stashed changes
      * @return
      */
     public void enviarTodosCiclistas(Etapa etapa){   
         try{  
+<<<<<<< Updated upstream
+=======
+>>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
+>>>>>>> Stashed changes
             Iterator<Ciclista> itc = ciclistas.iterator();
             Ciclista ciclista;
             
             while (itc.hasNext()) {
                 ciclista = itc.next();
                 etapa.setCiclista(ciclista); 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+            }
+            
+            itcA = ciclistasAbandonado.iterator();
+            while (itcA.hasNext()) {
+                ciclista = itcA.next();
+                etapa.setCiclista(ciclista); 
+=======
+>>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
+>>>>>>> Stashed changes
             }  
         } catch(NullPointerException e){ }
     }
@@ -407,13 +422,22 @@ public class Equipo
      * Updates the information about a certain Ciclista variable 
      * 
      * @param Ciclista variable to update
-     * @return
      */
     public void recogerCiclistas(Ciclista ciclista){
         borrarCiclista(ciclista);
+<<<<<<< HEAD
+        if(ciclista.abandonado()){
+            ciclistasAbandonado.add(ciclista);
+        } else {
+            setCiclista(ciclista);
+=======
         setCiclista(ciclista);
         if(ciclista.abandonado()){
             ciclistasAbandonado.add(ciclista);
+<<<<<<< Updated upstream
+=======
+>>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
+>>>>>>> Stashed changes
         }
     }
 }

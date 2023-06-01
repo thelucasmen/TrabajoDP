@@ -41,6 +41,7 @@ public class CiclistaExperimentado extends Ciclista
     
         /*Funcionalidad */
     //((habilidad del Ciclista + 4) / 130) * 10
+    @Override
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 4) / 130 * 10;
     }

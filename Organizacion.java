@@ -140,7 +140,8 @@ public class Organizacion
         String salida = "";
         String aux = "";
         boolean fin = false;
-        int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
+        //int contC = 0;
+        int contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         //Ordenar Etapas
         Iterator<Etapa> itE = etapas.iterator();
@@ -210,13 +211,13 @@ public class Organizacion
                     } 
                 } catch(ConcurrentModificationException e){ }
                 salida += etapa.getCiclistas();
-                contC = etapa.getCiclista();
+                //contC = etapa.getCiclista();
                 salida += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                         "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
                         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
                 podio.clear();
                 //podio = etapa.mostrarCiclistas(contC, etapa, podio);   
-                salida += etapa.salidaMostrarCiclistas(contC, etapa, podio);
+                salida += etapa.salidaMostrarCiclistas(etapa, podio);
                 
                 salida += "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                             "+++++++++++++++++ Clasificación final de la carrera en " + etapa.getNombre() + " ++++++++++++++++++\n" +
@@ -242,7 +243,14 @@ public class Organizacion
                     salida += aux;
                 }
                 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+                if(etapa.getCiclista() == contCA || etapa.getCiclista() - contCA == 1) {
+=======
+>>>>>>> Stashed changes
                 if(contC == contCA || contC - contCA == 1) {
+>>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
                     fin = true;
                 }
             }
