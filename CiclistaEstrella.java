@@ -19,19 +19,7 @@ public class CiclistaEstrella extends Ciclista
 
     /**
      * Constructor for objects of class Ciclista
-     */
-    /*public CiclistaEstrella(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List<Resultado> resultados, Equipo equipo)
-    {
-       super(nombre, bicicleta, habilidad, energia, resultados, equipo);
-       this.nombre = nombre;
-       this.bicicleta = bicicleta;
-       this.habilidad = habilidad;
-       this.energia = energia;
-       this.equipo = equipo;
-       this.popularidad = 6; 
-       this.resultados = resultados;
-    }*/
-    
+     */   
     public CiclistaEstrella(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
        super(nombre, habilidad, energia, equipo); 
@@ -47,17 +35,50 @@ public class CiclistaEstrella extends Ciclista
         return popularidad;
     }
     
-        /*Funcionalidad */        
-    //Suma o resta popularidad segun el tiempo
-    public String SerPopular(double tiempo){
+    @Override
+    public String toString(){
+        return super.toString() + "<popularidad: " + getPopularidad() + ">";
+    }
+    
+    /*   Funcionalidad   */     
+    @Override
+    public void funcionalidadCiclista(Etapa e, double tiempo){
+        super.funcionalidadCiclista(e, tiempo);
+        if(tiempo < 160){
+            setPopularidad(getPopularidad() + 4);
+        } else{
+            setPopularidad(getPopularidad() - 1);
+        }
+    }
+ 
+    /**
+     * Prepare a String for the specific ciclista.
+     * 
+     * @param tiempo and energiaPrevia variables double  
+     * @return String variable.
+     * 
+     */    
+    @Override
+    public String salidaFinalCiclista(double tiempo, double energiaPrevia){
         String salida = "";
-        if(tiempo<160){
-           setPopularidad(getPopularidad()+4); 
+        if(!abandonado()){
+            salida += "+++ " + getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n" +
+            "+++ La energía del ciclista " + getNombre() + " tras la carrera es " + 
+            String.format("%.2f",getEnergia()) + " +++\n" + "@@@\n";
+        } else {
+            salida += "¡¡¡ El ciclista " + getNombre() + " se quedó sin energia a falta de " + 
+                String.format("%.2f",getEnergia()*(-1)) + " minutos para terminar !!!\n" +
+                "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
+                String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
+                "+++ La energía del ciclista " + getNombre() + " tras la carrera es " + 
+                String.format("%.2f",getEnergia()) + " +++\n@@@\n";
+        }
+        
+        if(tiempo<160){ 
            salida += "+++ La popularidad del ciclista " + getNombre() + 
                          " ha aumentado y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
                          "@@@\n";
         } else {
-            setPopularidad(getPopularidad()-1);
             salida += "--- La popularidad del ciclista " + getNombre() + 
                          " ha disminuido y ahora su nivel de popularidad es de: " + getPopularidad() + " unidades\n" +
                          "@@@\n";

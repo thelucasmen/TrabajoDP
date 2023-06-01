@@ -12,12 +12,9 @@ import java.util.*;
 public class CiclismoDemo
 {    
     public static void main(String[] args)  throws java.io.IOException{
-        Salida.abrirFlujo("Campeonato.txt");       
-        HashSet<Etapa> etapas = new HashSet<Etapa>();
-        HashMap<String, Equipo> equipos = new HashMap<String, Equipo>();
-        List<Ciclista> ciclistasCarrera = new ArrayList<Ciclista>();
+        Salida.abrirFlujo("Campeonato.txt");
         
-        Organizacion organizacion=new Organizacion("OrganizacionPrueba", etapas, equipos, ciclistasCarrera);
+        Organizacion organizacion=new Organizacion("OrganizacionPrueba");
         //Descomentar de las líneas siguientes, la prueba que se quiera ejecutar
         
         /**DatosCampeonatoFinal**/

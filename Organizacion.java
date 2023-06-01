@@ -18,19 +18,16 @@ public class Organizacion
     private String nombreOrg;
     private List<ResultadosCarrera> podio;
     private Set<Etapa> etapas;
-    private HashMap<String, Equipo> equipos;
-    private List<Ciclista> ciclistasCarrera;
+    private Map<String, Equipo> equipos;
     /**
      * Constructor for objects of class Organizacion
      */
-    public Organizacion(String nombreOrg, HashSet<Etapa> etapas, HashMap<String, Equipo> equipos, List<Ciclista> ciclistasCarrera)
+    public Organizacion(String nombreOrg)
     {
         this.nombreOrg = nombreOrg;
         this.etapas = new TreeSet<Etapa>(new DificultadComparator());
-        this.equipos = new HashMap<String,Equipo>();           
-        this.ciclistasCarrera = new ArrayList<Ciclista>();
-        
-        podio = new ArrayList<ResultadosCarrera>();
+        this.equipos = new TreeMap<String,Equipo>();       
+        this.podio = new ArrayList<ResultadosCarrera>();
     }
     
     /**
@@ -113,26 +110,6 @@ public class Organizacion
         this.equipos.remove(equipo);
     }
     
-    /**
-     * Adds a new Ciclista element to the ciclistas ArrayList
-     * 
-     * @param Ciclista variable to add
-     * @return
-     */
-    public void setCiclistasCarrera(Ciclista ciclista){
-        this.ciclistasCarrera.add(ciclista);
-    }
-    
-    /**
-     * Removes a certain Ciclista element from ciclistas ArrayList
-     * 
-     * @param Ciclista element in ArrayList to remove
-     * @return
-     */
-    public void borrarCiclistasCarrera(Ciclista ciclista){
-        this.ciclistasCarrera.remove(ciclista);
-    }
-    
     //Inscribe los equipos de la lista equipos en la etapa
     /**
      * Adds a new Equipo variable to the equipos HashMap
@@ -162,17 +139,21 @@ public class Organizacion
         String salida = "";
         String aux = "";
         boolean fin = false;
-        int contC = 0, contCA = 0, contE = 0, contCE = 0, contPodio;
+        //int contC = 0;
+        int contCA = 0, contE = 0, contCE = 0, contPodio;
         double menorTiempo = 2147483647; //2147483647 es el valor maximo que un int puede guardar, el tiempo del primer equipo siempre sera menor que este valor
         //Ordenar Etapas
         Iterator<Etapa> itE = etapas.iterator();
         //Ordenar Equipos
         List<Equipo> equiposOrdenadas = new ArrayList<Equipo>();
-        for (String i : equipos.keySet()) {
+        for(Equipo e : equipos.values()){
+            e.ordenarEquipo();
+        }
+        /*for (String i : equipos.keySet()) {
             equiposOrdenadas.add(equipos.get(i));
         }
         equiposOrdenadas.sort(new NameEqComparator());
-        Iterator<Equipo> itEq = equiposOrdenadas.iterator();
+        Iterator<Equipo> itEq = equiposOrdenadas.iterator();*/
         
         //ordenarListas();
         if(etapas.size()>0){
@@ -189,7 +170,15 @@ public class Organizacion
                       "\n%%%%%%%% EQUIPOS DEL CAMPEONATO %%%%%%%%" +
                       "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";            
             
-            while (itEq.hasNext()) {
+            for ( Equipo e: equipos.values()){
+                salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
+                salida += e;
+                if(e.mediatiempoTotal() < menorTiempo){
+                    menorTiempo = e.mediatiempoTotal();
+                    equipoGanador = e;
+                }
+            }
+            /*while (itEq.hasNext()) {
                 equipo = itEq.next();
                 salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
                 salida += equipo;
@@ -197,7 +186,7 @@ public class Organizacion
                     menorTiempo = equipo.mediatiempoTotal();
                     equipoGanador = equipo;
                 }
-            }
+            }*/
             
             itE = etapas.iterator();
             salida += "\n********************************************************************************************************\n";
@@ -212,33 +201,19 @@ public class Organizacion
                 "******************************** Ciclistas que van a competir en " + etapa.getNombre() + 
                 " *******************************\n" +
                 "**********************************************************************************************************\n";
-                itEq = equiposOrdenadas.iterator();
-                try{
-                    while (itEq.hasNext()) {
-                        equipo = itEq.next();
-                        if(equipo.getNombre()=="DSM Women"){
-                            equipo.ordenarCiclistas(3);
-                            equipo.ordenarBicicletas(2);
-                        }
-                        if(equipo.getNombre()=="Movistar Women"){
-                            equipo.ordenarCiclistas(6);
-                            equipo.ordenarBicicletas(2);
-                        }
-                        if(equipo.getNombre()=="Trek Segafredo Women"){
-                            equipo.ordenarCiclistas(11);
-                            equipo.ordenarBicicletas(4);
-                        }
-                        equipo.enviarCiclistas(etapa);
-                    } 
-                } catch(ConcurrentModificationException e){ }
+                //itEq = equiposOrdenadas.iterator();
+                for(Equipo e : equipos.values()){
+                    e.ordenarEquipo();
+                    e.enviarCiclistas(etapa);
+                }
                 salida += etapa.getCiclistas();
-                contC = etapa.getCiclista();
+                //contC = etapa.getCiclista();
                 salida += "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                         "+++++++++++++++++++++++++ Comienza la carrera en " + etapa.getNombre() + " ++++++++++++++++++++++++++\n" +
                         "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
                 podio.clear();
                 //podio = etapa.mostrarCiclistas(contC, etapa, podio);   
-                salida += etapa.salidaMostrarCiclistas(contC, etapa, podio);
+                salida += etapa.salidaMostrarCiclistas(etapa, podio);
                 
                 salida += "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n" +
                             "+++++++++++++++++ Clasificación final de la carrera en " + etapa.getNombre() + " ++++++++++++++++++\n" +
@@ -257,9 +232,14 @@ public class Organizacion
                             String.format("%.2f", resultadosCarrera.getResultado().getTiempo()) + 
                         " - Además ha abandonado para el resto del Campeonato !!!\n";
                     }
-                }                   
-                salida += aux + "\n********************************************************************************************************\n";
-                if(contC == contCA || contC - contCA == 1) {
+                } 
+                if(contE < etapas.size()){
+                    salida += aux + "\n********************************************************************************************************\n";
+                } else {
+                    salida += aux;
+                }
+                
+                if(etapa.getCiclista() == contCA || etapa.getCiclista() - contCA == 1) {
                     fin = true;
                 }
             }
@@ -273,13 +253,20 @@ public class Organizacion
             if(fin) { 
                 salida += "Ganador desierto (ningún Ciclista ni equipo ha ganado el campeonato)\n";
             }
+            
+            etapa.clearCiclista();
+            for (Equipo e : equipos.values()){
+                equiposOrdenadas.add(e);
+                e.enviarTodosCiclistas(etapa);
+            }
+            
             salida += etapa.mostrarResultadosCiclistas();
             salida +=          "****************************************************\n" +
                                "******** CLASIFICACIÓN FINAL DE EQUIPOS *********\n" +
                                "****************************************************\n";
             contE = 0;
             equiposOrdenadas.sort(new MediaTiempoTotalComparator());
-            itEq = equiposOrdenadas.iterator();
+            Iterator<Equipo> itEq = equiposOrdenadas.iterator();
             while (itEq.hasNext()) {
                 equipo = itEq.next();
                 contE++;

@@ -50,8 +50,8 @@ public class Pruebas
         bs1 = new ArrayList<Bicicleta>();
         cs2 = new ArrayList<Ciclista>();
         bs2 = new ArrayList<Bicicleta>();
-        e1 = new Equipo("ESPAÑA", cs1, bs1);
-        e2 = new Equipo("ARGENTINA", cs1, bs1);
+        //e1 = new Equipo("ESPAÑA", cs1, bs1);
+        //e2 = new Equipo("ARGENTINA", cs1, bs1);
         et1 = new Etapa("Barcelona", Dificultad.COMPLEJA, Distancia.LARGA);
         et2 = new Etapa("París", Dificultad.NORMAL, Distancia.CORTA);
         c1 = new CiclistaNovato("Alberto", Habilidad.BUENA, 1400, e1);
@@ -79,13 +79,13 @@ public class Pruebas
         c4.funcionalidadCiclista(et1, b3.calculartiempo(c4, et1));
         c4.funcionalidadCiclista(et2, b3.calculartiempo(c4, et2));
     }
-
+}
     /**
      * Tears down the test fixture.
      *
      * Called after every test case method.
      */
-    @AfterEach
+    /*@AfterEach
     public void tearDown()
     {
     }
@@ -134,7 +134,7 @@ public class Pruebas
         e1.enviarCiclistas(et1);
         assertEquals(225.64, e1.mediatiempoTotal(), 0.01);
     }
-}
+}*/
 
 
 

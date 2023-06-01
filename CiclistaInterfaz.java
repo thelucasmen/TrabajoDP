@@ -53,8 +53,8 @@ interface CiclistaInterfaz
     public String abandonada();
         //Guarda en resultados el tiempo        tiempo=bicicleta.calculartiempo(ciclista,etapa);
     public void funcionalidadCiclista(Etapa e, double tiempo);
-        //Suma o resta popularidad segun el tiempo
-    public String SerPopular(double tiempo);
         //Caclcula la destreza del ciclista
     public double calculaDestreza();
+        //Prepara la salida de ciclista al final de la vuelta
+    public String salidaFinalCiclista(double tiempo, double energiaPrevia);
 }
