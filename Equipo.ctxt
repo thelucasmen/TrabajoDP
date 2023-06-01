@@ -6,80 +6,57 @@ comment1.target=Equipo(java.lang.String,\ java.util.List,\ java.util.List)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Equipo\r\n
 comment10.params=
 comment10.target=java.lang.String\ getBicicletas()
-comment10.text=\r\n\ \r\n\ @return\ String\ mostrar\r\n
+comment10.text=\r\n\ \r\n
 comment11.params=
 comment11.target=java.lang.String\ toString()
-comment11.text=\r\n\ Shows\ on\ screen\ all\ the\ information\ about\ Equipo\ class\r\n\ \r\n\ @return\ String\ mostrar\r\n
+comment11.text=\r\n\ Shows\ on\ screen\ all\ the\ information\ about\ Equipo\ class\r\n\ \r\n\ @param\r\n\ @return\r\n
 comment12.params=
 comment12.target=int\ hashCode()
 comment13.params=obj
 comment13.target=boolean\ equals(java.lang.Object)
 comment14.params=criterio
 comment14.target=void\ ordenarCiclistas(int)
-comment14.text=\r\n\ Sorts\ ciclistas\ ArrayList\ following\ a\ certain\ criteria\r\n\ \r\n\ @param\ int\ number\ to\ choose\ the\ way\ of\ sorting\r\n
+comment14.text=\r\n\ Sorts\ ciclistas\ ArrayList\ following\ a\ certain\ criteria\r\n\ \r\n\ @param\ int\ number\ to\ choose\ the\ way\ of\ sorting\r\n\ @return\r\n
 comment15.params=criterio
 comment15.target=void\ ordenarBicicletas(int)
-comment15.text=\r\n\ Sorts\ bicicletas\ ArrayList\ following\ a\ certain\ criteria\r\n\ \r\n\ @param\ int\ number\ to\ choose\ the\ way\ of\ sorting\r\n
+comment15.text=\r\n\ Sorts\ bicicletas\ ArrayList\ following\ a\ certain\ criteria\r\n\ \r\n\ @param\ int\ number\ to\ choose\ the\ way\ of\ sorting\r\n\ @return\r\n
 comment16.params=
 comment16.target=double\ tiempoTotal()
-comment16.text=\r\n\ Calculates\ the\ amount\ of\ time\ in\ total\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @return\ double\ variable\ whichs\ is\ the\ summation\ of\ all\ the\ times\ in\ ciclistas\ ArrayList\r\n
+comment16.text=\r\n\ Calculates\ the\ amount\ of\ time\ in\ total\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\r\n\ @return\ double\ variable\ whichs\ is\ the\ summation\ of\ all\ the\ times\ in\ ciclistas\ ArrayList\r\n
 comment17.params=
 comment17.target=double\ mediatiempoTotal()
-comment17.text=\r\n\ Calculates\ the\ average\ time\ spended\ by\ cyclist\ in\ the\ Equipo\ class\r\n\ \r\n\ @return\ double\ variable\ which\ is\ the\ total\ time\ divided\ by\ the\ total\ elements\ in\ ciclistas\r\n
+comment17.text=\r\n\ Calculates\ the\ average\ time\ spended\ by\ cyclist\ in\ the\ Equipo\ class\r\n\ \r\n\ @param\r\n\ @return\ double\ variable\ which\ is\ the\ total\ time\ divided\ by\ the\ total\ elements\ in\ ciclistas\r\n
 comment18.params=
 comment18.target=double\ mediatiempoSinA()
-comment18.text=\r\n\ Calculates\ the\ average\ time\ spendend\ by\ cyclist\ in\ the\ Equipo\ class\ who\ did\ NOT\ abandon\ the\ stage\r\n\ \r\n\ @return\ double\ variable\ which\ represents\ the\ total\ amount\ of\ time\ divided\ by\ the\ total\ amount\ of\ cyclist\ (who\ did\ NOT\ abandon)\r\n
+comment18.text=\r\n\ Calculates\ the\ average\ time\ spendend\ by\ cyclist\ in\ the\ Equipo\ class\ who\ did\ NOT\ abandon\ the\ stage\r\n\ \r\n\ @param\r\n\ @return\ double\ variable\ which\ represents\ the\ total\ amount\ of\ time\ divided\ by\ the\ total\ amount\ of\ cyclist\ (who\ did\ NOT\ abandon)\r\n
 comment19.params=etapa
 comment19.target=java.lang.String\ enviarCiclistas(Etapa)
-comment19.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Etapa\ class\ to\ copy\ the\ information\ to\r\n\ @return\ String\ salida\r\n
+comment19.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Etapa\ class\ to\ copy\ the\ information\ to\r\n\ @return\r\n
 comment2.params=nombre
 comment2.target=void\ setNombre(java.lang.String)
-<<<<<<< HEAD
-comment2.text=\r\n\ Changes\ the\ value\ of\ the\ String\ variable\ name\ in\ a\ certain\ Equipo\ class\r\n\ \r\n\ @param\ \ String\ variable\ to\ set\ in\ Equipo\ \ \ \r\n
-comment20.params=etapa
-comment20.target=void\ enviarTodosCiclistas(Etapa)
-comment20.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Etapa\ class\ to\ copy\ the\ information\ to\r\n
-comment21.params=ciclista
-comment21.target=void\ recogerCiclistas(Ciclista)
-comment21.text=\r\n\ Updates\ the\ information\ about\ a\ certain\ Ciclista\ variable\ \r\n\ \r\n\ @param\ Ciclista\ variable\ to\ update\r\n
-=======
 comment2.text=\r\n\ Changes\ the\ value\ of\ the\ String\ variable\ name\ in\ a\ certain\ Equipo\ class\r\n\ \r\n\ @param\ \ String\ variable\ to\ set\ in\ Equipo\r\n\ @return\ \ \ \ \ \r\n
-comment20.params=etapa
-comment20.target=void\ enviarTodosCiclistas(Etapa)
-comment20.text=\r\n\ Sends\ to\ a\ certain\ Etapa\ class\ all\ the\ information\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Etapa\ class\ to\ copy\ the\ information\ to\r\n\ @return\r\n
-comment21.params=ciclista
-comment21.target=void\ recogerCiclistas(Ciclista)
-comment21.text=\r\n\ Updates\ the\ information\ about\ a\ certain\ Ciclista\ variable\ \r\n\ \r\n\ @param\ Ciclista\ variable\ to\ update\r\n\ @return\r\n
-<<<<<<< Updated upstream
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
+comment20.params=ciclista
+comment20.target=void\ recogerCiclistas(Ciclista)
+comment20.text=\r\n\ Updates\ the\ information\ about\ a\ certain\ Ciclista\ variable\ \r\n\ \r\n\ @param\ Ciclista\ variable\ to\ update\r\n\ @return\r\n
 comment3.params=
 comment3.target=java.lang.String\ getNombre()
-comment3.text=\r\n\ Returns\ the\ String\ variable\ nombre\ value\r\n\ \r\n\ @return\ String\ value\r\n
+comment3.text=\r\n\ Returns\ the\ String\ variable\ nombre\ value\r\n\ \r\n\ @param\r\n\ @return\ String\ value\r\n
 comment4.params=ciclista
 comment4.target=void\ setCiclista(Ciclista)
-comment4.text=\r\n\ Adds\ a\ new\ Ciclista\ element\ to\ the\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Ciclista\ variable\ to\ add\ to\ the\ ArrayList\r\n
+comment4.text=\r\n\ Adds\ a\ new\ Ciclista\ element\ to\ the\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Ciclista\ variable\ to\ add\ to\ the\ ArrayList\r\n\ @return\r\n
 comment5.params=bicicleta
 comment5.target=void\ setBicicleta(Bicicleta)
-comment5.text=\r\n\ Adds\ a\ new\ Bicicleta\ element\ to\ the\ bicicletas\ ArrayList\r\n\ \r\n\ @param\ Bicicleta\ variable\ to\ insert\r\n
+comment5.text=\r\n\ Adds\ a\ new\ Bicicleta\ element\ to\ the\ bicicletas\ ArrayList\r\n\ \r\n\ @param\ Bicicleta\ variable\ to\ insert\r\n\ @return\r\n
 comment6.params=ciclista
 comment6.target=void\ borrarCiclista(Ciclista)
-comment6.text=\r\n\ Removes\ a\ certain\ Ciclista\ element\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Ciclista\ variable\ in\ ciclistas\r\n
+comment6.text=\r\n\ Removes\ a\ certain\ Ciclista\ element\ in\ ciclistas\ ArrayList\r\n\ \r\n\ @param\ Ciclista\ variable\ in\ ciclistas\r\n\ @return\r\n
 comment7.params=bicicleta
 comment7.target=void\ borrarBicicletas(Bicicleta)
-comment7.text=\r\n\ Removes\ a\ certain\ Bicicleta\ element\ in\ bicicletas\ ArrayList\r\n\ \r\n\ @param\ Bicicleta\ variable\ in\ bicicletas\r\n
+comment7.text=\r\n\ Removes\ a\ certain\ Bicicleta\ element\ in\ bicicletas\ ArrayList\r\n\ \r\n\ @param\ Bicicleta\ variable\ in\ bicicletas\r\n\ @return\r\n
 comment8.params=end
 comment8.target=java.lang.String\ getCiclistas(java.lang.Boolean)
-comment8.text=\r\n\ \r\n\ @param\ boolean\ variable\r\n\ @return\ String\ mostrar\r\n
+comment8.text=\r\n\ \r\n
 comment9.params=
 comment9.target=int\ contCiclistas()
-<<<<<<< HEAD
-comment9.text=\r\n\ Counts\ the\ amount\ of\ Ciclista\ elements\ in\ the\ ciclistas\ ArrayList\r\n\ \r\n\ @return\ int\ number\ representing\ the\ amount\ of\ elements\ in\ ciclistas\r\n
-=======
 comment9.text=\r\n\ Counts\ the\ amount\ of\ Ciclista\ elements\ in\ the\ ciclistas\ ArrayList\r\n\ \r\n\ @param\r\n\ @return\ int\ number\ representing\ the\ amount\ of\ elements\ in\ ciclistas\r\n
-<<<<<<< Updated upstream
-=======
->>>>>>> b3c236459597ee84208d99bd9088c0c9605094e0
->>>>>>> Stashed changes
-numComments=22
+numComments=21

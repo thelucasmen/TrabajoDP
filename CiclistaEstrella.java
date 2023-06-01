@@ -47,23 +47,7 @@ public class CiclistaEstrella extends Ciclista
         return popularidad;
     }
     
-    @Override
-    public String toString(){
-        return super.toString() + "<popularidad: " + getPopularidad() + ">";
-    }
-    
-    @Override
-    public void funcionalidadCiclista(Etapa e, double tiempo){
-        super.funcionalidadCiclista(e, tiempo);
-        if(tiempo < 160){
-            setPopularidad(getPopularidad() + 4);
-        } else{
-            setPopularidad(getPopularidad() - 1);
-        }
-    }
-    
-    /*
-            Funcionalidad         
+        /*Funcionalidad */        
     //Suma o resta popularidad segun el tiempo
     public String SerPopular(double tiempo){
         String salida = "";
@@ -80,8 +64,7 @@ public class CiclistaEstrella extends Ciclista
         }
         return salida;
     }
-    */
- 
+    
     //(((habilidad del Ciclista + 6) / 140) * 10
     public double calculaDestreza(){
         return (getHabilidad().getHabilidadCiclista() + 6) / 140 * 10;

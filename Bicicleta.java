@@ -26,6 +26,7 @@ public class Bicicleta
      * Changes the value of the String variable nombre in Bicicleta class
      * 
      * @param String variable to set in Bicicleta
+     * @return
      */
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -35,6 +36,7 @@ public class Bicicleta
      * Changes the value of the Peso variable in Bicicleta class
      * 
      * @param Peso variable to set in Bicicleta
+     * @return
     */
     public void setPeso(Peso peso){
         this.peso = peso;
@@ -42,7 +44,8 @@ public class Bicicleta
     
     /**
      * Returns the value of the String variable nombre in Bicicleta class
-     *
+     * 
+     * @param
      * @return String variable
      */
     public String getNombre(){
@@ -52,6 +55,7 @@ public class Bicicleta
     /**
      * Returns the value of the Peso variable in Bicicleta class
      * 
+     * @param
      * @return Peso variable
      */
     public Peso getPeso(){
@@ -61,7 +65,8 @@ public class Bicicleta
     /**
      * Shows on screen all information about Bicicleta class
      * 
-     * @return String variable mostrar
+     * @param
+     * @return
      */
     public String toString() {
         //<Bicicleta: SCOTT CONTESSA ADDICT RC 15> <peso: Pesada (valor: 7.85)>

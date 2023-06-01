@@ -8,11 +8,9 @@ comment2.params=popularidad
 comment2.target=void\ setPopularidad(int)
 comment3.params=
 comment3.target=int\ getPopularidad()
-comment4.params=
-comment4.target=java.lang.String\ toString()
-comment5.params=e\ tiempo
-comment5.target=void\ funcionalidadCiclista(Etapa,\ double)
-comment6.params=
-comment6.target=double\ calculaDestreza()
-comment6.text=\r\n\ \ \ \ \ \ \ \ \ \ \ \ Funcionalidad\ \ \ \ \ \ \ \ \ \r\n\ \ \ \ //Suma\ o\ resta\ popularidad\ segun\ el\ tiempo\r\n\ \ \ \ public\ String\ SerPopular(double\ tiempo){\r\n\ \ \ \ \ \ \ \ String\ salida\ \=\ "";\r\n\ \ \ \ \ \ \ \ if(tiempo<160){\r\n\ \ \ \ \ \ \ \ \ \ \ setPopularidad(getPopularidad()+4);\ \r\n\ \ \ \ \ \ \ \ \ \ \ salida\ +\=\ "+++\ La\ popularidad\ del\ ciclista\ "\ +\ getNombre()\ +\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\ ha\ aumentado\ y\ ahora\ su\ nivel\ de\ popularidad\ es\ de\:\ "\ +\ getPopularidad()\ +\ "\ unidades\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "@@@\\n";\r\n\ \ \ \ \ \ \ \ }\ else\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setPopularidad(getPopularidad()-1);\r\n\ \ \ \ \ \ \ \ \ \ \ \ salida\ +\=\ "---\ La\ popularidad\ del\ ciclista\ "\ +\ getNombre()\ +\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "\ ha\ disminuido\ y\ ahora\ su\ nivel\ de\ popularidad\ es\ de\:\ "\ +\ getPopularidad()\ +\ "\ unidades\\n"\ +\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "@@@\\n";\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ return\ salida;\r\n\ \ \ \ }\r\n
-numComments=7
+comment4.params=tiempo
+comment4.target=java.lang.String\ SerPopular(double)
+comment4.text=Funcionalidad
+comment5.params=
+comment5.target=double\ calculaDestreza()
+numComments=6
