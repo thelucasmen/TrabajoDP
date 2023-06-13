@@ -6,15 +6,9 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class CiclistaEstrella extends Ciclista 
+public class CiclistaEstrella extends Ciclista implements Popular 
 {
-    // instance variables - replace the example below with your own
-    //private String nombre;
-    //private Bicicleta bicicleta;
-    //private Habilidad habilidad;
-    //private double energia;
     private List<Resultado> resultados;
-    //private Equipo equipo;
     private int popularidad;
 
     /**
@@ -60,19 +54,7 @@ public class CiclistaEstrella extends Ciclista
      */    
     @Override
     public String salidaFinalCiclista(double tiempo, double energiaPrevia){
-        String salida = "";
-        if(!abandonado()){
-            salida += "+++ " + getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n" +
-            "+++ La energía del ciclista " + getNombre() + " tras la carrera es " + 
-            String.format("%.2f",getEnergia()) + " +++\n" + "@@@\n";
-        } else {
-            salida += "¡¡¡ El ciclista " + getNombre() + " se quedó sin energia a falta de " + 
-                String.format("%.2f",getEnergia()*(-1)) + " minutos para terminar !!!\n" +
-                "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
-                String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
-                "+++ La energía del ciclista " + getNombre() + " tras la carrera es " + 
-                String.format("%.2f",getEnergia()) + " +++\n@@@\n";
-        }
+        String salida = super.salidaFinalCiclista(tiempo, energiaPrevia);
         
         if(tiempo<160){ 
            salida += "+++ La popularidad del ciclista " + getNombre() + 

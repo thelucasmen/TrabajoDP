@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=BicicletaTest
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ testSetNombre()
+comment3.params=
+comment3.target=void\ testSetPeso()
+comment4.params=
+comment4.target=void\ testGetNombre()
+comment5.params=
+comment5.target=void\ testGetPeso()
+comment6.params=
+comment6.target=void\ testEquals()
+comment7.params=
+comment7.target=void\ testCalcularVelocidad()
+comment8.params=
+comment8.target=void\ testCalculartiempo()
+comment9.params=
+comment9.target=void\ tearDown()
+comment9.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
+numComments=10

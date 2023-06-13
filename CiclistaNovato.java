@@ -11,32 +11,13 @@ import java.util.*;
  */
 public class CiclistaNovato extends Ciclista
 {
-   // instance variables - replace the example below with your own
-    //private String nombre;
-    //private Bicicleta bicicleta;
-    //private Habilidad habilidad;
-    //private double energia;
-    //private List resultados;
-    //private Equipo equipo;
 
     /**
      * Constructor for objects of class Ciclista
-     */
-    /*public CiclistaNovato(String nombre, Bicicleta bicicleta, Habilidad habilidad, double energia, List resultados, Equipo equipo)
-    {
-       super(nombre, bicicleta, habilidad, energia, resultados, equipo);
-       this.nombre = nombre;
-       this.bicicleta = bicicleta;
-       this.habilidad = habilidad;
-       this.energia = energia;
-       this.equipo = equipo;
-       this.resultados = resultados;
-    }*/
-    
+     */    
     public CiclistaNovato(String nombre, Habilidad habilidad, double energia, Equipo equipo)
     {
-       super(nombre, habilidad, energia, equipo);          
-       //resultados = new ArrayList();
+       super(nombre, habilidad, energia, equipo);       
     }
         
         /*Funcionalidad */        

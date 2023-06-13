@@ -3,7 +3,7 @@ comment0.target=CiclistaNovato
 comment0.text=\r\n\ La\ clase\ ciclista\ novato\ es\ un\ complemento\ excluyente\ de\ la\ clase\ ciclista.\r\n\ Si\ un\ ciclista\ es\ novato,\ entonces\ no\ puede\ ser\ experimentado\ ni\ estrella.\r\n\ \r\n\ Contiene\ adem\u00E1s\ las\ operaciones\ basicas\ para\ interactuar\ con\ las\ otras\ clases\r\n\ \r\n\ @author\ (Marcos\ Acedo\ Mejias,\ Daniel\ Barrantes\ Pulido,\ Lucas\ Mendez\ Fernandez)\ \r\n\ @version\ (9.12.22)\r\n
 comment1.params=nombre\ habilidad\ energia\ equipo
 comment1.target=CiclistaNovato(java.lang.String,\ Habilidad,\ double,\ Equipo)
-comment1.text=public\ CiclistaNovato(String\ nombre,\ Bicicleta\ bicicleta,\ Habilidad\ habilidad,\ double\ energia,\ List\ resultados,\ Equipo\ equipo)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ super(nombre,\ bicicleta,\ habilidad,\ energia,\ resultados,\ equipo);\r\n\ \ \ \ \ \ \ this.nombre\ \=\ nombre;\r\n\ \ \ \ \ \ \ this.bicicleta\ \=\ bicicleta;\r\n\ \ \ \ \ \ \ this.habilidad\ \=\ habilidad;\r\n\ \ \ \ \ \ \ this.energia\ \=\ energia;\r\n\ \ \ \ \ \ \ this.equipo\ \=\ equipo;\r\n\ \ \ \ \ \ \ this.resultados\ \=\ resultados;\r\n}
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Ciclista\r\n
 comment2.params=
 comment2.target=double\ calculaDestreza()
 comment2.text=Funcionalidad

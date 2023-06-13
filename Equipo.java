@@ -123,51 +123,14 @@ public class Equipo
         return ordenB;
     }
     
-    
     /**
      * 
      * @param boolean variable
      * @return String mostrar
      */
-    public String getCiclistas(Boolean end){
+    public String getCiclistas(){
         String mostrar = "";
         Ciclista c, cAux = null;
-        /*if(end){
-            switch(nombre){
-                case "Trek Segafredo Women":
-                    Collections.sort(ciclistas, Collections.reverseOrder(new EnergyComparator()));
-                    break;
-                case "Movistar Women":
-                    ciclistas.sort(new NameComparator());
-                    break;
-                case "DSM Women":
-                    Collections.sort(ciclistas, Collections.reverseOrder(new NameComparator()));
-                    break;
-            }
-            ordenarCiclistas(getOrdenC());
-            try{
-                Iterator<Ciclista> itc = ciclistas.iterator();
-                
-                while (itc.hasNext()) {
-                    c = itc.next();
-                    if(nombre.equals("Movistar Women") && c.abandonado()){
-                        auxC = c;
-                    } else {
-                        mostrar += c + "\n";
-                    }
-                }
-                
-                if(nombre.equals("Movistar Women")){
-                    mostrar += auxC + "\n";
-                }
-            }catch(NullPointerException e){ }
-        } else {
-            Iterator<Ciclista> itc = ciclistas.iterator();
-                
-            while (itc.hasNext()) {
-                mostrar += itc.next() + "\n";       
-            }
-        }*/
         Iterator<Ciclista> itc = ciclistas.iterator();
         while (itc.hasNext()) {
             c = itc.next();
@@ -177,10 +140,75 @@ public class Equipo
                 cAux = c;
             }
         }
-        mostrar += cAux + "\n";
+        if(cAux != null){
+            mostrar += cAux + "\n";
+        }
         return mostrar;
     }
-
+    
+    /**
+     * Devuelve la lista de ciclistas (Esta clase solo se usa para las pruebas)
+     * 
+     * @return List<Ciclista> ciclistas
+     */
+    public List<Ciclista> getListaCiclistas(){
+        return ciclistas;
+    }
+    
+    /**
+     * Removes all Ciclista element in ciclistas ArrayList
+     * 
+     * @param Ciclista variable in ciclistas
+     */
+    public void limpiarCiclista(){
+        this.ciclistas.clear();
+    }
+    
+    /**
+     * Removes all Bicicleta element in ciclistas ArrayList
+     * 
+     * @param Bicicleta variable in bicicletas
+     */
+    public void limpiarBicicleta(){
+        this.bicicletas.clear();
+    }
+    
+    /**
+     * Devuelve la lista de bicicletas (Esta clase solo se usa para las pruebas)
+     * 
+     * @return List<Bicicleta> bicicletas
+     */
+    public List<Bicicleta> getListaBicicleta(){
+        return bicicletas;
+    }
+    
+    /**
+     * Busca si existe un ciclista (Esta clase solo se usa para las pruebas)
+     * 
+     * @param Ciclista c
+     * @return boolean existe
+     */
+    public boolean buscarCiclistas(Ciclista c){
+        boolean existe = false;
+        if(ciclistas.contains(c)){
+            existe = true;
+        }
+        return existe;
+    }
+    
+    /**
+     * Busca si existe una bicicleta (Esta clase solo se usa para las pruebas)
+     * 
+     * @param Bicicleta b
+     * @return boolean existe
+     */
+    public boolean buscarBicicletas(Bicicleta b){
+        boolean existe = false;
+        if(bicicletas.contains(b)){
+            existe = true;
+        }
+        return existe;
+    }
     
     //Cuenta los ciclistas del equipo sin abandonar
     /**
@@ -221,16 +249,10 @@ public class Equipo
         String mostrar = "%%% " + nombre.toUpperCase() + " %%% Media Minutos de Ciclistas sin abandonar " + 
                             String.format("%.2f", mediatiempoSinA()) + "%%%\n\n";
                             
-        mostrar += getCiclistas(false);
+        mostrar += getCiclistas();
         mostrar += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
             
         return mostrar;
-        /*Iterator<Bicicleta> itb = bicicletas.iterator();
-        try{
-            while (itb.hasNext()) {
-                itc.next().mostrar();
-            }
-        }catch(NullPointerException e){ }*/
     }
     
     public int hashCode() {

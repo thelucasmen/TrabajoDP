@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=EquipoTest
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ testSetNombre()
+comment3.params=
+comment3.target=void\ testSetCiclista()
+comment4.params=
+comment4.target=void\ testBorrarCiclista()
+comment5.params=
+comment5.target=void\ testSetBicicleta()
+comment6.params=
+comment6.target=void\ testBorrarBicicletas()
+comment7.params=
+comment7.target=void\ testGetCiclistas()
+comment8.params=
+comment8.target=void\ testContCiclistas()
+comment9.params=
+comment9.target=void\ tearDown()
+numComments=10

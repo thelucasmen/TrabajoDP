@@ -108,15 +108,6 @@ public class Etapa
      * @return int variable
      */
     public int getCiclista(){
-        /*int contador = 0;
-        try{
-            Iterator<Ciclista> itC = ciclistas.iterator();
-            while (itC.hasNext()) {
-                if(!itC.next().abandonado()){
-                    contador++;
-                }
-            }
-        }catch(NullPointerException e){ }*/
         return ciclistas.size();
     }
        
@@ -205,23 +196,7 @@ public class Etapa
                         "+++ Con estas condiciones el ciclista " + ciclista.getNombre() + " con la bicicleta " + 
                         ciclista.getBicicleta().getNombre() + " alcanza una velocidad de " + 
                         String.format("%.2f",ciclista.getBicicleta().calcularVelocidad(ciclista, etapa)) + " km/hora +++ \n";
-                    salida += ciclista.salidaFinalCiclista(tiempo, energiaPrevia);
-                    /*if(!ciclista.abandonado()){
-                        salida += "+++ " + ciclista.getNombre() + " termina la etapa en " + String.format("%.2f",tiempo) + " minutos +++\n" +
-                            "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                            String.format("%.2f",ciclista.getEnergia()) + " +++\n" + "@@@\n";
-                    } else {
-                        salida += "¡¡¡ El ciclista " + ciclista.getNombre() + " se quedó sin energia a falta de " + 
-                            String.format("%.2f",ciclista.getEnergia()*(-1)) + " minutos para terminar !!!\n" +
-                        "¡¡¡ En el momento de quedarse sin energia llevaba en carrera " + 
-                        String.format("%.2f",energiaPrevia) + " minutos !!!\n" +
-                        "+++ La energía del ciclista " + ciclista.getNombre() + " tras la carrera es " + 
-                        String.format("%.2f",ciclista.getEnergia()) + " +++\n@@@\n";
-                    }
-                    if(ciclista.getClass().getName().equals("CiclistaEstrella")){
-                        salida += ciclista.SerPopular(tiempo);
-                    }
-                    */                    
+                    salida += ciclista.salidaFinalCiclista(tiempo, energiaPrevia);               
                     if(!ciclista.abandonado()){
                         resultado = new Resultado(etapa, tiempo);
                     } else {

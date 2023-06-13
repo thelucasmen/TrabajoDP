@@ -86,7 +86,7 @@ public class Bicicleta
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Etapa other = (Etapa) obj;
+        Bicicleta other = (Bicicleta) obj;
         if (other.getNombre() == null) {
             if (other.getNombre() != null)
                 return false;

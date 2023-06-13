@@ -22,7 +22,6 @@
 <CiclistaExperimentado: LABOUS> <energía: 1150,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaEstrella: LIPPERT> <energía: 1160,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false><popularidad: 6>
 <CiclistaNovato: WIEBES> <energía: 1190,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
-null
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% MOVISTAR WOMEN %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
@@ -30,7 +29,6 @@ null
 <CiclistaNovato: SIERRA> <energía: 1110,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaExperimentado: NORSGAARD> <energía: 1145,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaEstrella: VAN VLEUTEN> <energía: 1200,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false><popularidad: 6>
-null
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% TREK SEGAFREDO WOMEN %%% Media Minutos de Ciclistas sin abandonar 0,00%%%
@@ -38,7 +36,6 @@ null
 <CiclistaNovato: CORDON-RAGOT> <energía: 1120,00> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaExperimentado: LONGO-BORGHINI> <energía: 1175,00> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false>
 <CiclistaEstrella: BALSAMO> <energía: 1180,00> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 0,00> <abandonado: false><popularidad: 6>
-null
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ********************************************************************************************************
@@ -744,6 +741,5 @@ Carrera(compleja larga) - Tiempo: -225,69 minutos
 <CiclistaNovato: WIEBES> <energía: 246,89> <habilidad:Normal (valor:6.0)> <tiempo acumulado sin abandonar: 943,11> <abandonado: false>
 <CiclistaEstrella: LIPPERT> <energía: 640,13> <habilidad:Lenta (valor:4.0)> <tiempo acumulado sin abandonar: 519,87> <abandonado: false><popularidad: 20>
 <CiclistaExperimentado: LABOUS> <energía: 650,80> <habilidad:Buena (valor:8.0)> <tiempo acumulado sin abandonar: 499,20> <abandonado: false>
-null
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

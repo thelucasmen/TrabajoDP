@@ -275,7 +275,7 @@ public class Organizacion
                     "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
                                    "%%% " + equipo.getNombre().toUpperCase()/*.charAt(0) + equipo.getNombre().substring(1, equipo.getNombre().length()).toLowerCase() */
                                    + " %%% Media Minutos de Ciclistas sin abandonar " + String.format("%.2f",equipo.mediatiempoSinA()) + " %%%\n\n";  
-                salida += equipo.getCiclistas(true);
+                salida += equipo.getCiclistas();
                 salida += "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
             }
         }

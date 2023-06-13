@@ -9,7 +9,6 @@ import java.util.*;
  */
 abstract class Ciclista implements CiclistaInterfaz
 {
-   // instance variables - replace the example below with your own
     private String nombre;
     private Bicicleta bicicleta;
     private Habilidad habilidad;
@@ -160,14 +159,8 @@ abstract class Ciclista implements CiclistaInterfaz
                          "> <abandonado: " + abandonado() + ">"; 
         }
         
-        /*if(getClass().getName().equals("CiclistaEstrella")){
-            mostrar +=  " <popularidad: " + getPopularidad() + ">";
-        }*/
-        
         return(mostrar);
     }
-
-    
     
    @Override
     public int hashCode() {
